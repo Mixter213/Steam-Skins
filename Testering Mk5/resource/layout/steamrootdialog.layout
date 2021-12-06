@@ -115,6 +115,15 @@
 	}
 
 
+	styles
+	{
+
+		"FrameTitle"
+		{
+			textcolor = "0 0 0 0"
+		}
+
+	}
 
 
 

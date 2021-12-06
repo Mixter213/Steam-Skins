@@ -3,12 +3,165 @@ steam.styles
 
 	styles
 	{
-		//-----------------------------------------------------------------
+
+		// Basic - Items -----------------------------------------------------------------
+
+		"Panel"
+		{
+			font-family = "Arial"
+			font-size = "16"
+			textcolor = "0 200 200 255"
+		}
+
+		"Label"
+		{
+			font-family = "Arial"
+			font-size = "16"
+			textcolor = "0 200 200 255"
+		}
+
+		"Button"
+		{
+			font-family = "Arial"
+			font-size = "16"
+			textcolor = "0 200 200 255"
+			bgcolor = "200 0 0 255"
+		}
+
+		"CheckButton"
+		{
+			font-family = "Arial"
+			font-size = "16"
+			textcolor = "0 200 200 255"
+			bgcolor = "200 0 0 255"
+		}
+
+		"CheckButtonList"
+		{
+			font-family = "Arial"
+			font-size = "16"
+			textcolor = "0 200 200 255"
+		}
+
+		"RadioButton"
+		{
+			font-family = "Arial"
+			font-size = "16"
+			textcolor = "0 200 200 255"
+			bgcolor = "200 0 0 255"
+		}
+
+		"ComboBox"
+		{
+			font-family = "Arial"
+			font-size = "16"
+			textcolor = "0 200 200 255"
+			bgcolor = "200 0 0 255"
+		}
+
+		"ComboBoxButton"
+		{
+			font-family = "Arial"
+			font-size = "16"
+			textcolor = "0 200 200 255"
+			bgcolor = "0 200 0 255"
+		}
+
+		"ToggleButton"
+		{
+			font-family = "Arial"
+			font-size = "16"
+			textcolor = "0 200 200 255"
+			bgcolor = "200 0 0 255"
+		}
+
+		"TextEntry"
+		{
+			font-family = "Arial"
+			font-size = "16"
+			textcolor = "0 200 200 255"
+		}
+
+		"ProgressBar"
+		{
+			font-family = "Arial"
+			font-size = "16"
+			textcolor = "0 200 200 255"
+			bgcolor = "200 0 0 255"
+		}
+
+		"Slider"
+		{
+			font-family = "Arial"
+			font-size = "16"
+			textcolor = "0 200 200 255"
+			bgcolor = "200 0 0 255"
+		}
+
+		"Divider"
+		{
+			bgcolor = "200 0 0 255"
+		}
+
+		"ListPanel"
+		{
+			font-family = "Arial"
+			font-size = "16"
+			textcolor = "0 200 200 255"
+		}
+
+		"ListPanelColumnHeader"
+		{
+			font-family = "Arial"
+			font-size = "16"
+			textcolor = "0 200 200 255"
+			bgcolor = "200 0 0 255"
+		}
+
+		"ListPanelInterior"
+		{
+			font-family = "Arial"
+			font-size = "16"
+			textcolor = "0 200 200 255"
+			bgcolor = "0 0 200 255"
+		}
+
+		"RichText"
+		{
+			font-family = "Arial"
+			font-size = "16"
+			textcolor = "0 200 200 255"
+		}
+
+		"PageTab"
+		{
+			font-family = "Arial"
+			font-size = "16"
+			textcolor = "0 200 200 255"
+			bgcolor = "200 0 0 255"
+		}
+
+		"GraphPanel"
+		{
+			font-family = "Arial"
+			font-size = "16"
+			textcolor = "0 200 200 255"
+		}
+
+		// Frame - -----------------------------------------------------------------
 
 		// Frame - Main Window
 		"Frame"
 		{
 			bgcolor = "20 40 80 255"
+		}
+
+		// Frame - Title
+		"FrameTitle"
+		{
+			font-family = "Arial"
+			font-size = "14"
+			textcolor = "200 200 200 255"
 		}
 
 		// Frame - Min Button
@@ -35,7 +188,7 @@ steam.styles
 			image="graphics/win32_win_close"
 		}
 
-		//-----------------------------------------------------------------
+		// Menu Bar - -----------------------------------------------------------------
 
 		// Menu Bar
 		"Menubar"
@@ -67,6 +220,73 @@ steam.styles
 		}
 
 		//-----------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 	}
