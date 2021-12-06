@@ -5,9 +5,34 @@ steam.styles
 	{
 		//-----------------------------------------------------------------
 
+		// Frame - Main Window
 		"Frame"
 		{
 			bgcolor = "20 40 80 255"
+		}
+
+		// Frame - Min Button
+		"FrameMinimizeButton"
+		{
+			image="graphics/win32_win_min"
+		}
+
+		// Frame - Max Button
+		"FrameMaximizeButton"
+		{
+			image="graphics/win32_win_max"
+		}
+
+		// Frame - Restore Button
+		"FrameRestoreButton"
+		{
+			image="graphics/win32_win_restore"
+		}
+
+		// Frame - Close Button
+		"FrameCloseButton"
+		{
+			image="graphics/win32_win_close"
 		}
 
 		//-----------------------------------------------------------------
