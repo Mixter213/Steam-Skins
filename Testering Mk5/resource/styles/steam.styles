@@ -1,6 +1,49 @@
 steam.styles
 {
 
-	
+	styles
+	{
+		//-----------------------------------------------------------------
+
+		"Frame"
+		{
+			bgcolor = "20 40 80 255"
+		}
+
+		//-----------------------------------------------------------------
+
+		// Menu Bar
+		"Menubar"
+		{
+		}
+
+		// Menu Bar - Button
+		"MenuButton"
+		{
+			font-family = "Arial"
+			font-size = "16"
+			textcolor = "200 200 200 255"
+		}
+
+		// Menu Bar Dropdown - Item
+		"MenuItem"
+		{
+			font-family = "Arial"
+			font-size = "16"
+			textcolor = "200 200 200 255"
+			bgcolor = "80 40 20 255"
+		}
+
+		// Menu Bar Dropdown - Separator
+		"MenuSeparator"
+		{
+			bgcolor = "80 40 20 255"
+			textcolor = "160 80 40 255"
+		}
+
+		//-----------------------------------------------------------------
+
+
+	}
 
 }
