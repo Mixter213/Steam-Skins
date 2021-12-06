@@ -1,0 +1,4 @@
+"resource/SharedLibraryNotification.res"
+{
+	
+}

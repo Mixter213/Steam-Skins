@@ -1,0 +1,244 @@
+"resource/layout/steamrootdialog.layout"
+{
+	controls
+	{
+
+		//==============================================================
+
+		// Navigation Panel
+		"UINavigatorPanel"
+		{
+			controlname = "CUINavigatorPanel"
+		}
+
+		// Status Panel
+		"UIStatusPanel"
+		{
+			controlname = "CUIStatusPanel"
+		}
+
+		// Menu Bar
+		"MenuBar"
+		{
+			controlname = "MenuBar"
+			style = "RootMenu"
+		}
+
+		// Windows Title Bar
+		"frame_title"
+		{
+			controlname = Label
+			style = "ClientTitle"
+		}
+
+		//==============================================================
+
+		"fullscreen"
+		{
+			controlname = "Button"
+			style = "FullscreenButton"
+		}
+
+		"AccountButton"
+		{
+			controlname = "CAccountButton"
+			style = "AccountButtonStyle"
+		}
+
+		"InboxButton"
+		{
+			controlname = "CInboxButton"
+			style = "inbox_button"
+		}
+
+		"AnnouncementButton"
+		{
+			controlname = "CAnnouncementButton"
+			style = "announcement_button"
+		}
+
+		"ParentalLockButton"
+		{
+			controlname = "ToggleButton"
+			style = "parental_lock_button"
+		}
+		
+		"startvr"
+		{
+			controlname = "Button"
+			style = "VRButton"
+		}
+
+		"exitvr"
+		{
+			controlname = "Button"
+			style = "VRButtonExit"
+		}
+
+		//==============================================================
+
+		"universe_label"
+		{
+			controlname = "Label"
+			style = "UniverseLabel"
+		}
+
+		"SupportAlert"
+		{
+			controlname = "Button"
+			style = "support_alert"
+		}
+
+		"EOLAlert"
+		{
+			controlname = "Button"
+			style = "support_alert"
+		}
+
+		//==============================================================
+
+		"add_game"
+		{
+			controlname = "MenuButton"
+			style = "AddGameButton"
+		}
+
+
+		"view_friends"
+		{
+			controlname = "Button"
+			style = "view_friends"
+		}
+
+		//==============================================================
+
+	}
+
+
+
+
+
+	layout
+	{
+
+		//==============================================================
+
+		place
+		{
+			control = "frame_captiongrip"
+			margin = "2"
+			height = "4"
+			width = "max"
+		}
+
+		//==============================================================
+		
+		place
+		{
+			control = "UINavigatorPanel"
+			height = max
+			width = max
+			margin = "2"
+			margin-top = "40"
+			margin-bottom = "50"
+		}
+
+		place
+		{
+			control = "UIStatusPanel"
+			width = "max"
+			height = "50"
+			align = "bottom"
+		}
+
+		place
+		{
+			control = "MenuBar"
+		}
+
+		//==============================================================
+
+
+		place
+		{
+			control = "fullscreen"
+			end-right = "frame_minimize"
+			height = "24"
+			width = "30"
+			align = "right"
+		}
+
+		place
+		{
+			control = "startvr, exitvr"
+			end-right="fullscreen"
+			height = "24"
+			align = "right"
+		}
+
+		place
+		{
+			control = "AccountButton"
+			end-right="startvr"
+			height = "24"
+			align = "right"
+		}
+
+		place
+		{
+			control = "InboxButton"
+			end-right="AccountButton"
+			height = "24"
+			width = "34"
+			align = "right"
+		}
+
+		place
+		{
+			control = "AnnouncementButton"
+			end-right="InboxButton"
+			height = "24"
+			width = "34"
+			align = "right"
+		}
+
+		place
+		{
+			control = "ParentalLockButton"
+			end-right="AnnouncementButton"
+			height = "24"
+			width = "44"
+			align = "right"
+		}
+
+
+		place
+		{
+			control = "universe_label, EOLAlert, SupportAlert"
+			end-right="ParentalLockButton"
+			height = "24"
+			align = "right"
+		}
+
+		//==============================================================
+		
+		place
+		{
+			control = "add_game"
+			align = "bottom"
+			height = "24"
+			margin = "4"
+		}
+
+		place
+		{
+			control = "view_friends"
+			align = "bottom-right"
+			height = "24"
+			margin = "4"
+			margin-right = "32"
+		}
+
+	}
+
+}

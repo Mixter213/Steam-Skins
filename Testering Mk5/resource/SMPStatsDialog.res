@@ -1,0 +1,4 @@
+"resource/SMPStatsDialog.res"
+{
+	
+}

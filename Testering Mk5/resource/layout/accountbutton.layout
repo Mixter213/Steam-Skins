@@ -1,0 +1,188 @@
+"resource/layout/accountbutton.layout"
+{
+	controls
+	{
+		account_avatar
+		{
+			ControlName = "Image"
+		}
+
+		account_drop_down
+		{
+			ControlName = "Label"
+			style = "AccountDropDownStyleOffline"
+		}
+
+
+		account_balance
+		{
+			ControlName = "Label"
+			style = "AccountBalanceStyle"
+		}
+
+		account_persona
+		{
+			ControlName = "Label"
+			style = "AccountPersonaStyleOffline"
+			labelText = "%persona%"
+		}
+
+		account_menu_button
+		{
+			ControlName = "Button"
+			style = "AccountMenuButtonStyle"
+		}
+	}
+
+	colors
+	{
+
+		"Account-Offline-Color" = "120 0 0 255"
+    	"Account-Online-Color" = "120 0 0 255"
+		"Account-InGame-Color" = "120 0 0 255"
+		"Account-Default-Color" = "120 120 0 255"
+		"Account-DarkBlue" = "0 0 120 255"
+		"Account-Background-None" = "0 0 0 0"
+		"Account-Disabled-Color" = "60 120 60 255"
+
+	}
+
+	styles
+	{
+
+		//==============================================================
+
+		// Account Button - Name
+		AccountPersonaStyleOffline
+		{
+			padding-right = 6
+			padding-left = 12
+			textcolor = "Account-Offline-Color"
+			bgcolor = "Account-Default-Color"
+		}
+
+		AccountPersonaStyleOnline
+		{
+			padding-right = 6
+			padding-left = 12
+			textcolor = "Account-Online-Color"
+			bgcolor = "Account-Default-Color"
+			render_bg
+		  	{
+				0 = "gradient_horizontal( x0, y0 - 1, x0 + 2, y1 + 1, Account-Online-Color, Account-Default-Color )"
+			}
+		}
+
+		AccountPersonaStyleInGame
+		{
+			padding-right = 6
+			padding-left = 12
+			textcolor = "Account-InGame-Color"
+			bgcolor = "Account-Default-Color"
+			render_bg
+		  	{
+				0 = "gradient_horizontal( x0, y0 - 1, x0 + 2, y1 + 1, Account-InGame-Color, Account-Default-Color )"
+			}
+		}
+		
+		//==============================================================
+
+		// Account Button - Dropdown Button
+		AccountDropDownStyleOffline
+		{
+			bgcolor = "Account-Default-Color"
+			render_bg
+		  	{
+				0 = "image( x0, y0+10, x1, y1, graphics/dropdown_offline )"
+			}
+			
+		}
+		
+		AccountDropDownStyleOnline
+		{
+			bgcolor = "Account-Default-Color"
+			render_bg
+		  	{
+				1 = "image( x0, y0 + 10, x1, y1, graphics/dropdown_online )"
+			}
+		}
+		
+		AccountDropDownStyleInGame
+		{
+			bgcolor = "Account-Default-Color"
+			render_bg
+		  	{
+				1 = "image( x0, y0+10, x1, y1, graphics/dropdown_ingame )"
+			}
+		}
+
+		//==============================================================
+
+		AccountButtonStyle
+		{
+			bgcolor = "Account-Default-Color"
+			render_bg
+		  	{
+				// background fill
+				0 = "fill( x0, y0, x1, y1, Account-DarkBlue )"
+			}
+		}
+
+		AccountButtonStyle:hover
+		{
+			bgcolor = "Account-Default-Color"
+			render_bg
+		  	{
+				// background fill
+				0 = "fill( x0, y0, x1, y1, Account-DarkBlue )"
+			}
+		}
+
+		//==============================================================
+
+
+		AccountBalanceStyle
+		{
+			textcolor = "Account-Disabled-Color"
+			bgcolor = "Account-Background-None"
+			font-family = basefont
+			font-size = 14
+			font-weight = 400
+			font-style = regular
+			padding-top = 1
+			padding-right = 8
+			padding-left = 2
+		}
+
+		AccountBalanceStyle [$OSX]
+		{
+		      textcolor = "Account-Disabled-Color"
+		      bgcolor = "Account-Background-None"
+		      font-family = basefont
+		      font-size = 13
+		      font-weight = 400
+		      font-style = regular
+		      inset = "0 1 0 0"
+		}
+		
+
+		//==============================================================
+
+		// Account Button - Main Button Container
+		AccountMenuButtonStyle
+		{
+			bgcolor = "Account-Background-None"
+		}
+
+		//==============================================================
+	}
+
+	layout
+	{
+		place { control = "account_menu_button" align=left height=24 width=max } // span over everything
+		place { control = "account_balance" align=right height=24 }
+		place { control = "account_drop_down" align=right end-right = "account_balance" margin-top = 1  height=24 width=8 }
+		place { control = "account_persona" align=right end-right = "account_drop_down" margin-top = 1  height=24 }
+		place { control = "account_avatar" align=right end-right = "account_persona" height=24 width=24 }
+	}
+}
