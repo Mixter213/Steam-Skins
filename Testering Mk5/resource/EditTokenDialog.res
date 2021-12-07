@@ -1,4 +1,4 @@
 "Resource/EditTokenDialog.res"
 {
-
+	
 }

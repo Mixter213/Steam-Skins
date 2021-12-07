@@ -2,9 +2,7 @@
 {
 	Steam
 	{
-
-		Restart					{	text = "#Steam_MustRestart_Button"			command = "RestartSteam"							}
-
+		Restart					{	text = "#Steam_MustRestart_Button"			command = "RestartSteam"	}
 		text = [!$OSX]	"#steam_menu_file"		
 		text = [$OSX]	"#SteamRootAccount"	
 		

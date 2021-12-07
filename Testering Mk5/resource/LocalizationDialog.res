@@ -1,4 +1,4 @@
 "Resource/LocalizationDialog.res"
 {
-
+	
 }

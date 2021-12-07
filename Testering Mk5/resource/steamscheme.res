@@ -1,79 +1,102 @@
 Scheme
 {
-	
-    LayoutTemplates
-    {
-        Frame
+
+	LayoutTemplates
+	{
+
+		Frame
 		{
 
-            // Not Sure what this does, when i double click it, steam closes
 			frame_menu
 			{
 				visible = "0"
 			}
+			
+			frame_title
+			{
 
-            
-            // Titlebar
-            frame_title
-            {
-                xpos = "0"
-                ypos = "8"
-                wide = "max"
-                tall = "20"
-            }
+				xpos = "0"
+				ypos = "1"
+				wide = "max"
+				tall = "28"
 
+			}
 
-            // Window Dragger 
-            frame_captiongrip
-            {
-                xpos = "0"
-                ypos = "2"
-                wide = "max"
-                tall = "28"
-            }
+			frame_captiongrip
+			{
 
+				xpos = "4"
+				ypos = "4"
+				wide = "r2"
+				tall = "20"
+				AutoResize = "1"
 
-            // Titlebar - Min Button
-            frame_minimize
-            {
-                xpos = "r64"
-                ypos = "8"
-                wide = "20"
-                tall = "20"
-            }
+			}
+			
+			frame_minimize
+			{
 
+				xpos = "r45"
+				ypos = "7"
+				wide = "20"
+				tall = "20"
+				PinCorner = "1"
 
-            // Titlebar - Max Button
-            frame_maximize
-            {
-                xpos = "r44"
-                ypos = "8"
-                wide = "20"
-                tall = "20"
-            }			
+				xpos = "22" [$OSX]
+				ypos = "3" [$OSX]
+				wide = "24" [$OSX]
+				PinCorner = "0" [$OSX]
 
+			}
+			
+			frame_maximize
+			{
 
-            // Titlebar - Close Button
-            frame_close
-            {
-                xpos = "r24"
-                ypos = "8"
-                wide = "20"
-                tall = "20"
-            }
+				xpos = "r59"
+				ypos = "7"
+				wide = "20"
+				tall = "20"
+				PinCorner = "1"
+				visible = "0" [!$OSX]
 
 
-            // Titlebar - Bottom Right Resize Wrapper
-            frame_brGrip
-            {
-                xpos = "r24"
-                ypos = "r24"
-                wide = "20"
-                tall = "20"
-            }
+				xpos = "43" [$OSX]
+				ypos = "3" [$OSX]
+				wide = "24" [$OSX]
+				PinCorner = "0" [$OSX]
 
-        }
-            
-    }
+			}
 
+			frame_close
+			{
+
+				xpos = "r29"
+				ypos = "7"
+				wide = "20"
+				tall = "20"
+				PinCorner = "1"
+
+
+				xpos = "1" [$OSX]
+				ypos = "3" [$OSX]
+				wide = "24" [$OSX]
+				PinCorner = "0" [$OSX]
+				
+			}
+
+			frame_brGrip
+			{
+
+				xpos = "r15"
+				ypos = "r15"
+				wide = "14"
+				tall = "14"
+				PinCorner = "3"
+
+			}
+
+		}
+		
+	}
+		
 }

@@ -1,83 +1,92 @@
-"resource/layout/settingsdialog.layout"
-{
-	controls
-	{
-		SettingsDialog { controlname="CDialogSettings" }
-		okbutton { controlname="OKButton" }	 
-		cancelbutton { controlname="CancelButton" }	 
-		settingslist { controlname="SettingsList" style="SettingsList" wide=180 }
-		sheet { controlname="Sheet" style="PropertySheet" }
+"resource/layout/settingsdialog.layout" {
+		
+	// -------------------------------------------------------------
+	//
+	//  Account - cached\AccoutnPage.res
+	//  	- Don't know how to modify from skin
+	//   
+	//  Family - resource\layout\subpaneloptionsfamily.layout
+	// 		- sub panel options family
+	//
+	//  In-Game - resource\layout\subpaneloptionsingame.layout
+	// 		- sub panel options in game
+	//
+	//  Interface - cached\SettingsSubInterface.res
+	//  	- Don't know how to modify from skin
+	//  	- Settings Sub Interface
+	//   
+	//  Library - resource\layout\subpaneloptionslibrary.layout
+	// 		- sub panel options library
+	//
+	//  Downloads - resource\layout\subpaneloptionsdownloads.layout
+	// 	- sub panel options downloads
+	//
+	//  Cloud - resource\layout\subpaneloptionsdowncloud.layout
+	// 		- sub panel options cloud
+	//
+	//  Music - resource\layout\settingssubmusic.layout
+	// 		- settings sub music
+	//
+	//  Broadcasting - resource\layout\settingssubbroadcast.layout
+	// 		- settings sub broadcast
+	//
+	//  Remote Play - resource\layout\settingssubstreaming.layout
+	// 		- settings sub streaming
+	//
+	//  Web Browser - resource\layout\subpaneloptionsbrowser.layout
+	// 		- sub panel options browser
+	//
+	//  Controller - resource\layout\subpaneloptionscontroller.layout
+	// 		- sub panel options controller
+	//
+	//  Shader Pre-Caching - resource\layout\subpaneloptionsshadercache.layout
+	// 		- sub panel options shader cache
+	//
+	// -------------------------------------------------------------
+
+	styles {
+
+		"CDialogSettings" {
+			minimum-height = "600"
+			minimum-width = "800"
+		}
 
 	}
-	
-	styles
-	{
-		CDialogSettings
-		{
-			minimum-width="740"
-			minimum-height="585"
-			bgcolor=dialogbg
-			render_bg
-			{     
-      	 0="gradient_horizontal( x0 + 10, y0 + 32, x1 - 10, y0 + 33, ButtonBorderDisabled, propertysheetbg )"     
-			}
 
+
+	layout {
+
+		region {
+			name = "Settings-Buttons"
+			height = "34"
+			width = "max"
+			align = "bottom"
+			margin = "4"
+		}
+
+		region {
+			name = "Settings-Body"
+			margin = "4"
+			margin-top = "32"
+			margin-bottom = "38"
+		}		
+		
+		place {
+			control = "settingslist,sheet"
+			region = "Settings-Body"
+			width = "max"
+			height = "max"
 		}
 		
-		PropertySheet
-		{
-			minimum-width="535"
-			minimum-height="505"
-			inset="0 32 0 0"
-			bgcolor=none
-			render_bg
-			{
-
-			}
-
+		place {
+			control = "okbutton,cancelbutton"
+			region = "Settings-Buttons"
+			width = "90"
+			height = "24"
+			align = "right"
+			spacing = "4"
 		}
-		"SettingsList"
-		{
-			inset="6 -14 4 0"
-			minimum-width="200"
-			minimum-height="525"
-			font-size=18
-			padding=6
-		}
-		
-		ListPanelInterior
-    {     
-		inset="3 0 0 0"
-		font-size=15
-		textcolor="text2"
-		bgcolor="none" 
-   		 render
-			{				
-     			//line to hide a bug here
-     			1="fill(x0, y0-1, x1, y0, almostblack )"
-      		 	//gradient to obscure content at bottom of scrolling region 
-			2="gradient( x0+1, y1 - 16, x1-1, y1, none, almostblack )"
-			}
-		render_bg 
-			{				
 
-			}
-    } 
-		
-		
 	}
-	layout
-	{
-		region { name="buttons" width=max height=36 align="bottom" }
-		region { name="body" margin-left=10 margin-right=10 margin-bottom=46 margin-top=-20 }		
-		
 
-		place { control="settingslist,sheet" region=body width=max height=max spacing=-4  }
-		place { control="settingslist" margin-top=32  }
-		place { control="sheet" margin-left=194 margin-top=-18 }
-		place { control="okbutton,cancelbutton" region="buttons"
-		        width=92 height=25 align=right
-						margin-right=10 margin-top=0
-						margin-bottom=2 spacing=10 }
-	}
 }

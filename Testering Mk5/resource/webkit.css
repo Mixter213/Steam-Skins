@@ -1,3 +1,7 @@
-::-webkit-scrollbar {
-    width: 12px;
+html {
+    background: black
+}
+
+html body {
+    background: black
 }
