@@ -47,7 +47,7 @@
 	layout {
 		
 		region {
-			name = "box"
+			name = "Setting-Family-Container"
 			width = "max"
 			height = "max"
 			margin = "32"
@@ -55,7 +55,7 @@
 		
 		place {
 			controls = "FamilyOptionsTitle,FamilyOptionsText,ManageOptionsLabel,Divider1,FamilySharingTitle,FamilySharingInfoText,AuthorizedDeviceCheck,ManageSharingLabel,BorrowersLabel,BorrowersList,ShowNotificationsCheck"
-			region = "box"
+			region = "Setting-Family-Container"
 			dir = "down"
 			width = "max"
 			spacing = "32"
