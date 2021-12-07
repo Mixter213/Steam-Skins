@@ -5,7 +5,7 @@
 	//  Account - cached\AccoutnPage.res
 	//  	- Don't know how to modify from skin
 	//   
-	//  Family - resource\layout\subpaneloptionsfamily.layout
+	// - Family - resource\layout\subpaneloptionsfamily.layout
 	// 		- sub panel options family
 	//
 	//  In-Game - resource\layout\subpaneloptionsingame.layout
@@ -19,7 +19,7 @@
 	// 		- sub panel options library
 	//
 	//  Downloads - resource\layout\subpaneloptionsdownloads.layout
-	// 	- sub panel options downloads
+	// 		- sub panel options downloads
 	//
 	//  Cloud - resource\layout\subpaneloptionsdowncloud.layout
 	// 		- sub panel options cloud

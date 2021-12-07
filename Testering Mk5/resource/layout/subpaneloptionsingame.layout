@@ -8,7 +8,7 @@
 	//  Family - resource\layout\subpaneloptionsfamily.layout
 	// 		- sub panel options family
 	//
-	//  In-Game - resource\layout\subpaneloptionsingame.layout
+	// - In-Game - resource\layout\subpaneloptionsingame.layout
 	// 		- sub panel options in game
 	//
 	//  Interface - cached\SettingsSubInterface.res
@@ -19,7 +19,7 @@
 	// 		- sub panel options library
 	//
 	//  Downloads - resource\layout\subpaneloptionsdownloads.layout
-	// 	- sub panel options downloads
+	// 		- sub panel options downloads
 	//
 	//  Cloud - resource\layout\subpaneloptionsdowncloud.layout
 	// 		- sub panel options cloud
@@ -51,30 +51,35 @@
 		region {
 			name = "Settings-Ingame-Top"
 			width = "max"
+			margin = "16"
 		}
 
 		region {
 			name = "Settings-Ingame-Top-Mid"
 			width = "max"
-			y = "130"
+			y = "150"
+			margin = "16"
 		}
 
 		region {
 			name = "Settings-Ingame-Mid"
 			width = "max"
-			y = "240"
+			y = "250"
+			margin = "16"
 		}
 
 		region {
 			name = "Settings-Ingame-Bottom-Mid"
 			width = "max"
-			y = "340"
+			y = "360"
+			margin = "16"
 		}
 
 		region {
 			name = "Settings-Ingame-Bottom"
 			width = "max"
-			y = "420"
+			y = "450"
+			margin = "16"
 		}
 
 
@@ -94,6 +99,7 @@
 			width = "max"
 			dir = "down"
 			spacing = "4"
+			margin = "8"
 		}
 
 		place [!$OSX] {
@@ -145,6 +151,8 @@
 
 
 
+
+
 		place {
 			controls = "ShowIngameFPSLabel,ShowIngameFPSCombo,ShowIngameFPSContrastCheck"
 			region = "Settings-Ingame-Mid"
@@ -171,12 +179,20 @@
 
 
 		place {
+			control = "Divider1"
+			region = "Settings-Ingame-Bottom-Mid"
+			height = "2"
+			width = "max"
+		}
+		
+		place {
 			controls = "TextFilterLabel,TextFilterStatus,TextFilterUpdateSettingURL"
 			region = "Settings-Ingame-Bottom-Mid"
 			height = "24"
 			width = "235" 
 			dir = "down"
 			spacing = "4"
+			y = "8"
 		}
 
 		place {
@@ -187,6 +203,7 @@
 			dir = "down"
 			align = "right"
 			spacing = "4"
+			y = "8"
 		}
 
 
@@ -200,12 +217,20 @@
 
 
 		place {
+			control = "Divider2"
+			region = "Settings-Ingame-Bottom"
+			height = "2"
+			width = "max"
+		}
+
+		place {
 			controls = "ShareIPNetworkingLabel,ShareIPNetworkingInfo,ShareIPNetworkingURL"
 			region = "Settings-Ingame-Bottom"
 			height = "24"
 			width = "235" 
 			dir = "down"
 			spacing = "4"
+			y = "8"
 		}
 
 
@@ -217,6 +242,7 @@
 			dir = "down" 
 			align = "right"
 			spacing = "4"
+			y = "20"
 		}
 
 
@@ -226,21 +252,11 @@
 
 
 
-		place {
-			control = "Divider2"
-			height = "2"
-			width = "max"
-		}
 
 
 
 
 		
-		place {
-			control = "Divider1"
-			height = "2"
-			width = "max" 
-		}
 
 	}
 

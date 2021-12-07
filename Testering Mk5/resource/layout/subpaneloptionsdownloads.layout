@@ -1,78 +1,49 @@
-"resource/layout/subpaneloptionsdownloads.layout"
-{
-	controls
-	{
-		RegionLabel {	controlname=label	labeltext=#Steam_RegionLabel	style=highlight 	}
-		LibrariesLabel {	controlname=label	labeltext=#Steam_LibrariesLabel	style=highlight }
-		RestrictionsLabel {	controlname=label	labeltext=#Steam_DownloadRestrictionsLabel	style=highlight 	}
-		RegionInfoLabel {	controlname=label labeltext=#Steam_RegionInfo wrap=1		}
-		ManageInstalledappsLabel { controlname=label labeltext=#SteamUI_ContentMgr_ManageInstalledAppsInfo }
-		FlushDownloadConfigLabel { controlname=label labeltext=#SteamUI_ContentMgr_FlushDownloadConfigInfo tooltiptext=#SteamUI_ContentMgr_FlushDownloadConfigTip }
-				
-		ThrottleCheckbox { controlname=checkbutton  labeltext=#Steam_ThrottleRatesLabel }
-		ThrottleRateCurrent { controlname=label }
-		ThrottleRateEditLabel { controlname=label labeltext=#SteamUI_ThrottleEditLabel }
-		ThrottleRateEdit { controlname=textentry }
-		ThrottleRateEditSuffix { controlname=label }
-		ThrottleRateApply 
-		{ 
-			controlname=button 
-			labeltext = #SteamUI_ThrottleApplyChange
-			command=ChangeThrottleValue
-		}
+"resource/layout/subpaneloptionsdownloads.layout" {
+	
+	// -------------------------------------------------------------
+	//
+	//  Account - cached\AccoutnPage.res
+	//  	- Don't know how to modify from skin
+	//   
+	//  Family - resource\layout\subpaneloptionsfamily.layout
+	// 		- sub panel options family
+	//
+	//  In-Game - resource\layout\subpaneloptionsingame.layout
+	// 		- sub panel options in game
+	//
+	//  Interface - cached\SettingsSubInterface.res
+	//  	- Don't know how to modify from skin
+	//  	- Settings Sub Interface
+	//   
+	// - Library - resource\layout\subpaneloptionslibrary.layout
+	// 		- sub panel options library
+	//
+	//  Downloads - resource\layout\subpaneloptionsdownloads.layout
+	// 		- sub panel options downloads
+	//
+	//  Cloud - resource\layout\subpaneloptionsdowncloud.layout
+	// 		- sub panel options cloud
+	//
+	//  Music - resource\layout\settingssubmusic.layout
+	// 		- settings sub music
+	//
+	//  Broadcasting - resource\layout\settingssubbroadcast.layout
+	// 		- settings sub broadcast
+	//
+	//  Remote Play - resource\layout\settingssubstreaming.layout
+	// 		- settings sub streaming
+	//
+	//  Web Browser - resource\layout\subpaneloptionsbrowser.layout
+	// 		- sub panel options browser
+	//
+	//  Controller - resource\layout\subpaneloptionscontroller.layout
+	// 		- sub panel options controller
+	//
+	//  Shader Pre-Caching - resource\layout\subpaneloptionsshadercache.layout
+	// 		- sub panel options shader cache
+	//
+	// -------------------------------------------------------------
 
-		
-		DownloadRegionCombo
-		{
-			controlname=combobox
-			editable="0"
-		}
-		
-		ManageInstalledApps
-		{
-			controlname=button
-			labeltext = #SteamUI_ContentMgr_ManageInstalledApps
-			command=ManageInstalledApps
-		}
-		
-		FlushDownloadConfig
-		{
-			controlname=button
-			labeltext = #SteamUI_ContentMgr_FlushDownloadConfig
-			command=FlushContentConfig
-		}
-		
-		AutoUpdateTimeRestrictCheckbox { controlname=checkbutton labeltext=#Steam_AutoUpdateTimeRestrictionLabel }
-		AutoUpdateTimeRestrictEndLabel { controlname=label labeltext=#Steam_AutoUpdateTimeRestrictionEnd style=padded }
-		AutoUpdateTimeRestrictStart { controlname=combobox }
-		AutoUpdateTimeRestrictEnd { controlname=combobox }
-		AllowDownloadsDuringGameplayCheckbox { controlname=checkbutton labeltext=#Steam_AllowDownloadsDuringGameplay tooltiptext=#Steam_AllowDownloadsDuringGameplayDetails}
-		ThrottleDownloadsWhileStreamingCheckbox { controlname=checkbutton labeltext=#Steam_ThrottleDownloadsWhileStreaming tooltiptext=#Steam_ThrottleDownloadsWhileStreamingDetails }
-		DownloadRatesInBitsCheckbox { controlname=checkbutton labeltext=#Steam_DownloadRatesInBits }
-				
-		Divider1 { ControlName=Divider	}				
-		Divider2 { ControlName=Divider	}				
-		Divider3 { ControlName=Divider	}	
-		
-	}
-	
-	colors
-	{
-	}	
-	
-	styles
-	{
-		highlight
-		{
-			textcolor=Text
-		}	
-		
-		padded
-		{
-			padding-top=6
-		}
-	}
-	
 	layout
 	{
 		region { name=box margin-top=10 margin-bottom=20 margin-left=20 margin-right=20 width=max height=max }
