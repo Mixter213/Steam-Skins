@@ -1,8 +1,8 @@
 steam.styles {
 
 	include "resource/styles/basic.styles"
-	includ "resource/styles/variables.styles"
-	
+	include "resource/styles/variables.styles"
+
 	styles {
 
 	}
