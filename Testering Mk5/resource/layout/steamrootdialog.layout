@@ -258,7 +258,6 @@
 				textcolor = "View_Friends_Text_Disabled"
 			}
 
-
 		//------------------------------------------------------------
 
 	}
@@ -267,28 +266,28 @@
 
 		// Main Items ------------------------------------------------------------
 
-			// Main Container Region - Keeps items nice and centered
+			// Main_Container Region - Keeps items nice and centered
 			region {
-				name = "Main Container"
+				name = "Main_Container"
 				height = "max"
 				width = "max"
 				margin = "8"
 			}
 
-			// Navigation Panel
+			// Navigation Panel - layout/uinavigatorpanel.layout
 			place {
 				control = "UINavigatorPanel"
-				region = "Main Container"
+				region = "Main_Container"
 				height = "max"
 				width = "max"
 				margin-top = "20"
 				margin-bottom = "64"
 			}
 
-			// Status Panel
+			// Status Panel - layout/uistatuspanel.layout
 			place {
 				control = "UIStatusPanel"
-				region = "Main Container"
+				region = "Main_Container"
 				height = "60"
 				width = "max"
 				align = "bottom"
@@ -296,18 +295,25 @@
 
 		// Frame ------------------------------------------------------------
 
+			place {
+				control = "frame_title"
+				region = "Main_Container"
+				x = "120"
+			}
+
+
 			// Draggable Grip Panel
 			place {
 				control = "frame_captiongrip"
-				region = "Main Container"
-				height = "104"
+				region = "Main_Container"
+				height = "4"
 				width = "max"
 			}
 
 			// Window Buttons
 			place {
 				controls = "frame_minimize, frame_maximize, frame_close"
-				region = "Main Container"
+				region = "Main_Container"
 				align = "right"
 				height = "20"
 				width = "20"
@@ -318,7 +324,7 @@
 			// Menu Bar
 			place {
 				control = "MenuBar"
-				region = "Main Container"
+				region = "Main_Container"
 				height = "20"
 			}
 
@@ -327,7 +333,7 @@
 			// Big Picture Button
 			place {
 				control = "fullscreen"
-				region = "Main Container"
+				region = "Main_Container"
 				end-right = "frame_minimize"
 				align = "right"
 				height = "20"
@@ -338,7 +344,7 @@
 			// Vr - Start - Exit
 			place {
 				controls = "startvr, exitvr"
-				region = "Main Container"
+				region = "Main_Container"
 				end-right = "fullscreen"
 				align = "right"
 				height = "20"
@@ -347,10 +353,10 @@
 				spacing = "8"
 			}
 
-			// Account Button
+			// Account Button - layout/accountbutton.layout -  - layout/accountmenu.layout
 			place {
 				control = "AccountButton"
-				region = "Main Container"
+				region = "Main_Container"
 				end-right = "startvr"
 				align = "right"
 				height = "20"
@@ -360,7 +366,7 @@
 			// Inbox Button
 			place {
 				control = "InboxButton"
-				region = "Main Container"
+				region = "Main_Container"
 				end-right = "AccountButton"
 				align = "right"
 				height = "20"
@@ -371,7 +377,7 @@
 			// Announcement Button
 			place {
 				control = "AnnouncementButton"
-				region = "Main Container"
+				region = "Main_Container"
 				end-right = "InboxButton"
 				align = "right"
 				height = "20"
@@ -382,7 +388,7 @@
 			// Parental Lock Button
 			place {
 				control = "ParentalLockButton"
-				region = "Main Container"
+				region = "Main_Container"
 				end-right = "AnnouncementButton"
 				align = "right"
 				height = "20"
@@ -393,7 +399,7 @@
 			// Alert Labels
 			place {
 				controls = "universe_label, EOLAlert, SupportAlert"
-				region = "Main Container"
+				region = "Main_Container"
 				end-right = "ParentalLockButton"
 				align = "right"
 				height = "20"
@@ -407,7 +413,7 @@
 			// Add Game Button
 			place {
 				control = "add_game"
-				region = "Main Container"
+				region = "Main_Container"
 				align = "bottom"
 				height = "30"
 			}
@@ -415,7 +421,7 @@
 			// Friends List Button
 			place {
 				control = "view_friends"
-				region = "Main Container"
+				region = "Main_Container"
 				align = "bottom-right"
 				height = "64"
 				width = "160"

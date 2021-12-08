@@ -41,7 +41,7 @@
 				control = "StatusPaused, StatusComplete" 
 				align = "top-center" 
 				height = "20"
-				y = "40"
+				y = "20"
 			}
 			
 			// Downloading Status Progress Bar
@@ -50,7 +50,7 @@
 				align = "top-center"
 				height = "4"
 				width = "240"
-				y = "28"
+				y = "40"
 			}
 
 		//---------------------------------------------------------------------------------------
