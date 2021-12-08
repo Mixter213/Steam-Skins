@@ -1,0 +1,498 @@
+basic.styles {
+
+	colors {
+
+		Scrollbar.Wide = "19"
+
+	}
+
+	styles {
+
+		// Main ---------------------------------------------------------------------------
+
+			// Panel - Main Containers
+			"Panel" {
+				font-family = "Arial"
+				font-size = "14"
+				textcolor = "200 200 200 255"
+			}
+
+			// Divider
+			"Divider" {
+				bgcolor = "60 60 60 255"
+			}
+
+		// Frame ---------------------------------------------------------------------------
+
+			// Frame - Main Window
+			"Frame" {
+				font-family = "Arial"
+				font-size = "14"
+				textcolor = "200 200 200 255"
+				bgcolor = "30 30 30 255"
+			}
+
+			// Frame Title - Titlebar
+			"FrameTitle" {
+				font-family = "Arial"
+				font-size = "14"
+				textcolor = "200 200 200 255"
+				bgcolor = "40 40 40 255"
+			}
+
+			// Frame Buttons - Window Buttons
+			"FrameButton" {
+				inset = "0 0 0 0"
+			}
+
+			// Frame Buttons - Window Buttons - Min
+			"FrameMinimizeButton" {
+				image="graphics/win32_win_min"
+				image="graphics/osx_win_dis" [$OSX]
+				image="graphics/osx_win_dis_new_dark" [$OSX1010]
+			}
+
+			// Frame Buttons - Window Buttons - Max
+			"FrameMaximizeButton" {
+				image="graphics/win32_win_max"
+				image="graphics/osx_win_dis" [$OSX]
+				image="graphics/osx_win_dis_new_dark" [$OSX1010]
+			}
+
+			// Frame Buttons - Window Buttons - Restore
+			"FrameRestoreButton" {
+				image="graphics/win32_win_restore"
+				image="graphics/osx_win_dis" [$OSX]
+				image="graphics/osx_win_dis_new" [$OSX1010]
+			}
+
+			// Frame Buttons - Window Buttons - Close
+			"FrameCloseButton" {
+				image="graphics/win32_win_close"
+				image="graphics/osx_win_dis" [$OSX]
+				image="graphics/osx_win_dis_new_dark" [$OSX1010]
+			}
+
+		// Grip Panels ---------------------------------------------------------------------------
+
+			"GripPanel" {
+				bgcolor = "200 0 0 255"
+			}
+
+			"FrameBRGripPanel" {
+				image = "graphics/resizer"
+			}
+
+		// Menu ---------------------------------------------------------------------------
+
+			// Menu - Not sure what this one does
+			"Menu" {
+				bgcolor = "200 0 0 255"
+			}
+
+			// Menu Bar
+			"MenuBar" {
+				padding = "2"
+			}
+
+			// Menu Button
+			"MenuButton" {
+				font-family = "Arial"
+				font-size = "14"
+				textcolor = "200 200 200 255"
+				bgcolor = "36 36 36 255"
+			}
+
+			// Menu Dropdown Item
+			"MenuItem" {
+				font-family = "Arial"
+				font-size = "14"
+				textcolor = "200 200 200 255"
+				bgcolor = "36 36 36 255"
+			}
+
+			// Menu Divider
+			"MenuSeparator" {
+				font-family = "Arial"
+				font-size = "14"
+				textcolor = "40 40 40 255"
+				bgcolor = "36 36 36 255"
+			}
+
+		// Page ---------------------------------------------------------------------------
+
+			// Page - Main Page Container
+			"Page" {
+				bgcolor = "24 24 24 255"
+			}
+
+			// Page - Header Tab 
+			"PageTab" {
+				font-family = "Arial"
+				font-size = "14"
+				textcolor = "200 200 200 255"
+				bgcolor = "36 36 36 255"
+			}
+
+		// Label ---------------------------------------------------------------------------
+
+			// Label
+			"Label" {
+				font-family = "Arial"
+				font-size = "14"
+				textcolor = "200 200 200 255"
+			}
+
+			// Status Label
+			"StatusLabel" {
+				font-family = "Arial"
+				font-size = "14"
+				textcolor = "200 200 200 255"
+			}
+
+			// Status Label Dim
+			"StatusLabelDim" {
+				font-family = "Arial"
+				font-size = "14"
+				textcolor = "200 200 200 255"
+			}
+
+			// Label - Url
+			"URLLabel" {
+				font-family = "Arial"
+				font-size = "14"
+				textcolor = "200 200 200 255"
+			}
+
+			// Label - Url - Simple
+			"URLLabelSimple" {
+				font-family = "Arial"
+				font-size = "14"
+				textcolor = "200 200 200 255"
+			}
+
+			// Label - Url - Simple - Alt ?
+			"URLLabelSimple2" {
+				font-family = "Arial"
+				font-size = "14"
+				textcolor = "200 200 200 255"
+			}
+
+		// Button ---------------------------------------------------------------------------
+
+			// Button
+			"Button" {
+				font-family = "Arial"
+				font-size = "14"
+				textcolor = "200 200 200 255"
+				bgcolor = "36 36 36 255"
+			}
+
+		// Check Button & List ---------------------------------------------------------------------------
+
+			// Check Button
+			"CheckButton" {
+				font-family = "Arial"
+				font-size = "14"
+				textcolor = "200 200 200 255"
+				image="graphics/chkUnselStd"
+			}
+
+			// Check Button - Indeterminate
+			"IndeterminateCheckButton" {
+				font-family = "Arial"
+				font-size = "14"
+				textcolor = "200 200 200 255"
+				image="graphics/chkIndeterminate"
+			}
+
+			// Check Button - List
+			"CheckButtonList" {
+				font-family = "Arial"
+				font-size = "14"
+				textcolor = "200 200 200 255"
+				bgcolor = "26 26 26 255"
+			}
+
+		// Radio Buttons ---------------------------------------------------------------------------
+
+			// Radio Button
+			"RadioButton" {
+				font-family = "Arial"
+				font-size = "14"
+				textcolor = "200 200 200 255"
+				image="graphics/RadUnselStd"
+			}
+			
+			// Radio Button - List
+			"RadioButtonList" {
+				font-family = "Arial"
+				font-size = "14"
+				textcolor = "200 200 200 255"
+				bgcolor = "26 26 26 255"
+			}
+
+		// Combo Box ---------------------------------------------------------------------------
+
+			// Combo Box
+			"ComboBox" {
+				font-family = "Arial"
+				font-size = "14"
+				textcolor = "200 200 200 255"
+				selectedtextcolor = "220 220 220 255"
+				bgcolor = "36 36 36 255"
+				selectedbgcolor = "60 60 60 255"
+			}
+
+			// Combo Box - Button
+			"ComboBoxButton" {
+				image = "graphics/icon_down_default"
+			}
+
+		// Toggle Button ---------------------------------------------------------------------------
+
+			// Toggle Button
+			"ToggleButton" {
+				font-family = "Arial"
+				font-size = "14"
+				textcolor = "200 200 200 255"
+				bgcolor = "36 36 36 255"
+			}
+
+		// Text Entry ---------------------------------------------------------------------------
+
+			// Text Entry
+			"TextEntry" {
+				font-family = "Arial"
+				font-size = "14"
+				textcolor = "200 200 200 255"
+				selectedtextcolor = "220 220 220 255"
+				shadowtextcolor = "160 160 160 255"
+				bgcolor = "36 36 36 255"
+				selectedbgcolor = "60 60 60 255"
+			}
+
+			// Text Entry - Large
+			"TextEntryLarge" {
+				font-family = "Arial"
+				font-size = "18"
+				textcolor = "200 200 200 255"
+				selectedtextcolor = "220 220 220 255"
+				shadowtextcolor = "160 160 160 255"
+				bgcolor = "36 36 36 255"
+				selectedbgcolor = "60 60 60 255"
+			}
+
+			// Text Entry - Url
+			"TextEntryURL" {
+				font-family = "Arial"
+				font-size = "18"
+				textcolor = "200 200 200 255"
+				selectedtextcolor = "220 220 220 255"
+				shadowtextcolor = "160 160 160 255"
+				bgcolor = "36 36 36 255"
+				selectedbgcolor = "60 60 60 255"
+			}
+
+		// Progress Bar ---------------------------------------------------------------------------
+
+			"ProgressBar" {
+				// textcolor - Bar Color
+				textcolor = "50 100 200 255"
+				bgcolor = "36 36 36 255"
+			}
+
+		// Slider Bar ---------------------------------------------------------------------------
+
+			"Slider" {
+				// textcolor - Bar Color
+				textcolor = "50 100 200 255"
+				bgcolor = "36 36 36 255"
+			}
+
+		// List Panel ---------------------------------------------------------------------------
+
+			// List Panel - Container -----------------------------------------------------------
+
+				// List Panel
+				"ListPanel" {
+					// shadow text color - disabled line items
+					font-family = "Arial"
+					font-size = "14"
+					textcolor = "200 200 200 255"
+					selectedtextcolor = "220 220 220 255"
+					shadowtextcolor = "160 160 160 255"
+				}
+
+				// List Panel - Interior
+				"ListPanelInterior" {
+					font-family = "Arial"
+					font-size = "14"
+					textcolor = "200 200 200 255"
+					bgcolor = "24 24 24 255"
+				}
+
+				// List Panel - Sectioned
+				"SectionedListPanel" {
+					font-family = "Arial"
+					font-size = "14"
+					textcolor = "200 200 200 255"
+					selectedtextcolor = "220 220 220 255"
+					bgcolor = "24 24 24 255"
+					selectedbgcolor = "28 28 28 255"
+				}
+
+				// List Panel - Dragger
+				"ListPanelDragger" {
+					bgcolor="none"
+
+					//fill makes dragger visible
+					render {
+						0 = "fill( x0, y0 + 2, x0 + 1, y1 - 3, dialogbg )"
+						1 = "fill (x0, y0, x0+1, y0+3, propertysheetbg )"
+					}
+
+				}
+
+			// List Panel - Headers -----------------------------------------------------------
+
+				// List Panel - Sectioned - Header
+				"ListPanelSectionHeader" {
+					font-family = "Arial"
+					font-size = "14"
+					textcolor = "200 200 200 255"
+					bgcolor = "36 36 36 255"
+				}
+
+				// List Panel - Column - Header
+				"ListPanelColumnheader" {
+					font-family = "Arial"
+					font-size = "14"
+					textcolor = "200 200 200 255"
+					bgcolor = "36 36 36 255"
+				}
+
+			// List Panel - Buttons -----------------------------------------------------------
+
+				// List Panel - Check Box
+				"ListPanelCheckBox" {
+					font-family = "Arial"
+					font-size = "14"
+					textcolor = "200 200 200 255"
+					image = "graphics/chkUnselStd_Sm"
+				}
+
+				// List Panel - Selected Button
+				"ListPanelColumnSelectButton" {
+					image = "graphics/icon_collapse"
+				}
+
+			// List Panel - Collapsers -----------------------------------------------------------
+
+				// List Panel - Sectioned Collapser
+				"SectionedlistpanelCollapser" {
+					image = "graphics/icon_collapse"
+				}
+
+				// List Panel - Section Collapser
+				"ListPanelSectionCollapser" {
+					bgcolor = "36 36 36 255"
+				}
+
+		// Rich Text ---------------------------------------------------------------------------
+
+			// Rich Text
+			"RichText" {
+				font-family = "Arial"
+				font-size = "14"
+				textcolor = "200 200 200 255"
+				selectedtextcolor = "220 220 220 255"
+				bgcolor = "24 24 24 255"
+			}
+
+			// Rich Text - Interior
+			"RichTextInterior" {
+				bgcolor = "0 0 0 0"
+			}
+
+			// Rich Text - Url
+			"RichText url" {
+				font-family = "Arial"
+				font-size = "14"
+				textcolor = "200 200 200 255"
+				selectedtextcolor = "220 220 220 255"
+			}
+
+			// Rich Text - Bold Text
+			"RichText bold"
+			{
+				font-weight = "1000"
+			}
+
+			// Rich Text - Italic Text
+			"RichText emphasis"
+			{
+				font-style = "italic"
+			}
+
+		// Scrollbar ---------------------------------------------------------------------------
+
+			// Scrollbar - Container
+			"Scrollbar" {
+				bgcolor = "200 0 0 255"
+			}
+
+			// Scrollbar - Button -------------------------------------------------------------------------
+
+				// Scrollbar - Button
+				"ScrollbarButton" {
+					bgcolor = "0 0 0 0"
+				}
+
+				// Scrollbar - Button - Up
+				"ScrollbarButton.Up" {
+					image = "graphics/icon_up_default"
+				}
+
+				// Scrollbar - Button - Down
+				"ScrollbarButton.Down" {
+					image = "graphics/icon_down_default"
+				}
+
+				// Scrollbar - Button - Left
+				"ScrollbarButton.Left" {
+					image = "graphics/icon_left_default"
+				}
+
+				// Scrollbar - Button - Right
+				"ScrollbarButton.Right" {
+					image = "graphics/icon_right_default"
+				}
+
+			// Scrollbar - Body -------------------------------------------------------------------------
+
+				// Scrollbar - Handle - Vertical
+				"ScrollBarHandle" {
+					image = "graphics/icon_scroll_handle"
+				}
+
+				// Scrollbar - Gutter - Vertical
+				"ScrollBarSlider" {
+					bgcolor = "24 24 24 255"
+				}
+
+				// Scrollbar - Handle - Horizontal
+				"ScrollBarHandle" {
+					image = "graphics/icon_scroll_handle_horiz"
+				}
+
+				// Scrollbar - Gutter - Horizontal
+				"ScrollBarSliderHoriz" {
+					bgcolor = "24 24 24 255"
+				}
+
+		//---------------------------------------------------------------------------
+
+	}
+
+}
