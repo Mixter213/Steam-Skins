@@ -1,5 +1,4 @@
-"resource/layout/uistatuspanel.layout"
-{
+"resource/layout/uistatuspanel.layout" {
 
 	styles {
 
@@ -26,8 +25,7 @@
 
 	}
 
-	layout
-	{
+	layout {
 
 		// Downloading Status Items ---------------------------------------------------------------------------------------
 			

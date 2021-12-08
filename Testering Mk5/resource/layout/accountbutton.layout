@@ -1,164 +1,154 @@
-"resource/layout/accountbutton.layout"
-{
-	controls
-	{
-		account_avatar
-		{
-			"ControlName"	"Image"
-			"fieldName"		"account_avatar"
-			"zpos" 			"-2" // behind dropdown button
-		}
+"resource/layout/accountbutton.layout" {
 
-		account_drop_down
-		{
-			"ControlName"	"Label"
-			"fieldName"		"account_drop_down"
-			"zpos" 			"-2" // behind dropdown button
-			"style"			"AccountDropDownStyleOffline"
-		}
+	colors {
 
+		// Account Button ------------------------------------------------------------
 
-		account_balance
-		{
-			"ControlName"	"Label"
-			"fieldName"		"account_balance"
-			"style"			"AccountBalanceStyle"
+			Account_Button = "40 80 160 255"
+			Account_Button_Hover = "50 100 200 255"
+
+		// Account - Name -----------------------------------------------------------------------------
+
+			Account_Name_Offline = "160 160 160 255"
+			Account_Name_Online = "160 160 160 255"
+			Account_Name_InGame = "160 160 160 255"
+			Account_Name_Background = "160 160 160 255"
+		
+		//-----------------------------------------------------------------------------
+
+	}
+
+	styles {
+
+		// Account Button - Main Container ------------------------------------------------------------
+
+			// Account Button
+			"AccountButtonStyle" {
+				render_bg {
+					0 = "fill( x0, y0, x1, y1, Account_Button )"
+				}
+			}
+
+			// Account Button - Hover
+			"AccountButtonStyle:hover" {
+				render_bg {
+					0 = "fill( x0, y0, x1, y1, Account_Button_Hover )"
+				}
+			}
+
+		// Account Items -----------------------------------------------------------------------------
+
+			// Account - Dropdown - Buttons -----------------------------------------------------------------------------
+
+				// Account - Dropdown Button
+				"AccountMenuButtonStyle" {}
+
+				// Account - Side Dropdown Button - Offline
+				"AccountDropDownStyleOffline" {
+					image = "graphics/dropdown_offline"
+				}
+
+				// Account - Side Dropdown Button - Online
+				"AccountDropDownStyleOnline" {
+					image = "graphics/dropdown_online"
+				}
+
+				// Account - Side Dropdown Button - InGame
+				"AccountDropDownStyleInGame" {
+					image = "graphics/dropdown_ingame"
+				}
+
+			// Account - Name -----------------------------------------------------------------------------
+
+				// Account - Name - Offline
+				"AccountPersonaStyleOffline" {
+					padding-left = "4"
+					padding-right = "4"
+					textcolor = "Account_Name_Offline"
+				}
+
+				// Account - Name - Online
+				"AccountPersonaStyleOnline" {
+					padding-left = "4"
+					padding-right = "4"
+					textcolor = "Account_Name_Online"
+					render_bg {
+						0 = "gradient_horizontal( x0, y0 - 1, x0 + 2, y1 + 1, Account_Name_Online, Account_Name_Background )"
+					}
+				}
+
+				// Account - Name - InGame
+				"AccountPersonaStyleInGame" {
+					padding-left = "4"
+					padding-right = "4"
+					textcolor = "Account_Name_InGame"
+					render_bg {
+						0 = "gradient_horizontal( x0, y0 - 1, x0 + 2, y1 + 1, Account_Name_InGame, Account_Name_Background )"
+					}
+				}
+
+			// Account - Name -----------------------------------------------------------------------------
+
+				// Account - Balance
+				AccountBalanceStyle
+				{
+					font-family = "Arial"
+					font-size = 14
+					textcolor = "Account_Balance"
+					bgcolor = "0 0 0 0"
+				}
+
+		//-----------------------------------------------------------------------------
+
+	}
+
+	layout {
+
+		// Account Items -----------------------------------------------------------------------------
+
+			// Account - Dropdown Button
+			place {
+				control = "account_menu_button"
+				align = "left"
+				height = "20"
+				width = "max"
+			}
+
+			// Account - Side Dropdown Button
+			place {
+				control = "account_drop_down"
+				align = "right"
+				end-right = "account_balance"
+				height = "20"
+				width = "8"
+			}
 			
-			"zpos" 			"-2" // behind dropdown button
-		}
-
-		account_persona
-		{
-			"ControlName"	"Label"
-			"fieldName"		"account_persona"
-			"style" 		"AccountPersonaStyleOffline"
-			"labelText"		"%persona%"
-			"zpos" 			"-2" // behind dropdown button
-		}
-
-		account_menu_button
-		{
-			"ControlName"	"Button"
-			"fieldName"		"account_menu_button"
-			"labelText"		""
-			"style" 		"AccountMenuButtonStyle"
-		}
-	}
-
-	styles
-	{
-		AccountPersonaStyleOffline
-		{
-			padding-right=6
-			padding-left=12
-			textcolor=Friends.OfflineColor
-		}
-
-		AccountPersonaStyleOnline
-		{
-			padding-right=6
-			padding-left=12
-			textcolor=Friends.OnlineColor
-			render_bg
-		  	{
-				0="gradient_horizontal( x0, y0 - 1, x0 + 2, y1 + 1, Friends.OnlineColor, DialogBG )"
-			}
-		}
-
-		AccountPersonaStyleInGame
-		{
-			padding-right=6
-			padding-left=12
-			textcolor=Friends.InGameColor
-			render_bg
-		  	{
-				0="gradient_horizontal( x0, y0 - 1, x0 + 2, y1 + 1, Friends.InGameColor, DialogBG )"
-			}
-		}
-		
-		AccountDropDownStyleOffline
-		{
-			render_bg
-		  	{
-				1="image( x0, y0+10, x1, y1, graphics/dropdown_offline )"
+			// Account - Name
+			place {
+				control = "account_persona"
+				align = "right"
+				end-right = "account_drop_down"
+				height = "20"
 			}
 			
-		}
-		
-		AccountDropDownStyleOnline
-		{
-			render_bg
-		  	{
-				1="image( x0, y0 + 10, x1, y1, graphics/dropdown_online )"
+			// Account - Avatar
+			place {
+				control = "account_avatar"
+				align = "right"
+				end-right = "account_persona"
+				height = "20"
+				width = "20"
 			}
-		}
-		
-		AccountDropDownStyleInGame
-		{
-			render_bg
-		  	{
-				1="image( x0, y0+10, x1, y1, graphics/dropdown_ingame )"
-			}
-		}
 
-		AccountButtonStyle
-		{
-			render_bg
-		  	{
-				// background fill
-				0="fill( x0, y0, x1, y1, dark_blue )"
+			// Account - Balance
+			place {
+				control = "account_balance"
+				align = "right"
+				height = "20"
 			}
-		}
 
-		AccountButtonStyle:hover
-		{
-			render_bg
-		  	{
-				// background fill
-				0="fill( x0, y0, x1, y1, darkblue )"
-			}
-		}
+		//-----------------------------------------------------------------------------
 
-		AccountBalanceStyle
-		{
-			textcolor="labeldisabled"
-			bgcolor="none"
-			font-family=basefont
-			font-size=14
-			font-weight=400
-			font-style=regular
-			padding-top=1
-			padding-right=8
-			padding-left=2
-		}
-
-		AccountBalanceStyle [$OSX]
-		{
-		      textcolor="labeldisabled"
-		      bgcolor="none"
-		      font-family=basefont
-		      font-size=13
-		      font-weight=400
-		      font-style=regular
-		      inset="0 1 0 0"
-		}
-		
-		AccountMenuButtonStyle
-		{
-			render_bg
-		  	{
-				// background fill
-				// 0="fill( x0, y0, x1, y1, darkblue )"
-			}
-		}
 	}
 
-	layout
-	{
-		place { control="account_menu_button" align=left height=24 width=max } // span over everything
-		place { control="account_balance" align=right height=24 }
-		place { control="account_drop_down" align=right end-right="account_balance" margin-top=1  height=24 width=8 }
-		place { control="account_persona" align=right end-right="account_drop_down" margin-top=1  height=24 }
-		place { control="account_avatar" align=right end-right="account_persona" height=24 width=24 }
-	}
 }
