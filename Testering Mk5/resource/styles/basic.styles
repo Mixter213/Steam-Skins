@@ -1,11 +1,5 @@
 basic.styles {
 
-	colors {
-
-		Scrollbar.Wide = "19"
-
-	}
-
 	styles {
 
 		// Main ---------------------------------------------------------------------------
@@ -439,7 +433,7 @@ basic.styles {
 
 			// Scrollbar - Container
 			"Scrollbar" {
-				bgcolor = "200 0 0 255"
+				bgcolor = "40 40 40 255"
 			}
 
 			// Scrollbar - Button -------------------------------------------------------------------------
@@ -473,7 +467,7 @@ basic.styles {
 
 				// Scrollbar - Handle - Vertical
 				"ScrollBarHandle" {
-					image = "graphics/icon_scroll_handle"
+					bgcolor = "40 40 40 255"
 				}
 
 				// Scrollbar - Gutter - Vertical
@@ -483,7 +477,7 @@ basic.styles {
 
 				// Scrollbar - Handle - Horizontal
 				"ScrollBarHandle" {
-					image = "graphics/icon_scroll_handle_horiz"
+					bgcolor = "40 40 40 255"
 				}
 
 				// Scrollbar - Gutter - Horizontal
