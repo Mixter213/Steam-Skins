@@ -44,6 +44,51 @@
 	//
 	// -------------------------------------------------------------
 
+
+	styles {
+		
+		// Main Settings Container - Min Height and Width
+		"CDialogSettings" {
+			minimum-height = "600"
+			minimum-width = "800"
+			bgcolor = "0 0 40 255"
+		}
+
+		"SettingsList" {
+			bgcolor = "40 0 0 255"
+		}
+
+		"PropertySheet" {
+			bgcolor = "0 40 0 255"
+		}
+		"Page" {
+			bgcolor = "0 40 40 255"
+		}
+
+		"CSubPanelOptionsFamily" {
+			bgcolor = "40 0 40 255"
+		}
+
+
+		"AccountPage" {
+			bgcolor = "40 40 0 255"
+		}
+
+		"CAccountPage" {
+			bgcolor = "40 40 0 255"
+		}
+
+		"Panel" {
+			bgcolor = "40 40 0 255"
+		}
+
+		"Frame" {
+			bgcolor = "40 40 0 255"
+		}
+
+
+	}
+
 	layout {
 		
 		region {

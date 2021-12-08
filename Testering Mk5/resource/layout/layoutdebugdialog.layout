@@ -4,7 +4,117 @@
 	{
 		wiki_link { controlname="URLLabel" labeltext="VGUI editor wiki page"  urltext="https://intranet.valvesoftware.com/wiki/index.php/VGUI_Editing" }
 	}
-	
+	styles {
+
+		"ListPanel" {
+			bgcolor = "0 0 0 0"
+			font-family = "Arial"
+			font-size = "14"
+			textcolor = "200 200 200 255"
+			selectedtextcolor = "220 220 220 255"
+			shadowtextcolor = "160 160 160 255"
+		}
+
+		"ListPanelCheckBox" {
+			bgcolor = "0 0 0 0"
+			font-family = "Arial"
+			font-size = "14"
+			textcolor = "200 200 200 255"
+			selectedtextcolor = "220 220 220 255"
+			shadowtextcolor = "160 160 160 255"
+		}
+
+		"ListPanelColumnHeader" {
+			bgcolor = "0 0 0 0"
+			font-family = "Arial"
+			font-size = "14"
+			textcolor = "200 200 200 255"
+			selectedtextcolor = "220 220 220 255"
+			shadowtextcolor = "160 160 160 255"
+		}
+
+		"ListPanelSectionCollapser" {
+			bgcolor = "0 0 0 0"
+			font-family = "Arial"
+			font-size = "14"
+			textcolor = "200 200 200 255"
+			selectedtextcolor = "220 220 220 255"
+			shadowtextcolor = "160 160 160 255"
+		}
+
+		"ListPanelColumnSelectButton" {
+			bgcolor = "0 0 0 0"
+			font-family = "Arial"
+			font-size = "14"
+			textcolor = "200 200 200 255"
+			selectedtextcolor = "220 220 220 255"
+			shadowtextcolor = "160 160 160 255"
+		}
+
+		"ListPanelDragger" {
+			bgcolor = "0 0 0 0"
+			font-family = "Arial"
+			font-size = "14"
+			textcolor = "200 200 200 255"
+			selectedtextcolor = "220 220 220 255"
+			shadowtextcolor = "160 160 160 255"
+		}
+
+		"ListPanelInterior" {
+			bgcolor = "0 0 0 0"
+			font-family = "Arial"
+			font-size = "14"
+			textcolor = "200 200 200 255"
+			selectedtextcolor = "220 220 220 255"
+			shadowtextcolor = "160 160 160 255"
+		}
+
+		"ListPanelSectionHeader" {
+			bgcolor = "0 0 0 0"
+			font-family = "Arial"
+			font-size = "14"
+			textcolor = "200 200 200 255"
+			selectedtextcolor = "220 220 220 255"
+			shadowtextcolor = "160 160 160 255"
+		}
+
+		"RichText" {
+			bgcolor = "0 0 0 0"
+			font-family = "Arial"
+			font-size = "14"
+			textcolor = "200 200 200 255"
+			selectedtextcolor = "220 220 220 255"
+			shadowtextcolor = "160 160 160 255"
+		}
+
+		"PageTab" {
+			bgcolor = "0 0 0 0"
+			font-family = "Arial"
+			font-size = "14"
+			textcolor = "200 200 200 255"
+			selectedtextcolor = "220 220 220 255"
+			shadowtextcolor = "160 160 160 255"
+		}
+
+		"Label" {
+			bgcolor = "0 0 0 0"
+			font-family = "Arial"
+			font-size = "14"
+			textcolor = "200 200 200 255"
+			selectedtextcolor = "220 220 220 255"
+			shadowtextcolor = "160 160 160 255"
+		}
+
+		"URLLabel" {
+			bgcolor = "0 0 0 0"
+			font-family = "Arial"
+			font-size = "14"
+			textcolor = "200 200 200 255"
+			selectedtextcolor = "220 220 220 255"
+			shadowtextcolor = "160 160 160 255"
+		}
+
+	}
 	layout
 	{
 		place { control="containerlabel,fileurl" y=30 x=6 dir="right" align="top" spacing=10 margin=4 }

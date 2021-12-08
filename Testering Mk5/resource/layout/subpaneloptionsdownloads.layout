@@ -15,10 +15,10 @@
 	//  	- Don't know how to modify from skin
 	//  	- Settings Sub Interface
 	//   
-	// - Library - resource\layout\subpaneloptionslibrary.layout
+	//  Library - resource\layout\subpaneloptionslibrary.layout
 	// 		- sub panel options library
 	//
-	//  Downloads - resource\layout\subpaneloptionsdownloads.layout
+	// - Downloads - resource\layout\subpaneloptionsdownloads.layout
 	// 		- sub panel options downloads
 	//
 	//  Cloud - resource\layout\subpaneloptionsdowncloud.layout
@@ -83,8 +83,6 @@
 		place { controls="FlushDownloadConfig" region=box start=Divider3 margin-top=15 width=235 height=25 dir=down }
 		place { controls="FlushDownloadConfigLabel" region=box start=FlushDownloadConfig margin-top=10 width=max dir=down }
 		
-		
-
-
 	}
+
 }

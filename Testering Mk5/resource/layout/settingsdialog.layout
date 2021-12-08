@@ -44,48 +44,81 @@
 	//
 	// -------------------------------------------------------------
 
+
 	styles {
 
+		// Main Settings Container - Min Height and Width
 		"CDialogSettings" {
 			minimum-height = "600"
 			minimum-width = "800"
+			bgcolor = "0 0 40 255"
 		}
+
+		"SettingsList" {
+			bgcolor = "40 0 0 255"
+		}
+
+		"PropertySheet" {
+			bgcolor = "0 40 0 255"
+		}
+
+
 
 	}
 
 
-	layout {
 
+	layout
+	{
 		region {
-			name = "Settings-Buttons"
-			height = "34"
+			name = "buttons"
 			width = "max"
+			height = "36"
 			align = "bottom"
-			margin = "4"
 		}
 
 		region {
-			name = "Settings-Body"
-			margin = "4"
-			margin-top = "32"
-			margin-bottom = "38"
+			name = "body"
+			margin-left = "10"
+			margin-right = "10"
+			margin-bottom = "46"
+			margin-top = "-20"
 		}		
-		
+
+
+
 		place {
 			control = "settingslist,sheet"
-			region = "Settings-Body"
+			region = "body"
 			width = "max"
 			height = "max"
+			spacing = "-4"
 		}
-		
+
+		place {
+			control = "settingslist"
+			margin-top = "32"
+		}
+
+		place {
+			control = "sheet"
+			margin-left = "194"
+			margin-top = "-18"
+		}
+
 		place {
 			control = "okbutton,cancelbutton"
-			region = "Settings-Buttons"
-			width = "90"
-			height = "24"
+			region = "buttons"
+			width = "92"
+			height = "25"
 			align = "right"
-			spacing = "4"
+			margin-right = "10"
+			margin-top = "0"
+			margin-bottom = "2"
+			spacing = "10"
 		}
+
+
 
 	}
 
