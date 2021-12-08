@@ -11,18 +11,9 @@ steam.styles {
 				textcolor = "200 200 200 255"
 			}
 
-			// Graph Panel - Graph Container
-			"GraphPanel" {
-				font-family = "Arial"
-				font-size = "14"
-				textcolor = "200 200 200 255"
-			}
-
-			// List Panel - List Container
-			"ListPanel" {
-				font-family = "Arial"
-				font-size = "14"
-				textcolor = "200 200 200 255"
+			// Divider
+			"Divider" {
+				bgcolor = "60 60 60 255"
 			}
 
 		// Frame ---------------------------------------------------------------------------
@@ -254,12 +245,153 @@ steam.styles {
 
 		// Toggle Button ---------------------------------------------------------------------------
 
+			// Toggle Button
 			"ToggleButton" {
 				font-family = "Arial"
 				font-size = "14"
 				textcolor = "200 200 200 255"
 				bgcolor = "36 36 36 255"
 			}
+
+		// Text Entry ---------------------------------------------------------------------------
+
+			// Text Entry
+			"TextEntry" {
+				font-family = "Arial"
+				font-size = "14"
+				textcolor = "200 200 200 255"
+				selectedtextcolor = "220 220 220 255"
+				shadowtextcolor = "160 160 160 255"
+				bgcolor = "36 36 36 255"
+				selectedbgcolor = "60 60 60 255"
+			}
+
+			// Text Entry - Large
+			"TextEntryLarge" {
+				font-family = "Arial"
+				font-size = "18"
+				textcolor = "200 200 200 255"
+				selectedtextcolor = "220 220 220 255"
+				shadowtextcolor = "160 160 160 255"
+				bgcolor = "36 36 36 255"
+				selectedbgcolor = "60 60 60 255"
+			}
+
+			// Text Entry - Url
+			"TextEntryURL" {
+				font-family = "Arial"
+				font-size = "18"
+				textcolor = "200 200 200 255"
+				selectedtextcolor = "220 220 220 255"
+				shadowtextcolor = "160 160 160 255"
+				bgcolor = "36 36 36 255"
+				selectedbgcolor = "60 60 60 255"
+			}
+
+		// Progress Bar ---------------------------------------------------------------------------
+
+			"ProgressBar" {
+				// textcolor - Bar Color
+				textcolor = "50 100 200 255"
+				bgcolor = "36 36 36 255"
+			}
+
+		// Slider Bar ---------------------------------------------------------------------------
+
+			"Slider" {
+				// textcolor - Bar Color
+				textcolor = "50 100 200 255"
+				bgcolor = "36 36 36 255"
+			}
+
+		// List Panel ---------------------------------------------------------------------------
+
+			// List Panel - Container -----------------------------------------------------------
+
+				// List Panel
+				"ListPanel" {
+					// shadow text color - disabled line items
+					font-family = "Arial"
+					font-size = "14"
+					textcolor = "200 200 200 255"
+					selectedtextcolor = "220 220 220 255"
+					shadowtextcolor = "160 160 160 255"
+				}
+
+				// List Panel - Interior
+				"ListPanelInterior" {
+					font-family = "Arial"
+					font-size = "14"
+					textcolor = "200 200 200 255"
+					bgcolor = "24 24 24 255"
+				}
+
+				// List Panel - Sectioned
+				"SectionedListPanel" {
+					font-family = "Arial"
+					font-size = "14"
+					textcolor = "200 200 200 255"
+					selectedtextcolor = "220 220 220 255"
+					bgcolor = "24 24 24 255"
+					selectedbgcolor = "28 28 28 255"
+				}
+
+				// List Panel - Dragger
+				"ListPanelDragger" {
+					bgcolor="none"
+
+					//fill makes dragger visible
+					render {
+						0 = "fill( x0, y0 + 2, x0 + 1, y1 - 3, dialogbg )"
+						1 = "fill (x0, y0, x0+1, y0+3, propertysheetbg )"
+					}
+
+				}
+
+			// List Panel - Headers -----------------------------------------------------------
+
+				// List Panel - Sectioned - Header
+				"ListPanelSectionHeader" {
+					font-family = "Arial"
+					font-size = "14"
+					textcolor = "200 200 200 255"
+					bgcolor = "36 36 36 255"
+				}
+
+				// List Panel - Column - Header
+				"ListPanelColumnheader" {
+					font-family = "Arial"
+					font-size = "14"
+					textcolor = "200 200 200 255"
+					bgcolor = "36 36 36 255"
+				}
+
+			// List Panel - Buttons -----------------------------------------------------------
+
+				// List Panel - Check Box
+				"ListPanelCheckBox" {
+					font-family = "Arial"
+					font-size = "14"
+					textcolor = "200 200 200 255"
+					image = "graphics/chkUnselStd_Sm"
+				}
+
+				// List Panel - Selected Button
+				"ListPanelColumnSelectButton" {
+					image = "graphics/icon_collapse"
+				}
+
+			// List Panel - Collapsers -----------------------------------------------------------
+
+				// List Panel - Sectioned Collapser
+				"SectionedlistpanelCollapser" {
+					image = "graphics/icon_collapse"
+				}
+
+				// List Panel - Section Collapser
+				"ListPanelSectionCollapser" {
+					bgcolor = "36 36 36 255"
+				}
 
 		//---------------------------------------------------------------------------
 
