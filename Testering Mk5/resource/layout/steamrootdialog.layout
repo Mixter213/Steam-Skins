@@ -289,7 +289,7 @@
 			place {
 				control = "UIStatusPanel"
 				region = "Main Container"
-				height = "40"
+				height = "60"
 				width = "max"
 				align = "bottom"
 			}
