@@ -1,0 +1,24 @@
+colors.styles {
+	
+	colors {
+
+		// Buttons ----------------------------------
+		
+			"Button-Default" = "40 40 40 255"
+
+		// Inbox Button -----------------------------------------------------------
+
+			"Inbox-Button-Default" = "40 80 160 255"
+			"Inbox-Button-Hover" = "50 100 200 255"
+			"Inbox-Button-Selected" = "40 160 80 255"
+			"Inbox-Button-Disabled" = "160 160 160 255"
+			
+			"Inbox-Button-Active-Default" = "50 200 100 255"
+			"Inbox-Button-Active-Hover" = "40 160 80 255"
+			"Inbox-Button-Active-Selected" = "50 200 100 255"
+			"Inbox-Button-Active-Disabled" = "160 160 160 255"
+
+		//-----------------------------------------------------------
+
+	}
+}

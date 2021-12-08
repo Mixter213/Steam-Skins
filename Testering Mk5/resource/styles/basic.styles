@@ -31,12 +31,11 @@ basic.styles {
 				font-family = "Arial"
 				font-size = "14"
 				textcolor = "200 200 200 255"
-				bgcolor = "40 40 40 255"
 			}
 
 			// Frame Buttons - Window Buttons
 			"FrameButton" {
-				inset = "0 0 0 0"
+				inset = "-3 3 0 0"
 			}
 
 			// Frame Buttons - Window Buttons - Min
@@ -94,7 +93,6 @@ basic.styles {
 				font-family = "Arial"
 				font-size = "14"
 				textcolor = "200 200 200 255"
-				bgcolor = "36 36 36 255"
 			}
 
 			// Menu Dropdown Item
@@ -179,7 +177,10 @@ basic.styles {
 				font-family = "Arial"
 				font-size = "14"
 				textcolor = "200 200 200 255"
-				bgcolor = "36 36 36 255"
+				render_bg
+				{
+					0 = "fill( x0, y0, x1, y1, Button-Default )"
+				}
 			}
 
 		// Check Button & List ---------------------------------------------------------------------------

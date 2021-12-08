@@ -1,9 +1,19 @@
 steam.styles {
 
-	include "resource/styles/basic.styles"
-	include "resource/styles/variables.styles"
+	include = "resource/styles/basic.styles"
+	include = "resource/styles/variables.styles"
+	include = "resource/styles/colors.styles"
+
 
 	styles {
+
+		"CUINavigatorPanel" {
+			bgcolor = "60 0 0 255"
+		}
+
+		"CUIStatusPanel" {
+			bgcolor = "0 60 0 255"
+		}
 
 	}
 
