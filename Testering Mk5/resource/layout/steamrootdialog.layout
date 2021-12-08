@@ -30,6 +30,16 @@
 			Parental_Selected = "50 200 100 255"
 			Parental_Selected_Hover = "40 160 80 255"
 
+		// Add Game Button ------------------------------------------------------------
+
+			Add_Game_Text = "200 200 200 255"
+			Add_Game_Text_Hover = "220 220 220 255"
+
+		// Add Game Button ------------------------------------------------------------
+
+			View_Friends_Text = "200 200 200 255"
+			View_Friends_Text_Hover = "220 220 220 255"
+
 		//------------------------------------------------------------
 
 	}
@@ -69,7 +79,7 @@
 				"inbox_button" {
 					render_bg {
 						0 = "fill( x0, y0, x1, y1, Inbox_Button_Default )"
-						1 = "image( x1-22, y0+4, x1-2, y1, graphics/inbox_notification_inactive )"
+						1 = "image( x1 - 22, y0 + 4, x1 - 2, y1, graphics/inbox_notification_inactive )"
 					}
 				}
 
@@ -77,7 +87,7 @@
 				"inbox_button:hover" {
 					render_bg {
 						0 = "fill( x0, y0, x1, y1, Inbox_Button_Hover )"
-						1 = "image( x1-22, y0+4, x1-2, y1, graphics/inbox_notification_inactive )"
+						1 = "image( x1 - 22, y0 + 4, x1 - 2, y1, graphics/inbox_notification_inactive )"
 					}
 				}
 
@@ -85,7 +95,7 @@
 				"inbox_button:selected" {
 					render_bg {
 						0 = "fill( x0, y0, x1, y1, Inbox_Button_Selected )"
-						1 = "image( x1-22, y0+4, x1-2, y1, graphics/inbox_notification_inactive )"
+						1 = "image( x1 - 22, y0 + 4, x1 - 2, y1, graphics/inbox_notification_inactive )"
 					}
 				}
 
@@ -93,7 +103,7 @@
 				"inbox_button:disabled" {
 					render_bg {
 						0 = "fill( x0, y0, x1, y1, Inbox_Button_Disabled )"
-						1 = "image( x1-22, y0+4, x1-2, y1, graphics/inbox_notification_inactive_disabled )"
+						1 = "image( x1 - 22, y0 + 4, x1 - 2, y1, graphics/inbox_notification_inactive_disabled )"
 					}
 				}
 
@@ -103,7 +113,7 @@
 				"inbox_button_active" {
 					render_bg {
 						0 = "fill( x0, y0, x1, y1, Inbox_Button_Active_Default )"
-						1 = "image( x1-22, y0+4, x1-2, y1, graphics/inbox_notification )"
+						1 = "image( x1 - 22, y0 + 4, x1 - 2, y1, graphics/inbox_notification )"
 					}
 				}
 
@@ -111,7 +121,7 @@
 				"inbox_button_active:hover" {
 					render_bg {
 						0 = "fill( x0, y0, x1, y1, Inbox_Button_Active_Hover )"
-						1 = "image( x1-22, y0+4, x1-2, y1, graphics/inbox_notification )"
+						1 = "image( x1 - 22, y0 + 4, x1 - 2, y1, graphics/inbox_notification )"
 					}
 				}
 
@@ -119,7 +129,7 @@
 				"inbox_button_active:selected" {
 					render_bg {
 						0 = "fill( x0, y0, x1, y1, Inbox_Button_Active_Selected )"
-						1 = "image( x1-22, y0+4, x1-2, y1, graphics/inbox_notification )"
+						1 = "image( x1 - 22, y0 + 4, x1 - 2, y1, graphics/inbox_notification )"
 					}
 				}
 
@@ -127,7 +137,7 @@
 				"inbox_button_active:disabled" {
 					render_bg {
 						0 = "fill( x0, y0, x1, y1, Inbox_Button_Active_Disabled )"
-						1 = "image( x1-22, y0+4, x1-2, y1, graphics/inbox_notification_disabled )"
+						1 = "image( x1 - 22, y0 + 4, x1 - 2, y1, graphics/inbox_notification_disabled )"
 					}
 				}
 
@@ -152,7 +162,7 @@
 			"announcement_button" {
 				render_bg {
 					0 = "fill( x0, y0, x1, y1, Announcement_Default )"
-					1 = "image( x1-20, y0+3, x1-2, y1, graphics/updatenone_notification )"
+					1 = "image( x1 - 20, y0 + 3, x1 - 2, y1, graphics/updatenone_notification )"
 				}
 			}
 
@@ -160,7 +170,7 @@
 			"announcement_button:hover" {
 				render_bg {
 					0 = "fill( x0, y0, x1, y1, Announcement_Hover )"
-					1 = "image( x1-20, y0+3, x1-2, y1, graphics/updatenone_notification )"
+					1 = "image( x1 - 20, y0 + 3, x1 - 2, y1, graphics/updatenone_notification )"
 				}
 			}
 
@@ -170,7 +180,7 @@
 			"parental_lock_button" {
 				render_bg {
 					0 = "fill( x0, y0, x1, y1, Parental_Default )"
-					1 = "image( x0+9, y0+2, x1, y1, graphics/notfamilyview )"
+					1 = "image( x0 + 9, y0 + 2, x1, y1, graphics/notfamilyview )"
 				}
 			}
 
@@ -178,7 +188,7 @@
 			"parental_lock_button:hover" {
 				render_bg {
 					0 = "fill( x0, y0, x1, y1, Parental_Hover )"
-					1 = "image( x0+9, y0+2, x1, y1, graphics/notfamilyview )"
+					1 = "image( x0 + 9, y0 + 2, x1, y1, graphics/notfamilyview )"
 				}
 			}
 
@@ -186,7 +196,7 @@
 			"parental_lock_button:selected" {
 				render_bg {
 					0 = "fill( x0, y0, x1, y1, Parental_Selected )"
-					1 = "image( x0+9, y0+2, x1, y1, graphics/notfamilyview )"
+					1 = "image( x0 + 9, y0 + 2, x1, y1, graphics/notfamilyview )"
 				}
 			}
 
@@ -194,14 +204,64 @@
 			"parental_lock_button:selected:hover" {
 				render_bg {
 					0 = "fill( x0, y0, x1, y1, Parental_Selected_Hover )"
-					1 = "image( x0+9, y0+2, x1, y1, graphics/notfamilyview )"
+					1 = "image( x0 + 9, y0 + 2, x1, y1, graphics/notfamilyview )"
 				}
 			}
+
+		// Add Game Button ------------------------------------------------------------
+
+			// Add Game Button
+			AddGameButton {
+				font-family = "Arial"
+				font-size = "14"
+				padding-left = "24"
+				textcolor = "Add_Game_Text"
+				render_bg {
+					0 = "image( x0 + 2, y0 + 4, x1, y1, graphics/icon_addgame )"
+				}
+			}
+
+			// Add Game Button - Hover
+			AddGameButton:hover {
+				textcolor="Add_Game_Text_Hover"
+				render_bg
+				{
+					0 = "image( x0 + 2, y0 + 4, x1, y1, graphics/icon_addgame_over )"
+				}
+
+			}
+
+		// View Friends Button ------------------------------------------------------------
+
+			// View Friends Button
+			view_friends {
+				font-family = "Arial"
+				font-size = "14"
+				padding-right=28
+				textcolor = "View_Friends_Text"
+				render_bg {
+					1 = "image( x1-30, y0+20, x1, y1, graphics/icon_friendslist )" 
+				}
+
+			}
+
+			// View Friends Button - Hover
+			view_friends:Hover {
+				textcolor = "View_Friends_Text_Hover"
+				render_bg {
+					1 = "image( x1-30, y0+20, x1, y1, graphics/icon_friendslist_over )"
+				}
+			}
+
+			// View Friends Button - Disabled
+			view_friends:disabled {
+				textcolor = "View_Friends_Text_Disabled"
+			}
+
 
 		//------------------------------------------------------------
 
 	}
-
 
 	layout {
 
