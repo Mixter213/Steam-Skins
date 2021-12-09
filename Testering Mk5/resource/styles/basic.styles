@@ -317,6 +317,7 @@ basic.styles {
 					textcolor = "200 200 200 255"
 					selectedtextcolor = "220 220 220 255"
 					shadowtextcolor = "160 160 160 255"
+					padding-left = "16"
 				}
 
 				// List Panel - Interior
