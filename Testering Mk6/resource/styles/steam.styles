@@ -1,0 +1,12 @@
+steam.styles {
+
+	include = "resource/styles/basic.styles"
+	include = "resource/styles/variables.styles"
+	include = "resource/styles/colors.styles"
+
+
+	styles {
+
+	}
+
+}
