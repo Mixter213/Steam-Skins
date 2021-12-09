@@ -341,7 +341,7 @@ basic.styles {
 			// Menu - Dropdown - Items ------------------------------------------------------------------------------------------
 
 				// Menu - Dropdown - Item
-				MenuItem {
+				"MenuItem" {
 					font-family = "basefont"
 					textcolor = "label"
 					font-size = "14"
@@ -353,38 +353,409 @@ basic.styles {
 				}
 
 				// Menu - Dropdown - Item - Hover
-				MenuItem:hover {
+				"MenuItem:hover" {
 					textcolor = "white"
 					bgcolor = "none"
 				}
 
 				// Menu - Dropdown - Item - Selected
-				MenuItem:selected {
+				"MenuItem:selected" {
 					textcolor = "TextHover"
 					bgcolor = "none"
 				}
 				// Menu - Dropdown - Item - Disabled
-				MenuItem:disabled {
+				"MenuItem:disabled" {
 					textcolor = "labeldisabled"
 					shadowtextcolor = "none"
 				}
 
 				// Menu - Dropdown - Item - Disabled - Hover
-				MenuItem:disabled:hover {
+				"MenuItem:disabled:hover" {
 					textcolor = "labeldisabled"
 					shadowtextcolor = "none"
 				}
 
 				// Menu - Dropdown - Separator
-				MenuSeparator {
+				"MenuSeparator" {
 					inset = "-4 0 0 0"
 					textcolor = "divider"
 					bgcolor = "none"
 				}
 
 
+			//------------------------------------------------------------------------------------------
+		
+		// Panels ------------------------------------------------------------------------------------------
+			
+			// Panel - Basic Types ------------------------------------------------------------------------------------------
 
+				// Panel - Basic
+				"Panel" {
+					font-family = "basefont"
+					font-size = "14"
+					font-weight = "400"
+					textcolor = "Text"
+					bgcolor = "none"
+				}
+			
+				// Panel - Graph
+				"GraphPanel" {
+					textcolor = "Highlight5"
+					bgcolor = "none"
+					render_bg {}
+				}
 
+				// Panel - Wrap
+				"WrapPanel" {
+					inset = "0 0 0 0"
+					font-family = "basefont"
+					font-size = "14"
+					font-weight = "400"
+					textcolor = "Text"
+					selectedtextcolor = "TextSelected"
+					selectedbgcolor = "Focus"
+					bgcolor = "none"
+					inset = "1 -1 1 1"
+					render_bg {
+						1 = "gradient( x0, y0, x1, y0 + 240, propertysheetbg, DarkDialogBG )"
+						2 = "fill( x0, y0 + 240, x1, y1, DarkDialogBG )"
+					}
+				}
+
+			// Panel - List ------------------------------------------------------------------------------------------
+
+				// Panel - List - Basic ------------------------------------------------------------------------------------------
+
+					// Panel - List
+					"ListPanel" {
+						bgcolor = "none"
+						font-family = "basefont"
+						font-size = "14"
+						font-weight = "400"
+						textcolor = "text2"
+						selectedtextcolor = "TextSelected"
+						selectedbgcolor = "Focus"
+						shadowtextcolor = "TextDisabled"
+						inset = "0 -1 1 1"
+						render {}
+						render_bg {
+							0 = "gradient( x0, y0, x1, y1, dialogbg, almostblack )"
+							1 = "gradient( x0, y0, x1, y0 + 31, backgroundstartsubtle, none )"
+						}
+					}
+
+					// Panel - List - Dragger
+					"ListPanelDragger" {
+						bgcolor = "none"
+						render {
+							0 = "fill( x0, y0 + 2, x0 + 1, y1 - 3, dialogbg )"
+							1 = "fill (x0, y0, x0+1, y0+3, propertysheetbg )"
+						}
+					}
+
+					// Panel - List - Interior
+					"ListPanelInterior" {
+						inset = "3 1 0 0"
+						font-size = "15"
+						textcolor = "text2"
+						bgcolor = "none"
+						render {}
+						render_bg {}
+					}
+
+					// Panel - List - Interior - Scrollbar
+					"ListPanelInterior:scrollbar" {
+						bgcolor = "none"
+						inset = "3 1 -1 0"
+						textcolor = "text2"
+						render {}
+						render_bg {}
+					}
+		
+				// Panel - List - RichText ------------------------------------------------------------------------------------------
+
+					// Panel - List - RichText
+					"ListPanel RichText" {
+						textcolor = "Text"
+						font-family = "basefont"
+						font-size = "15"
+						bgcolor = "none"
+						render_bg {}
+					}
+
+					// Panel - List - RichText - Interior
+					"ListPanel RichTextInterior" {
+						bgcolor = "DarkDialogBG"
+						render_bg {}
+						bgcolor = "none"
+					}
+
+					// Panel - List - RichText - Url
+					"ListPanel RichText url" {
+						font-size = "15"
+						textcolor = "Text"
+						font-style = "underline"
+					}
+					
+				// Panel - List - Column Header ------------------------------------------------------------------------------------------
+
+					// Panel - List - Column Header
+					"ListPanelColumnheader" {
+						font-family = "basefont"
+						font-size = "14"
+						font-size = "13" [$OSX]
+						font-weight = "400"
+						textcolor = "label"
+						font-style = "uppercase"
+						bgcolor = "none"
+						inset = "1 3 0 0"
+						render_bg {
+							0 = "fill (x0, y0 + 1, x1, y1 + 1, propertysheetbg)"
+							1 = "fill (x0 + 1, y0 + 1, x1, y0 + 3, propertysheetbg)"
+						}
+					}
+						
+					// Panel - List - Column Header - Hover
+					"ListPanelColumnHeader:hover" {
+						textcolor = "Texthover"
+					}
+					
+					// Panel - List - Column Header - Checkbox ------------------------------------------------------------------------------------------
+
+						// Panel - List - Column Header - Checkbox
+						"ListPanelColumnheader ListPanelCheckBox" {
+							font-family = "basefont"
+							font-size = "14"
+							font-weight = "400"
+							textcolor = "Label"
+							image = "graphics/chkUnSelFocus_Sm"
+							inset = "4 0 0 0"
+						}
+
+						// Panel - List - Column Header - Checkbox - Selected
+						"ListPanelColumnHeader ListPanelCheckBox:selected" {
+							inset = "4 0 0 0"
+							image = "graphics/chkUnSelStd_Sm"
+						}
+
+						// Panel - List - Column Header - Checkbox - Focus
+						"ListPanelColumnheader ListPanelCheckBox:focus" {
+							font-family = "basefont"
+							font-size = "14"
+							font-weight = "400"
+							textcolor = "TextHover"
+							image = "graphics/chkUnSelFocus_Sm"
+							inset = "4 0 0 0"
+						}
+
+						// Panel - List - Column Header - Checkbox - Selected - Focus
+						"ListPanelColumnheader ListPanelCheckBox:selected:focus" {
+							textcolor = "TextHover"
+							bgcolor = "none"
+							image = "graphics/chkSelFocus_Sm"
+							inset = "4 0 0 0"
+							render_bg {}
+						}
+
+					//------------------------------------------------------------------------------------------
+
+				// Panel - List - Checkbox ------------------------------------------------------------------------------------------
+
+					// Panel - List - Checkbox
+					"ListPanelCheckBox" {
+						font-family = "basefont"
+						font-size = "14"
+						font-weight = "400"
+						textcolor = "Label"
+						image = "graphics/chkUnselStd_Sm"
+						inset = "0 5 0 0"
+					}
+					
+					// Panel - List - Checkbox - Selected
+					"ListPanelCheckBox:selected" {
+						image = "graphics/chkSelStd_Sm"
+					}
+
+					// Panel - List - Checkbox - Selected - Focus
+					"ListPanelCheckBox:selected:focus" {
+						textcolor = "TextSelected"
+						render_bg {}
+						bgcolor = "none"
+						image = "graphics/chkSelFocus_Sm"
+					}
+	
+					// Panel - List - Checkbox - Focus
+					"ListPanelCheckBox:focus" {
+						textcolor = "TextSelected"
+						bgcolor = "none"
+						image = "graphics/chkUnselFocus_Sm"
+					}
+					
+					// Panel - List - Checkbox - Disabled
+					"ListPanelCheckBox:disabled" {
+						textcolor = "TextDisabled"
+						bgcolor = "none"
+						image = "graphics/chkUnselDis_Sm"
+					}
+
+					// Panel - List - Checkbox - Disabled - Select
+					"ListPanelCheckBox:disabled:select" {
+						textcolor = "TextDisabled"
+						bgcolor = "none"
+						image = "graphics/chkUnselDis"
+					}
+
+				// Panel - List - Select Button ------------------------------------------------------------------------------------------
+
+					// Panel - List - Select Button
+					"ListPanelColumnSelectButton" {
+						inset = "-3 3 0 0"
+						render {
+							0 = "image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse )"
+						}
+						render_bg {
+							1 = "fill( x0 + 1, y0, x1 - 1, y1, propertysheetbg )"
+						}
+					}
+					
+					// Panel - List - Select Button - Hover
+					"ListPanelColumnSelectButton:hover" {
+						inset = "-3 3 0 0"
+						render {
+							0 = "image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse_over )" 
+						}
+						render_bg {
+							1 = "fill( x0 + 1, y0, x1 - 1, y1, propertysheetbg )"
+						}
+					}
+					
+					// Panel - List - Select Button - Selected
+					"ListPanelColumnSelectButton:selected" {
+						inset = "-3 3 0 0"
+						render {
+							0 = "image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse_over )"
+						}
+						render_bg {
+							1 = "fill( x0 + 1, y0, x1 - 1, y1, propertysheetbg )" 
+						}
+					}
+
+				// Panel - List - Section Collapser ------------------------------------------------------------------------------------------
+		
+					
+					// Panel - List - Section Collapser (Not OSX)
+					"ListPanelSectionCollapser" [!$OSX] {
+						bgcolor = none
+						image = "graphics/icon_collapse"
+						inset = "-4 0 0 0"
+						padding-top = "-2"
+						padding-bottom = "-2"
+						render_bg {}
+					}
+					
+					// Panel - List - Section Collapser - Hover (Not OSX)
+					"ListPanelSectionCollapser:hover" [!$OSX] {
+						image = "graphics/icon_collapse_over"
+					}
+					
+					// Panel - List - Section Collapser - Selected (Not OSX)
+					"ListPanelSectionCollapser:selected" [!$OSX] {
+						image = "graphics/icon_expand"
+					}
+					
+					// Panel - List - Section Collapser - Selected - Hover (Not OSX)
+					"ListPanelSectionCollapser:selected:hover" [!$OSX] {
+						image = "graphics/icon_expand_over"
+					}
+				
+					// Panel - List - Section Collapser (OSX)
+					"ListPanelSectionCollapser" [$OSX] {
+						bgcolor = "none"
+						image = "graphics/icon_collapse_osx"
+						inset = "-4 0 0 0"
+						padding-top = "-2"
+						padding-bottom = "-2"
+						render_bg {}
+					}
+
+					// Panel - List - Section Collapser - Hover (OSX)
+					"ListPanelSectionCollapser:hover" [$OSX] {
+						image = "graphics/icon_collapse_over_osx"
+					}
+					
+					// Panel - List - Section Collapser - Selected (OSX)
+					"ListPanelSectionCollapser:selected" [$OSX] {
+						image = "graphics/icon_expand_osx"
+					}
+					
+					// Panel - List - Section Collapser - Selected - Hover (OSX)
+					"ListPanelSectionCollapser:selected:hover" [$OSX] {
+						image = "graphics/icon_expand_over_osx"
+					}
+
+				// Panel - List - Section Header ------------------------------------------------------------------------------------------
+			
+					// Panel - List - Section Header
+					"ListPanelSectionHeader" {
+						inset = "2 0 0 0"
+						textcolor = "label"
+						font-style = "uppercase"
+						render_bg {
+							0 = "gradient_horizontal( x0 - 1, y0, x0 + 250, y1 - 1, propertysheetbg, Friends.ListHeaderFadeOut  )"
+						}
+					}
+
+					// Panel - List - Section Header - Hover
+					"ListPanelSectionHeader:hover" {
+						textcolor = "texthover"
+					}
+				
+				// Panel - Sectioned List ------------------------------------------------------------------------------------------
+				
+					// Panel - Sectioned List
+					"SectionedListPanel" {
+						bgcolor = "propertysheetbg" 
+						font-family = "basefont"
+						font-size = "14"
+						font-weight = "400"
+						textcolor = "Text"
+						selectedtextcolor = "TextSelected"
+						selectedbgcolor = "Focus"
+						bgcolor = "none"
+						inset = "1 -1 1 1" 
+						render {}
+						render_bg {
+							0 = "gradient( x0, y0, x1, y0 + 140, dialogbg, almostblack )"
+							1 = "fill( x0, y0 + 140, x1, y1, almostblack )"
+						}
+					}
+
+					// Panel - Sectioned List - Collapser
+					"SectionedlistpanelCollapser" {
+						bgcolor = "none"
+						image = "graphics/icon_collapse"
+						inset = "2 1 0 0"
+						render_bg {} 
+					}
+
+					// Panel - Sectioned List - Collapser - Hover
+					"SectionedListPanelCollapser:hover" {
+						image = "graphics/icon_collapse_over" 
+					}
+
+					// Panel - Sectioned List - Collapser - Selected
+					"SectionedListPanelCollapser:selected" {
+						image = "graphics/icon_expand" 
+					}
+
+					// Panel - Sectioned List - Collapser - Selected - Hover
+					"SectionedListPanelCollapser:selected:hover" {
+						image = "graphics/icon_expand_over" 
+					}
+					
+				//------------------------------------------------------------------------------------------
+		
+			//------------------------------------------------------------------------------------------
 
 
 
@@ -464,16 +835,7 @@ basic.styles {
 		"html-imebar" { font-family=basefont font-size=14 textcolor="text2" font-weight=400 bgcolor="DarkClientBG" selectedtextcolor="TextEntrySelected" selectedbgcolor="TextSelectedBG" shadowtextcolor="Text"	 inset-left=0 inset-top=0 render { 0="fill( x0, y0, x0 + 1, y1, ButtonBorder )" 1="gradient_horizontal( x0, y0, x1, y0 + 1, ButtonBorder, none )" 2="gradient_horizontal( x0, y1 - 1, x1, y1, ButtonBorder, none )" }}
 		
 		"HTMLFramelessPopup HTML" { inset="0 0 0 0" }
-		
-		"ListPanel RichText url" { font-size=15 textcolor="Text" font-style=underline }
-		"ListPanel RichText" { textcolor="Text" font-family=basefont font-size=15 bgcolor=none render_bg {}}
-		"ListPanel RichTextInterior" { bgcolor=DarkDialogBG render_bg {} bgcolor=none }
-		
-		"ListPanelColumnheader ListPanelCheckBox:focus" { font-family=basefont font-size=14 font-weight=400 textcolor="TextHover" image="graphics/chkUnSelFocus_Sm" inset="4 0 0 0" }
-		"ListPanelColumnheader ListPanelCheckBox:selected:focus" { textcolor="TextHover" render_bg {} bgcolor=none image="graphics/chkSelFocus_Sm" inset="4 0 0 0" }
-		"ListPanelColumnHeader ListPanelCheckBox:selected" { inset="4 0 0 0" image="graphics/chkUnSelStd_Sm" }
-		"ListPanelColumnheader ListPanelCheckBox" { font-family=basefont font-size=14 font-weight=400 textcolor="Label" image="graphics/chkUnSelFocus_Sm" inset="4 0 0 0" }
-		
+
 
 		"NotifyRemoteClientInfo" { textcolor="176 172 165 255"}
 		"NotifyRemoteClientTitle" {textcolor="LabelDisabled"}
@@ -623,9 +985,7 @@ basic.styles {
 		gamedetails-headerlabel-blue { font-size="17" font-style="normal" textcolor="GameDetailsBlue" font-family=basefont font-weight=700 font-style="uppercase;" }
 		gamedetails-headerlabel-green { font-size="17" font-style="normal" textcolor="GameDetailsGreen" font-family=basefont font-weight=700 font-style="uppercase;" }
 		gamedetails-headerlabel-red { font-size="17" font-style="normal" font-family=basefont font-weight=700 textcolor="GameDetailsRed" font-style="uppercase;" }
-		
-		GraphPanel { textcolor=Highlight5 bgcolor=none render_bg {}}
-		
+
 		HomeButton { bgcolor=none inset="-5 0 0 0" render_bg={} image="graphics/icon_button_home" }
 		HomeButton:active { bgcolor=none render_bg={} image="graphics/icon_button_home_down" }
 		HomeButton:disabled { bgcolor=none render_bg={} image="graphics/icon_button_home_disabled" }
@@ -636,34 +996,7 @@ basic.styles {
 		IndeterminateCheckButton { font-family=basefont font-size=14 font-weight=400 textcolor="Label" bgcolor=none image="graphics/chkIndeterminate" }
 		
 		Label { textcolor="Label" selectedtextcolor="Text" bgcolor="none" font-family=basefont font-size=14 font-weight=400 }
-		
-		ListPanel { bgcolor=none font-family=basefont font-size=14 font-weight=400 textcolor="text2" selectedtextcolor="TextSelected" selectedbgcolor="Focus" shadowtextcolor="TextDisabled"	 inset="0 -1 1 1" render {} render_bg { 0="gradient( x0, y0, x1, y1, dialogbg, almostblack )" 1="gradient( x0, y0, x1, y0 + 31, backgroundstartsubtle, none )" }}
-		ListPanelCheckBox { font-family=basefont font-size=14 font-weight=400 textcolor="Label" image="graphics/chkUnselStd_Sm" inset="0 5 0 0" }
-		ListPanelCheckBox:disabled { textcolor="TextDisabled" bgcolor=none image="graphics/chkUnselDis_Sm" }
-		ListPanelCheckBox:disabled:select { textcolor="TextDisabled" bgcolor=none image="graphics/chkUnselDis" }
-		ListPanelCheckBox:focus { textcolor="TextSelected" bgcolor=none image="graphics/chkUnselFocus_Sm" }
-		ListPanelCheckBox:selected { image="graphics/chkSelStd_Sm" }
-		ListPanelCheckBox:selected:focus { textcolor="TextSelected" render_bg {} bgcolor=none image="graphics/chkSelFocus_Sm" }
-		
-		ListPanelColumnheader { font-family=basefont font-size=14 font-size=13 [$OSX] font-weight=400 textcolor="label" font-style="uppercase" bgcolor="none" inset="1 3 0 0" render_bg { 0="fill (x0, y0 + 1, x1, y1 + 1, propertysheetbg)"  1="fill (x0 + 1, y0 + 1, x1, y0 + 3, propertysheetbg)"  }}
-		ListPanelColumnHeader:hover {textcolor="Texthover"}
-		ListPanelColumnSelectButton { inset="-3 3 0 0" render { 0="image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse )" } render_bg { 1="fill( x0 + 1, y0, x1 - 1, y1, propertysheetbg )" }}
-		ListPanelColumnSelectButton:hover { inset="-3 3 0 0" render { 0="image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse_over )" } render_bg { 1="fill( x0 + 1, y0, x1 - 1, y1, propertysheetbg )" }}
-		ListPanelColumnSelectButton:selected { inset="-3 3 0 0" render { 0="image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse_over )" } render_bg { 1="fill( x0 + 1, y0, x1 - 1, y1, propertysheetbg )" }}
-		ListPanelDragger { bgcolor="none" render { 0="fill( x0, y0 + 2, x0 + 1, y1 - 3, dialogbg )"  1="fill (x0, y0, x0+1, y0+3, propertysheetbg )"  }}
-		ListPanelInterior { inset="3 1 0 0" font-size=15 textcolor="text2" bgcolor="none" render { } render_bg {}}
-		ListPanelInterior:scrollbar { bgcolor=none inset="3 1 -1 0" textcolor="text2" render { } render_bg {}}
-		ListPanelSectionCollapser [!$OSX] { bgcolor=none render_bg {} image="graphics/icon_collapse" inset="-4 0 0 0" padding-top=-2 padding-bottom=-2 }
-		ListPanelSectionCollapser [$OSX] { bgcolor=none render_bg {} image="graphics/icon_collapse_osx" inset="-4 0 0 0" padding-top=-2 padding-bottom=-2 }
-		ListPanelSectionCollapser:hover [!$OSX] { image="graphics/icon_collapse_over" }
-		ListPanelSectionCollapser:hover [$OSX] { image="graphics/icon_collapse_over_osx" }
-		ListPanelSectionCollapser:selected [!$OSX] { image="graphics/icon_expand" }
-		ListPanelSectionCollapser:selected [$OSX] { image="graphics/icon_expand_osx" }
-		ListPanelSectionCollapser:selected:hover [!$OSX] { image="graphics/icon_expand_over" }
-		ListPanelSectionCollapser:selected:hover [$OSX] { image="graphics/icon_expand_over_osx" }
-		ListPanelSectionHeader { inset="2 0 0 0" textcolor=label font-style="uppercase" render_bg { 0="gradient_horizontal( x0 - 1, y0, x0 + 250, y1 - 1, propertysheetbg, Friends.ListHeaderFadeOut  )" }}
-		ListPanelSectionHeader:hover { textcolor=texthover }
-		
+
 		MainNav { textcolor="Label" selectedtextcolor="Text" bgcolor="none" font-family=basefont font-size=21 font-weight=700 font-style="uppercase" }
 
 		Notification { font-family=basefont font-size=15 font-weight=400 bgcolor=none render_bg { 0="gradient( x0, y0, x1, y0+80, DialogBG, ClientBG )" 1="gradient_horizontal( x0, y1-1, x1, y1, ClientBG, Highlight5 )"     2="gradient( x1-1, y0, x1, y1 , ClientBG, Highlight5 )"  3="fill( x0, y0, x1, y0+1, ClientBG )"  4="fill( x0, y0, x0+1, y1, ClientBG )"  } render {}}
@@ -674,9 +1007,7 @@ basic.styles {
 		PageTab:hover { textcolor="texthover" font-family=basefont font-size=13 font-style=Uppercase font-weight=400 inset="0 -2 0 0" render_bg { 0="fill( x0, y0 , x1, y1 - 4, buttonfacehover )" 1="fill(x0, y1-2, x1+3000, y1 -1, divider )" }}
 		PageTab:selected { textcolor="texthover" font-family=basefont font-size=13 font-style=Uppercase font-weight=400 inset="0 -2 0 0" bgcolor="none" render_bg { 0="gradient( x0, y0 , x1, y1, divider, dialogbg )" 1="fill(x1, y1-2, x1+3000, y1 - 1, divider )" }}
 		PageTab:selected:hover { textcolor="texthover" font-family=basefont font-size=13 font-style=Uppercase font-weight=400 inset="0 -2 0 0" bgcolor="none" render_bg { 0="gradient( x0, y0 , x1, y1, divider, dialogbg )" 1="fill(x1, y1-2, x1+3000, y1 - 1, divider )" }}
-		
-		Panel { font-family=basefont font-size=14 font-weight=400 textcolor="Text" bgcolor="none" }
-		
+
 		ProgressBar { textcolor="highlight5a" bgcolor="none" render { 1="fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, ButtonBorder )" 2="fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, ButtonBorder )"   3="fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonBorder )"  4="fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonBorder )"   }}
 		
 		PropertyPage { bgcolor="PropertySheetBG" }
@@ -715,13 +1046,7 @@ basic.styles {
 		ScrollBarSlider { bgcolor="none" render{} render_bg { 2="gradient( x0 + 2, y0 + 6, x1 - 4, y0 + 200, scrollbg, none)" }}
 		ScrollBarSlider:disabled { bgcolor="none" render_bg {}}
 		ScrollBarSliderHoriz { bgcolor="none" render{} render_bg {}}
-		
-		SectionedListPanel { bgcolor="propertysheetbg" font-family=basefont font-size=14 font-weight=400 textcolor="Text" selectedtextcolor="TextSelected" selectedbgcolor="Focus" bgcolor="none" render { } render_bg { 0="gradient( x0, y0, x1, y0 + 140, dialogbg, almostblack )" 1="fill( x0, y0 + 140, x1, y1, almostblack )" } inset="1 -1 1 1" }
-		SectionedlistpanelCollapser { render_bg {} bgcolor=none image="graphics/icon_collapse" inset="2 1 0 0" }
-		SectionedListPanelCollapser:hover { image="graphics/icon_collapse_over" }
-		SectionedListPanelCollapser:selected { image="graphics/icon_expand" }
-		SectionedListPanelCollapser:selected:hover { image="graphics/icon_expand_over" }
-		
+
 		Slider { font-family=basefont font-size=10 font-weight=400 textcolor="label" font-style=uppercase }
 		Slider:focus {textcolor="Text"}
 		
@@ -794,8 +1119,6 @@ basic.styles {
 		VRButtonExit:active { bgcolor=none render_bg={} image="graphics/icon_vr_happy_down" }
 		VRButtonExit:disabled { bgcolor=none render_bg={} image="graphics/icon_vr_disabled" }
 		VRButtonExit:hover { bgcolor=none render_bg={} image="graphics/icon_vr_happy_over" }
-		
-		WrapPanel { inset="0 0 0 0" font-family=basefont font-size=14 font-weight=400 textcolor="Text" selectedtextcolor="TextSelected" selectedbgcolor="Focus" bgcolor=none render_bg { 1="gradient( x0, y0, x1, y0 + 240, propertysheetbg, DarkDialogBG )" 2="fill( x0, y0 + 240, x1, y1, DarkDialogBG )" } inset="1 -1 1 1" }
 
 
 
