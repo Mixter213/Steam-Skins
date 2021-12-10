@@ -1392,176 +1392,289 @@ basic.styles {
 				PageTab:selected { textcolor = "texthover" font-family = "basefont" font-size = "13" font-style = "Uppercase" font-weight = "400" inset = "0 -2 0 0" bgcolor = "none" render_bg { 0 = "gradient( x0, y0 , x1, y1, divider, dialogbg )" 1 = "fill(x1, y1-2, x1+3000, y1 - 1, divider )" }}
 				PageTab:selected:hover { textcolor = "texthover" font-family = "basefont" font-size = "13" font-style = "Uppercase" font-weight = "400" inset = "0 -2 0 0" bgcolor = "none" render_bg { 0 = "gradient( x0, y0 , x1, y1, divider, dialogbg )" 1 = "fill(x1, y1-2, x1+3000, y1 - 1, divider )" }}
 
-			// Page Button ------------------------------------------------------------------------------------------
+			// Page - Button ------------------------------------------------------------------------------------------
 
-				// Page Button
-				"Page Button" {
-					render_bg {
-						0 = "gradient( x0, y0, x1, y1, buttonface2, propertysheetbg )"
+				// Page - Button ------------------------------------------------------------------------------------------
+
+					// Page - Button
+					"Page Button" {
+						render_bg {
+							0 = "gradient( x0, y0, x1, y1, buttonface2, propertysheetbg )"
+						}
 					}
-				}
 
-				// Page Button - Hover
-				"Page Button:hover" {
-					textcolor = "TextHover"
-					render_bg {
-						0 = "gradient( x0, y0, x1, y1, buttonfaceactive, propertysheetbg )"
+					// Page - Button - Hover
+					"Page Button:hover" {
+						textcolor = "TextHover"
+						render_bg {
+							0 = "gradient( x0, y0, x1, y1, buttonfaceactive, propertysheetbg )"
+						}
 					}
-				}
 
-				// Page Button - Active
-				"Page Button:active" {
-					textcolor = "TextHover"
-					render_bg {
-						0 = "gradient( x0, y0, x1, y1, DialogBG, propertysheetbg )"
+					// Page - Button - Active
+					"Page Button:active" {
+						textcolor = "TextHover"
+						render_bg {
+							0 = "gradient( x0, y0, x1, y1, DialogBG, propertysheetbg )"
+						}
 					}
-				}
 
-				// Page Button - Focus
-				"Page Button:focus" {
-					textcolor = "TextHover"
-					render_bg {
-						0 = "gradient( x0, y0, x1, y1,  buttonfacefocus, propertysheetbg )"
+					// Page - Button - Focus
+					"Page Button:focus" {
+						textcolor = "TextHover"
+						render_bg {
+							0 = "gradient( x0, y0, x1, y1,  buttonfacefocus, propertysheetbg )"
+						}
 					}
-				}
 
-				// Page Button - Selected
-				"Page Button:selected" {
-					textcolor = "TextHover"
-					render_bg {
-						0 = "gradient( x0, y0, x1, y1, buttonfaceactivefocus, propertysheetbg )"
+					// Page - Button - Selected
+					"Page Button:selected" {
+						textcolor = "TextHover"
+						render_bg {
+							0 = "gradient( x0, y0, x1, y1, buttonfaceactivefocus, propertysheetbg )"
+						}
 					}
-				}
 
-				// Page Button - Disabled
-				"Page Button:disabled" {
-					textcolor = "LabelDisabled"
-					render_bg {
-						0 = "gradient( x0, y0, x1, y1, buttonfacedisabled, buttonfacedisabled )"
+					// Page - Button - Disabled
+					"Page Button:disabled" {
+						textcolor = "LabelDisabled"
+						render_bg {
+							0 = "gradient( x0, y0, x1, y1, buttonfacedisabled, buttonfacedisabled )"
+						}
 					}
-				}
 
-			// Page Button - Check ------------------------------------------------------------------------------------------
+				// Page - Button - Check ------------------------------------------------------------------------------------------
 
-				// Page Button - Check
-				"Page CheckButtonList" {
-					inset = "1 1 1 1" 
-					textcolor = "text2"
-					bgcolor = "none"
-					render {} 
-					render_bg {
-						1 = "gradient( x0, y0, x1, y1, dialogbg, almostblack )" 
+					// Page - Button - Check
+					"Page CheckButtonList" {
+						inset = "1 1 1 1" 
+						textcolor = "text2"
+						bgcolor = "none"
+						render {} 
+						render_bg {
+							1 = "gradient( x0, y0, x1, y1, dialogbg, almostblack )" 
+						}
 					}
-				}
 
-				// Page Button - Check - Scrollbar
-				"Page CheckButtonList:scrollbar" {
-					inset = "1 1 1 1" 
-					textcolor = "text2"
-					bgcolor = "none"
-					render {} 
-					render_bg {
-						1 = "gradient( x0+1, y0, x1-1, y1-2, dialogbg, almostblack )" 
+					// Page - Button - Check - Scrollbar
+					"Page CheckButtonList:scrollbar" {
+						inset = "1 1 1 1" 
+						textcolor = "text2"
+						bgcolor = "none"
+						render {} 
+						render_bg {
+							1 = "gradient( x0+1, y0, x1-1, y1-2, dialogbg, almostblack )" 
+						}
 					}
-				}
 
-			// Page Button - Combo Box ------------------------------------------------------------------------------------------
+				// Page - Button - Combo Box ------------------------------------------------------------------------------------------
 
-				// Page Button - Check - Scrollbar
-				"Page ComboBox" {
-					render_bg {
-						0 = "gradient( x0, y0, x1, y1, buttonface2, propertysheetbg )" 
+					// Page - Button - Combo Box
+					"Page ComboBox" {
+						render_bg {
+							0 = "gradient( x0, y0, x1, y1, buttonface2, propertysheetbg )" 
+						}
 					}
-				}
 
-				// Page Button - Check - Scrollbar
-				"Page ComboBox:hover" {
-					render_bg {
-						0 = "gradient(x0, y0, x1, y1, buttonfacehover, propertysheetbg )" 
+					// Page - Button - Combo Box - Hover
+					"Page ComboBox:hover" {
+						render_bg {
+							0 = "gradient(x0, y0, x1, y1, buttonfacehover, propertysheetbg )" 
+						}
 					}
-				}
 
-				// Page Button - Check - Scrollbar
-				"Page ComboBox:focus" {
-					render_bg {
-						0 = "gradient( x0, y0, x1, y1, buttonfaceactive, propertysheetbg )" 
+					// Page - Button - Combo Box - Focus
+					"Page ComboBox:focus" {
+						render_bg {
+							0 = "gradient( x0, y0, x1, y1, buttonfaceactive, propertysheetbg )" 
+						}
 					}
-				}
 
-				// Page Button - Check - Scrollbar
-				"Page ComboBox:focus:hover" {
-					render_bg {
-						0 = "gradient( x0, y0, x1, y1, buttonfaceactive, propertysheetbg )" 
+					// Page - Button - Combo Box - Focus - Hover
+					"Page ComboBox:focus:hover" {
+						render_bg {
+							0 = "gradient( x0, y0, x1, y1, buttonfaceactive, propertysheetbg )" 
+						}
 					}
-				}
 
-			// Page Button - Combo Box - Button
+				// Page - Button - Combo Box - Button
 
-				// Page Button - Combo Box - Button
-				"Page ComboBoxButton" {
-					bgcolor = "none"
-					image = "graphics/icon_down_default" 
-					render_bg {
-						0 = "fill( x0, y0 + 2, x0 + 1, y1 - 4, ButtonBorderPage )" 
+					// Page - Button - Combo Box - Button
+					"Page ComboBoxButton" {
+						bgcolor = "none"
+						image = "graphics/icon_down_default" 
+						render_bg {
+							0 = "fill( x0, y0 + 2, x0 + 1, y1 - 4, ButtonBorderPage )" 
+						}
 					}
-				}
 
-				// Page Button - Combo Box - Button - Hover
-				"Page ComboBoxButton:hover" {
-					image = "graphics/icon_down_hover" 
-					render_bg {
-						0 = "fill( x0, y0 + 2, x0 + 1, y1 - 4, ButtonBorderActive  )" 
+					// Page - Button - Combo Box - Button - Hover
+					"Page ComboBoxButton:hover" {
+						image = "graphics/icon_down_hover" 
+						render_bg {
+							0 = "fill( x0, y0 + 2, x0 + 1, y1 - 4, ButtonBorderActive  )" 
+						}
 					}
-				}
 
-				// Page Button - Combo Box - Button - Focus
-				"Page ComboBoxButton:focus" {
-					bgcolor = "none" 
-					image = "graphics/icon_down_focus" 
-					render_bg {
-						0 = "fill( x0, y0 + 2, x0 + 1, y1 - 4, ButtonBorderActive  )" 
+					// Page - Button - Combo Box - Button - Focus
+					"Page ComboBoxButton:focus" {
+						bgcolor = "none" 
+						image = "graphics/icon_down_focus" 
+						render_bg {
+							0 = "fill( x0, y0 + 2, x0 + 1, y1 - 4, ButtonBorderActive  )" 
+						}
 					}
-				}
 
-				// Page Button - Combo Box - Button - Focus - Hover
-				"Page ComboBoxButton:focus:hover" {
-					bgcolor = "none" 
-					image = "graphics/icon_down_focus" 
-					render_bg {
-						0 = "fill( x0, y0 + 2, x0 + 1, y1 - 4, ButtonBorderActive )" 
+					// Page - Button - Combo Box - Button - Focus - Hover
+					"Page ComboBoxButton:focus:hover" {
+						bgcolor = "none" 
+						image = "graphics/icon_down_focus" 
+						render_bg {
+							0 = "fill( x0, y0 + 2, x0 + 1, y1 - 4, ButtonBorderActive )" 
+						}
 					}
-				}
 
-			// Page Button ------------------------------------------------------------------------------------------
+				// Page - Button - Radio ------------------------------------------------------------------------------------------
+
+					// Page - Button - Radio
+					"Page RadioButtonList" { 
+						bgcolor = "DialogBG"
+					}
+
+				// Page - Button - Toggle ------------------------------------------------------------------------------------------
+
+					// Page - Button - Toggle
+					"Page ToggleButton" {
+						font-family = "basefont"
+						font-size = "13" 
+						font-weight = "400" 
+						textcolor = "Text" 
+						bgcolor = "none" 
+						render_bg { 
+							0 = "gradient( x0, y0, x1, y1, buttonface2, propertysheetbg )" 
+						}
+					}
+
+					// Page - Button - Toggle - Hover
+					"Page ToggleButton:hover" {
+						textcolor = "TextHover"
+						bgcolor = "none" 
+						render_bg { 
+							0 = "gradient( x0, y0, x1, y1, buttonfacehover, propertysheetbg )" 
+						}
+					}
+
+					// Page - Button - Toggle - Focus
+					"Page ToggleButton:focus" {
+						textcolor = "TextHover"
+						bgcolor = "none" 
+						render_bg {
+							0 = "gradient( x0, y0, x1, y1, buttonfacefocus, propertysheetbg )" 
+						}
+					}
+
+					// Page - Button - Toggle - Selected
+					"Page ToggleButton:selected" {
+						textcolor = "TextHover" 
+						bgcolor = "none" 
+						render_bg {
+							0 = "gradient( x0, y0, x1, y1, backgroundstartopaque, propertysheetbg )"
+						}
+					}
+
+			// Page - List Panel ------------------------------------------------------------------------------------------
 			
-				"Page ListPanel" { font-family = "basefont" font-size = "14" font-weight = "400" textcolor = "Text2" selectedtextcolor = "TextSelected" selectedbgcolor = "Focus" inset = "0 -1 1 1" bgcolor = "none" render_bg { 0 = "gradient( x0, y0, x1, y0 + 80, Propertysheetbg, BackgroundStartOpaque )" 1 = "fill( x0, y0 + 80, x1, y1, BackgroundStartOpaque )" 2 = "gradient( x0, y0, x1, y0 + 30, backgroundstartsubtle, none )" }}
-				"Page ListPanelInterior:scrollbar" { inset = "3 1 -1 0" bgcolor = "none" render_bg { 0 = "gradient( x0, y0, x1+16, y1, dialogbg, almostblack )" }}
-				"Page ListPanelInterior" { inset = "3 1 -1 0" font-size = 15 bgcolor = "none" render { } render_bg { 0 = "gradient( x0, y0, x1, y1, dialogbg, almostblack )" }}
+				// Page - Button - List Panel
+				"Page ListPanel" {
+					font-family = "basefont"
+					font-size = "14"
+					font-weight = "400"
+					textcolor = "Text2"
+					selectedtextcolor = "TextSelected"
+					selectedbgcolor = "Focus"
+					inset = "0 -1 1 1"
+					bgcolor = "none"
+					render_bg {
+						0 = "gradient( x0, y0, x1, y0 + 80, Propertysheetbg, BackgroundStartOpaque )" 
+						1 = "fill( x0, y0 + 80, x1, y1, BackgroundStartOpaque )" 
+						2 = "gradient( x0, y0, x1, y0 + 30, backgroundstartsubtle, none )"
+					}
+				}
 
-			// Page Button ------------------------------------------------------------------------------------------
-				"Page MenuBar" { bgcolor = "none" }
+				// Page - Button - List Panel - Interior
+				"Page ListPanelInterior" { 
+					inset = "3 1 -1 0" 
+					font-size = "15"
+					bgcolor = "none"
+					render {}
+					render_bg { 
+						0 = "gradient( x0, y0, x1, y1, dialogbg, almostblack )" 
+					}
+				}
 
-			// Page Button ------------------------------------------------------------------------------------------
-				"Page ProgressBar" { textcolor = "highlight5a" bgcolor = "none" render { 1 = "fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, ButtonBorder )" 2 = "fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, ButtonBorder )"   3 = "fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonBorder )"  4 = "fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonBorder )"   }}
+				// Page - Button - List Panel - Interior - Scrollbar
+				"Page ListPanelInterior:scrollbar" {
+					inset = "3 1 -1 0" 
+					bgcolor = "none" 
+					render_bg {
+						0 = "gradient( x0, y0, x1+16, y1, dialogbg, almostblack )" 
+					}
+				}
 
-			// Page Button ------------------------------------------------------------------------------------------
-				"Page RadioButtonList" { bgcolor = "DialogBG" }
+				//------------------------------------------------------------------------------------------
 
-			// Page Button ------------------------------------------------------------------------------------------
-				"Page TextEntry:focus" { textcolor = "TextHover" render { 1 = "fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, ButtonBorderFocus )" 2 = "fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, ButtonBorderFocus )"   3 = "fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonBorderFocus )"  4 = "fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonBorderFocus )"   }}
-				"Page TextEntry" { render { 1 = "fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, ButtonBorder )" 2 = "fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, ButtonBorder )"   3 = "fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonBorder )"  4 = "fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonBorder )"   }}
+			// Page - Text Entry ------------------------------------------------------------------------------------------
 
-			// Page Button ------------------------------------------------------------------------------------------
-				"Page ToggleButton:focus" { textcolor = "TextHover" bgcolor = "none" render_bg { 0 = "gradient( x0, y0, x1, y1, buttonfacefocus, propertysheetbg )" }}
-				"Page ToggleButton:hover" { textcolor = "TextHover" bgcolor = "none" render_bg { 0 = "gradient( x0, y0, x1, y1, buttonfacehover, propertysheetbg )" }}
-				"Page ToggleButton:selected" { textcolor = "TextHover" bgcolor = "none" render_bg { 0 = "gradient( x0, y0, x1, y1, backgroundstartopaque, propertysheetbg )" }}
-				"Page ToggleButton" { font-family = "basefont" font-size = "13" font-weight = "400" textcolor = "Text" bgcolor = "none" render_bg { 0 = "gradient( x0, y0, x1, y1, buttonface2, propertysheetbg )" }}
+				// Page - Text Entry
+				"Page TextEntry" {
+					render {
+						1 = "fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, ButtonBorder )"
+						2 = "fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, ButtonBorder )"
+						3 = "fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonBorder )"
+						4 = "fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonBorder )"
+					}
+				}
+
+				// Page - Text Entry - Focus
+				"Page TextEntry:focus" {
+					textcolor = "TextHover"
+					render {
+						1 = "fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, ButtonBorderFocus )"
+						2 = "fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, ButtonBorderFocus )"
+						3 = "fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonBorderFocus )"  
+						4 = "fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonBorderFocus )"
+					}
+				}
+
+			// Page - Menu Bar ------------------------------------------------------------------------------------------
+
+				// Page - Menu Bar
+				"Page MenuBar" { 
+					bgcolor = "none"
+				}
+
+			// Page - Progress Bar ------------------------------------------------------------------------------------------
+
+				// Page - Progress Bar
+				"Page ProgressBar" {
+					textcolor = "highlight5a"
+					bgcolor = "none"
+					render {
+						1 = "fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, ButtonBorder )"
+						2 = "fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, ButtonBorder )"
+						3 = "fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonBorder )" 
+						4 = "fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonBorder )"
+					}
+				}
 
 
-			// Page Button ------------------------------------------------------------------------------------------
-				"PageDragFrame PageTab" { font-size = "14" font-style = "" }
+			// Page - Progress Bar ------------------------------------------------------------------------------------------
 
-
+				// Page - Progress Bar
+				"PageDragFrame PageTab" {
+					font-size = "14"
+					font-style = ""
+				}
 
 			//------------------------------------------------------------------------------------------
 
@@ -1653,7 +1766,7 @@ basic.styles {
 			"CGamesListPanel ListPanelColumnSelectButton:hover" { inset = "-3 3 0 0" render { 0 = "image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse_over )" } render_bg { 1 = "fill( x0 + 1, y0, x1 - 1, y1, propertysheetbg )" }}
 			"CGamesListPanel ListPanelColumnSelectButton:selected" { inset = "-3 3 0 0" render { 0 = "image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse_over )" } render_bg { 1 = "fill( x0 + 1, y0, x1 - 1, y1, propertysheetbg )" }}
 			"CGamesListPanel ListPanelColumnSelectButton" { inset = "-3 3 0 0" render { 0 = "image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse )" } render_bg { 1 = "fill( x0 + 1, y0, x1 - 1, y1, propertysheetbg )" }}
-			"CGamesListPanel" { font-family = "basefont" bgcolor = "none" font-size = 15 font-weight = "400" textcolor = "Text" selectedtextcolor = "textselected" selectedbgcolor = "Focus" shadowtextcolor = "TextDisabled" inset = "0 -1 1 1" render_bg { 0 = "gradient( x0, y0, x1, y0 + 432, dialogbg, almostblack )" 1 = "fill( x0, y0 + 432, x1, y1, almostblack )" 2 = "gradient( x0, y0, x1, y0 + 31, dialogbgFade1, dialogbgFade2 )" }}
+			"CGamesListPanel" { font-family = "basefont" bgcolor = "none" font-size = "15" font-weight = "400" textcolor = "Text" selectedtextcolor = "textselected" selectedbgcolor = "Focus" shadowtextcolor = "TextDisabled" inset = "0 -1 1 1" render_bg { 0 = "gradient( x0, y0, x1, y0 + 432, dialogbg, almostblack )" 1 = "fill( x0, y0 + 432, x1, y1, almostblack )" 2 = "gradient( x0, y0, x1, y0 + 31, dialogbgFade1, dialogbgFade2 )" }}
 
 			"CGamesPage_Mini ListPanelSectionCollapser" { inset = "0 1 0 1" bgcolor = "none" render_bg { 1 = "fill( x0 , y0, x1, y1 - 1, propertysheetbg  )" }}
 
@@ -1807,7 +1920,7 @@ basic.styles {
 
 		MainNav { textcolor = "Label" selectedtextcolor = "Text" bgcolor = "none" font-family = "basefont" font-size = 21 font-weight = 700 font-style = "uppercase" }
 
-		Notification { font-family = "basefont" font-size = 15 font-weight = "400" bgcolor = "none" render_bg { 0 = "gradient( x0, y0, x1, y0+80, DialogBG, ClientBG )" 1 = "gradient_horizontal( x0, y1-1, x1, y1, ClientBG, Highlight5 )"     2 = "gradient( x1-1, y0, x1, y1 , ClientBG, Highlight5 )"  3 = "fill( x0, y0, x1, y0+1, ClientBG )"  4 = "fill( x0, y0, x0+1, y1, ClientBG )"  } render {}}
+		Notification { font-family = "basefont" font-size = "15" font-weight = "400" bgcolor = "none" render_bg { 0 = "gradient( x0, y0, x1, y0+80, DialogBG, ClientBG )" 1 = "gradient_horizontal( x0, y1-1, x1, y1, ClientBG, Highlight5 )"     2 = "gradient( x1-1, y0, x1, y1 , ClientBG, Highlight5 )"  3 = "fill( x0, y0, x1, y0+1, ClientBG )"  4 = "fill( x0, y0, x0+1, y1, ClientBG )"  } render {}}
 
 
 		PropertyPage { bgcolor = "PropertySheetBG" }
