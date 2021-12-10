@@ -1268,7 +1268,7 @@ basic.styles {
 					// Combobox Button
 					ComboBoxButton {
 						bgcolor = "none" 
-						padding-left = 2 
+						padding-left = "2" 
 						image = "graphics/icon_down_default" 
 						render_bg { 
 							0 = "fill( x0, y0 + 2, x0 + 1, y1 - 4, ButtonBorder )" 
@@ -1678,25 +1678,617 @@ basic.styles {
 
 			//------------------------------------------------------------------------------------------
 
+		// Scrollbar ------------------------------------------------------------------------------------------
+
+			// Scrollbar - Main ------------------------------------------------------------------------------------------
+
+				// Scrollbar
+				ScrollBar {
+					inset = "0 0 0 0"
+				}
+
+			// Scrollbar - Button ------------------------------------------------------------------------------------------
+
+				// Scrollbar - Button
+				ScrollBarButton {}
+
+				// Scrollbar - Button - Up ------------------------------------------------------------------------------------------
+
+					// Scrollbar - Button - Up
+					ScrollBarButton.up {
+						bgcolor = "none"
+						inset = "-1 2 0 0"
+						image = "graphics/icon_up_default"
+						render_bg {
+							0 = "fill( x0 + 2, y0 + 3, x1 - 4, y1 + 2, buttonface )"
+						}
+					}
+
+					// Scrollbar - Button - Up - Hover
+					ScrollBarButton.up:hover {
+						bgcolor = "none"
+						inset = "-1 2 0 0"
+						image = "graphics/icon_up_hover"
+						render_bg {
+							0 = "fill( x0 + 2, y0 + 3, x1 - 4, y1 + 2, buttonfaceActive )" 
+						}
+					}
+
+					// Scrollbar - Button - Up - Active
+					ScrollBarButton.up:active {
+						inset = "-1 2 0 0"
+						image = "graphics/icon_up_hover" 
+						render_bg { 
+							0 = "fill( x0 + 2, y0 + 3, x1 - 4, y1 + 2, buttonfaceActive )" 
+						}
+					}
+
+					// Scrollbar - Button - Up - Disabled
+					ScrollBarButton.up:disabled {
+						inset = "-1 2 0 0"
+						image = "graphics/icon_up_disabled"
+						render_bg { 
+							0 = "fill( x0 + 2, y0 + 3, x1 - 4, y1 + 2, buttonfaceDisabled )" 
+						}
+					}
+
+				// Scrollbar - Button - Down ------------------------------------------------------------------------------------------
+
+					// Scrollbar - Button - Down
+					ScrollBarButton.down {
+						bgcolor = "none"
+						inset = "-2 0 0 0"
+						image = "graphics/icon_down_default"
+						render_bg {
+							0 = "fill( x0 + 2, y0 - 1, x1 - 4, y1 - 3, buttonface )" 
+						}
+					}
+
+					// Scrollbar - Button - Down - Hover
+					ScrollBarButton.down:hover { 
+						inset = "-2 0 0 0"
+						image = "graphics/icon_down_hover" 
+						render_bg {
+							0 = "fill( x0 + 2, y0 - 1, x1 - 4, y1 - 3, buttonfaceActive )" 
+						}
+					}
+
+					// Scrollbar - Button - Down - Active
+					ScrollBarButton.down:active { 
+						inset = "-2 0 0 0" 
+						image = "graphics/icon_down_hover" 
+						render_bg { 
+							0 = "fill( x0 + 2, y0 - 1, x1 - 4, y1 - 3, buttonfaceActive )" 
+						}
+					}
+
+					// Scrollbar - Button - Down - Disabled
+					ScrollBarButton.down:disabled { 
+						inset = "-2 0 0 0" 
+						image = "graphics/icon_down_hover" 
+						render_bg { 
+							0 = "fill( x0 + 2, y0 - 1, x1 - 4, y1 - 3, buttonfaceDisabled )"
+							}
+						}
+
+				// Scrollbar - Button - Left ------------------------------------------------------------------------------------------
+
+					// Scrollbar - Button - Left
+					ScrollBarButton.left { 
+						bgcolor = "none"
+						inset = "1 3 0 0"
+						image = "graphics/icon_left_default"
+						render_bg {
+							0 = "fill( x0 + 2, y0 + 5, x1, y1 - 3, ButtonFace )"
+						}
+					}
+
+					// Scrollbar - Button - Left - Hover
+					ScrollBarButton.left:hover {
+						image = "graphics/icon_left_hover"
+						inset = "1 3 0 0"
+						render_bg {
+							0 = "fill( x0 + 2, y0 + 5, x1, y1 - 3, ButtonFaceActive )" 
+						}
+					}
+
+				// Scrollbar - Button - Right ------------------------------------------------------------------------------------------
+
+					// Scrollbar - Button - Right
+					ScrollBarButton.right {
+						bgcolor = "none"
+						image = "graphics/icon_right_default"
+						inset = "0 2 0 0"
+						render_bg {
+							0 = "fill( x0, y0 + 5, x1, y1 - 3, ButtonFace )"
+						}
+					}
+
+					// Scrollbar - Button - Right - Hover
+					ScrollBarButton.right:hover {
+						image = "graphics/icon_right_hover"
+						inset = "0 2 0 0"
+						render_bg {
+							0 = "fill( x0, y0 + 5, x1, y1 - 3, ButtonFaceActive )" 
+						}
+					}
+	
+				//------------------------------------------------------------------------------------------
+
+			// Scrollbar - Thumb ------------------------------------------------------------------------------------------
+
+				// Scrollbar - Thumb - Vertical ------------------------------------------------------------------------------------------
+
+					// Scrollbar - Thumb - Vertical
+					ScrollBarHandle  {
+						bgcolor = "none"
+						image = "graphics/icon_scroll_handle"
+						render_bg {
+							0 = "fill( x0 + 2, y0 + 6, x1 - 4, y1 - 5, ButtonFace )" 
+						}
+					}
+
+					// Scrollbar - Thumb - Vertical - Hover
+					"ScrollBarHandle:hover" {
+						image = "graphics/icon_scroll_handle_over" 
+						render_bg {
+							0 = "fill( x0 + 2, y0 + 6, x1 - 4, y1 - 5, ButtonFaceActive )"
+						}
+					}
+
+					// Scrollbar - Thumb - Vertical - Active
+					"ScrollBarHandle:active" {
+						image = "graphics/icon_scroll_handle_over"
+						render_bg {
+							0 = "fill( x0 + 2, y0 + 6, x1 - 4, y1 - 5, ButtonFaceActive )" 
+						}
+					}
+
+				// Scrollbar - Thumb - Horizontal ------------------------------------------------------------------------------------------
+
+					// Scrollbar - Thumb - Horizontal
+					"SliderHoriz"  {
+						image = "graphics/icon_scroll_handle_horiz"
+						render {
+							1 = "fill( x0 + 2, y0 + 6, x1 - 1, y1 - 3, ButtonFace )" 
+						}
+					}
+
+					// Scrollbar - Thumb - Horizontal
+					"ScrollBar SliderHoriz" {
+						bgcolor = "dialogbg"
+					}
+
+					// Scrollbar - Thumb - Horizontal - Hover
+					"SliderHoriz:hover" {
+						image = "graphics/icon_scroll_handle_over_horiz"
+						render {
+							0 = "fill( x0 + 2, y0 + 6, x1 - 1, y1 - 3, ButtonFaceActive )" 
+						}
+					}
+
+					// Scrollbar - Thumb - Horizontal - Active
+					"SliderHoriz:active" {
+						image = "graphics/icon_scroll_handle_over_horiz"
+						render {
+							0 = "fill( x0 + 2, y0 + 6, x1 - 1, y1 - 3, ButtonFaceActive )" 
+						}
+					}
+
+				//------------------------------------------------------------------------------------------
+
+			// Scrollbar - Slider (Gutter) (Empty Space) ------------------------------------------------------------------------------------------
+
+				// Scrollbar - Slider
+				ScrollBarSlider {
+					bgcolor = "none"
+					render{}
+					render_bg {
+						2 = "gradient( x0 + 2, y0 + 6, x1 - 4, y0 + 200, scrollbg, none)" 
+					}
+				}
+
+				// Scrollbar - Slider - Disabled
+				ScrollBarSlider:disabled {
+					bgcolor = "none"
+					render_bg {}
+				}
+
+				// Scrollbar - Slider - Horizontal
+				ScrollBarSliderHoriz {
+					bgcolor = "none"
+					render{}
+					render_bg {}
+				}
+
+			//------------------------------------------------------------------------------------------
+		
+		//------------------------------------------------------------------------------------------
+		
+
+
+
+
+
+
+
+		// Steam Root Dialog ------------------------------------------------------------------------------------------
+
+			// Steam Root Dialog - Page ------------------------------------------------------------------------------------------
+
+				// Steam Root Dialog - Page
+				"CSteamRootDialog Page" {
+					bgcolor = "none"
+					render_bg {}
+				}
+
+			// Steam Root Dialog - List Panel ------------------------------------------------------------------------------------------
+
+				// Steam Root Dialog - List Panel
+				"CSteamRootDialog ListPanel" {
+					padding-left = "2"
+					padding-right = "2"
+				}
+
+				// Steam Root Dialog - List Panel - Column Header
+				"Csteamrootdialog ListPanelColumnheader" {
+					font-family = "basefont"
+					font-size = "14"
+					font-size = "13" [$OSX]
+					font-weight = "400"
+					textcolor = "label"
+					font-style = "uppercase"
+					bgcolor = "none"
+					inset = "0 0 0 0"
+					inset = "0 1 0 0" [$OSX]
+					padding-top = 1
+					render_bg {
+						0 = "fill (x0, y0 + 1, x1, y1, propertysheetbg )"
+					}
+				}
+
+				// Steam Root Dialog - List Panel - Column Header - Hover
+				"Csteamrootdialog ListPanelColumnHeader:hover" {
+					textcolor = "TextHover"
+				}
+
+				// Steam Root Dialog - List Panel - Interior
+				"Csteamrootdialog ListPanelInterior" {
+					inset = "3 0 3 0"
+					bgcolor = "none"
+					render_bg {}
+				}
+
+				// Steam Root Dialog - List Panel - Interior - Scrollbar
+				"Csteamrootdialog ListPanelInterior:scrollbar" {
+					inset = "3 0 -1 0"
+					bgcolor = "none"
+					render {}
+					render_bg {}
+				}
+
+				// Steam Root Dialog - List Panel - Section Collapser
+				"Csteamrootdialog ListPanelSectionCollapser" {
+					inset = "0 1 0 1"
+					bgcolor = "none"
+					render_bg {
+						1 = "fill( x0 , y0, x1, y1 - 1, propertysheetbg )"
+					}
+				}
+
+			// Steam Root Dialog - Fullscreen Button ------------------------------------------------------------------------------------------
+
+				// Steam Root Dialog - Fullscreen Button
+				FullscreenButton {
+					bgcolor = "none"
+					render_bg = {}
+					image = "graphics/icon_controller_bpm"
+				}
+
+				// Steam Root Dialog - Fullscreen Button - Hover
+				FullscreenButton:hover {
+					bgcolor = "none"
+					render_bg = {}
+					image = "graphics/icon_controller_bpm_over"
+				}
+
+				// Steam Root Dialog - Fullscreen Button - Active
+				FullscreenButton:active {
+					bgcolor = "none"
+					render_bg = {}
+					image = "graphics/icon_controller_bpm_down"
+				}
+
+				// Steam Root Dialog - Fullscreen Button - Disabled
+				FullscreenButton:disabled {
+					bgcolor = "none"
+					render_bg = {}
+					image = "graphics/icon_controller_bpm_disabled"
+				}
+
+			// Steam Root Dialog - VR Button ------------------------------------------------------------------------------------------
+
+				// Steam Root Dialog - VR Button ------------------------------------------------------------------------------------------
+
+					// Steam Root Dialog - VR Button
+					VRButton {
+						bgcolor = "none"
+						render_bg = {}
+						image = "graphics/icon_vr"
+					}
+
+					// Steam Root Dialog - VR Button - Hover
+					VRButton:hover {
+						bgcolor = "none"
+						render_bg = {}
+						image = "graphics/icon_vr_over"
+					}
+
+					// Steam Root Dialog - VR Button - Active
+					VRButton:active {
+						bgcolor = "none"
+						render_bg = {}
+						image = "graphics/icon_vr_down"
+					}
+
+					// Steam Root Dialog - VR Button - Disabled
+					VRButton:disabled {
+						bgcolor = "none"
+						render_bg = {}
+						image = "graphics/icon_vr_disabled"
+					}
+
+				// Steam Root Dialog - VR Button - Exit ------------------------------------------------------------------------------------------
+
+					// Steam Root Dialog - VR Button - Exit
+					VRButtonExit {
+						bgcolor = "none"
+						render_bg = {}
+						image = "graphics/icon_vr_happy"
+					}
+
+					// Steam Root Dialog - VR Button - Exit - Hover
+					VRButtonExit:hover {
+						bgcolor = "none"
+						render_bg = {}
+						image = "graphics/icon_vr_happy_over"
+					}
+
+					// Steam Root Dialog - VR Button - Exit - Active
+					VRButtonExit:active {
+						bgcolor = "none"
+						render_bg = {}
+						image = "graphics/icon_vr_happy_down"
+					}
+
+					// Steam Root Dialog - VR Button - Exit - Disabled
+					VRButtonExit:disabled {
+						bgcolor = "none"
+						render_bg = {}
+						image = "graphics/icon_vr_disabled"
+					}
+
+			// Steam Root Dialog - View Friends ------------------------------------------------------------------------------------------
+
+				// Steam Root Dialog - View Friends (Not OSX)
+				view_friends [!$OSX] {
+					textcolor = "LabelFocus"
+					bgcolor = "none"
+					font-family = "basefont"
+					font-size = "14"
+					font-weight = "400"
+					font-style = "regular,uppercase"
+					padding-top = "0"
+					padding-right = "28"
+					render_bg {
+						1 = "image( x1-30, y0+20, x1, y1, graphics/icon_friendslist )"
+					}
+				}
+
+				// Steam Root Dialog - View Friends (OSX)
+				view_friends [$OSX] {
+					textcolor = "LabelFocus"
+					bgcolor = "none"
+					font-family = "basefont"
+					font-size = "13"
+					font-weight = "400"
+					font-style = "regular,uppercase"
+					padding-top = "-1"
+					padding-right = "28"
+					render_bg {
+						1 = "image( x1-30, y0+20, x0, y0, graphics/icon_friendslist )"
+					}
+				}
+
+				// Steam Root Dialog - View Friends - Hover
+				view_friends:Hover {
+					textcolor = "white"
+					render_bg {
+						1 = "image( x1-30, y0+20, x1, y1, graphics/icon_friendslist_over )" 
+					}
+				}
+
+				// Steam Root Dialog - View Friends - Disabled
+				view_friends:disabled {
+					textcolor = "TextDisabled"
+				}
+
+			//------------------------------------------------------------------------------------------
 		//------------------------------------------------------------------------------------------
 
 
 
+		// Navigation ------------------------------------------------------------------------------------------
 
+			// Navigation - Forward Button ------------------------------------------------------------------------------------------
+		
+				// Navigation - Forward Button
+				ForwardButton {
+					bgcolor = "none"
+					inset = "-5 -1 0 0"
+					image = "graphics/icon_button_forward"
+					render_bg = {}
+				}
 
+				// Navigation - Forward Button - Hover
+				ForwardButton:hover {
+					bgcolor = "none"
+					image = "graphics/icon_button_forward_over"
+					render_bg = {}
+				}
 
+				// Navigation - Forward Button - Active
+				ForwardButton:active {
+					bgcolor = "none"
+					image = "graphics/icon_button_forward_down"
+					render_bg = {}
+				}
 
+				// Navigation - Forward Button - Disabled
+				ForwardButton:disabled {
+					bgcolor = "none"
+					image = "graphics/icon_button_forward_disabled"
+					render_bg = {}
+				}
 
+			// Navigation - Back Button ------------------------------------------------------------------------------------------
+				
+				// Navigation - Back Button - Disabled
+				BackButton {
+					bgcolor = "none"
+					inset = "-5 -1 0 0"
+					image = "graphics/icon_button_back"
+					render_bg = {}
+				}
 
+				// Navigation - Back Button - Disabled
+				BackButton:hover {
+					bgcolor = "none"
+					image = "graphics/icon_button_back_down"
+					render_bg = {}
+				}
 
+				// Navigation - Back Button - Disabled
+				BackButton:active {
+					bgcolor = "none"
+					image = "graphics/icon_button_back_down"
+					render_bg = {}
+				}
 
+				// Navigation - Back Button - Disabled
+				BackButton:disabled {
+					bgcolor = "none"
+					image = "graphics/icon_button_back_disabled"
+					render_bg = {}
+				}
 
+			// Navigation - Reload Button ------------------------------------------------------------------------------------------
 
+				// Navigation - Reload Button - Disabled
+				ReloadButton {
+					bgcolor = "none"
+					inset = "-5 0 0 0"
+					image = "graphics/icon_button_reload"
+					render_bg = {}
+				}
 
+				// Navigation - Reload Button - Disabled
+				ReloadButton:hover {
+					bgcolor = "none"
+					image = "graphics/icon_button_reload_over"
+					render_bg = {}
+				}
 
+				// Navigation - Reload Button - Disabled
+				ReloadButton:active {
+					bgcolor = "none"
+					image = "graphics/icon_button_reload_down"
+					render_bg = {}
+				}
 
+				// Navigation - Reload Button - Disabled
+				ReloadButton:disabled {
+					bgcolor = "none"
+					image = "graphics/icon_button_reload_disabled"
+					render_bg = {}
+				}
 
+			// Navigation - Stop Button ------------------------------------------------------------------------------------------
 
+				// Navigation - Stop Button - Disabled
+				StopButton {
+					bgcolor = "none"
+					inset = "-5 0 0 0"
+					image = "graphics/icon_button_stop"
+					render_bg = {}
+				}
+
+				// Navigation - Stop Button - Disabled
+				StopButton:hover {
+					bgcolor = "none"
+					image = "graphics/icon_button_stop_over"
+					render_bg = {}
+				}
+
+				// Navigation - Stop Button - Disabled
+				StopButton:active {
+					bgcolor = "none"
+					image = "graphics/icon_button_stop_down"
+					render_bg = {}
+				}
+
+				// Navigation - Stop Button - Disabled
+				StopButton:disabled {
+					bgcolor = "none"
+					image = "graphics/icon_button_stop_disabled"
+					render_bg = {}
+				}
+			//------------------------------------------------------------------------------------------
+
+		// Console Page ------------------------------------------------------------------------------------------
+
+			// Console Page - History
+			CConsoleHistory {
+				font-family = "Lucida Console"
+				font-size = "9"
+				font-family = "DejaVu Sans Mono" [$LINUX]
+				font-size = 12 [$LINUX]
+				font-family = "Menlo" [$OSX]
+				font-size = "14" [$OSX]
+				textcolor = "label"
+				selectedtextcolor = "TextSelected" 
+				render {}
+				render_bg {
+					1 = "gradient( x0, y0, x1, y1, dialogbg, almostblack )" 
+				}
+			}
+
+			// Console - Page - Text
+			console_text {
+				font-family = "Lucida Console"
+				font-size = "9" 
+				font-family = "DejaVu Sans Mono" [$LINUX] 
+				font-size = 12 [$LINUX] 
+				font-family = "Menlo" [$OSX] 
+				font-size = "14" [$OSX] 
+				textcolor = "text" 
+				selectedtextcolor = "TextSelected" 
+				selectedbgcolor = "Focus" 
+			}
+
+			// Console - Page - Text
+			console_text_error {
+				textcolor = "Highlight3" 
+				font-size = "14" 
+				font-family = "DejaVu Sans Mono" [$LINUX] 
+				font-size = 12 [$LINUX] 
+				font-family = "Menlo" [$OSX] 
+				font-size = 16 [$OSX] 
+				selectedtextcolor = "TextSelected" 
+				selectedbgcolor = "Focus" 
+			}
+
+		//------------------------------------------------------------------------------------------
 
 
 
@@ -1763,27 +2355,12 @@ basic.styles {
 
 		// GamesListPanel - Not sure what this does ------------------------------------------------------------------------------------------
 
-			"CGamesListPanel ListPanelColumnSelectButton:hover" { inset = "-3 3 0 0" render { 0 = "image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse_over )" } render_bg { 1 = "fill( x0 + 1, y0, x1 - 1, y1, propertysheetbg )" }}
-			"CGamesListPanel ListPanelColumnSelectButton:selected" { inset = "-3 3 0 0" render { 0 = "image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse_over )" } render_bg { 1 = "fill( x0 + 1, y0, x1 - 1, y1, propertysheetbg )" }}
-			"CGamesListPanel ListPanelColumnSelectButton" { inset = "-3 3 0 0" render { 0 = "image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse )" } render_bg { 1 = "fill( x0 + 1, y0, x1 - 1, y1, propertysheetbg )" }}
-			"CGamesListPanel" { font-family = "basefont" bgcolor = "none" font-size = "15" font-weight = "400" textcolor = "Text" selectedtextcolor = "textselected" selectedbgcolor = "Focus" shadowtextcolor = "TextDisabled" inset = "0 -1 1 1" render_bg { 0 = "gradient( x0, y0, x1, y0 + 432, dialogbg, almostblack )" 1 = "fill( x0, y0 + 432, x1, y1, almostblack )" 2 = "gradient( x0, y0, x1, y0 + 31, dialogbgFade1, dialogbgFade2 )" }}
+		"CGamesListPanel ListPanelColumnSelectButton:hover" { inset = "-3 3 0 0" render { 0 = "image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse_over )" } render_bg { 1 = "fill( x0 + 1, y0, x1 - 1, y1, propertysheetbg )" }}
+		"CGamesListPanel ListPanelColumnSelectButton:selected" { inset = "-3 3 0 0" render { 0 = "image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse_over )" } render_bg { 1 = "fill( x0 + 1, y0, x1 - 1, y1, propertysheetbg )" }}
+		"CGamesListPanel ListPanelColumnSelectButton" { inset = "-3 3 0 0" render { 0 = "image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse )" } render_bg { 1 = "fill( x0 + 1, y0, x1 - 1, y1, propertysheetbg )" }}
+		"CGamesListPanel" { font-family = "basefont" bgcolor = "none" font-size = "15" font-weight = "400" textcolor = "Text" selectedtextcolor = "textselected" selectedbgcolor = "Focus" shadowtextcolor = "TextDisabled" inset = "0 -1 1 1" render_bg { 0 = "gradient( x0, y0, x1, y0 + 432, dialogbg, almostblack )" 1 = "fill( x0, y0 + 432, x1, y1, almostblack )" 2 = "gradient( x0, y0, x1, y0 + 31, dialogbgFade1, dialogbgFade2 )" }}
 
-			"CGamesPage_Mini ListPanelSectionCollapser" { inset = "0 1 0 1" bgcolor = "none" render_bg { 1 = "fill( x0 , y0, x1, y1 - 1, propertysheetbg  )" }}
-
-
-
-
-
-
-
-
-		"CSteamRootDialog ListPanel" { padding-left = 2 padding-right = 2 }
-		"Csteamrootdialog ListPanelColumnHeader:hover" {textcolor = "TextHover"}
-		"Csteamrootdialog ListPanelColumnheader" { font-family = "basefont" font-size = "14" font-size = "13" [$OSX] font-weight = "400" textcolor = "label" font-style = "uppercase" bgcolor = "none" inset = "0 0 0 0" inset = "0 1 0 0" [$OSX] padding-top = 1 render_bg { 0 = "fill (x0, y0 + 1, x1, y1, propertysheetbg )"  }}
-		"Csteamrootdialog ListPanelInterior:scrollbar" { inset = "3 0 -1 0" bgcolor = "none" render { } render_bg {}}
-		"Csteamrootdialog ListPanelInterior" { inset = "3 0 3 0" bgcolor = "none" render_bg {}}
-		"Csteamrootdialog ListPanelSectionCollapser" { inset = "0 1 0 1" bgcolor = "none" render_bg { 1 = "fill( x0 , y0, x1, y1 - 1, propertysheetbg  )" }}
-		"CSteamRootDialog Page" { bgcolor = "none" render_bg {}}
+		"CGamesPage_Mini ListPanelSectionCollapser" { inset = "0 1 0 1" bgcolor = "none" render_bg { 1 = "fill( x0 , y0, x1, y1 - 1, propertysheetbg  )" }}
 
 		"GameColumn_BigText" { font-family = "basefont" font-size = 17 font-weight = 700 textcolor = "text" }
 		"GameItem_Decrypting:hover" { textcolor = "highlight1" selectedtextcolor = "highlight1" }
@@ -1819,32 +2396,15 @@ basic.styles {
 
 		"HTMLFramelessPopup HTML" { inset = "0 0 0 0" }
 
-
 		"NotifyRemoteClientInfo" { textcolor = "176 172 165 255"}
 		"NotifyRemoteClientTitle" {textcolor = "LabelDisabled"}
 		"NotifyRemotePlayTogetherTitle" {textcolor = "white"}
-
-		"ScrollBar SliderHoriz" { bgcolor = "dialogbg" }
-		"ScrollBarHandle:active" { image = "graphics/icon_scroll_handle_over" render_bg { 0 = "fill( x0 + 2, y0 + 6, x1 - 4, y1 - 5, ButtonFaceActive )" }}
-		"ScrollBarHandle:hover" { image = "graphics/icon_scroll_handle_over" render_bg { 0 = "fill( x0 + 2, y0 + 6, x1 - 4, y1 - 5, ButtonFaceActive )" }}
-
-		"SliderHoriz:active" { image = "graphics/icon_scroll_handle_over_horiz" render { 0 = "fill( x0 + 2, y0 + 6, x1 - 1, y1 - 3, ButtonFaceActive )" }}
-		"SliderHoriz:hover" { image = "graphics/icon_scroll_handle_over_horiz" render { 0 = "fill( x0 + 2, y0 + 6, x1 - 1, y1 - 3, ButtonFaceActive )" }}
-		"SliderHoriz"  { image = "graphics/icon_scroll_handle_horiz" render { 1 = "fill( x0 + 2, y0 + 6, x1 - 1, y1 - 3, ButtonFace )" }}
 
 		"SuperNavMenuDivider" { textcolor = "none" render { 1 = "fill( x0+6, y0+1, x1-6, y0+2, SuperDivider )" } }
 
 		"TooltipWindow Label" { padding-left = 4 textcolor = "Text" }
 
-		BackButton { bgcolor = "none" inset = "-5 -1 0 0" render_bg = {} image = "graphics/icon_button_back" }
-		BackButton:active { bgcolor = "none" render_bg = {} image = "graphics/icon_button_back_down" }
-		BackButton:disabled { bgcolor = "none" render_bg = {} image = "graphics/icon_button_back_disabled" }
-		BackButton:hover { bgcolor = "none" render_bg = {} image = "graphics/icon_button_back_down" }
-
-
 		CChatRoomDlg { bgcolor = "none" render { } render_bg {}}
-
-		CConsoleHistory { font-family = "Lucida Console" font-size = 9 font-family = "DejaVu Sans Mono" [$LINUX] font-size = 12 [$LINUX] font-family = "Menlo" [$OSX] font-size = "14" [$OSX] textcolor = "label" selectedtextcolor = "TextSelected" render { } render_bg { 1 = "gradient( x0, y0, x1, y1, dialogbg, almostblack )" }}
 
 		CFriendPanel { inset = "0 0 0 0" bgcolor = "none" font-family = "basefont" font-size = "14" font-size = "13" [$OSX] font-weight = "400" textcolor = "label" }
 
@@ -1861,19 +2421,10 @@ basic.styles {
 
 		ChatListPanel { render {} render_bg { 0 = "gradient( x0, y0, x1 -16, y1, darkdialogbg, almostblack )" }}
 
-		console_text { font-family = "Lucida Console" font-size = 9 font-family = "DejaVu Sans Mono" [$LINUX] font-size = 12 [$LINUX] font-family = "Menlo" [$OSX] font-size = "14" [$OSX] textcolor = "text" selectedtextcolor = "TextSelected" selectedbgcolor = "Focus" }
-		console_text_error { textcolor = "Highlight3" font-size = "14" font-family = "DejaVu Sans Mono" [$LINUX] font-size = 12 [$LINUX] font-family = "Menlo" [$OSX] font-size = 16 [$OSX] selectedtextcolor = "TextSelected" selectedbgcolor = "Focus" }
-
 		Divider { bgcolor = "none" render { 0 = "gradient_horizontal( x0, y1 - 1, x1, y1, divider, propertysheetbg )" }}
 
 		downarrow { image = "graphics/icon_down_default" }
 		downarrow:hover { image = "graphics/icon_down_hover" render_bg { 0 = "fill( x0 + 5, y0 + 4, x1 - 2, y1 - 4, buttonfaceactive )" 1 = "fill(x0 + 4, y0 + 5, x0 + 5, y1 - 5, buttonfaceactive )" 2 = "fill(x1 - 2, y0 + 5, x1 - 1, y1 - 5, buttonfaceactive )"   }}
-
-		ForwardButton { bgcolor = "none" inset = "-5 -1 0 0" render_bg = {} image = "graphics/icon_button_forward" }
-		ForwardButton:active { bgcolor = "none" render_bg = {} image = "graphics/icon_button_forward_down" }
-		ForwardButton:disabled { bgcolor = "none" render_bg = {} image = "graphics/icon_button_forward_disabled" }
-		ForwardButton:hover { bgcolor = "none" render_bg = {} image = "graphics/icon_button_forward_over" }
-
 
 		friends_chat_accountid { selectedtextcolor = "TextentrySelected" selectedbgcolor = "focus" textcolor = "text" font-size = 16 }
 		friends_chat_bright_event { textcolor = "text" selectedtextcolor = "TextentrySelected" font-size = 16 font-weight = 1000 }
@@ -1897,11 +2448,6 @@ basic.styles {
 		friends_online { textcolor = "Friends.OnlineColor"}
 		friends_online:hover { textcolor = "Friends.OnlineHoverColor"}
 
-		FullscreenButton { bgcolor = "none" render_bg = {} image = "graphics/icon_controller_bpm" }
-		FullscreenButton:active { bgcolor = "none" render_bg = {} image = "graphics/icon_controller_bpm_down" }
-		FullscreenButton:disabled { bgcolor = "none" render_bg = {} image = "graphics/icon_controller_bpm_disabled" }
-		FullscreenButton:hover { bgcolor = "none" render_bg = {} image = "graphics/icon_controller_bpm_over" }
-
 		GameColumnHeaderFavorites { image = "steam/cached/fav_remove" }
 
 		gamedetails-headerlabel { font-size = "17" font-style = "normal" font-family = "basefont" font-weight = 700 textcolor = "Text" font-style = "uppercase;" }
@@ -1916,47 +2462,14 @@ basic.styles {
 
 		HTML { bgcolor = "none" render_bg { 0 = "fill( x0, y0, x1, y1, almostblack )"  } inset = "2 2 2 2" }
 
-
-
 		MainNav { textcolor = "Label" selectedtextcolor = "Text" bgcolor = "none" font-family = "basefont" font-size = 21 font-weight = 700 font-style = "uppercase" }
 
 		Notification { font-family = "basefont" font-size = "15" font-weight = "400" bgcolor = "none" render_bg { 0 = "gradient( x0, y0, x1, y0+80, DialogBG, ClientBG )" 1 = "gradient_horizontal( x0, y1-1, x1, y1, ClientBG, Highlight5 )"     2 = "gradient( x1-1, y0, x1, y1 , ClientBG, Highlight5 )"  3 = "fill( x0, y0, x1, y0+1, ClientBG )"  4 = "fill( x0, y0, x0+1, y1, ClientBG )"  } render {}}
 
-
 		PropertyPage { bgcolor = "PropertySheetBG" }
-
-		ReloadButton { bgcolor = "none" inset = "-5 0 0 0" render_bg = {} image = "graphics/icon_button_reload" }
-		ReloadButton:active { bgcolor = "none" render_bg = {} image = "graphics/icon_button_reload_down" }
-		ReloadButton:disabled { bgcolor = "none" render_bg = {} image = "graphics/icon_button_reload_disabled" }
-		ReloadButton:hover { bgcolor = "none" render_bg = {} image = "graphics/icon_button_reload_over" }
-
 
 		rightarrow { image = "graphics/icon_right_default" }
 		rightarrow:hover { image = "graphics/icon_right_hover" }
-
-		ScrollBar { inset = "0 0 0 0" }
-		ScrollBarButton.down { bgcolor = "none" inset = "-2 0 0 0" image = "graphics/icon_down_default" render_bg { 0 = "fill( x0 + 2, y0 - 1, x1 - 4, y1 - 3, buttonface )" }}
-		ScrollBarButton.down:active { inset = "-2 0 0 0" image = "graphics/icon_down_hover" render_bg { 0 = "fill( x0 + 2, y0 - 1, x1 - 4, y1 - 3, buttonfaceActive )" }}
-		ScrollBarButton.down:disabled { inset = "-2 0 0 0" image = "graphics/icon_down_hover" render_bg { 0 = "fill( x0 + 2, y0 - 1, x1 - 4, y1 - 3, buttonfaceDisabled )" }}
-		ScrollBarButton.down:hover { inset = "-2 0 0 0" image = "graphics/icon_down_hover" render_bg { 0 = "fill( x0 + 2, y0 - 1, x1 - 4, y1 - 3, buttonfaceActive )" }}
-		ScrollBarButton.left { bgcolor = "none" inset = "1 3 0 0" image = "graphics/icon_left_default" render_bg { 0 = "fill( x0 + 2, y0 + 5, x1, y1 - 3, ButtonFace )" }}
-		ScrollBarButton.left:hover { image = "graphics/icon_left_hover" inset = "1 3 0 0" render_bg { 0 = "fill( x0 + 2, y0 + 5, x1, y1 - 3, ButtonFaceActive )" }}
-		ScrollBarButton.right { bgcolor = "none" image = "graphics/icon_right_default" inset = "0 2 0 0" render_bg { 0 = "fill( x0, y0 + 5, x1, y1 - 3, ButtonFace )" }}
-		ScrollBarButton.right:hover { image = "graphics/icon_right_hover" inset = "0 2 0 0" render_bg { 0 = "fill( x0, y0 + 5, x1, y1 - 3, ButtonFaceActive )" }}
-		ScrollBarButton.up { bgcolor = "none" inset = "-1 2 0 0" image = "graphics/icon_up_default" render_bg { 0 = "fill( x0 + 2, y0 + 3, x1 - 4, y1 + 2, buttonface )" }}
-		ScrollBarButton.up:active { inset = "-1 2 0 0" image = "graphics/icon_up_hover" render_bg { 0 = "fill( x0 + 2, y0 + 3, x1 - 4, y1 + 2, buttonfaceActive )" }}
-		ScrollBarButton.up:disabled { inset = "-1 2 0 0" image = "graphics/icon_up_disabled" render_bg { 0 = "fill( x0 + 2, y0 + 3, x1 - 4, y1 + 2, buttonfaceDisabled )" }}
-		ScrollBarButton.up:hover { bgcolor = "none" inset = "-1 2 0 0" image = "graphics/icon_up_hover" render_bg { 0 = "fill( x0 + 2, y0 + 3, x1 - 4, y1 + 2, buttonfaceActive )" }}
-		ScrollBarHandle  { bgcolor = "none" image = "graphics/icon_scroll_handle" render_bg { 0 = "fill( x0 + 2, y0 + 6, x1 - 4, y1 - 5, ButtonFace )" }}
-		ScrollBarSlider { bgcolor = "none" render{} render_bg { 2 = "gradient( x0 + 2, y0 + 6, x1 - 4, y0 + 200, scrollbg, none)" }}
-		ScrollBarSlider:disabled { bgcolor = "none" render_bg {}}
-		ScrollBarSliderHoriz { bgcolor = "none" render{} render_bg {}}
-
-
-		StopButton { bgcolor = "none" inset = "-5 0 0 0" render_bg = {} image = "graphics/icon_button_stop" }
-		StopButton:active { bgcolor = "none" render_bg = {} image = "graphics/icon_button_stop_down" }
-		StopButton:disabled { bgcolor = "none" render_bg = {} image = "graphics/icon_button_stop_disabled" }
-		StopButton:hover { bgcolor = "none" render_bg = {} image = "graphics/icon_button_stop_over" }
 
 		SuperNavMenu { padding-left = 8 padding-right = 8 render {} render_bg { 0 = "fill( x0, y0, x1, y1, MenuBg )" 1 = "image( x0, y0, x1, y1, graphics/clienttexture8)" 2 = "fill( x0 + 1, y0, x1 - 1, y0 + 1, blueborder )"   3 = "fill( x0 + 1, y1 - 1, x1 - 1, y1, blueborder )"   4 = "fill( x0, y0 + 1, x0 + 1, y1 - 1, blueborder )"   5 = "fill( x1 - 1, y0 + 1, x1, y1 - 1, blueborder )"   }}
 		SuperNavMenuItem { padding = 1 font-size = "14" font-weight = regular textcolor = "label" bgcolor = "none" font-style = "uppercase" }
@@ -1980,20 +2493,6 @@ basic.styles {
 		TreeViewSubPanel { bgcolor = "none" }
 
 		uparrow { image = "graphics/icon_up_default" }
-
-		view_friends [!$OSX] { textcolor = "LabelFocus" bgcolor = "none" font-family = "basefont" font-size = "14" font-weight = "400" font-style = regular,uppercase padding-top = 0 padding-right = 28 render_bg { 1 = "image( x1-30, y0+20, x1, y1, graphics/icon_friendslist )" }}
-		view_friends [$OSX] { textcolor = "LabelFocus" bgcolor = "none" font-family = "basefont" font-size = "13" font-weight = "400" font-style = regular,uppercase padding-top = -1 padding-right = 28 render_bg { 1 = "image( x1-30, y0+20, x0, y0, graphics/icon_friendslist )" }}
-		view_friends:disabled {textcolor = "TextDisabled"}
-		view_friends:Hover { textcolor = "white" render_bg { 1 = "image( x1-30, y0+20, x1, y1, graphics/icon_friendslist_over )" }}
-
-		VRButton { bgcolor = "none" render_bg = {} image = "graphics/icon_vr" }
-		VRButton:active { bgcolor = "none" render_bg = {} image = "graphics/icon_vr_down" }
-		VRButton:disabled { bgcolor = "none" render_bg = {} image = "graphics/icon_vr_disabled" }
-		VRButton:hover { bgcolor = "none" render_bg = {} image = "graphics/icon_vr_over" }
-		VRButtonExit { bgcolor = "none" render_bg = {} image = "graphics/icon_vr_happy" }
-		VRButtonExit:active { bgcolor = "none" render_bg = {} image = "graphics/icon_vr_happy_down" }
-		VRButtonExit:disabled { bgcolor = "none" render_bg = {} image = "graphics/icon_vr_disabled" }
-		VRButtonExit:hover { bgcolor = "none" render_bg = {} image = "graphics/icon_vr_happy_over" }
 
 
 
