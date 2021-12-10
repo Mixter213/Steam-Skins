@@ -1,17 +1,61 @@
-"menubar"
-{
-	Friends
-	{
-		text="#steam_menu_friends_view"
-		
-		AddFriend		{ text="#steam_menu_friends_add"				shellcmd="steam://friends/add" }
-		Divider {}	
-		SortByName		{ text="#steam_menu_friends_sortbyname"				command="ToggleSortByName"	checkable=1 }
-		ShowAvatars		{ text="#steam_menu_friends_showavatars"			command="Avatars"		checkable=1 }
-		OnlineUsersOnly		{ text="#steam_menu_friends_hideoffline" 			command="OnlineOnly"		checkable=1 }
-		ShowTagged			{ text="#steam_menu_friends_showtagged"			command="ToggleTagged"	checkable=1 }
-		Divider {}
-		Settings		{ text="#steam_menu_friends_settings"				shellcmd="steam://settings/friends" }
+"menubar" {
+
+	Friends {
+
+		// Don't know what this does -----------------------------------------------------------------------------------------------------
+
+			text = "#steam_menu_friends_view"
+
+		// Friends List -----------------------------------------------------------------------------------------------------
+
+			// Add Friend
+			AddFriend {
+				text = "#steam_menu_friends_add"
+				shellcmd = "steam://friends/add"
+			}
+
+			// Menu Separator ----------------------------------------------
+			Divider {}
+
+			// Sort - By Name
+			SortByName {
+				text = "#steam_menu_friends_sortbyname"
+				command = "ToggleSortByName"
+				checkable = 1
+			}
+
+			// Filter - Show Avatars
+			ShowAvatars {
+				text = "#steam_menu_friends_showavatars"
+				command = "Avatars"
+				checkable = 1
+			}
+
+			// Filter - Users
+			OnlineUsersOnly {
+				text = "#steam_menu_friends_hideoffline"
+				command = "OnlineOnly"
+				checkable = 1
+			}
+
+			// Filter - Show Tagged
+			ShowTagged {
+				text = "#steam_menu_friends_showtagged"
+				command = "ToggleTagged"
+				checkable = 1
+			}
+
+			// Menu Separator ----------------------------------------------
+			Divider {}
+
+			// Settings
+			Settings {
+				text = "#steam_menu_friends_settings"
+				shellcmd = "steam://settings/friends"
+			}
+
+		//-----------------------------------------------------------------------------------------------------
+
 	}
 	
 }
