@@ -29,7 +29,7 @@
 					bgcolor = "none"
 					render_bg {
 						1 = "gradient( x0, y0 - 4, x1, y1 + 18, TitleBar, none )"
-						1 = "gradient( x0, y0, x1, y1 + 18, TitleBar, none )"[$OSX]
+						1 = "gradient( x0, y0, x1, y1 + 18, TitleBar, none )" [$OSX]
 					}
 				}
 
@@ -43,7 +43,7 @@
 					textcolor = "Text"
 					render_bg { 
 						1 = "gradient( x0, y0 - 4, x1, y1 + 18, titlebarfocus, none )"
-						1 = "gradient( x0, y0, x1, y1 + 18, titlebarfocus, none )"[$OSX] 
+						1 = "gradient( x0, y0, x1, y1 + 18, titlebarfocus, none )" [$OSX] 
 					}
 				}
 
@@ -55,54 +55,54 @@
 					"FrameRestoreButton" {
 						render_bg {}
 						inset = "0 0 4 0"
-						inset = "0 0 -2 -8"[$OSX]
+						inset = "0 0 -2 -8" [$OSX]
 						image = "graphics/win32_win_restore"
-						image = "graphics/osx_win_dis"[$OSX] 
-						image = "graphics/osx_win_dis_new_dark"[$OSX1010] 
+						image = "graphics/osx_win_dis" [$OSX] 
+						image = "graphics/osx_win_dis_new_dark" [$OSX1010] 
 					}
 
 					// Frame - Button - Restore - Hover
 					"FrameRestoreButton:hover" {
 						render_bg {}
 						inset = "0 0 4 0"
-						inset = "0 0 -2 -8"[$OSX]
+						inset = "0 0 -2 -8" [$OSX]
 						bgcolor = "none"
 						image = "graphics/win32_win_restore_hover"
-						image = "graphics/osx_max_hov"[$OSX] 
-						image = "graphics/osx_max_hov_new"[$OSX1010] 
+						image = "graphics/osx_max_hov" [$OSX] 
+						image = "graphics/osx_max_hov_new" [$OSX1010] 
 					}
 
 					// Frame - Button - Restore - Active
 					"FrameRestoreButton:active" {
 						render_bg {}
 						inset = "0 0 4 0"
-						inset = "0 0 -2 -8"[$OSX]
+						inset = "0 0 -2 -8" [$OSX]
 						bgcolor = "none"
 						image = "graphics/win32_win_restore_hover"
-						image = "graphics/osx_max_down"[$OSX] 
-						image = "graphics/osx_max_down_new"[$OSX1010] 
+						image = "graphics/osx_max_down" [$OSX] 
+						image = "graphics/osx_max_down_new" [$OSX1010] 
 					}
 
 					// Frame - Button - Restore - Focus
 					"FrameRestoreButton:framefocus" {
 						render_bg {}
 						inset = "0 0 4 0"
-						inset = "0 0 -2 -8"[$OSX]
+						inset = "0 0 -2 -8" [$OSX]
 						bgcolor = "none"
 						image = "graphics/win32_win_restore"
-						image = "graphics/osx_max_def"[$OSX] 
-						image = "graphics/osx_max_def_new"[$OSX1010] 
+						image = "graphics/osx_max_def" [$OSX] 
+						image = "graphics/osx_max_def_new" [$OSX1010] 
 					}
 
 					// Frame - Button - Restore - Focus - Hover
 					"FrameRestoreButton:framefocus:hover" {
 						render_bg {}
 						inset = "0 0 4 0"
-						inset = "0 0 -2 -8"[$OSX]
+						inset = "0 0 -2 -8" [$OSX]
 						bgcolor = "none"
 						image = "graphics/win32_win_restore_hover"
-						image = "graphics/osx_max_hov"[$OSX] 
-						image = "graphics/osx_max_hov_new"[$OSX1010] 
+						image = "graphics/osx_max_hov" [$OSX] 
+						image = "graphics/osx_max_hov_new" [$OSX1010] 
 					}
 
 				// Frame - Buttons - Minimize -------------------------------------------------------------------------------
@@ -112,9 +112,9 @@
 						render_bg {}
 						image = "graphics/win32_win_min"
 						inset = "0 0 4 0"
-						inset = "0 0 4 -8"[$OSX] 
-						image = "graphics/osx_win_dis"[$OSX] 
-						image = "graphics/osx_win_dis_new_dark"[$OSX1010] 
+						inset = "0 0 4 -8" [$OSX] 
+						image = "graphics/osx_win_dis" [$OSX] 
+						image = "graphics/osx_win_dis_new_dark" [$OSX1010] 
 					}
 
 					// Frame - Button - Minimize - Hover
@@ -122,10 +122,10 @@
 						render_bg {}
 						bgcolor = "none"
 						inset = "0 0 4 0"
-						inset = "0 0 4 -8"[$OSX] 
+						inset = "0 0 4 -8" [$OSX] 
 						image = "graphics/win32_win_min_hover"
-						image = "graphics/osx_min_hov"[$OSX] 
-						image = "graphics/osx_min_hov_new"[$OSX1010] 
+						image = "graphics/osx_min_hov" [$OSX] 
+						image = "graphics/osx_min_hov_new" [$OSX1010] 
 					}
 
 					// Frame - Button - Minimize - Active (OSX)
@@ -133,7 +133,7 @@
 						render_bg {}
 						inset = "0 0 4 -8"
 						image = "graphics/osx_min_down"
-						image = "graphics/osx_min_down_new"[$OSX1010] 
+						image = "graphics/osx_min_down_new" [$OSX1010] 
 					}
 
 					// Frame - Button - Minimize - Focus (OSX)
@@ -141,7 +141,7 @@
 						render_bg {}
 						inset = "0 0 4 -8"
 						image = "graphics/osx_min_def"
-						image = "graphics/osx_min_def_new"[$OSX1010] 
+						image = "graphics/osx_min_def_new" [$OSX1010] 
 					}
 
 					// Frame - Button - Minimize - Focus - Hover (OSX)
@@ -149,7 +149,7 @@
 						render_bg {}
 						inset = "0 0 4 -8"
 						image = "graphics/osx_min_hov"
-						image = "graphics/osx_min_hov_new"[$OSX1010] 
+						image = "graphics/osx_min_hov_new" [$OSX1010] 
 					}
 
 				// Frame - Buttons - Maximize -------------------------------------------------------------------------------
@@ -158,54 +158,54 @@
 					"FrameMaximizeButton" {
 						render_bg {}
 						inset = "0 0 4 0"
-						inset = "0 0 -2 -8"[$OSX]
+						inset = "0 0 -2 -8" [$OSX]
 						image = "graphics/win32_win_max"
-						image = "graphics/osx_win_dis"[$OSX]
-						image = "graphics/osx_win_dis_new_dark"[$OSX1010]
+						image = "graphics/osx_win_dis" [$OSX]
+						image = "graphics/osx_win_dis_new_dark" [$OSX1010]
 					}
 
 					// Frame - Button - Maximize - Hover
 					"FrameMaximizeButton:hover" {
 						render_bg {}
 						inset = "0 0 4 0"
-						inset = "0 0 -2 -8"[$OSX] 
+						inset = "0 0 -2 -8" [$OSX] 
 						bgcolor = "none"
 						image = "graphics/win32_win_max_hover"
-						image = "graphics/osx_max_hov"[$OSX] 
-						image = "graphics/osx_max_hov_new"[$OSX1010] 
+						image = "graphics/osx_max_hov" [$OSX] 
+						image = "graphics/osx_max_hov_new" [$OSX1010] 
 					}
 
 					// Frame - Button - Maximize - Active
 					"FrameMaximizeButton:active" {
 						render_bg {}
 						inset = "0 0 4 0"
-						inset = "0 0 -2 -8"[$OSX] 
+						inset = "0 0 -2 -8" [$OSX] 
 						bgcolor = "none"
 						image = "graphics/win32_win_max_hover"
-						image = "graphics/osx_max_down"[$OSX]
-						image = "graphics/osx_max_down_new"[$OSX1010] 
+						image = "graphics/osx_max_down" [$OSX]
+						image = "graphics/osx_max_down_new" [$OSX1010] 
 					}
 
 					// Frame - Button - Maximize - Focus
 					"FrameMaximizeButton:framefocus" {
 						render_bg {}
 						inset = "0 0 4 0"
-						inset = "0 0 -2 -8"[$OSX] 
+						inset = "0 0 -2 -8" [$OSX] 
 						bgcolor = "none"
 						image = "graphics/win32_win_max"
-						image = "graphics/osx_max_def"[$OSX]
-						image = "graphics/osx_max_def_new"[$OSX1010] 
+						image = "graphics/osx_max_def" [$OSX]
+						image = "graphics/osx_max_def_new" [$OSX1010] 
 					}
 
 					// Frame - Button - Maximize - Focus - Hover
 					"FrameMaximizeButton:framefocus:hover" {
 						render_bg {}
 						inset = "0 0 4 0"
-						inset = "0 0 -2 -8"[$OSX] 
+						inset = "0 0 -2 -8" [$OSX] 
 						bgcolor = "none"
 						image = "graphics/win32_win_max_hover"
-						image = "graphics/osx_max_hov"[$OSX] 
-						image = "graphics/osx_max_hov_new"[$OSX1010] 
+						image = "graphics/osx_max_hov" [$OSX] 
+						image = "graphics/osx_max_hov_new" [$OSX1010] 
 					}
 
 				// Frame - Buttons - Close -------------------------------------------------------------------------------
@@ -214,20 +214,20 @@
 					"FrameCloseButton" {
 						render_bg {}
 						inset = "0 0 4 0"
-						inset = "-7 0 4 -8"[$OSX] 
+						inset = "-7 0 4 -8" [$OSX] 
 						image = "graphics/win32_win_close"
-						image = "graphics/osx_win_dis"[$OSX] 
-						image = "graphics/osx_win_dis_new_dark"[$OSX1010] 
+						image = "graphics/osx_win_dis" [$OSX] 
+						image = "graphics/osx_win_dis_new_dark" [$OSX1010] 
 					}
 
 					// Frame - Button - Close - Hover
 					"FrameCloseButton:hover" {
 						render_bg {}
 						inset = "0 0 4 0"
-						inset = "-7 0 4 -8"[$OSX] 
+						inset = "-7 0 4 -8" [$OSX] 
 						image = "graphics/win32_win_close_hover"
-						image = "graphics/osx_close_hov"[$OSX] 
-						image = "graphics/osx_close_hov_new"[$OSX1010] 
+						image = "graphics/osx_close_hov" [$OSX] 
+						image = "graphics/osx_close_hov_new" [$OSX1010] 
 					}
 
 					// Frame - Button - Close - Active
@@ -236,7 +236,7 @@
 						inset = "-7 0 4 -8"
 						bgcolor = "none"
 						image = "graphics/osx_close_down"
-						image = "graphics/osx_close_down_new"[$OSX1010] 
+						image = "graphics/osx_close_down_new" [$OSX1010] 
 					}
 
 					// Frame - Button - Close - Focus
@@ -245,7 +245,7 @@
 						inset = "-7 0 4 -8"
 						bgcolor = "none"
 						image = "graphics/osx_close_def"
-						image = "graphics/osx_close_def_new"[$OSX1010] 
+						image = "graphics/osx_close_def_new" [$OSX1010] 
 					}
 
 					// Frame - Button - Close - Focus - Hover
@@ -254,18 +254,18 @@
 						inset = "-7 0 4 -8"
 						bgcolor = "none"
 						image = "graphics/osx_close_hov"
-						image = "graphics/osx_close_hov_new"[$OSX1010] 
+						image = "graphics/osx_close_hov_new" [$OSX1010] 
 					}
 
 					// Frame - Button - Close - Disabled
 					"FrameCloseButton:disabled" {
 						render_bg {}
 						inset = "0 0 4 0"
-						inset = "-7 0 4 -8"[$OSX] 
+						inset = "-7 0 4 -8" [$OSX] 
 						bgcolor = "none"
 						image = "graphics/win32_win_close_disabled"
-						image = "graphics/osx_win_dis"[$OSX] 
-						image = "graphics/osx_win_dis_new_dark"[$OSX1010] 
+						image = "graphics/osx_win_dis" [$OSX] 
+						image = "graphics/osx_win_dis_new_dark" [$OSX1010] 
 					}
 
 				//-------------------------------------------------------------------------------
@@ -648,7 +648,7 @@
 				control = "frame_captiongrip"
 				margin = "2"
 				width = "max"
-				height = "104"
+				height = "1"
 			}
 
 			// Navigator Panel
