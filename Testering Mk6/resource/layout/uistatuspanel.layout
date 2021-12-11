@@ -5,7 +5,7 @@
 		// Progress Bar ------------------------------------------------------------------------------------------------
 
 			// Progress Bar
-			SlimProgressBar {
+			"SlimProgressBar" {
 				textcolor = "focus4"
 				render {}      
 				render_bg {

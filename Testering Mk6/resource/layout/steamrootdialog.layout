@@ -5,7 +5,7 @@
 		// Steam Root Dialog -------------------------------------------------------------------------------
 	
 			// Steam Root Dialog
-			CSteamRootDialog {
+			"CSteamRootDialog" {
 				bgcolor = "none"
 				render_bg {
 					0 = "gradient( x0, y0, x1, y0+175, ClientBGTop, DialogBG )"
@@ -21,7 +21,7 @@
 			// Frame - Title -------------------------------------------------------------------------------
 
 				// Frame - Title
-				FrameTitle {
+				"FrameTitle" {
 					font-family = "basefont"
 					font-size = "15"
 					font-weight = "400"
@@ -34,7 +34,7 @@
 				}
 
 				// Frame - Title - Focus
-				FrameTitle:framefocus { 
+				"FrameTitle:framefocus" { 
 					font-family = "basefont"
 					font-size = "15"
 					font-weight = "400"
@@ -52,7 +52,7 @@
 				// Frame - Buttons - Restore -------------------------------------------------------------------------------
 
 					// Frame - Button - Restore
-					FrameRestoreButton {
+					"FrameRestoreButton" {
 						render_bg {}
 						inset = "0 0 4 0"
 						inset = "0 0 -2 -8"[$OSX]
@@ -62,7 +62,7 @@
 					}
 
 					// Frame - Button - Restore - Hover
-					FrameRestoreButton:hover {
+					"FrameRestoreButton:hover" {
 						render_bg {}
 						inset = "0 0 4 0"
 						inset = "0 0 -2 -8"[$OSX]
@@ -73,7 +73,7 @@
 					}
 
 					// Frame - Button - Restore - Active
-					FrameRestoreButton:active {
+					"FrameRestoreButton:active" {
 						render_bg {}
 						inset = "0 0 4 0"
 						inset = "0 0 -2 -8"[$OSX]
@@ -84,7 +84,7 @@
 					}
 
 					// Frame - Button - Restore - Focus
-					FrameRestoreButton:framefocus {
+					"FrameRestoreButton:framefocus" {
 						render_bg {}
 						inset = "0 0 4 0"
 						inset = "0 0 -2 -8"[$OSX]
@@ -95,7 +95,7 @@
 					}
 
 					// Frame - Button - Restore - Focus - Hover
-					FrameRestoreButton:framefocus:hover {
+					"FrameRestoreButton:framefocus:hover" {
 						render_bg {}
 						inset = "0 0 4 0"
 						inset = "0 0 -2 -8"[$OSX]
@@ -108,7 +108,7 @@
 				// Frame - Buttons - Minimize -------------------------------------------------------------------------------
 
 					// Frame - Button - Minimize
-					FrameMinimizeButton {
+					"FrameMinimizeButton" {
 						render_bg {}
 						image = "graphics/win32_win_min"
 						inset = "0 0 4 0"
@@ -118,7 +118,7 @@
 					}
 
 					// Frame - Button - Minimize - Hover
-					FrameMinimizeButton:hover {
+					"FrameMinimizeButton:hover" {
 						render_bg {}
 						bgcolor = "none"
 						inset = "0 0 4 0"
@@ -129,7 +129,7 @@
 					}
 
 					// Frame - Button - Minimize - Active (OSX)
-					FrameMinimizeButton:active [$OSX] {
+					"FrameMinimizeButton:active" [$OSX] {
 						render_bg {}
 						inset = "0 0 4 -8"
 						image = "graphics/osx_min_down"
@@ -137,7 +137,7 @@
 					}
 
 					// Frame - Button - Minimize - Focus (OSX)
-					FrameMinimizeButton:framefocus [$OSX] {
+					"FrameMinimizeButton:framefocus" [$OSX] {
 						render_bg {}
 						inset = "0 0 4 -8"
 						image = "graphics/osx_min_def"
@@ -145,7 +145,7 @@
 					}
 
 					// Frame - Button - Minimize - Focus - Hover (OSX)
-					FrameMinimizeButton:framefocus:hover [$OSX] {
+					"FrameMinimizeButton:framefocus:hover" [$OSX] {
 						render_bg {}
 						inset = "0 0 4 -8"
 						image = "graphics/osx_min_hov"
@@ -155,7 +155,7 @@
 				// Frame - Buttons - Maximize -------------------------------------------------------------------------------
 
 					// Frame - Button - Maximize
-					FrameMaximizeButton {
+					"FrameMaximizeButton" {
 						render_bg {}
 						inset = "0 0 4 0"
 						inset = "0 0 -2 -8"[$OSX]
@@ -165,7 +165,7 @@
 					}
 
 					// Frame - Button - Maximize - Hover
-					FrameMaximizeButton:hover {
+					"FrameMaximizeButton:hover" {
 						render_bg {}
 						inset = "0 0 4 0"
 						inset = "0 0 -2 -8"[$OSX] 
@@ -176,7 +176,7 @@
 					}
 
 					// Frame - Button - Maximize - Active
-					FrameMaximizeButton:active {
+					"FrameMaximizeButton:active" {
 						render_bg {}
 						inset = "0 0 4 0"
 						inset = "0 0 -2 -8"[$OSX] 
@@ -187,7 +187,7 @@
 					}
 
 					// Frame - Button - Maximize - Focus
-					FrameMaximizeButton:framefocus {
+					"FrameMaximizeButton:framefocus" {
 						render_bg {}
 						inset = "0 0 4 0"
 						inset = "0 0 -2 -8"[$OSX] 
@@ -198,7 +198,7 @@
 					}
 
 					// Frame - Button - Maximize - Focus - Hover
-					FrameMaximizeButton:framefocus:hover {
+					"FrameMaximizeButton:framefocus:hover" {
 						render_bg {}
 						inset = "0 0 4 0"
 						inset = "0 0 -2 -8"[$OSX] 
@@ -211,7 +211,7 @@
 				// Frame - Buttons - Close -------------------------------------------------------------------------------
 
 					// Frame - Button - Close
-					FrameCloseButton {
+					"FrameCloseButton" {
 						render_bg {}
 						inset = "0 0 4 0"
 						inset = "-7 0 4 -8"[$OSX] 
@@ -221,7 +221,7 @@
 					}
 
 					// Frame - Button - Close - Hover
-					FrameCloseButton:hover {
+					"FrameCloseButton:hover" {
 						render_bg {}
 						inset = "0 0 4 0"
 						inset = "-7 0 4 -8"[$OSX] 
@@ -231,7 +231,7 @@
 					}
 
 					// Frame - Button - Close - Active
-					FrameCloseButton:active [$OSX] {
+					"FrameCloseButton:active" [$OSX] {
 						render_bg {}
 						inset = "-7 0 4 -8"
 						bgcolor = "none"
@@ -240,7 +240,7 @@
 					}
 
 					// Frame - Button - Close - Focus
-					FrameCloseButton:framefocus [$OSX] {
+					"FrameCloseButton:framefocus" [$OSX] {
 						render_bg {}
 						inset = "-7 0 4 -8"
 						bgcolor = "none"
@@ -249,7 +249,7 @@
 					}
 
 					// Frame - Button - Close - Focus - Hover
-					FrameCloseButton:framefocus:hover [$OSX] {
+					"FrameCloseButton:framefocus:hover" [$OSX] {
 						render_bg {}
 						inset = "-7 0 4 -8"
 						bgcolor = "none"
@@ -258,7 +258,7 @@
 					}
 
 					// Frame - Button - Close - Disabled
-					FrameCloseButton:disabled {
+					"FrameCloseButton:disabled" {
 						render_bg {}
 						inset = "0 0 4 0"
 						inset = "-7 0 4 -8"[$OSX] 
@@ -275,12 +275,12 @@
 		// Client Title -------------------------------------------------------------------------------
 
 			// Client Title (Not OSX)
-			ClientTitle [!$OSX] {
+			"ClientTitle" [!$OSX] {
 				textcolor = "none"
 			}
 
 			// Client Title (OSX)
-			ClientTitle [$OSX] {
+			"ClientTitle" [$OSX] {
 				font-family = "basefont"
 				font-size = "15"
 				font-weight = "400"
@@ -290,7 +290,7 @@
 			}
 
 			// Client Title - Focus (OSX)
-			ClientTitle:FrameFocus [$OSX] {
+			"ClientTitle:FrameFocus" [$OSX] {
 				font-family = "basefont"
 				font-size = "15"
 				font-weight = "400"
@@ -302,7 +302,7 @@
 		// Menu -------------------------------------------------------------------------------
 
 			// Menu
-			Menu {
+			"Menu" {
 				bgcolor = "dialogbg"
 				padding-right = "4"
 				inset = "2 2 2 2"
@@ -317,7 +317,7 @@
 			}
 
 			// Root Menu
-			RootMenu {
+			"RootMenu" {
 				bgcolor = "none"
 			}
 
@@ -325,12 +325,12 @@
 		// Top Bar -------------------------------------------------------------------------------
 	
 			// Universal Label
-			UniverseLabel {
+			"UniverseLabel" {
 				padding-top = "11"
 			}
 
 			// VR Exit Button
-			VRButtonExit [$OSX] {
+			"VRButtonExit" [$OSX] {
 				padding-left = "0"
 				padding-top = "8"
 				padding-right = "0"
@@ -342,7 +342,7 @@
 				// Inbox Button -------------------------------------------------------------------------------
 
 					// Inbox Button (Not OSX)
-					inbox_button [!$OSX] {
+					"inbox_button" [!$OSX] {
 						font-family = "basefont"
 						font-size = "14"
 						font-weight = "800"
@@ -358,7 +358,7 @@
 					}
 
 					// Inbox Button (OSX)
-					inbox_button [$OSX] {
+					"inbox_button" [$OSX] {
 						font-family = "basefont"
 						font-size = "13"
 						font-weight = "800"
@@ -374,7 +374,7 @@
 					}
 
 					// Inbox Button - Disabled
-					inbox_button:disabled {
+					"inbox_button:disabled" {
 						textcolor = "labeldisabled"
 						render_bg {
 							1 = "image( x1-24, y0+4, x1-2, y1+2, graphics/inbox_notification_inactive_disabled )"
@@ -382,7 +382,7 @@
 					}
 
 					// Inbox Button - Hover
-					inbox_button:hover {
+					"inbox_button:hover" {
 						render_bg {
 							0 = "fill(  x0, y0, x1, y1, darkblue )"
 							13 = "image( x1-24, y0+4, x1, y1, graphics/inbox_notification_inactive )"
@@ -390,7 +390,7 @@
 					}
 
 					// Inbox Button - Selected
-					inbox_button:selected {
+					"inbox_button:selected" {
 						render_bg {
 							0 = "fill(  x0, y0, x1, y1, green6 )"
 							1 = "image( x1-24, y0+4, x1 -2, y1 + 2, graphics/inbox_notification_inactive )"
@@ -400,7 +400,7 @@
 				// Inbox Button - Active -------------------------------------------------------------------------------
 
 					// Inbox Button - Active
-					inbox_button_active {
+					"inbox_button_active" {
 						render_bg {
 							0 = "fill( x0 , y0, x1, y1, green6 )"
 							1 = "image( x1-21, y0+4, x1-2, y1+2, graphics/inbox_notification )"
@@ -408,7 +408,7 @@
 					}
 
 					// Inbox Button - Active - Disabled
-					inbox_button_active:disabled {
+					"inbox_button_active:disabled" {
 						render {}
 						render_bg {
 							1 = "image( x1-21, y0+4, x1-2, y1+2, graphics/inbox_notification_disabled )"
@@ -416,7 +416,7 @@
 					}
 
 					// Inbox Button - Active - Hover
-					inbox_button_active:hover {
+					"inbox_button_active:hover" {
 						render_bg {
 							0 = "fill( x0 , y0, x1, y1, green5 )"
 							1 = "image( x1-21, y0+4, x1-2, y1+2, graphics/inbox_notification )"
@@ -424,7 +424,7 @@
 					}
 
 					// Inbox Button - Active - Selected
-					inbox_button_active:selected {
+					"inbox_button_active:selected" {
 						render_bg {
 							0 = "fill(  x0, y0, x1, y1, green6 )"
 							1 = "image( x1-21, y0+4, x1-2, y1+2, graphics/inbox_notification )"
@@ -434,24 +434,24 @@
 				// Inbox - Dropdown List -------------------------------------------------------------------------------
 
 					// Inbox Dropdown Item - Active - Hover
-					inboxmenuitem_active:hover {
+					"inboxmenuitem_active:hover" {
 						textcolor = "white"
 					}
 
 					// Inbox Dropdown Item - Active
-					inboxmenuitem_active {
+					"inboxmenuitem_active" {
 						textcolor = "label"
 					}
 
 					// Inbox Dropdown Item
-					inboxmenuitem {
+					"inboxmenuitem" {
 						textcolor = "inbox_inactive_text"
 					}
 
 			// Announcement Button -------------------------------------------------------------------------------
 
 				// Announcement Button
-				announcement_button {
+				"announcement_button" {
 					render_bg {
 						0 = "fill( x0, y0, x1, y1, dark_blue )"
 						1 = "image( x1-24, y0+4, x1 -2, y1 + 1, graphics/updatenone_notification )"
@@ -459,7 +459,7 @@
 				}
 
 				// Announcement Button - Hover
-				announcement_button:hover {
+				"announcement_button:hover" {
 					render_bg {
 						0 = "fill( x0, y0, x1, y1, darkblue )"
 						1 = "image( x1-24, y0+4, x1 -2, y1 + 1, graphics/updatenone_notification )"
@@ -467,7 +467,7 @@
 				}
 
 				// Announcement Button - Active
-				announcement_button_active {
+				"announcement_button_active" {
 					render_bg {
 						0 = "fill(  x0, y0, x1, y1, AnnouncementBlue )"
 						1 = "image( x1-24, y0+4, x1 -2, y1 + 1, graphics/updatenew_notification )"
@@ -477,7 +477,7 @@
 			// Parental Lock Button -------------------------------------------------------------------------------
 
 				// Parental Lock Button
-				parental_lock_button {
+				"parental_lock_button" {
 					render_bg {
 						0 = "fill( x0, y0, x1, y1, parental_lock_inactive1 )"
 						1 = "image( x0+9, y0+2, x1, y1, resource/notfamilyview )"
@@ -485,7 +485,7 @@
 				}
 
 				// Parental Lock Button - Hover
-				parental_lock_button:hover { 
+				"parental_lock_button:hover" { 
 					render_bg {
 						0 = "fill( x0, y0, x1, y1, parental_lock_inactive3 )"
 						1 = "image( x0+9, y0+2, x1, y1, resource/notfamilyview )"
@@ -493,7 +493,7 @@
 				}
 
 				// Parental Lock Button - Selected
-				parental_lock_button:selected {
+				"parental_lock_button:selected" {
 					render_bg {
 						0 = "fill( x0, y0, x1, y1, green6 )"
 						1 = "image( x0+9, y0+2, x1, y1, resource/familyview )"
@@ -501,7 +501,7 @@
 				}
 
 				// Parental Lock Button - Selected - Hover
-				parental_lock_button:selected:hover {
+				"parental_lock_button:selected:hover" {
 					render_bg {
 						0 = "fill( x0, y0, x1, y1, green5 )"
 						1 = "image( x0+9, y0+2, x1, y1, resource/familyview )"
@@ -511,7 +511,7 @@
 			// Support Alert -------------------------------------------------------------------------------
 
 				// Support Alert
-				support_alert {
+				"support_alert" {
 					font-family = "basefont"
 					font-size = "14"
 					font-weight = "1000"
@@ -528,7 +528,7 @@
 				}
 
 				// Support Alert - Hover
-				support_alert:hover {
+				"support_alert:hover" {
 					font-family = "basefont"
 					font-size = "14"
 					font-weight = "1000"
@@ -545,7 +545,7 @@
 				}
 
 				// Support Alert - Ack
-				support_alert_ack {
+				"support_alert_ack" {
 					font-family = "basefont"
 					font-size = "14"
 					font-weight = "1000"
@@ -562,7 +562,7 @@
 				}
 
 				// Support Alert - Ack - Hover
-				support_alert_ack:hover {
+				"support_alert_ack:hover" {
 					font-family = "basefont"
 					font-size = "14"
 					font-weight = "1000"
@@ -583,7 +583,7 @@
 		// View Friends Button -------------------------------------------------------------------------------
 
 			// Friend Panel - Hover
-			CFriendPanel:hover {
+			"CFriendPanel:hover" {
 				render_bg {
 					0 = "fill( x0, y0, x1, y1, black)"
 				}
@@ -592,7 +592,7 @@
 		// Add Game Button -------------------------------------------------------------------------------
 
 			// Add Game Button
-			AddGameButton {
+			"AddGameButton" {
 				font-size = "14"
 				font-size = "13 [$OSX]"
 				font-family = "basefont"
@@ -605,7 +605,7 @@
 			}
 
 			// Add Game Button - Hover
-			AddGameButton:hover {
+			"AddGameButton:hover" {
 				textcolor = "white"
 				render_bg {
 					0 = "image( x0 + 2, y0 + 4, x1, y1, graphics/icon_addgame_over )"

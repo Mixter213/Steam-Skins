@@ -9,47 +9,47 @@
 		// Friends List -----------------------------------------------------------------------------------------------------
 
 			// Add Friend
-			AddFriend {
+			"AddFriend" {
 				text = "#steam_menu_friends_add"
 				shellcmd = "steam://friends/add"
 			}
 
 			// Menu Separator ----------------------------------------------
-			Divider {}
+			"Divider" {}
 
 			// Sort - By Name
-			SortByName {
+			"SortByName" {
 				text = "#steam_menu_friends_sortbyname"
 				command = "ToggleSortByName"
 				checkable = 1
 			}
 
 			// Filter - Show Avatars
-			ShowAvatars {
+			"ShowAvatars" {
 				text = "#steam_menu_friends_showavatars"
 				command = "Avatars"
 				checkable = 1
 			}
 
 			// Filter - Users
-			OnlineUsersOnly {
+			"OnlineUsersOnly" {
 				text = "#steam_menu_friends_hideoffline"
 				command = "OnlineOnly"
 				checkable = 1
 			}
 
 			// Filter - Show Tagged
-			ShowTagged {
+			"ShowTagged" {
 				text = "#steam_menu_friends_showtagged"
 				command = "ToggleTagged"
 				checkable = 1
 			}
 
 			// Menu Separator ----------------------------------------------
-			Divider {}
+			"Divider" {}
 
 			// Settings
-			Settings {
+			"Settings" {
 				text = "#steam_menu_friends_settings"
 				shellcmd = "steam://settings/friends"
 			}
