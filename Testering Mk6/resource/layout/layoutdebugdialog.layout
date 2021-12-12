@@ -1,0 +1,53 @@
+"resource/layout/layoutdebugdialog.layout" {
+
+	layout {
+
+		//-----------------------------------------------------------------------------------
+
+			// Container Label, File Url - Top Description
+			place {
+				control = "containerlabel, fileurl"
+				y = "30"
+				x = "6"
+				dir = "right"
+				align = "top"
+				spacing = "10"
+				margin = "4"
+			}
+			
+			// Section Label - Middle Description
+			place {
+				control = "selectionlabel"
+				y = "48"
+				x = "6"
+				dir = "right"
+				align = "top"
+				spacing = "10"
+				margin = "4"
+			}
+			
+			// Tabs - List
+			place {
+				control = "tabs"
+				y = "64"
+				width = "max"
+				height = "max"
+				margin = "8"
+				margin-bottom = "32"
+			}
+
+			// Wiki Link - Bottom Useless Link
+			place {
+				control = "wiki_link"
+				align = "bottom"
+				width = "max"
+				margin = "16"
+				margin-bottom = "12"
+				margin-right = "16"
+			}
+
+		//-----------------------------------------------------------------------------------
+
+	}
+
+}
