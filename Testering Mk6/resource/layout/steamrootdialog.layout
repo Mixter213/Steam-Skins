@@ -648,7 +648,7 @@
 				control = "frame_captiongrip"
 				margin = "2"
 				width = "max"
-				height = "1"
+				height = "40"
 			}
 
 			// Navigator Panel
