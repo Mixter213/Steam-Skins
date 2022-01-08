@@ -324,7 +324,7 @@
 
 		// Top Bar -------------------------------------------------------------------------------
 	
-			// Universal Label
+			// Universe Label
 			"UniverseLabel" {
 				padding-top = "11"
 			}
