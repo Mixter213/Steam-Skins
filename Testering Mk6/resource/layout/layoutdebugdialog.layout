@@ -1,5 +1,41 @@
 "resource/layout/layoutdebugdialog.layout" {
 
+	styles {
+
+		//  Selection Label - Middle Description
+		Label {
+			bgcolor = "0 0 120"
+		}
+
+		// Tabs -----------------------------------------------------------------------------------
+
+			PageTab {
+				bgcolor = "0 120 0"
+				font-size = "16"
+				render_bg{}
+			}
+
+			PageTab:Focus {
+				bgcolor = "60 120 60"
+			}
+
+			PageTab:hover {
+				bgcolor = "60 120 0"
+			}
+
+			PageTab:selected {
+				bgcolor = "120 120 120"
+			}
+
+			PageTab:selected:hover {
+				bgcolor = "0 0 0"
+			}
+
+		//-----------------------------------------------------------------------------------
+
+	}
+
+
 	layout {
 
 		//-----------------------------------------------------------------------------------
@@ -29,13 +65,14 @@
 			// Tabs - List
 			place {
 				control = "tabs"
+				x = "0"
 				y = "64"
 				width = "max"
 				height = "max"
 				margin = "8"
 				margin-bottom = "32"
 			}
-
+			
 			// Wiki Link - Bottom Useless Link
 			place {
 				control = "wiki_link"

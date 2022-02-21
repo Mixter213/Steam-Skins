@@ -1,0 +1,12 @@
+"resource/layout/zoodialog.layout" {
+
+    layout {
+
+        place {
+            control = "frame_captiongrip"
+            height = "20"
+        }
+
+    }
+
+}
