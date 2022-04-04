@@ -23,8 +23,8 @@ gameoverlay.styles
 		detailsboxtitle
 		{
 			font-size=28
-			font-style=uppercase
-			textcolor="80 154 191 255"
+			font-style = uppercase
+			textcolor = "80 154 191 255"
 		}
 	}
 }
