@@ -1,0 +1,172 @@
+variables.styles {
+
+	colors {
+
+		// Frame - Main Window ----------------------------------------------------------------------------------
+
+			// Frame - Client ----------------------------------------------------------------------------------
+
+				// Frame - Client - Inset X
+				Frame.ClientInsetX = "10"
+
+				// Frame - Client - Inset Y
+				Frame.ClientInsetY = "35"
+
+				// Frame - Focus - Fade in/out Transition Time
+				Frame.FocusTransitionEffectTime = "0" 
+				
+				// Frame - Open/Close - Transition Time
+				Frame.TransitionEffectTime = "0.25" 
+				
+				// Frame - Dragging - Alpha Transition Delay
+				Frame.OnDragAlphaDelayTime = "0.15" 
+				
+				// Frame - Dragging - Alpha Multiplier
+				Frame.OnDragAlphaMultiplier = "1.0" 
+				
+				// Frame - Client - Window Auto Snapping
+				Frame.AutoSnapRange = "6"
+
+				// Frame - Client - Alpha Blending
+				Frame.UsesAlphaBlending = "1"
+
+				// Frame - System Tray Icon
+				FrameSystemButton.Icon = ""
+
+				// Frame - System Tray Icon - Disabled
+				FrameSystemButton.DisabledIcon = ""
+
+			//----------------------------------------------------------------------------------
+
+		// Notification ----------------------------------------------------------------------------------
+
+			// Notification - Panel Position - TopLeft | TopRight | BottomLeft | BottomRight
+			Notifications.PanelPosition = "BottomRight" 
+			
+			// Notification - Panel Position - TopLeft | TopRight | BottomLeft | BottomRight (OSX)
+			Notifications.PanelPosition = "TopRight" [$OSX] 
+			
+			// Notification - Panel Slide Direction - Vertical | Horizontal | None
+			Notifications.SlideDirection = "Vertical"
+			
+			// Notification - Panel Slide - Transition Time - In
+			Notifications.FadeInTime = "0.45"
+			
+			// Notification - Panel Slide - Transition Time - Out
+			Notifications.FadeOutTime = "0.45" 
+			
+			// Notification - Panel Slide - Transition Time - Out - Delay
+			Notifications.DisplayTime = "6.0" 
+			
+			// Notification - Panel Slide - Number of Panels before Background Queueing
+			Notifications.StackSize = "3" 
+
+		// Tooltip ----------------------------------------------------------------------------------
+
+			// Tooltip - Delay
+			Tooltip.Delay = "75"
+
+			// Tooltip - Anchor - Cursor | Float | Parent ----------------------------------------------------------------------------------
+
+				// Cursor = Position to Initial Location - Like windows implementation
+				// Float = Position Moves with Mouse
+				// Parent = Position outside Parent Panel
+
+				Tooltip.Anchor = "Cursor"
+
+			//----------------------------------------------------------------------------------
+
+
+		// List Panel - Scrollbar  ----------------------------------------------------------------------------------
+
+			// List Panel - Scrollbar - Scrolling
+			ListPanel.PerPixelScrolling = "1"
+
+			// List Panel - Post Section Leading
+			ListPanel.PostSectionLeading = "10"
+
+			// List Panel - Sectioned - Collapser Width
+			SectionedListPanel.CollapserWidth = "16"
+
+		// Scrollbar ----------------------------------------------------------------------------------
+
+			// Scrollbar - Width
+			ScrollBar.Wide = "19"
+
+		// Rich Text ----------------------------------------------------------------------------------
+
+			// Rich Text - Inset X
+			RichText.InsetX = "8"
+
+			// Rich Text - Inset Y
+			RichText.InsetY = "7"
+
+		// Property Sheet ----------------------------------------------------------------------------------
+
+			// Property Sheet - Page Change Transition
+			PropertySheet.TransitionEffectTime = "0" 
+			
+			// Property Sheet - Tab Gap
+			PropertySheet.TabGap = "1"
+
+		// Menu ----------------------------------------------------------------------------------
+
+			// Menu - Text Inset
+			Menu.TextInset = "6"
+
+		// Message Box ----------------------------------------------------------------------------------
+
+			// Message Box - Button Height
+			MessageBox.ButtonHeight = "24"
+
+		// Html ----------------------------------------------------------------------------------
+
+			// Html - Search ----------------------------------------------------------------------------------
+			
+				// Html - Search - Inset X
+				HTML.SearchInsetX = "10"
+
+				// Html - Search - Inset Y
+				HTML.SearchInsetY = "5"
+
+				// Html - Search - Height
+				HTML.SearchTall = "38"
+
+				// Html - Search - Width
+				HTML.SearchWide = "348"
+
+				// Html - Search - Animation Time
+				HTML.SearchAnimationTime = "0.25"
+		
+			// Html - IME ----------------------------------------------------------------------------------
+
+				// Html - IME - Inset X
+				HTML.IMEInsetX = "10"
+
+				// Html - Search - Inset Y
+				HTML.IMEInsetY = "5"
+
+				// Html - Search - Height
+				HTML.IMETall = "38"
+
+				// Html - Search - Width
+				HTML.IMEWide = "348"
+
+				// Html - Search - Animation Time
+				HTML.IMEAnimationTime = "0.25"
+
+			// Html - Url ----------------------------------------------------------------------------------
+	
+				// Html - Url - Secure
+				html.secureurl = "126 166 75 255"
+
+				// Html - Url - Insecure
+				html.insecureurl = "173 69 72 255"
+
+			//----------------------------------------------------------------------------------
+
+		//----------------------------------------------------------------------------------
+
+	}
+
+}

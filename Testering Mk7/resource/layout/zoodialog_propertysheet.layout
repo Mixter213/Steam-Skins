@@ -1,0 +1,13 @@
+"resource/layout/zoodialog_property.layout" {
+
+    layout {
+
+        place {
+            control = "tab"
+            height = "200"
+            width = "300"
+        }
+
+    }
+
+}

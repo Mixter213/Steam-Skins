@@ -1,0 +1,482 @@
+"resource/layout/steamrootdialog.layout"{
+
+	styles {
+
+		// Steam Root Dialog -------------------------------------------------------------------------------
+	
+			// Steam Root Dialog
+			"CSteamRootDialog" {
+				bgcolor = "DialogBG"
+			}
+
+		// Frame -------------------------------------------------------------------------------
+
+			// Frame - Title -------------------------------------------------------------------------------
+
+				// Frame - Title
+				"FrameTitle" {
+					font-family = "basefont"
+					font-size = "15"
+					font-weight = "400"
+					textcolor = "Label"
+					bgcolor = "TitleBar"
+				}
+
+			// Frame - Buttons -------------------------------------------------------------------------------
+
+				// Frame - Buttons - Restore -------------------------------------------------------------------------------
+
+					// Frame - Button - Restore
+					"FrameRestoreButton" {
+						inset = "0 0 4 0"
+						image = "graphics/win32_win_restore"
+					}
+
+				// Frame - Buttons - Minimize -------------------------------------------------------------------------------
+
+					// Frame - Button - Minimize
+					"FrameMinimizeButton" {
+						image = "graphics/win32_win_min"
+						inset = "0 0 4 0"
+					}
+
+				// Frame - Buttons - Maximize -------------------------------------------------------------------------------
+
+					// Frame - Button - Maximize
+					"FrameMaximizeButton" {
+						inset = "0 0 4 0"
+						image = "graphics/win32_win_max"
+					}
+
+				// Frame - Buttons - Close -------------------------------------------------------------------------------
+
+					// Frame - Button - Close
+					"FrameCloseButton" {
+						inset = "0 0 4 0"
+						image = "graphics/win32_win_close"
+					}
+
+				// -------------------------------------------------------------------------------
+
+			// -------------------------------------------------------------------------------
+
+		// Client Title -------------------------------------------------------------------------------
+
+			// Client Title (Not OSX)
+			"ClientTitle" {
+				textcolor = "none"
+				bgcolor = "none"
+			}
+
+		// Menu -------------------------------------------------------------------------------
+
+			// Menu
+			"Menu" {
+				bgcolor = "dialogbg"
+				padding-right = "4"
+				inset = "2 2 2 2"
+			}
+
+			// Root Menu
+			"RootMenu" {
+				bgcolor = "none"
+			}
+
+
+
+		// Top Bar -------------------------------------------------------------------------------
+
+			// Support Alert -------------------------------------------------------------------------------
+
+				// Support Alert
+				"support_alert" {
+					font-size = "14"
+					font-family = "basefont"
+					textcolor = "labelfocus"
+					font-style = "uppercase"
+					bgcolor = "60 60 0 255"
+				}
+
+				// Support Alert - Ack
+				"support_alert_ack" {
+					font-size = "14"
+					font-family = "basefont"
+					textcolor = "labelfocus"
+					font-style = "uppercase"
+					bgcolor = "60 60 0 255"
+				}
+
+			// -------------------------------------------------------------------------------
+
+
+
+			// Parental Lock Button -------------------------------------------------------------------------------
+
+				// Parental Lock Button
+				"parental_lock_button" {
+					font-size = "14"
+					font-family = "basefont"
+					textcolor = "labelfocus"
+					font-style = "uppercase"
+					bgcolor = "60 60 0 255"
+					image = "resource/notfamilyview"
+				}
+
+			// -------------------------------------------------------------------------------
+
+
+
+			// Announcement Button -------------------------------------------------------------------------------
+
+				// Announcement Button
+				"announcement_button" {
+					font-size = "14"
+					font-family = "basefont"
+					textcolor = "labelfocus"
+					font-style = "uppercase"
+					bgcolor = "60 60 0 255"
+					image = "graphics/updatenone_notification"
+				}
+
+			// -------------------------------------------------------------------------------
+
+			// Inbox -------------------------------------------------------------------------------
+
+				// Inbox Button -------------------------------------------------------------------------------
+
+					// Inbox Button
+					"inbox_button" {
+						font-size = "14"
+						font-family = "basefont"
+						textcolor = "labelfocus"
+						font-style = "uppercase"
+						bgcolor = "60 60 0 255"
+						image = "graphics/inbox_notification_inactive"
+					}
+
+				// -------------------------------------------------------------------------------
+
+
+
+				// Dropdown List -------------------------------------------------------------------------------
+
+					// Dropdown Item
+					"inboxmenuitem" {
+						font-size = "14"
+						font-family = "basefont"
+						textcolor = "labelfocus"
+						font-style = "uppercase"
+						bgcolor = "60 60 0 255"
+					}
+
+				// -------------------------------------------------------------------------------
+
+			// -------------------------------------------------------------------------------
+
+
+			// VR Buttons -------------------------------------------------------------------------------
+
+				// VR Exit Button
+				"VRButtonExit" {
+					font-size = "14"
+					font-family = "basefont"
+					textcolor = "labelfocus"
+					font-style = "uppercase"
+					bgcolor = "60 60 0 255"
+					image = "graphics/icon_vr_happy"
+				}
+				
+				// VR Button
+				"VRButton" {
+					font-size = "14"
+					font-family = "basefont"
+					textcolor = "labelfocus"
+					font-style = "uppercase"
+					bgcolor = "60 60 0 255"
+					image = "graphics/icon_vr"
+				}
+				
+
+			// -------------------------------------------------------------------------------
+
+
+
+			// Fullscreen - Big Picture -------------------------------------------------------------------------------
+
+				// Fullscreen - Big Picture
+				"FullscreenButton" {
+					font-size = "14"
+					font-family = "basefont"
+					textcolor = "labelfocus"
+					font-style = "uppercase"
+					bgcolor = "60 60 0 255"
+					image = "graphics/icon_controller_bpm"
+				}
+
+			// -------------------------------------------------------------------------------
+
+		// -------------------------------------------------------------------------------
+
+
+
+		// Bottom Bar -------------------------------------------------------------------------------
+
+			// Add Game Button -------------------------------------------------------------------------------
+
+				// Add Game Button
+				"AddGameButton" {
+					font-size = "14"
+					font-family = "basefont"
+					textcolor = "labelfocus"
+					font-style = "uppercase"
+					bgcolor = "60 0 0 255"
+				}
+
+			// -------------------------------------------------------------------------------
+
+			// View Friends Button -------------------------------------------------------------------------------
+
+				"view_friends" {
+					font-size = "14"
+					font-weight = "400"
+					font-family = "basefont"
+					textcolor = "labelfocus"
+					font-style = "uppercase"
+					bgcolor = "60 0 0 255"
+					padding-right = "28"
+					"render_bg" {
+						1 = "image( x1-30, y0+8, x1, y1, graphics/icon_friendslist )"
+					}
+				}
+			// -------------------------------------------------------------------------------
+
+		// -------------------------------------------------------------------------------
+
+	}
+
+
+	layout {
+
+		// Main Window -------------------------------------------------------------------------------
+
+			// Frame - Caption Grip
+			place {
+				control = "frame_captiongrip"
+				height = "10"
+				width = "1000"
+				x = "0"
+				y = "0"
+			}
+
+			// Navigator Panel
+			place {
+				control = "UINavigatorPanel"
+				height = "500"
+				width = "1000"
+				x = "10"
+				y = "10"
+			}
+
+
+		// -------------------------------------------------------------------------------
+
+
+
+		// Menu Bar -------------------------------------------------------------------------------
+
+			// Menu Bar (Not OSX)
+			place {
+				control = "MenuBar"
+				x = "410"
+				y = "510"
+			}
+
+		// -------------------------------------------------------------------------------
+
+
+
+		// Frame Buttons -------------------------------------------------------------------------------
+
+			// Mininmize
+			place [!$OSX] {
+				control = "frame_minimize"
+				height = "30"
+				width = "40"
+				x = "410"
+				y = "550"
+			}
+			
+			// Maxinmize
+			place [!$OSX] {
+				control = "frame_maximize"
+				height = "30"
+				width = "40"
+				x = "460"
+				y = "550"
+			}
+			
+			// Close
+			place [!$OSX] {
+				control = "frame_close"
+				height = "30"
+				width = "40"
+				x = "510"
+				y = "550"
+			}
+			
+		// -------------------------------------------------------------------------------
+
+
+
+		// Top Bar -------------------------------------------------------------------------------
+
+			// Alerts -------------------------------------------------------------------------------
+
+				// Top Bar - Alerts
+				place {
+					control = "universe_label"
+					height = "30"
+					width = "40"
+					x = "10"
+					y = "560"
+				}
+
+			// -------------------------------------------------------------------------------
+
+
+
+			// Parental Lock -------------------------------------------------------------------------------
+
+				// Top Bar - Parental Lock Button
+				place {
+					control = "ParentalLockButton"
+					height = "30"
+					width = "40"
+					x = "60"
+					y = "560"
+				}
+
+			// -------------------------------------------------------------------------------
+
+
+
+			// Announcment Button -------------------------------------------------------------------------------
+
+				// Announcement Button
+				place {
+					control = "AnnouncementButton"
+					height = "30"
+					width = "40"
+					x = "110"
+					y = "560"
+				}
+		
+			// -------------------------------------------------------------------------------
+
+
+
+			// Inbox -------------------------------------------------------------------------------
+
+				// Inbox
+				place {
+					control = "InboxButton"
+					height = "30"
+					width = "40"
+					x = "160"
+					y = "560"
+				}
+
+			// -------------------------------------------------------------------------------
+
+
+
+			// Account -------------------------------------------------------------------------------
+
+				// Top Bar - Account
+				place {
+					control = "AccountButton"
+					height = "30"
+					width = "40"
+					x = "210"
+					y = "560"
+				}
+
+			// -------------------------------------------------------------------------------
+
+
+
+			// VR -------------------------------------------------------------------------------
+
+				// VR - Start
+				place {
+					control = "startvr"
+					height = "30"
+					width = "40"
+					x = "260"
+					y = "560"
+				}
+				
+				// VR - Exit
+				place {
+					control = "exitvr"
+					height = "30"
+					width = "40"
+					x = "310"
+					y = "560"
+				}
+
+			// -------------------------------------------------------------------------------
+
+
+
+			// Big Picture -------------------------------------------------------------------------------
+
+				// Top Bar - Big Picture
+				place {
+					control = "fullscreen"
+					height = "30"
+					width = "40"
+					x = "360"
+					y = "560"
+				}
+
+			// -------------------------------------------------------------------------------
+
+		// -------------------------------------------------------------------------------
+
+
+
+		// Bottom Bar -------------------------------------------------------------------------------
+
+			// Status Panel
+			place {
+				control = "UIStatusPanel"
+				height = "40"
+				width = "120"
+				x = "290"
+				y = "510"
+			}
+
+			// Bottom Bar - Add Game
+			place {
+				control = "add_game"
+				height = "40"
+				width = "120"
+				x = "170"
+				y = "510"
+			}
+
+			// Bottom Bar - View Friends
+			place {
+				control = "view_friends"
+				height = "40"
+				width = "120"
+				x = "50"
+				y = "510"
+			}
+
+		// -------------------------------------------------------------------------------
+
+	}
+
+}

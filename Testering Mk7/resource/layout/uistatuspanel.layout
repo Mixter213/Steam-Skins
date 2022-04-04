@@ -1,0 +1,100 @@
+"resource/layout/uistatuspanel.layout" {
+
+	styles {
+
+		// Progress Bar ------------------------------------------------------------------------------------------------
+
+			// Progress Bar
+			"SlimProgressBar" {
+				textcolor = "focus4"
+				render {}      
+				render_bg {
+					0 = "fill( x0, y0, x1, y1, black )"
+				}
+			}
+
+		//------------------------------------------------------------------------------------------------
+		// Status Panel -------------------------------------------------------------------------------
+
+			"CUIStatusPanel" {
+				font-size = "14"
+				font-family = "basefont"
+				textcolor = "labelfocus"
+				font-style = "uppercase"
+				bgcolor = "60 0 0 255"
+				render = ""
+				render_bg = ""
+			}
+
+		// -------------------------------------------------------------------------------
+
+	}
+
+	layout {
+
+		// Top Bar ------------------------------------------------------------------------------------------------
+
+			// Region - Top Bar
+			region {
+				name = "TitleRegion"
+				width = "max"
+				height = "28"
+				align = "top"
+				margin = "5"
+			} 
+
+			// Status - Downloading
+			place {
+				control = "StatusDownloading"
+				region = "TitleRegion"
+				align = "top-center" 
+				margin-top = "2"
+			}
+
+		// Middle Bar ------------------------------------------------------------------------------------------------
+
+			// Region - Middle Bar
+			region {
+				name = "statusRegion"
+				y = "28"
+				width = "max"
+				height = "28"
+				align = "bottom"
+				margin = "6"
+			} 
+
+			// Status - Pause - Completed
+			place {
+				control = "StatusPaused, StatusComplete"
+				region = "StatusRegion"
+				align = "top-center" 
+				margin-top = "3"
+			}
+
+		// Bottom Bar ------------------------------------------------------------------------------------------------
+
+			// Region - Bottom Bar
+			region {
+				name = "ProgressRegion"
+				y = "37"
+				width = "max"
+				height = "10"
+				align = "top"
+				margin = "0"
+			}
+
+			// Status - Progress Bar
+			place {
+				control = "StatusProgressbar"
+				region = "ProgressRegion"
+				width = "300"
+				height = "3"
+				margin-top = "0"
+				align = "top-center"
+			}
+
+		//------------------------------------------------------------------------------------------------
+
+	}
+
+}
