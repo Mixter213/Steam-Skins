@@ -453,7 +453,7 @@
 				control = "UIStatusPanel"
 				height = "40"
 				width = "120"
-				x = "290"
+				x = "270"
 				y = "510"
 			}
 
@@ -462,7 +462,7 @@
 				control = "add_game"
 				height = "40"
 				width = "120"
-				x = "170"
+				x = "140"
 				y = "510"
 			}
 
@@ -471,7 +471,7 @@
 				control = "view_friends"
 				height = "40"
 				width = "120"
-				x = "50"
+				x = "10"
 				y = "510"
 			}
 
