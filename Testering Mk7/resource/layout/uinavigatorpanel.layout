@@ -520,151 +520,6 @@
 
 	layout {
 
-		// Navigator Panel ---------------------------------------------------------------------------------------------------------
-
-
-
-			
-			// Music Page ---------------------------------------------------------------------------------------------------------
-
-				// Library Zoom ---------------------------------------------------------------------------------------------------------
-
-					// Zoom Label, Zoom, Zoom Separator, View (Not OSX)
-					place [!$OSX] {
-						control = "label_library_zoom,library_zoom,label_zoom_separator, label_library_view"
-						align = "right"
-						y = "55"
-						height = "20"
-						spacing = "3"
-						margin-right = "85"
-					}
-
-					// Zoom Label, Zoom, Zoom Separator, View (OSX)
-					place [$OSX] {
-						control = "label_library_zoom,library_zoom,label_zoom_separator, label_library_view"
-						align = "right"
-						y = "55"
-						height = "20"
-						spacing = "3"
-						margin-right = "84"
-					}
-
-					// Music Menu, Music Add Button
-					place [!$OSX] {
-						control = "library_music_menu,library_music_add_button"
-						align = "left"
-						x = "290"
-						y = "55"
-						height = "20"
-						spacing = "3"
-						margin-right = "180"
-					}
-
-					// Music Menu, Music Add Button
-					place [$OSX] {
-						control = "library_music_menu,library_music_add_button"
-						align = "left"
-						x = "290"
-						y = "55"
-						height = "20"
-						spacing = "3"
-						margin-right = "179"
-					}
-
-					// Zoom
-					place {
-						control = "library_zoom"
-						width = "82"
-						height = "20"
-					}
-
-				// Library Filter ---------------------------------------------------------------------------------------------------------
-
-					// Region - Dropdown
-					region {
-						name = "dropdown"
-						width = "200"
-						x = "82"
-						y = "55"
-						height = "20"
-					}
-
-					// Filters
-					place {
-						control = "library_filters"
-						align = "right"
-						spacing = "1"
-						region = "dropdown"
-					}
-
-					// Filter Details, Filters List, Filters Grid
-					place {
-						control = "library_filters_details,library_filters_list,library_filters_grid,"
-						align = "right"
-						y = "54"
-						height = "20"
-						spacing = "4"
-						margin-right = "9"
-						width = "20"
-					}
-
-				// Library ---------------------------------------------------------------------------------------------------------
-
-					// Sub Nav Group
-					place {
-						control = "subnavgroup_library"
-						align = "top-center"
-						y = "50"
-						height = "28"
-						width = "max"
-						margin-right = "-2"
-						margin-left = "8"
-					}
-
-					// Search
-					place {
-						control = "library_search"
-						width = "112"
-					}
-
-					// Music Player - Icon
-					place {
-						control = "library_music_player_icon"
-						align = "right"
-						y = "57"
-						height = "16"
-						width = "16"
-						margin-right = "10"
-					}
-
-					// Search Icon, Search (Not OSX)
-					place [!$OSX] {
-						control = "label_search_icon,library_search"
-						align = "left"
-						y = "56"
-						height = "17"
-						spacing = "1"
-						x = "12"
-					}
-
-					// Search Icon, Search (OSX)
-					place  [$OSX] {
-						control = "label_search_icon,library_search"
-						align = "left"
-						y = "56"
-						height = "17"
-						spacing = "1"
-						x = "11"
-					}
-
-				//---------------------------------------------------------------------------------------------------------
-
-		//---------------------------------------------------------------------------------------------------------
-
-
-
-
-
 		// Pages ---------------------------------------------------------------------------------------------------------
 
 			// Web Page
@@ -698,10 +553,10 @@
 			// Music Page
 			place {
 				control = "MusicPage_Details"
-				height = "100"
-				width = "100"
-				x = "0"
-				y = "390"
+				height = "500"
+				width = "500"
+				x = "420"
+				y = "170"
 			}
 
 		//---------------------------------------------------------------------------------------------------------
@@ -737,12 +592,21 @@
 				y = "350"
 			}
 
+			// Community "New" Tag
+				place {
+					control = "label_community_new"
+					start = "label_community"
+					width = "60"
+					height = "30"
+					x = "10"
+				}
+
 			//Profile (me)
 			place {
 				control = "label_me"
 				height = "30"
 				width = "60"
-				x = "210"
+				x = "280"
 				y = "350"
 			}
 
@@ -751,17 +615,9 @@
 				control = "label_console"
 				height = "30"
 				width = "60"
-				x = "280"
+				x = "350"
 				y = "350"
 			}
-
-			// Community "New" Tag
-				place {
-					control = "label_community_new"
-					start = "label_community"
-					width = "0"
-					height = "0"
-				}
 
 		//---------------------------------------------------------------------------------------------------------
 
@@ -869,7 +725,100 @@
 
 
 
+		// Music Page ---------------------------------------------------------------------------------------------------------
 
+			// Sub Nav Grouper
+			place {
+				control = "subnavgroup_library"
+				height = "30"
+				width = "60"
+				x = "0"
+				y = "310"
+			}
+
+			// Search Icon
+			place {
+				control = "label_search_icon"
+				height = "30"
+				width = "60"
+				x = "70"
+				y = "310"
+			}
+
+			// Search Bar
+			place {
+				control = "library_search"
+				height = "30"
+				width = "60"
+				x = "140"
+				y = "310"
+
+			}
+
+			// Filters
+			place {
+				control = "library_filters"
+				height = "30"
+				width = "60"
+				x = "210"
+				y = "310"
+			}
+
+			// Filter Details
+			place {
+				control = "library_filters_details"
+				height = "30"
+				width = "60"
+				x = "280"
+				y = "310"
+			}
+
+			// Filters List
+			place {
+				control = "library_filters_list"
+				height = "30"
+				width = "60"
+				x = "280"
+				y = "310"
+			}
+
+			// Filters Grid
+			place {
+				control = "library_filters_grid"
+				height = "30"
+				width = "60"
+				x = "280"
+				y = "310"
+			}
+			
+			// Music Player - Icon
+			place {
+				control = "library_music_player_icon"
+				height = "30"
+				width = "60"
+				x = "350"
+				y = "310"
+			}
+
+			// Music Menu
+			place {
+				control = "library_music_menu"
+				height = "30"
+				width = "60"
+				x = "0"
+				y = "270"
+			}
+
+			// Music Add Button
+			place {
+				control = "library_music_add_button"
+				height = "30"
+				width = "60"
+				x = "70"
+				y = "270"
+			}
+
+		//---------------------------------------------------------------------------------------------------------
 
 
 
