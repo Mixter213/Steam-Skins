@@ -2,11 +2,16 @@
 
 	styles {
 
+
+			"Label" {
+				bgcolor = "0 0 60 255"
+			}
+
 		// Navigation Panel ---------------------------------------------------------------------------------------------------------
 
 			// Navigation Panel
 			"CUINavigatorPanel" {
-				bgcolor = "DialogBG"
+				bgcolor = "0 60 0 255"
 			}
 
 		// Nav Buttons ---------------------------------------------------------------------------------------------------------
@@ -525,38 +530,46 @@
 			// Web Page
 			place {
 				control = "WebPanel"
-				height = "100"
-				width = "100"
+				start = "LibraryAnchor"
+				dir = "down"
+				height = "max"
+				width = "max"
 				x = "0"
-				y = "390"
+				y = "0"
 			}
 
 			// New Library Page
 			place {
 				control = "NewLibraryPage"
-				height = "100"
-				width = "100"
+				start = "LibraryAnchor"
+				dir = "down"
+				height = "max"
+				width = "max"
 				x = "0"
-				y = "390"
+				y = "0"
 			}
 
 			// Console Page
 			place {
 				control = "ConsolePage"
-				height = "100"
-				width = "100"
+				start = "LibraryAnchor"
+				dir = "down"
+				height = "max"
+				width = "max"
 				x = "0"
-				y = "390"
+				y = "0"
 			}
 
 			
 			// Music Page
 			place {
 				control = "MusicPage_Details"
-				height = "500"
-				width = "500"
-				x = "420"
-				y = "170"
+				start = "LibraryAnchor"
+				dir = "down"
+				height = "max"
+				width = "max"
+				x = "0"
+				y = "0"
 			}
 
 		//---------------------------------------------------------------------------------------------------------
@@ -565,59 +578,22 @@
 
 		// Nav Bar ---------------------------------------------------------------------------------------------------------
 
-			// Store
+			// Store - Library - Community - Profile - Console
 			place {
-				control = "label_store"
-				height = "30"
-				width = "60"
-				x = "0"
-				y = "350"
-			}
-
-			//Library
-			place {
-				control = "label_library"
-				height = "30"
-				width = "60"
-				x = "70"
-				y = "350"
-			}
-
-			//Community
-			place {
-				control = "label_community"
-				height = "30"
-				width = "60"
-				x = "140"
-				y = "350"
+				control = "label_store, label_library, label_community, label_me, label_console"
+				height = "40"
+				spacing = "10"
+				x = "78"
+				y = "10"
 			}
 
 			// Community "New" Tag
 				place {
 					control = "label_community_new"
 					start = "label_community"
-					width = "60"
-					height = "30"
-					x = "10"
+					height = "0"
+					width = "0"
 				}
-
-			//Profile (me)
-			place {
-				control = "label_me"
-				height = "30"
-				width = "60"
-				x = "280"
-				y = "350"
-			}
-
-			//Console
-			place {
-				control = "label_console"
-				height = "30"
-				width = "60"
-				x = "350"
-				y = "350"
-			}
 
 		//---------------------------------------------------------------------------------------------------------
 
@@ -625,22 +601,13 @@
 
 		// Forward & Back Buttons ---------------------------------------------------------------------------------------------------------
 
-			// Back
+			// Back - Forward
 			place {
-				control = "back"
-				height = "30"
+				control = "back, forward"
+				height = "40"
 				width = "30"
-				x = "120"
-				y = "390"
-			}
-
-			// Forward
-			place {
-				control = "forward"
-				height = "30"
-				width = "30"
-				x = "160"
-				y = "390"
+				x = "10"
+				y = "10"
 			}
 
 		//---------------------------------------------------------------------------------------------------------
@@ -649,78 +616,44 @@
 
 		// Url Bar ---------------------------------------------------------------------------------------------------------
 
-			// Refresh
+			// Refresh - Stop - Url Status Image - EvCert - Url Bar
 			place {
-				control = "refresh"
-				height = "30"
-				width = "30"
-				x = "120"
-				y = "430"
-			}
-
-			// Stop
-			place {
-				control = "stop"
-				height = "30"
-				width = "30"
-				x = "160"
-				y = "430"
-			}
-
-			// Url Status Image
-			place {
-				control = "URLStatusImage"
-				height = "30"
-				width = "30"
-				x = "200"
-				y = "430"
-			}
-
-			// EvCert
-			place {
-				control = "EVCert"
-				height = "30"
-				width = "30"
-				x = "240"
-				y = "430"
-			}
-
-			// Url Bar
-			place {
-				control = "URLBar"
-				height = "30"
-				width = "30"
-				x = "280"
-				y = "430"
+				control = "refresh, stop, URLStatusImage, EVCert, URLBar"
+				height = "24"
+				width = "max"
+				x = "10"
+				y = "58"
 			}
 
 			// Page Load Throbber
 			place {
 				control = "PageLoadThrobber"
+				align = "right"
 				height = "30"
 				width = "30"
-				x = "320"
-				y = "430"
+				x = "10"
+				y = "58"
 			}
 
 			// Url Anchor
 			place {
 				control = "URLAnchor"
-				height = "30"
-				width = "30"
-				x = "360"
-				y = "430"
+				height = "24"
+				width = "max"
+				x = "0"
+				y = "58"
 			}
-			
+
 			// Library Anchor
 			place {
 				control = "LibraryAnchor"
-				height = "30"
-				width = "30"
-				x = "400"
-				y = "430"
+				start = "URLAnchor"
+				dir = "down"
+				height = "24"
+				width = "max"
+				x = "0"
+				y = "0"
 			}
-
 		//---------------------------------------------------------------------------------------------------------
 
 
@@ -730,92 +663,60 @@
 			// Sub Nav Grouper
 			place {
 				control = "subnavgroup_library"
-				height = "30"
-				width = "60"
+				height = "24"
+				width = "max"
 				x = "0"
-				y = "310"
+				y = "58"
 			}
 
-			// Search Icon
+			// Search Icon - Search Bar
 			place {
-				control = "label_search_icon"
-				height = "30"
-				width = "60"
-				x = "70"
-				y = "310"
-			}
-
-			// Search Bar
-			place {
-				control = "library_search"
-				height = "30"
-				width = "60"
-				x = "140"
-				y = "310"
-
+				control = "label_search_icon, library_search"
+				height = "24"
+				spacing = "2"
+				x = "10"
+				y = "58"
 			}
 
 			// Filters
 			place {
 				control = "library_filters"
-				height = "30"
-				width = "60"
-				x = "210"
-				y = "310"
+				align = "right"
+				height = "24"
+				width = "200"
+				x = "10"
+				y = "58"
 			}
 
-			// Filter Details
+			// Filter Details - Filters List - Filters Grid
 			place {
-				control = "library_filters_details"
-				height = "30"
-				width = "60"
-				x = "280"
-				y = "310"
-			}
-
-			// Filters List
-			place {
-				control = "library_filters_list"
-				height = "30"
-				width = "60"
-				x = "280"
-				y = "310"
-			}
-
-			// Filters Grid
-			place {
-				control = "library_filters_grid"
-				height = "30"
-				width = "60"
-				x = "280"
-				y = "310"
+				control = "library_filters_details, library_filters_list, library_filters_grid"
+				align = "right"
+				height = "24"
+				width = "20"
+				spacing = "4"
+				x = "10"
+				y = "58"
 			}
 			
 			// Music Player - Icon
 			place {
 				control = "library_music_player_icon"
-				height = "30"
-				width = "60"
-				x = "350"
-				y = "310"
+				align = "right"
+				height = "24"
+				width = "20"
+				spacing = "4"
+				x = "10"
+				y = "58"
 			}
 
-			// Music Menu
+			// Music Menu - Music Add Button
 			place {
-				control = "library_music_menu"
-				height = "30"
-				width = "60"
-				x = "0"
-				y = "270"
-			}
-
-			// Music Add Button
-			place {
-				control = "library_music_add_button"
-				height = "30"
-				width = "60"
-				x = "70"
-				y = "270"
+				control = "library_music_menu, library_music_add_button"
+				height = "24"
+				spacing = "4"
+				x = "290"
+				y = "58"
 			}
 
 		//---------------------------------------------------------------------------------------------------------

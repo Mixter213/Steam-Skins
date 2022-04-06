@@ -6,7 +6,7 @@
 	
 			// Steam Root Dialog
 			"CSteamRootDialog" {
-				bgcolor = "DialogBG"
+				bgcolor = "60 0 0 255"
 			}
 
 		// Frame -------------------------------------------------------------------------------
@@ -262,8 +262,8 @@
 			// Frame - Caption Grip
 			place {
 				control = "frame_captiongrip"
-				height = "10"
-				width = "1000"
+				height = "100"
+				width = "max"
 				x = "0"
 				y = "0"
 			}
@@ -271,10 +271,10 @@
 			// Navigator Panel
 			place {
 				control = "UINavigatorPanel"
-				height = "500"
-				width = "1000"
-				x = "10"
-				y = "10"
+				height = "max"
+				width = "max"
+				y = "24"
+				margin-bottom = "60"
 			}
 
 
@@ -287,8 +287,9 @@
 			// Menu Bar (Not OSX)
 			place {
 				control = "MenuBar"
-				x = "410"
-				y = "510"
+				height = "24"
+				x = "0"
+				y = "0"
 			}
 
 		// -------------------------------------------------------------------------------
@@ -297,31 +298,13 @@
 
 		// Frame Buttons -------------------------------------------------------------------------------
 
-			// Mininmize
+			// Mininmize - Maxinmize - Close
 			place [!$OSX] {
-				control = "frame_minimize"
-				height = "30"
-				width = "40"
-				x = "410"
-				y = "550"
-			}
-			
-			// Maxinmize
-			place [!$OSX] {
-				control = "frame_maximize"
-				height = "30"
-				width = "40"
-				x = "460"
-				y = "550"
-			}
-			
-			// Close
-			place [!$OSX] {
-				control = "frame_close"
-				height = "30"
-				width = "40"
-				x = "510"
-				y = "550"
+				control = "frame_minimize, frame_maximize, frame_close"
+				align = "right"
+				height = "24"
+				x = "0"
+				y = "0"
 			}
 			
 		// -------------------------------------------------------------------------------
@@ -330,30 +313,64 @@
 
 		// Top Bar -------------------------------------------------------------------------------
 
-			// Alerts -------------------------------------------------------------------------------
+			// Big Picture -------------------------------------------------------------------------------
 
-				// Top Bar - Alerts
+				// Top Bar - Big Picture
 				place {
-					control = "universe_label"
+					control = "fullscreen"
+					align = "right"
+					end-right = "frame_minimize"
+					spacing = "8"
 					height = "30"
-					width = "40"
-					x = "10"
-					y = "560"
+					margin-right = "8"
 				}
 
 			// -------------------------------------------------------------------------------
 
 
 
-			// Parental Lock -------------------------------------------------------------------------------
+			// VR -------------------------------------------------------------------------------
 
-				// Top Bar - Parental Lock Button
+				// VR Start - VR Exit
 				place {
-					control = "ParentalLockButton"
+					control = "startvr, exitvr"
+					align = "right"
+					end-right = "fullscreen"
+					spacing = "8"
 					height = "30"
-					width = "40"
-					x = "60"
-					y = "560"
+					margin-right = "8"
+				}
+				
+			// -------------------------------------------------------------------------------
+
+
+
+			// Account -------------------------------------------------------------------------------
+
+				// Top Bar - Account
+				place {
+					control = "AccountButton"
+					align = "right"
+					end-right = "startvr"
+					spacing = "8"
+					height = "30"
+					margin-right = "8"
+				}
+
+			// -------------------------------------------------------------------------------
+
+
+
+			// Inbox -------------------------------------------------------------------------------
+
+				// Inbox
+				place {
+					control = "InboxButton"
+					align = "right"
+					end-right = "AccountButton"
+					spacing = "8"
+					height = "30"
+					margin-right = "8"
 				}
 
 			// -------------------------------------------------------------------------------
@@ -365,79 +382,43 @@
 				// Announcement Button
 				place {
 					control = "AnnouncementButton"
+					align = "right"
+					end-right = "InboxButton"
+					spacing = "8"
 					height = "30"
-					width = "40"
-					x = "110"
-					y = "560"
+					margin-right = "8"
 				}
 		
 			// -------------------------------------------------------------------------------
 
 
 
-			// Inbox -------------------------------------------------------------------------------
+			// Parental Lock -------------------------------------------------------------------------------
 
-				// Inbox
+				// Top Bar - Parental Lock Button
 				place {
-					control = "InboxButton"
+					control = "ParentalLockButton"
+					align = "right"
+					end-right = "AnnouncementButton"
+					spacing = "8"
 					height = "30"
-					width = "40"
-					x = "160"
-					y = "560"
+					margin-right = "8"
 				}
 
 			// -------------------------------------------------------------------------------
 
 
 
-			// Account -------------------------------------------------------------------------------
+			// Alerts -------------------------------------------------------------------------------
 
-				// Top Bar - Account
+				// Top Bar - Alerts
 				place {
-					control = "AccountButton"
+					control = "universe_label, EOLAlert, SupportAlert"
+					align = "right"
+					end-right = "ParentalLockButton"
+					spacing = "8"
 					height = "30"
-					width = "40"
-					x = "210"
-					y = "560"
-				}
-
-			// -------------------------------------------------------------------------------
-
-
-
-			// VR -------------------------------------------------------------------------------
-
-				// VR - Start
-				place {
-					control = "startvr"
-					height = "30"
-					width = "40"
-					x = "260"
-					y = "560"
-				}
-				
-				// VR - Exit
-				place {
-					control = "exitvr"
-					height = "30"
-					width = "40"
-					x = "310"
-					y = "560"
-				}
-
-			// -------------------------------------------------------------------------------
-
-
-
-			// Big Picture -------------------------------------------------------------------------------
-
-				// Top Bar - Big Picture
-				place {
-					control = "fullscreen"
-					height = "30"
-					width = "40"
-					x = "360"
-					y = "560"
+					margin-right = "8"
 				}
 
 			// -------------------------------------------------------------------------------
@@ -451,28 +432,31 @@
 			// Status Panel
 			place {
 				control = "UIStatusPanel"
-				height = "40"
-				width = "120"
-				x = "270"
-				y = "510"
+				align = "bottom"
+				height = "60"
+				width = "max"
+				x = "0"
+				y = "0"
 			}
 
 			// Bottom Bar - Add Game
 			place {
 				control = "add_game"
-				height = "40"
+				align = "bottom"
+				height = "60"
 				width = "120"
-				x = "140"
-				y = "510"
+				x = "10"
+				y = "10"
 			}
 
 			// Bottom Bar - View Friends
 			place {
 				control = "view_friends"
-				height = "40"
+				align = "bottom-right"
+				height = "60"
 				width = "120"
 				x = "10"
-				y = "510"
+				y = "10"
 			}
 
 		// -------------------------------------------------------------------------------
