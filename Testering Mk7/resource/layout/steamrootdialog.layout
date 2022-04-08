@@ -2,255 +2,14 @@
 
 	styles {
 
-		// Steam Root Dialog -------------------------------------------------------------------------------
-	
-			// Steam Root Dialog
-			"CSteamRootDialog" {
-				bgcolor = "60 0 0 255"
+		// Main Window -------------------------------------------------------------------------------
+
+			"FrameTitle" {
+				textcolor = "0 0 0 0"
 			}
-
-		// Frame -------------------------------------------------------------------------------
-
-			// Frame - Title -------------------------------------------------------------------------------
-
-				// Frame - Title
-				"FrameTitle" {
-					font-family = "basefont"
-					font-size = "15"
-					font-weight = "400"
-					textcolor = "Label"
-					bgcolor = "TitleBar"
-				}
-
-			// Frame - Buttons -------------------------------------------------------------------------------
-
-				// Frame - Buttons - Restore -------------------------------------------------------------------------------
-
-					// Frame - Button - Restore
-					"FrameRestoreButton" {
-						inset = "0 0 4 0"
-						image = "graphics/win32_win_restore"
-					}
-
-				// Frame - Buttons - Minimize -------------------------------------------------------------------------------
-
-					// Frame - Button - Minimize
-					"FrameMinimizeButton" {
-						image = "graphics/win32_win_min"
-						inset = "0 0 4 0"
-					}
-
-				// Frame - Buttons - Maximize -------------------------------------------------------------------------------
-
-					// Frame - Button - Maximize
-					"FrameMaximizeButton" {
-						inset = "0 0 4 0"
-						image = "graphics/win32_win_max"
-					}
-
-				// Frame - Buttons - Close -------------------------------------------------------------------------------
-
-					// Frame - Button - Close
-					"FrameCloseButton" {
-						inset = "0 0 4 0"
-						image = "graphics/win32_win_close"
-					}
-
-				// -------------------------------------------------------------------------------
-
-			// -------------------------------------------------------------------------------
-
-		// Client Title -------------------------------------------------------------------------------
-
-			// Client Title (Not OSX)
-			"ClientTitle" {
-				textcolor = "none"
-				bgcolor = "none"
-			}
-
-		// Menu -------------------------------------------------------------------------------
-
-			// Menu
-			"Menu" {
-				bgcolor = "dialogbg"
-				padding-right = "4"
-				inset = "2 2 2 2"
-			}
-
-			// Root Menu
-			"RootMenu" {
-				bgcolor = "none"
-			}
-
-
-
-		// Top Bar -------------------------------------------------------------------------------
-
-			// Support Alert -------------------------------------------------------------------------------
-
-				// Support Alert
-				"support_alert" {
-					font-size = "14"
-					font-family = "basefont"
-					textcolor = "labelfocus"
-					font-style = "uppercase"
-					bgcolor = "60 60 0 255"
-				}
-
-				// Support Alert - Ack
-				"support_alert_ack" {
-					font-size = "14"
-					font-family = "basefont"
-					textcolor = "labelfocus"
-					font-style = "uppercase"
-					bgcolor = "60 60 0 255"
-				}
-
-			// -------------------------------------------------------------------------------
-
-
-
-			// Parental Lock Button -------------------------------------------------------------------------------
-
-				// Parental Lock Button
-				"parental_lock_button" {
-					font-size = "14"
-					font-family = "basefont"
-					textcolor = "labelfocus"
-					font-style = "uppercase"
-					bgcolor = "60 60 0 255"
-					image = "resource/notfamilyview"
-				}
-
-			// -------------------------------------------------------------------------------
-
-
-
-			// Announcement Button -------------------------------------------------------------------------------
-
-				// Announcement Button
-				"announcement_button" {
-					font-size = "14"
-					font-family = "basefont"
-					textcolor = "labelfocus"
-					font-style = "uppercase"
-					bgcolor = "60 60 0 255"
-					image = "graphics/updatenone_notification"
-				}
-
-			// -------------------------------------------------------------------------------
-
-			// Inbox -------------------------------------------------------------------------------
-
-				// Inbox Button -------------------------------------------------------------------------------
-
-					// Inbox Button
-					"inbox_button" {
-						font-size = "14"
-						font-family = "basefont"
-						textcolor = "labelfocus"
-						font-style = "uppercase"
-						bgcolor = "60 60 0 255"
-						image = "graphics/inbox_notification_inactive"
-					}
-
-				// -------------------------------------------------------------------------------
-
-
-
-				// Dropdown List -------------------------------------------------------------------------------
-
-					// Dropdown Item
-					"inboxmenuitem" {
-						font-size = "14"
-						font-family = "basefont"
-						textcolor = "labelfocus"
-						font-style = "uppercase"
-						bgcolor = "60 60 0 255"
-					}
-
-				// -------------------------------------------------------------------------------
-
-			// -------------------------------------------------------------------------------
-
-
-			// VR Buttons -------------------------------------------------------------------------------
-
-				// VR Exit Button
-				"VRButtonExit" {
-					font-size = "14"
-					font-family = "basefont"
-					textcolor = "labelfocus"
-					font-style = "uppercase"
-					bgcolor = "60 60 0 255"
-					image = "graphics/icon_vr_happy"
-				}
-				
-				// VR Button
-				"VRButton" {
-					font-size = "14"
-					font-family = "basefont"
-					textcolor = "labelfocus"
-					font-style = "uppercase"
-					bgcolor = "60 60 0 255"
-					image = "graphics/icon_vr"
-				}
-				
-
-			// -------------------------------------------------------------------------------
-
-
-
-			// Fullscreen - Big Picture -------------------------------------------------------------------------------
-
-				// Fullscreen - Big Picture
-				"FullscreenButton" {
-					font-size = "14"
-					font-family = "basefont"
-					textcolor = "labelfocus"
-					font-style = "uppercase"
-					bgcolor = "60 60 0 255"
-					image = "graphics/icon_controller_bpm"
-				}
-
-			// -------------------------------------------------------------------------------
 
 		// -------------------------------------------------------------------------------
 
-
-
-		// Bottom Bar -------------------------------------------------------------------------------
-
-			// Add Game Button -------------------------------------------------------------------------------
-
-				// Add Game Button
-				"AddGameButton" {
-					font-size = "14"
-					font-family = "basefont"
-					textcolor = "labelfocus"
-					font-style = "uppercase"
-					bgcolor = "60 0 0 255"
-				}
-
-			// -------------------------------------------------------------------------------
-
-			// View Friends Button -------------------------------------------------------------------------------
-
-				"view_friends" {
-					font-size = "14"
-					font-weight = "400"
-					font-family = "basefont"
-					textcolor = "labelfocus"
-					font-style = "uppercase"
-					bgcolor = "60 0 0 255"
-					padding-right = "28"
-					"render_bg" {
-						1 = "image( x1-30, y0+8, x1, y1, graphics/icon_friendslist )"
-					}
-				}
-			// -------------------------------------------------------------------------------
-
-		// -------------------------------------------------------------------------------
 
 	}
 
@@ -280,36 +39,17 @@
 
 		// -------------------------------------------------------------------------------
 
-
-
 		// Menu Bar -------------------------------------------------------------------------------
 
 			// Menu Bar (Not OSX)
 			place {
 				control = "MenuBar"
 				height = "24"
-				x = "0"
-				y = "0"
+				x = "6"
+				y = "6"
 			}
 
 		// -------------------------------------------------------------------------------
-
-
-
-		// Frame Buttons -------------------------------------------------------------------------------
-
-			// Mininmize - Maxinmize - Close
-			place [!$OSX] {
-				control = "frame_minimize, frame_maximize, frame_close"
-				align = "right"
-				height = "24"
-				x = "0"
-				y = "0"
-			}
-			
-		// -------------------------------------------------------------------------------
-
-
 
 		// Top Bar -------------------------------------------------------------------------------
 
@@ -321,13 +61,13 @@
 					align = "right"
 					end-right = "frame_minimize"
 					spacing = "8"
-					height = "30"
+					height = "24"
+					width = "30"
+					y = "6"
 					margin-right = "8"
 				}
 
 			// -------------------------------------------------------------------------------
-
-
 
 			// VR -------------------------------------------------------------------------------
 
@@ -337,13 +77,12 @@
 					align = "right"
 					end-right = "fullscreen"
 					spacing = "8"
-					height = "30"
+					height = "24"
+					y = "6"
 					margin-right = "8"
 				}
 				
 			// -------------------------------------------------------------------------------
-
-
 
 			// Account -------------------------------------------------------------------------------
 
@@ -353,13 +92,12 @@
 					align = "right"
 					end-right = "startvr"
 					spacing = "8"
-					height = "30"
+					height = "24"
+					y = "6"
 					margin-right = "8"
 				}
 
 			// -------------------------------------------------------------------------------
-
-
 
 			// Inbox -------------------------------------------------------------------------------
 
@@ -369,13 +107,13 @@
 					align = "right"
 					end-right = "AccountButton"
 					spacing = "8"
-					height = "30"
+					height = "24"
+					width = "34"
+					y = "6"
 					margin-right = "8"
 				}
 
 			// -------------------------------------------------------------------------------
-
-
 
 			// Announcment Button -------------------------------------------------------------------------------
 
@@ -385,13 +123,13 @@
 					align = "right"
 					end-right = "InboxButton"
 					spacing = "8"
-					height = "30"
+					height = "24"
+					width = "34"
+					y = "6"
 					margin-right = "8"
 				}
 		
 			// -------------------------------------------------------------------------------
-
-
 
 			// Parental Lock -------------------------------------------------------------------------------
 
@@ -401,13 +139,13 @@
 					align = "right"
 					end-right = "AnnouncementButton"
 					spacing = "8"
-					height = "30"
+					height = "24"
+					width = "44"
+					y = "6"
 					margin-right = "8"
 				}
 
 			// -------------------------------------------------------------------------------
-
-
 
 			// Alerts -------------------------------------------------------------------------------
 
@@ -417,7 +155,8 @@
 					align = "right"
 					end-right = "ParentalLockButton"
 					spacing = "8"
-					height = "30"
+					height = "24"
+					y = "6"
 					margin-right = "8"
 				}
 
@@ -425,15 +164,13 @@
 
 		// -------------------------------------------------------------------------------
 
-
-
 		// Bottom Bar -------------------------------------------------------------------------------
 
 			// Status Panel
 			place {
 				control = "UIStatusPanel"
 				align = "bottom"
-				height = "60"
+				height = "40"
 				width = "max"
 				x = "0"
 				y = "0"
@@ -443,18 +180,17 @@
 			place {
 				control = "add_game"
 				align = "bottom"
-				height = "60"
-				width = "120"
+				height = "30"
 				x = "10"
-				y = "10"
+				y = "5"
 			}
 
 			// Bottom Bar - View Friends
 			place {
 				control = "view_friends"
 				align = "bottom-right"
-				height = "60"
-				width = "120"
+				height = "40"
+				width = "160"
 				x = "10"
 				y = "10"
 			}

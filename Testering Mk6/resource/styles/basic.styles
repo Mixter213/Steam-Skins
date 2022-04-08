@@ -1278,7 +1278,7 @@ basic.styles {
 					"ComboBoxButton" {
 						bgcolor = "none" 
 						padding-left = "2" 
-						image = "graphics/icon_down_default" 
+						image = "graphics/icon_down_default"
 						"render_bg" { 
 							0 = "fill( x0, y0 + 2, x0 + 1, y1 - 4, ButtonBorder )" 
 						}

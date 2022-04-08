@@ -89,73 +89,60 @@ Scheme
 		{
 			frame_menu
 			{
-				visible	0	// hidden
+				visible = "0"	// hidden
 			}
 			
 			frame_title
 			{
-				xpos	0
-				ypos	1
-				wide	max 
-				tall	28
-				AutoResize	1
+				xpos = "0"
+				ypos = "0"
+				wide = "max" 
+				tall = "30"
+				AutoResize = "1"
 			}
 			
 			frame_captiongrip
 			{
-				xpos	4
-				ypos	4
-				wide	r20
-				tall	60
-				AutoResize	1
+				xpos = "0"
+				ypos = "0"
+				wide = "max"
+				tall = "30"
+				AutoResize = "1"
 			}
 			
 			frame_minimize
 			{
-				xpos	r45
-				xpos	22 [$OSX]
-				ypos	7
-				ypos	3 [$OSX]
-				wide	20
-				wide	24 [$OSX]
-				tall	20
-				PinCorner	1
-				PinCorner	0 [$OSX]
+				xpos = "r90"
+				ypos = "6"
+				wide = "24"
+				tall = "24"
+				PinCorner = "1"
 			}
 			
 			frame_maximize
 			{
-				xpos	r59
-				xpos	43 [$OSX]
-				ypos	7
-				ypos	3 [$OSX]
-				wide	20
-				wide	24 [$OSX]
-				tall	20
-				visible 0 [!$OSX]
-				PinCorner	1
-				PinCorner	0 [$OSX]
+				xpos = "r60"
+				ypos = "6"
+				wide = "24"
+				tall = "24"
+				PinCorner = "1"
 			}			
 			frame_close
 			{
-				xpos	r29
-				xpos	1 [$OSX]
-				ypos	7
-				ypos	3 [$OSX]
-				wide	20
-				wide	24 [$OSX]
-				tall	20
-				PinCorner	1
-				PinCorner	0 [$OSX]
+				xpos = "r30"
+				ypos = "6"
+				wide = "24"
+				tall = "24"
+				PinCorner = "1"
 			}
 
 			frame_brGrip
 			{
-				xpos	r15
-				ypos	r15
-				wide	14
-				tall	14
-				PinCorner	3
+				xpos = "r15"
+				ypos = "r15"
+				wide = "14"
+				tall = "14"
+				PinCorner = "3"
 			}
 		}
 		

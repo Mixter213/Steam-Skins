@@ -4,7 +4,8 @@
 
         place {
             control = "frame_captiongrip"
-            height = "20"
+            height = "30"
+            width = "max"
         }
 
     }
