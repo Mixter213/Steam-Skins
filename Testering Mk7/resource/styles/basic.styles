@@ -115,7 +115,6 @@ basic.styles {
 				// Menu Button - Hover
 				"MenuButton:hover" {
 					textcolor = "160 160 160 255"
-					bgcolor = "40 40 40 255"
 				}
 
 				// Menu Button - Disabled
@@ -137,21 +136,19 @@ basic.styles {
 				// Menu Dropdown Item - Hover
 				"MenuItem:hover" {
 					textcolor = "200 200 200 255"
-					bgcolor = "40 40 40 255"
 				}
 
 				// Menu Dropdown Item - Disabled
 				"MenuItem:disabled" {
 					textcolor = "120 120 120 255"
-					bgcolor = "20 20 20 255"
 				}
 
 			// ------------------------------------------------------------------------------------------
 
 				// Menu Dropdown Separator
 				"MenuSeparator" {
-					textcolor = "140 140 140 255"
-					bgcolor = "20 20 20 255"
+					textcolor = "40 40 40 255"
+					bgcolor = "30 30 30 255"
 				}
 
 		// ------------------------------------------------------------------------------------------
@@ -229,14 +226,15 @@ basic.styles {
 			"HTML" {
 				bgcolor = "0 0 0 0"
 			}
-
-			// HTML
-			"HTMLRoot" {
-				bgcolor = "0 0 0 0"
-			}
 			
+			// Root
 			"RootMenu"
 			{
+				bgcolor = "0 0 0 0"
+			}
+
+			// HTML Root
+			"HTMLRoot" {
 				bgcolor = "0 0 0 0"
 			}
 
@@ -317,7 +315,7 @@ basic.styles {
 				font-family = "basefont"
 				font-size = "16"
 				textcolor = "200 200 200 255"
-				bgcolor = "30 30 30 255"
+				bgcolor = "0 0 0 0"
 			}
 			
 		// ------------------------------------------------------------------------------------------
@@ -508,7 +506,7 @@ basic.styles {
 				font-family = "basefont"
 				font-size = "16"
 				textcolor = "140 140 140 255"
-				bgcolor = "30 30 30 255"
+				bgcolor = "0 0 0 0"
 				selectedtextcolor="200 200 200 255"
 				selectedbgcolor="40 40 40 255"
 			}
@@ -518,7 +516,7 @@ basic.styles {
 				font-family = "basefont"
 				font-size = "16"
 				textcolor = "140 140 140 255"
-				bgcolor = "30 30 30 255"
+				bgcolor = "0 0 0 0"
 				selectedtextcolor="200 200 200 255"
 				selectedbgcolor="40 40 40 255"
 			}

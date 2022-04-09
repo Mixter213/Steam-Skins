@@ -2,12 +2,6 @@
 
 	styles {
 
-		// Main Window -------------------------------------------------------------------------------
-
-
-
-		// -------------------------------------------------------------------------------
-
 		//Navigation Buttons -------------------------------------------------------------------------------
 
 			// Back Button -------------------------------------------------------------------------------
@@ -57,6 +51,121 @@
 				"ForwardButton:disabled" {
 					image = "graphics/icon_button_forward_disabled"
 				}
+
+
+			// Nav Buttons -------------------------------------------------------------------------------
+
+				"CUINavButton" {
+					font-size = "24"
+					textcolor = "200 200 200 255"
+					bgcolor = "0 0 0 0"
+					padding-left = "4"
+					padding-right = "4"
+				}
+
+				"CUINavButton:hover" {
+					textcolor = "240 240 240 255"
+				}
+				
+		// -------------------------------------------------------------------------------
+
+		// URL Bar -------------------------------------------------------------------------------
+
+			// Label
+			"Label" {
+				textcolor = "120 120 120 255"
+				bgcolor = "0 0 0 0"
+			}
+
+			// Url Bar
+			"TextEntryURL" {
+				textcolor = "120 120 120 255"
+				selectedtextcolor = "160 160 160 255"
+				bgcolor = "0 0 0 0"
+				selectedbgcolor = "30 30 30 255"
+				padding-left = "8"
+				padding-right = "8"
+			}
+
+			// Secure Url Bar
+			"URLBarSecure" {
+				textcolor = "126 166 75 255"
+			}
+
+			// Insecure Url Bar
+			"URLBarBrokenSecure" {
+				textcolor = "173 69 72 255"
+			}
+
+			// EVCert Label
+			"LabelEVCert" {
+				font-size = "14"
+				textcolor = "30 30 30 255"
+				bgcolor = "126 166 75 255"
+				padding-left = "8"
+				padding-right = "8"
+			}
+
+			// EVCert Lock Icon
+			"URLStatusImage" {
+				bgcolor = "0 0 0 0"
+				image = "graphics/html_lock_disabled"
+				padding-left = "8"
+				padding-right = "8"
+			}
+
+			// Stop -------------------------------------------------------------------------------
+
+				// Stop
+				"StopButton" {
+					bgcolor = "0 0 0 0"
+					inset = "-5 0 0 0"
+					image = "graphics/icon_button_stop"
+					padding-left = "8"
+					padding-right = "8"
+				}
+
+				// Stop - Hover
+				"StopButton:hover" {
+					image = "graphics/icon_button_stop_over"
+				}
+
+				// Stop - Active
+				"StopButton:active" {
+					image = "graphics/icon_button_stop_down"
+				}
+
+				// Stop - Disabled
+				"StopButton:disabled" {
+					image = "graphics/icon_button_stop_disabled"
+				}
+
+			// Refresh -------------------------------------------------------------------------------
+
+				// Reload
+				"ReloadButton" {
+					bgcolor = "0 0 0 0"
+					inset = "-5 0 0 0"
+					image = "graphics/icon_button_reload"
+					padding-left = "8"
+					padding-right = "8"
+				}
+
+				// Reload - Hover
+				"ReloadButton:hover" {
+					image = "graphics/icon_button_reload_over"
+				}
+
+				// Reload - Active
+				"ReloadButton:active" {
+					image = "graphics/icon_button_reload_down"
+				}
+
+				// Reload - Disabled
+				"ReloadButton:disabled" {
+					image = "graphics/icon_button_reload_disabled"
+				}
+
 
 		// -------------------------------------------------------------------------------
 
@@ -109,8 +218,8 @@
 			place {
 				control = "label_store, label_library, label_community, label_me, label_console"
 				height = "40"
-				spacing = "10"
-				x = "78"
+				spacing = "8"
+				x = "68"
 				y = "10"
 			}
 
@@ -132,7 +241,6 @@
 			place {
 				control = "back, forward"
 				height = "40"
-				width = "30"
 				x = "0"
 				y = "10"
 			}
@@ -146,9 +254,10 @@
 			// Refresh - Stop - Url Status Image - EvCert - Url Bar
 			place {
 				control = "refresh, stop, URLStatusImage, EVCert, URLBar"
+				spacing = "4"
 				height = "24"
 				width = "max"
-				x = "10"
+				x = "0"
 				y = "58"
 			}
 
