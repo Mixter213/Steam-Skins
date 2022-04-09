@@ -8,6 +8,58 @@
 
 		// -------------------------------------------------------------------------------
 
+		//Navigation Buttons -------------------------------------------------------------------------------
+
+			// Back Button -------------------------------------------------------------------------------
+
+				// Back
+				"BackButton" {
+					bgcolor = "0 0 0 0"
+					inset = "-6 0 0 0"
+					image = "graphics/icon_button_back"
+				}
+
+				// Back - Disabled
+				"BackButton:hover" {
+					image = "graphics/icon_button_back_down"
+				}
+
+				// Back - Disabled
+				"BackButton:active" {
+					image = "graphics/icon_button_back_down"
+				}
+
+				// Back - Disabled
+				"BackButton:disabled" {
+					image = "graphics/icon_button_back_disabled"
+				}
+
+			// Forward -------------------------------------------------------------------------------
+
+				// Forward
+				"ForwardButton" {
+					bgcolor = "0 0 0 0"
+					inset = "-8 0 0 0"
+					image = "graphics/icon_button_forward"
+				}
+
+				// Forward - Hover
+				"ForwardButton:hover" {
+					image = "graphics/icon_button_forward_over"
+				}
+
+				// Forward - Active
+				"ForwardButton:active" {
+					image = "graphics/icon_button_forward_down"
+				}
+
+				// Forward - Disabled
+				"ForwardButton:disabled" {
+					image = "graphics/icon_button_forward_disabled"
+				}
+
+		// -------------------------------------------------------------------------------
+
 	}
 
 	layout {
@@ -17,46 +69,34 @@
 			// Web Page
 			place {
 				control = "WebPanel"
-				start = "LibraryAnchor"
-				dir = "down"
 				height = "max"
 				width = "max"
-				x = "0"
-				y = "0"
+				margin-top = "90"
 			}
 
 			// New Library Page
 			place {
 				control = "NewLibraryPage"
-				start = "LibraryAnchor"
-				dir = "down"
 				height = "max"
 				width = "max"
-				x = "0"
-				y = "0"
+				margin-top = "58"
 			}
 
 			// Console Page
 			place {
 				control = "ConsolePage"
-				start = "LibraryAnchor"
-				dir = "down"
 				height = "max"
 				width = "max"
-				x = "0"
-				y = "0"
+				margin-top = "58"
 			}
 
 			
 			// Music Page
 			place {
 				control = "MusicPage_Details"
-				start = "LibraryAnchor"
-				dir = "down"
 				height = "max"
 				width = "max"
-				x = "0"
-				y = "0"
+				margin-top = "90"
 			}
 
 		//---------------------------------------------------------------------------------------------------------
@@ -93,7 +133,7 @@
 				control = "back, forward"
 				height = "40"
 				width = "30"
-				x = "10"
+				x = "0"
 				y = "10"
 			}
 

@@ -114,7 +114,7 @@ basic.styles {
 
 				// Menu Button - Hover
 				"MenuButton:hover" {
-					textcolor = "140 140 140 255"
+					textcolor = "160 160 160 255"
 					bgcolor = "40 40 40 255"
 				}
 
@@ -223,6 +223,21 @@ basic.styles {
 				font-size = "16"
 				textcolor = "140 140 140 255"
 				bgcolor = "30 30 30 255"
+			}
+
+			// HTML
+			"HTML" {
+				bgcolor = "0 0 0 0"
+			}
+
+			// HTML
+			"HTMLRoot" {
+				bgcolor = "0 0 0 0"
+			}
+			
+			"RootMenu"
+			{
+				bgcolor = "0 0 0 0"
 			}
 
 		// ------------------------------------------------------------------------------------------

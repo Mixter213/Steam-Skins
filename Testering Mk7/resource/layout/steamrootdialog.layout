@@ -4,15 +4,217 @@
 
 		// Main Window -------------------------------------------------------------------------------
 
+			// Frame Container
+			"Frame" {
+				bgcolor = "20 20 20 255"
+			}
+
+			// Frame Title
 			"FrameTitle" {
 				textcolor = "0 0 0 0"
 			}
 
 		// -------------------------------------------------------------------------------
 
+		// Menu Bar -------------------------------------------------------------------------------
+
+			"MenuButton" {
+				bgcolor = "0 0 0 0"
+			}
+
+		// -------------------------------------------------------------------------------
+
+		// Top Bar Items -------------------------------------------------------------------------------
+
+			// Fullscreen -------------------------------------------------------------------------------
+
+				"FullscreenButton" {
+					bgcolor = "0 0 0 0"
+					image="graphics/icon_controller_bpm"
+				}
+
+				"FullscreenButton:hover" {
+					bgcolor = "0 0 0 0"
+					image="graphics/icon_controller_bpm_over"
+				}
+
+				"FullscreenButton:active" {
+					bgcolor = "0 0 0 0"
+					image="graphics/icon_controller_bpm_down"
+				}
+
+				"FullscreenButton:disabled" {
+					bgcolor = "0 0 0 0"
+					image="graphics/icon_controller_bpm_disabled"
+				}
+
+			// VR -------------------------------------------------------------------------------
+
+				"VRButton" {
+					bgcolor = "0 0 0 0"
+					image="graphics/icon_vr"
+				}
+
+				"VRButton:hover" {
+					bgcolor = "0 0 0 0"
+					image="graphics/icon_vr_over"
+				}
+
+				"VRButton:active" {
+					bgcolor = "0 0 0 0"
+					image="graphics/icon_vr_down"
+				}
+
+				"VRButton:disabled" {
+					bgcolor = "0 0 0 0"
+					image="graphics/icon_vr_disabled"
+				}
+
+
+
+				"VRButtonExit" {
+					bgcolor = "0 0 0 0"
+					image="graphics/icon_vr_happy"
+				}
+
+				"VRButtonExit:hover" {
+					bgcolor = "0 0 0 0"
+					image="graphics/icon_vr_happy_over"
+				}
+
+				"VRButtonExit:active" {
+					bgcolor = "0 0 0 0"
+					image="graphics/icon_vr_happy_down"
+				}
+
+				"VRButtonExit:disabled" {
+					bgcolor = "0 0 0 0"
+					image="graphics/icon_vr_disabled"
+				}
+
+			// Inbox -------------------------------------------------------------------------------
+
+				"inbox_button" {
+					bgcolor = "30 30 30 255"
+					image = "graphics/inbox_notification_inactive"
+					inset = "4 4 0 0"
+				}
+
+				"inbox_button:hover" {
+					bgcolor = "40 40 40 255"
+				}
+
+				"inbox_button:selected" {
+					bgcolor = "40 40 40 255"
+				}
+
+
+
+				"inbox_button_active" {
+					bgcolor = "40 40 40 255"
+					image = "graphics/inbox_notification"
+					inset = "4 4 0 0"
+				}
+
+				"inbox_button_active:hover" {
+					bgcolor = "50 50 50 255"
+				}
+
+				"inbox_button_active:selected" {
+					bgcolor = "50 50 50 255"
+				}
+
+			// Announcement -------------------------------------------------------------------------------
+
+				"announcement_button" {
+					bgcolor = "30 30 30 255"
+					image = "graphics/updatenone_notification"
+					inset = "4 2 0 0"
+				}
+
+
+				"announcement_button:hover" {
+					bgcolor = "40 40 40 255"
+				}
+
+				"announcement_button_active" {
+					bgcolor = "40 40 40 255"
+					image = "graphics/updatenew_notification"
+					inset = "4 2 0 0"
+				}
+
+			// Parental Lock -------------------------------------------------------------------------------
+
+				"parental_lock_button" {
+					bgcolor = "30 30 30 255"
+					image="resource/notfamilyview"
+				}
+
+				"parental_lock_button:hover" {
+					bgcolor = "40 40 40 255"
+				}
+
+				"parental_lock_button:selected" {
+					bgcolor = "40 40 40 255"
+					image="graphics/icon_vr_happy_down"
+				}
+
+		// -------------------------------------------------------------------------------
+
+		// Bottom Bar Items -------------------------------------------------------------------------------
+
+			// Add Game -------------------------------------------------------------------------------
+
+				"AddGameButton" {
+					textcolor = "140 140 140 255"
+					bgcolor = "0 0 0 0"
+					padding-left = "28"
+					render {
+						1 = "image( x0, y0 + 10, x1, y1, graphics/icon_addgame )" 
+					}
+				}
+
+				"AddGameButton:hover" {
+					textcolor = "160 160 160 255"
+					bgcolor = "0 0 0 0"
+					padding-left = "28"
+					render {
+						1 = "image( x0, y0 + 10, x1, y1, graphics/icon_addgame_over )" 
+					}
+				}
+
+			// View Friends -------------------------------------------------------------------------------
+
+				// View Friends
+				"view_friends" {
+					textcolor = "140 140 140 255"
+					bgcolor = "0 0 0 0"
+					padding-right = "28"
+					render {
+						1 = "image( x1 - 30, y0 + 10, x1, y1, graphics/icon_friendslist )" 
+					}
+				}
+
+				// View Friends - Hover
+				"view_friends:Hover" {
+					textcolor = "160 160 160 255"
+					bgcolor = "0 0 0 0"
+					textcolor = "140 140 140 255"
+					bgcolor = "0 0 0 0"
+					padding-right = "28"
+					render {
+						1 = "image( x1 - 30, y0 + 10, x1, y1, graphics/icon_friendslist_over )" 
+					}
+				}
+
+				// View Friends - Disabled
+				"view_friends:disabled" {
+					textcolor = "120 120 120 255"
+				}
+
+		// -------------------------------------------------------------------------------
 
 	}
-
 
 	layout {
 
@@ -32,8 +234,9 @@
 				control = "UINavigatorPanel"
 				height = "max"
 				width = "max"
-				y = "24"
-				margin-bottom = "60"
+				margin = "8"
+				margin-top = "36"
+				margin-bottom = "76"
 			}
 
 
@@ -170,19 +373,18 @@
 			place {
 				control = "UIStatusPanel"
 				align = "bottom"
-				height = "40"
+				height = "60"
 				width = "max"
-				x = "0"
-				y = "0"
+				margin = "8"
 			}
 
 			// Bottom Bar - Add Game
 			place {
 				control = "add_game"
 				align = "bottom"
-				height = "30"
-				x = "10"
-				y = "5"
+				height = "40"
+				x = "20"
+				margin-bottom = "24"
 			}
 
 			// Bottom Bar - View Friends
@@ -190,9 +392,9 @@
 				control = "view_friends"
 				align = "bottom-right"
 				height = "40"
-				width = "160"
-				x = "10"
-				y = "10"
+				width = "120"
+				margin-right = "20"
+				margin-bottom = "24"
 			}
 
 		// -------------------------------------------------------------------------------
