@@ -239,6 +239,16 @@
 				margin-bottom = "72"
 			}
 
+			// Frame Buttons
+			place {
+				control = "frame_minimize,frame_maximize,frame_close"
+				align = "right"
+				spacing = "6"
+				margin-right = "10"
+				y = "10"
+			}
+
+
 
 		// -------------------------------------------------------------------------------
 

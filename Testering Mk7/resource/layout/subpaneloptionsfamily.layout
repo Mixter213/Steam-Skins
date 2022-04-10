@@ -1,0 +1,128 @@
+"resource/layout/subpaneloptionscloud.layout"
+{
+
+	styles {
+
+		"Highlight" {
+			textcolor = "160 160 160 255"
+			bgcolor = "0 0 0 0"
+		}
+
+		"Label" {
+			textcolor = "120 120 120 255"
+			bgcolor = "0 0 0 0"
+		}
+
+	}
+	
+	layout {
+
+		// Family Title
+		place {
+			controls = "FamilyOptionsTitle"
+			height = "30"
+			width = "max"
+			margin = "20"
+			margin-top = "10"
+		}
+
+		// Title Description
+		place {
+			controls = "FamilyOptionsText"
+			start = "FamilyOptionsTitle"
+			dir = "down"
+			width = "max"
+			margin-top = "10"
+			margin-right = "10"
+		}
+		
+		place {
+			controls = "ManageOptionsLabel"
+			start = "FamilyOptionsText"
+			dir = "down"
+			height = "30"
+			margin-top = "10"
+			margin-right = "10"
+		}
+		
+		place {
+			controls = "Divider1"
+			start = "ManageOptionsLabel"
+			dir = "down"
+			height = "2"
+			width = "max"
+			margin-top = "10"
+			margin-right = "10"
+		}
+		
+		place {
+			controls = "FamilySharingTitle"
+			start = "Divider1"
+			dir = "down"
+			height = "30"
+			width = "max"
+			margin-top = "10"
+			margin-right = "10"
+		}
+		
+		place {
+			controls = "FamilySharingInfoText"
+			start = "FamilySharingTitle"
+			dir = "down"
+			width = "max"
+			margin-top = "10"
+			margin-right = "10"
+		}
+		
+		place {
+			controls = "AuthorizedDeviceCheck"
+			start = "FamilySharingInfoText"
+			dir = "down"
+			height = "30"
+			width = "300"
+			margin-top = "10"
+			margin-right = "10"
+		}
+		
+		place {
+			controls = "ManageSharingLabel"
+			start = "FamilySharingInfoText"
+			dir = "down"
+			height = "30"
+			width = "230"
+			margin-right = "10"
+			margin-left = "310"
+		}
+		
+		place {
+			controls = "BorrowersLabel"
+			start = "FamilySharingInfoText"
+			dir = "down"
+			height = "30"
+			width = "max"
+			margin-top = "50"
+			margin-right = "10"
+		}
+		
+		place {
+			controls = "BorrowersList"
+			start = "BorrowersLabel"
+			dir = "down"
+			height = "120"
+			width = "max"
+			margin-top = "10"
+			margin-right = "10"
+		}
+		
+		place {
+			controls = "ShowNotificationsCheck"
+			start = "BorrowersList"
+			dir = "down"
+			width = "max"
+			margin-top = "10"
+			margin-right = "10"
+		}
+		
+	}
+
+}

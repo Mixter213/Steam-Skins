@@ -1,0 +1,116 @@
+"resource/layout/settingsdialog.layout" {
+		
+	// -------------------------------------------------------------
+	//
+	//  Account - cached\AccoutnPage.res
+	//  	- Don't know how to modify from skin
+	//   
+	//  Family - resource\layout\subpaneloptionsfamily.layout
+	// 		- sub panel options family
+	//
+	//  In-Game - resource\layout\subpaneloptionsingame.layout
+	// 		- sub panel options in game
+	//
+	//  Interface - cached\SettingsSubInterface.res
+	//  	- Don't know how to modify from skin
+	//  	- Settings Sub Interface
+	//   
+	//  Library - resource\layout\subpaneloptionslibrary.layout
+	// 		- sub panel options library
+	//
+	//  Downloads - resource\layout\subpaneloptionsdownloads.layout
+	// 		- sub panel options downloads
+	//
+	//  Cloud - resource\layout\subpaneloptionsdowncloud.layout
+	// 		- sub panel options cloud
+	//
+	//  Music - resource\layout\settingssubmusic.layout
+	// 		- settings sub music
+	//
+	//  Broadcasting - resource\layout\settingssubbroadcast.layout
+	// 		- settings sub broadcast
+	//
+	//  Remote Play - resource\layout\settingssubstreaming.layout
+	// 		- settings sub streaming
+	//
+	//  Web Browser - resource\layout\subpaneloptionsbrowser.layout
+	// 		- sub panel options browser
+	//
+	//  Controller - resource\layout\subpaneloptionscontroller.layout
+	// 		- sub panel options controller
+	//
+	//  Shader Pre-Caching - resource\layout\subpaneloptionsshadercache.layout
+	// 		- sub panel options shader cache
+	//
+	// -------------------------------------------------------------
+
+	styles {
+		
+		// Main Settings Container - Min Height and Width is the hieght and width of the settings
+		"CDialogSettings" {
+			minimum-height = "600"
+			minimum-width = "800"
+			bgcolor = "20 20 20 255"
+		}
+
+		"SettingsList" {
+			bgcolor = "0 0 0 0"
+		}
+
+		"PropertySheet" {
+			bgcolor = "0 0 0 0"
+		}
+
+		// Dialog Buttons ------------------------------------------------------------------------------------------
+
+			"PropertyDialogButton" {
+				textcolor = "120 120 120 255"
+				bgcolor = "30 30 30 255"
+			}
+
+			"PropertyDialogButton:hover" {
+				textcolor = "160 160 160 255"
+				bgcolor = "40 40 40 255"
+			}
+
+		// ------------------------------------------------------------------------------------------
+
+	}
+
+
+
+	layout
+	{
+
+		place {
+			control = "settingslist, sheet"
+			height = "max"
+			width = "max"
+			x = "10"
+			y = "38"
+			margin-right = "10"
+			margin-bottom = "50"
+		}
+
+		place {
+			control = "okbutton"
+			align = "bottom-right"
+			height = "30"
+			width = "90"
+			margin-right = "10"
+			margin-bottom = "10"
+		}
+
+		place {
+			control = "cancelbutton"
+			end-right = "okbutton"
+			align = "bottom-right"
+			height = "30"
+			width = "90"
+			margin-right = "10"
+			margin-bottom = "10"
+		}
+
+	}
+
+}

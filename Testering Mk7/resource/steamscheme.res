@@ -25,7 +25,7 @@ Scheme {
 			}
 			
 			"frame_minimize" {
-				xpos = "r90"
+				xpos = "r60"
 				ypos = "6"
 				wide = "24"
 				tall = "24"
@@ -33,7 +33,7 @@ Scheme {
 			}
 			
 			"frame_maximize" {
-				xpos = "r60"
+				xpos = "r90"
 				ypos = "6"
 				wide = "24"
 				tall = "24"
@@ -57,80 +57,41 @@ Scheme {
 			}
 		}
 		
+		WizardPanel {
 
-
-		PropertyDialog {
-
-			"sheet" {
-				xpos = "9"
-				ypos = "26"
-				wide = "100"
-				tall = "100"
-			}
-			
-			"ApplyButton" {
-				xpos = "r101"
-				ypos = "r36"
-				wide = "200"
-				tall = "50"
-			}
-			
-			"CancelButton" {
-				xpos = "r203"
-				ypos = "r36"
-				wide = "50"
-				tall = "200"
-			}
-			
-			"OKButton" {
-				xpos = "r304"
-				ypos = "r36"
-				wide = "50"
-				tall = "50"
-			}
-		}
-
-		
-		WizardPanel
-		{
 			"subpanel" {
-				xpos = "10"
-				ypos = "28"
-				wide = "r10"
 				tall = "r48"
-				AutoResize = "3"
+				wide = "r10"
+				xpos = "10"
+				ypos = "34"
 			}
 		
 			"PrevButton" {
-				xpos = "r306"
-				ypos = "r36"
-				wide = "92"
-				tall = "24"
-				PinCorner = "3"
+				tall = "30"
+				wide = "90"
+				xpos = "r300"
+				ypos = "r40"
 			}
 			
 			"NextButton" {
-				xpos = "r204"
-				ypos = "r36"
-				wide = "92"
-				tall = "24"
-				PinCorner = "3"
+				tall = "30"
+				wide = "90"
+				xpos = "r200"
+				ypos = "r40"
 			}
 
 			"CancelButton" {
-				xpos = "r102"
-				ypos = "r36"
-				wide = "92"
-				tall = "24"
-				PinCorner = "3"
+				tall = "30"
+				wide = "90"
+				xpos = "r100"
+				ypos = "r40"
 			}
 
 			"FinishButton" {
-				xpos = "r102"
-				ypos = "r36"
-				wide = "92"
-				tall = "24"
-				PinCorner = "3"
+				tall = "30"
+				wide = "90"
+				xpos = "r100"
+				ypos = "r40"
 			}
 
 		}

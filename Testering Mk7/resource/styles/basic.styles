@@ -187,8 +187,10 @@ basic.styles {
 				selectedtextcolor="200 200 200 255"
 				selectedbgcolor="40 40 40 255"
 				bgcolor = "0 0 0 0"
+				padding-left = "10"
+				padding-right = "10"
 			}
-				
+
 			// Check Button List
 			"CheckButtonList" {
 				font-family = "basefont"
@@ -219,7 +221,7 @@ basic.styles {
 				font-family = "basefont"
 				font-size = "16"
 				textcolor = "140 140 140 255"
-				bgcolor = "30 30 30 255"
+				bgcolor = "0 0 0 0"
 			}
 
 			// HTML
@@ -316,6 +318,18 @@ basic.styles {
 				font-size = "16"
 				textcolor = "200 200 200 255"
 				bgcolor = "0 0 0 0"
+			}
+
+			// URLLabel
+			"URLLabel" {
+				font-style = "underline"
+				textcolor = "120 120 120 255"
+				bgcolor = "0 0 0 0"
+			}
+			
+			// URLLabel - Hover
+			"URLLabel:hover" {
+				textcolor = "160 160 160 255"
 			}
 			
 		// ------------------------------------------------------------------------------------------
@@ -563,7 +577,7 @@ basic.styles {
 
 			// Divider
 			"Divider" {
-				bgcolor = "30 30 30 255"
+					bgcolor = "30 30 30 255"
 			}
 
 		// ------------------------------------------------------------------------------------------
