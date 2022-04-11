@@ -1,0 +1,277 @@
+"resource/layout/subpaneloptionsdownloads.layout" {
+
+	layout {
+
+		// Content Libraries ------------------------------------------------------------------------------------------
+
+			// Content Libraries Title
+			place {
+				controls = "LibrariesLabel"
+				height = "24"
+				width = "max"
+				margin = "20"
+				margin-top = "10"
+			}
+
+			// Content Libraries Button
+			place {
+				controls = "ManageInstalledApps"
+				start = "LibrariesLabel"
+				dir = "down"
+				width = "max"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// Content Libraries Description
+			place {
+				controls = "ManageInstalledappsLabel"
+				start = "ManageInstalledApps"
+				dir = "down"
+				width = "max"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+		// Divider 1 ------------------------------------------------------------------------------------------
+
+			// Divider
+			place {
+				controls = "Divider1"
+				start = "ManageInstalledappsLabel"
+				dir = "down"
+				height = "2"
+				width = "max"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+		// Download Region ------------------------------------------------------------------------------------------
+
+			// Download Region Title
+			place {
+				controls = "RegionLabel"
+				start = "Divider1"
+				dir = "down"
+				width = "max"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// Download Region Button
+			place {
+				controls = "DownloadRegionCombo"
+				start = "RegionLabel"
+				dir = "down"
+				width = "235"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// Download Region Description
+			place {
+				controls = "RegionInfoLabel"
+				start = "DownloadRegionCombo"
+				dir = "down"
+				width = "max"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+		// Divider 2 ------------------------------------------------------------------------------------------
+
+			// Divider
+			place {
+				controls = "Divider2"
+				start = "RegionInfoLabel"
+				dir = "down"
+				height = "2"
+				width = "max"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+		// Download Restrictions ------------------------------------------------------------------------------------------
+
+			// Download Restrictions Title
+			place {
+				controls = "RestrictionsLabel"
+				start = "RegionInfoLabel"
+				dir = "down"
+				width = "max"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// Download Restrictions CheckBox
+			place {
+				controls = "AutoUpdateTimeRestrictCheckbox"
+				start = "RestrictionsLabel"
+				dir = "down"
+				width = "235"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// Download Restrictions Start
+			place {
+				controls = "AutoUpdateTimeRestrictStart"
+				start = "AutoUpdateTimeRestrictCheckbox"
+				dir = "down"
+				height = "24"
+				width = "90"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// Download Restrictions Mid Label
+			place {
+				controls = "AutoUpdateTimeRestrictEndLabel"
+				start = "AutoUpdateTimeRestrictStart"
+				height = "24"
+				width = "50"
+				margin-right = "10"
+			}
+
+			// Download Restrictions End
+			place {
+				controls = "AutoUpdateTimeRestrictEnd"
+				start = "AutoUpdateTimeRestrictEndLabel"
+				height = "24"
+				width = "90"
+				margin-right = "10"
+			}
+
+		// Download Restrictions Sub Options ------------------------------------------------------------------------------------------
+
+			// Download Restrictions Allow Downloads During Gameplay
+			place {
+				controls = "AllowDownloadsDuringGameplayCheckbox"
+				start = "AutoUpdateTimeRestrictStart"
+				dir = "down"
+				width = "235"
+				margin-top = "4"
+				margin-right = "10"
+			}
+
+			// Download Restrictions Throttle Downloads While Streaming
+			place {
+				controls = "ThrottleDownloadsWhileStreamingCheckbox"
+				start = "AllowDownloadsDuringGameplayCheckbox"
+				dir = "down"
+				width = "235"
+				margin-top = "4"
+				margin-right = "10"
+			}
+
+			// Download Restrictions Throttle Downloads While Streaming
+			place {
+				controls = "DownloadRatesInBitsCheckbox"
+				start = "ThrottleDownloadsWhileStreamingCheckbox"
+				dir = "down"
+				width = "235"
+				margin-top = "4"
+				margin-right = "10"
+			}
+
+		// Download Restrictions Throttling ------------------------------------------------------------------------------------------
+
+			// Throttle Button
+			place {
+				controls = "ThrottleCheckbox"
+				start = "RestrictionsLabel"
+				dir = "down"
+				align = "right"
+				width = "235"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// Throttle Selected Speed
+			place {
+				controls = "ThrottleRateCurrent"
+				start = "ThrottleCheckbox"
+				dir = "down"
+				width = "235"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// Throttle Selected Edit Header
+			place {
+				controls = "ThrottleRateEditLabel"
+				start = "ThrottleRateCurrent"
+				dir = "down"
+				width = "235"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// Throttle Selected Edit
+			place {
+				controls = "ThrottleRateEdit"
+				start = "ThrottleRateEditLabel"
+				dir = "down"
+				width = "90"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// Throttle Selected Edit Suffix
+			place {
+				controls = "ThrottleRateEditSuffix"
+				start = "ThrottleRateEdit"
+				width = "235"
+				margin-right = "10"
+			}
+
+			// Throttle Selected Apply
+			place {
+				controls = "ThrottleRateApply"
+				start = "ThrottleRateEdit"
+				dir = "down"
+				width = "235"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+		// Divider 3 ------------------------------------------------------------------------------------------
+
+			// Divider
+			place {
+				controls = "Divider3"
+				start = "DownloadRatesInBitsCheckbox"
+				dir = "down"
+				height = "2"
+				width = "max"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+		// Download Cache ------------------------------------------------------------------------------------------
+
+			// Cache Clear Button
+			place {
+				controls = "FlushDownloadConfig"
+				start = "Divider3"
+				dir = "down"
+				width = "235"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// Cache Clear Description
+			place {
+				controls = "FlushDownloadConfigLabel"
+				start = "FlushDownloadConfig"
+				dir = "down"
+				width = "max"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+		// ------------------------------------------------------------------------------------------
+
+	}
+
+}

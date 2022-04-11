@@ -36,6 +36,7 @@
 			margin-right = "10"
 		}
 		
+		// Manage Family View
 		place {
 			controls = "ManageOptionsLabel"
 			start = "FamilyOptionsText"
@@ -45,6 +46,7 @@
 			margin-right = "10"
 		}
 		
+		// Divider
 		place {
 			controls = "Divider1"
 			start = "ManageOptionsLabel"
@@ -55,6 +57,7 @@
 			margin-right = "10"
 		}
 		
+		// Family Library Title
 		place {
 			controls = "FamilySharingTitle"
 			start = "Divider1"
@@ -65,6 +68,7 @@
 			margin-right = "10"
 		}
 		
+		// Family Library Description
 		place {
 			controls = "FamilySharingInfoText"
 			start = "FamilySharingTitle"
@@ -74,6 +78,7 @@
 			margin-right = "10"
 		}
 		
+		// Authorized Library Sharing
 		place {
 			controls = "AuthorizedDeviceCheck"
 			start = "FamilySharingInfoText"
@@ -84,6 +89,7 @@
 			margin-right = "10"
 		}
 		
+		// Manage Other Computers
 		place {
 			controls = "ManageSharingLabel"
 			start = "FamilySharingInfoText"
@@ -94,6 +100,7 @@
 			margin-left = "310"
 		}
 		
+		// List of Family Sharing Title
 		place {
 			controls = "BorrowersLabel"
 			start = "FamilySharingInfoText"
@@ -104,6 +111,7 @@
 			margin-right = "10"
 		}
 		
+		// List of Family Sharing Items
 		place {
 			controls = "BorrowersList"
 			start = "BorrowersLabel"
@@ -114,6 +122,7 @@
 			margin-right = "10"
 		}
 		
+		// Show Notification
 		place {
 			controls = "ShowNotificationsCheck"
 			start = "BorrowersList"

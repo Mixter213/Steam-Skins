@@ -1,0 +1,171 @@
+"resource/layout/subpaneloptionsingame.layout" {
+
+	layout {
+
+		// Library Title
+		place {
+			controls = "TitleLabel"
+			height = "24"
+			width = "max"
+			margin = "20"
+			margin-top = "2"
+		}
+
+		// Display Size ------------------------------------------------------------------------------------------
+
+			// Display Size Title
+			place {
+				controls = "LibraryDisplaySizeLabel"
+				start = "TitleLabel"
+				dir = "down"
+				width = "max"
+				margin-top = "2"
+				margin-right = "10"
+			}
+
+			// Display Size - Automatic
+			place {
+				controls = "LibraryDisplaySizeAutomatic"
+				start = "LibraryDisplaySizeLabel"
+				dir = "down"
+				width = "max"
+				margin-top = "2"
+				margin-right = "10"
+			}
+
+			// Display Size - Automatic Description
+			place {
+				controls = "LibraryDisplaySizeAutomaticLabel"
+				start = "LibraryDisplaySizeAutomatic"
+				dir = "down"
+				width = "max"
+				margin-top = "2"
+				margin-right = "10"
+			}
+
+			// Display Size - Small
+			place {
+				controls = "LibraryDisplaySizeSmall"
+				start = "LibraryDisplaySizeAutomaticLabel"
+				dir = "down"
+				width = "max"
+				margin-top = "2"
+				margin-right = "10"
+			}
+
+			// Display Size - Medium
+			place {
+				controls = "LibraryDisplaySizeMedium"
+				start = "LibraryDisplaySizeSmall"
+				dir = "down"
+				width = "max"
+				margin-top = "2"
+				margin-right = "10"
+			}
+
+			// Display Size - Large
+			place {
+				controls = "LibraryDisplaySizeLarge"
+				start = "LibraryDisplaySizeMedium"
+				dir = "down"
+				width = "max"
+				margin-top = "2"
+				margin-right = "10"
+			}
+
+		// Low Bandwidth ------------------------------------------------------------------------------------------
+
+			// Low Bandwidth Selector
+			place {
+				controls = "LibraryLowBandwidthCheckbox"
+				start = "LibraryDisplaySizeLarge"
+				dir = "down"
+				width = "235"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// Low Bandwidth Description
+			place {
+				controls = "LibraryLowBandwidthLabel"
+				start = "LibraryLowBandwidthCheckbox"
+				dir = "down"
+				width = "235"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+		// Disable Content ------------------------------------------------------------------------------------------
+
+			// Disable Content Selector
+			place {
+				controls = "LibraryDisableCommunityContentCheckbox"
+				start = "LibraryLowBandwidthLabel"
+				dir = "down"
+				width = "235"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// Disable Content Description
+			place {
+				controls = "LibraryDisableCommunityContentLabel"
+				start = "LibraryDisableCommunityContentCheckbox"
+				dir = "down"
+				width = "235"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+		// Low Performance ------------------------------------------------------------------------------------------
+
+			// Low Performance Selector
+			place {
+				controls = "LibraryLowPerfCheckbox"
+				start = "LibraryDisplaySizeLarge"
+				dir = "down"
+				align = "right"
+				width = "235"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// Low Performance Description
+			place {
+				controls = "LibraryLowPerfLabel"
+				start = "LibraryLowPerfCheckbox"
+				dir = "down"
+				align = "right"
+				width = "235"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+		// Ingame Icon ------------------------------------------------------------------------------------------
+
+			// Ingame Icon Selector
+			place {
+				controls = "LibraryDisplayIconInGameListCheckbox"
+				start = "LibraryLowPerfLabel"
+				dir = "down"
+				align = "right"
+				width = "235"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// Ingame Icon Description
+			place {
+				controls = "LibraryLowPerfLabel"
+				start = "LibraryDisplayIconInGameListCheckbox"
+				dir = "down"
+				width = "235"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+		// ------------------------------------------------------------------------------------------
+
+	}
+
+}

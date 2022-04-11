@@ -1,0 +1,333 @@
+"resource/layout/subpaneloptionsingame.layout" {
+
+	layout {
+
+		// Overlay ------------------------------------------------------------------------------------------
+
+			// Steam Overlay Title
+			place {
+				controls = "TitleLabel"
+				height = "24"
+				width = "max"
+				margin = "20"
+				margin-top = "2"
+			}
+
+			// Title Description
+			place {
+				controls = "DescriptionLabel"
+				start = "TitleLabel"
+				dir = "down"
+				width = "max"
+				margin-top = "2"
+				margin-right = "10"
+			}
+			
+			// Enable Overlay
+			place {
+				controls = "EnableOverlayCheck"
+				start = "DescriptionLabel"
+				dir = "down"
+				height = "24"
+				margin-top = "2"
+				margin-right = "10"
+			}
+
+			// Use Big Picture Overlay
+			place [!$OSX] {
+				controls = "EnableSCTenfootOverlayCheck"
+				start = "EnableOverlayCheck"
+				dir = "down"
+				height = "24"
+				margin-top = "2"
+				margin-right = "10"
+			}
+
+			// Use Desktop Game Theatre with VR
+			place [!$OSX&&!$LINUX] {
+				controls = "EnableVRDesktopGameTheaterCheck"
+				start = "EnableSCTenfootOverlayCheck"
+				dir = "down"
+				height = "24"
+				margin-top = "2"
+				margin-right = "10"
+			}
+
+			// Overlay Hotkey Header
+			place {
+				controls = "HotKeySelectorLabel"
+				start = "EnableVRDesktopGameTheaterCheck"
+				dir = "down"
+				height = "24"
+				width = "235"
+				margin-top = "2"
+				margin-right = "10"
+			}
+
+			// Overlay Hotkey Selector
+			place {
+				controls = "HotKeySelector"
+				start = "HotKeySelectorLabel"
+				dir = "down"
+				width = "235"
+				margin-top = "2"
+				margin-right = "10"
+			}
+
+		// Screenshot ------------------------------------------------------------------------------------------
+
+			// Screenshot Hotkey Header
+			place {
+				controls = "ScreenshotLabel"
+				start = "EnableVRDesktopGameTheaterCheck"
+				dir = "down"
+				align = "right"
+				height = "24"
+				width = "235"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// Screenshot Hotkey Selector
+			place {
+				controls = "ScreenshotHotKeySelector"
+				start = "ScreenshotLabel"
+				dir = "down"
+				width = "235"
+				margin-top = "2"
+				margin-right = "10"
+			}
+
+			// Screenshot Hotkey Selector
+			place {
+				controls = "SetScreenshotFolderButton"
+				start = "ScreenshotHotKeySelector"
+				dir = "down"
+				width = "235"
+				margin-top = "2"
+				margin-right = "10"
+			}
+
+			// Screenshot Hotkey Selector
+			place {
+				controls = "ScreenshotActionLabel"
+				start = "SetScreenshotFolderButton"
+				dir = "down"
+				width = "235"
+				margin-top = "2"
+				margin-right = "10"
+			}
+
+		// In Game FPS Counter ------------------------------------------------------------------------------------------
+
+			// In Game FPS Counter Header
+			place {
+				controls = "ShowIngameFPSLabel"
+				start = "HotKeySelector"
+				dir = "down"
+				height = "24"
+				width = "235"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// In Game FPS Counter Combo
+			place {
+				controls = "ShowIngameFPSCombo"
+				start = "ShowIngameFPSLabel"
+				dir = "down"
+				width = "235"
+				margin-top = "2"
+				margin-right = "10"
+			}
+
+			// In Game FPS High Contract Check
+			place {
+				controls = "ShowIngameFPSContrastCheck"
+				start = "ShowIngameFPSCombo"
+				dir = "down"
+				width = "235"
+				margin-top = "2"
+				margin-right = "10"
+			}
+
+		// Screenshot Notification ------------------------------------------------------------------------------------------
+
+			// Screenshot Notification Header
+			place {
+				controls = "ScreenshotNotifyCheck"
+				start = "ScreenshotActionLabel"
+				dir = "down"
+				height = "24"
+				width = "235"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// Screenshot Notification Play Sound Check
+			place {
+				controls = "ScreenshotPlaySoundCheck"
+				start = "ScreenshotNotifyCheck"
+				dir = "down"
+				width = "235"
+				margin-top = "2"
+				margin-right = "10"
+			}
+
+			// Screenshot Notification Save Copy Check
+			place {
+				controls = "ScreenshotSaveUncompressedCheck"
+				start = "ScreenshotPlaySoundCheck"
+				dir = "down"
+				width = "235"
+				margin-top = "2"
+				margin-right = "10"
+			}
+
+		// Divider 1 ------------------------------------------------------------------------------------------
+
+			// Divider
+			place {
+				controls = "Divider1"
+				start = "ScreenshotSaveUncompressedCheck"
+				dir = "down"
+				align = "right"
+				height = "2"
+				width = "max"
+				margin-top = "2"
+				margin-right = "10"
+			}
+
+		// Chat Filtering ------------------------------------------------------------------------------------------
+
+			// Chat Filtering Header
+			place {
+				controls = "TextFilterLabel"
+				start = "Divider1"
+				dir = "down"
+				height = "24"
+				width = "235"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// Chat Filtering Description
+			place {
+				controls = "TextFilterStatus"
+				start = "TextFilterLabel"
+				dir = "down"
+				width = "235"
+				margin-top = "2"
+				margin-right = "10"
+			}
+
+			// Chat Filtering Selector
+			place {
+				controls = "TextFilterUpdateSettingURL"
+				start = "TextFilterStatus"
+				dir = "down"
+				width = "235"
+				margin-top = "2"
+				margin-right = "10"
+			}
+
+		// Ping Limit ------------------------------------------------------------------------------------------
+
+			// Ping Limit Header
+			place {
+				controls = "PingRateLabel"
+				start = "Divider1"
+				dir = "down"
+				align = "right"
+				height = "24"
+				width = "235"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// Ping Limit Description
+			place {
+				controls = "PingRateInfo"
+				start = "PingRateLabel"
+				dir = "down"
+				width = "235"
+				margin-top = "2"
+				margin-right = "10"
+			}
+
+			// Ping Limit Selector
+			place {
+				controls = "PingRateCombo"
+				start = "PingRateInfo"
+				dir = "down"
+				height = "24"
+				width = "235"
+				margin-top = "2"
+				margin-right = "10"
+			}
+
+		// Divider 2 ------------------------------------------------------------------------------------------
+
+		// Divider
+		place {
+			controls = "Divider2"
+			start = "PingRateCombo"
+			dir = "down"
+			align = "right"
+			height = "2"
+			width = "max"
+			margin-top = "2"
+			margin-right = "10"
+		}
+
+		// Steam Networking ------------------------------------------------------------------------------------------
+
+			// Steam Networking Header
+			place {
+				controls = "ShareIPNetworkingLabel"
+				start = "Divider2"
+				dir = "down"
+				height = "24"
+				width = "235"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// Steam Networking Description
+			place {
+				controls = "ShareIPNetworkingInfo"
+				start = "ShareIPNetworkingLabel"
+				dir = "down"
+				width = "235"
+				margin-top = "2"
+				margin-right = "10"
+			}
+
+			// Steam Networking Selector
+			place {
+				controls = "ShareIPNetworkingURL"
+				start = "ShareIPNetworkingInfo"
+				dir = "down"
+				width = "235"
+				margin-top = "2"
+				margin-right = "10"
+			}
+
+
+			// Steam Networking Combo
+			place {
+				controls = "ShareIPNetworkingCombo"
+				start = "Divider2"
+				dir = "down"
+				align = "right"
+				height = "24"
+				width = "235"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+		// ------------------------------------------------------------------------------------------
+
+	}
+
+}

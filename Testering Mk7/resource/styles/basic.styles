@@ -369,40 +369,34 @@ basic.styles {
 					font-family = "basefont"
 					font-size = "16"
 					textcolor = "140 140 140 255"
-					bgcolor = "40 40 40 255"
    				   image="graphics/chkUnselStd"
 				}
 
 				// Check Button - Hover
 				"CheckButton:hover" {
 					textcolor = "200 200 200 255"
-					bgcolor = "60 60 60 255"
 				}
 
 				// Check Button - Selected
 				"CheckButton:selected" {
 					textcolor = "200 200 200 255"
-					bgcolor = "60 60 60 255"
    				   image="graphics/chkSelStd"
 				}
 
 				// Check Button - Selected - Hover
 				"CheckButton:selected:hover" {
 					textcolor = "200 200 200 255"
-					bgcolor = "70 70 70 255"
 				}
 				
 				// Check Button - Disabled
 				"CheckButton:disabled" {
 					textcolor = "120 120 120 255"
-					bgcolor = "30 30 30 255"
    				   image="graphics/chkUnselDis"
 				}
 
 				// Check Button - Indeterminate
 				"IndeterminateCheckButton" {
 					textcolor = "120 120 120 255"
-					bgcolor = "30 30 30 255"
 					image = "graphics/chkIndeterminate"
 				}
 
@@ -520,10 +514,33 @@ basic.styles {
 				font-family = "basefont"
 				font-size = "16"
 				textcolor = "140 140 140 255"
-				bgcolor = "0 0 0 0"
+				bgcolor = "30 30 30 30"
 				selectedtextcolor="200 200 200 255"
 				selectedbgcolor="40 40 40 255"
 			}
+
+			// Text Entry - Disabled
+			"TextEntry:disabled" {
+				textcolor = "120 120 120 255"
+				bgcolor = "20 20 20 30"
+			}
+
+			// Text Entry - Empty
+			"TextEntry:empty" {
+				font-style = "italic"
+				textcolor = "120 120 120 255"
+				bgcolor = "20 20 20 30"
+			}
+
+			// Text Entry - Focus
+			"TextEntry:focus" {
+				textcolor = "160 160 160 255"
+				bgcolor = "40 40 40 30"
+			}
+
+		// ------------------------------------------------------------------------------------------
+
+		// Rich Text ------------------------------------------------------------------------------------------
 
 			// Rich Text
 			"RichText" {
