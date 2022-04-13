@@ -1,0 +1,225 @@
+"resource/layout/settingssubstreaming.layout" {
+
+	layout {
+
+		// Remote Play ------------------------------------------------------------------------------------------
+
+			// Description
+			place {
+				controls = "DescriptionLabel"
+				width = "max"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// Enable Remote Play
+			place {
+				controls = "EnableStreaming"
+				start = "DescriptionLabel"
+				dir = "down"
+				height = "24"
+				margin-top = "4"
+			}
+
+			// Remote Clients List
+			place {
+				controls = "RemoteClientList"
+				start = "EnableStreaming"
+				dir = "down"
+				width = "max"
+				margin-top = "4"
+			}
+
+		// Pairing Buttons ------------------------------------------------------------------------------------------
+
+			// Pair Button
+			place {
+				controls = "Pair"
+				start = "RemoteClientList"
+				dir = "down"
+				height = "30"
+				width = "190"
+				margin-top = "10"
+			}
+
+			// Unpair Button
+			place {
+				controls = "Unpair"
+				start = "Pair"
+				height = "30"
+				width = "190"
+				margin-left = "10"
+			}
+
+			// Unpair Button
+			place {
+				controls = "SetPIN"
+				start = "Unpair"
+				height = "30"
+				width = "190"
+				margin-left = "10"
+			}
+
+		// Dirrect Connection (P2P) ------------------------------------------------------------------------------------------
+
+			// P2P Title
+			place {
+				controls = "P2PScopeLabel"
+				start = "Pair"
+				dir = "down"
+				height = "24"
+				width = "max"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// P2P Button
+			place {
+				controls = "P2PScope"
+				start = "P2PScopeLabel"
+				dir = "down"
+				height = "24"
+				width = "190"
+				margin-top = "4"
+				margin-right = "10"
+			}
+
+		// Divider ------------------------------------------------------------------------------------------
+
+			// Divider
+			place {
+				controls = "HostDivider"
+				start = "P2PScope"
+				dir = "down"
+				height = "2"
+				width = "max"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+		// Host ------------------------------------------------------------------------------------------
+
+			// Host Title
+			place {
+				controls = "HostLabel"
+				start = "HostDivider"
+				dir = "down"
+				height = "24"
+				width = "max"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// Host Button - Unsupported Platform
+			place {
+				controls = "UnsupportedPlatform"
+				start = "HostLabel"
+				dir = "down"
+				width = "max"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// Host Button - Options
+			place {
+				controls = "AdvancedHostOptions"
+				start = "HostLabel"
+				dir = "down"
+				width = "190"
+				margin-top = "4"
+				margin-right = "10"
+			}
+
+		// Divider ------------------------------------------------------------------------------------------
+
+			// Divider
+			place {
+				controls = "ClientDivider"
+				start = "AdvancedHostOptions"
+				dir = "down"
+				height = "2"
+				width = "max"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+		// Client Options ------------------------------------------------------------------------------------------
+
+			// Client Label - Local
+			place {
+				controls = "ClientLabelLocal"
+				start = "ClientDivider"
+				dir = "down"
+				height = "24"
+				width = "max"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// Client Label - Remote
+			place {
+				controls = "ClientLabelRemote"
+				start = "ClientDivider"
+				dir = "down"
+				height = "24"
+				width = "max"
+				margin-top = "4"
+				margin-right = "10"
+			}
+
+		// Client Options - Quality Buttons ------------------------------------------------------------------------------------------
+
+			// Fast
+			place {
+				controls = "QualityFast"
+				start = "ClientDivider"
+				dir = "down"
+				height = "24"
+				width = "90"
+				y = "34"
+				margin-top = "4"
+			}
+
+			// Balanced
+			place {
+				controls = "QualityBalanced"
+				start = "QualityFast"
+				height = "24"
+				width = "90"
+				margin-left = "10"
+			}
+
+			// Balanced
+			place {
+				controls = "QualityBeautiful"
+				start = "QualityBalanced"
+				height = "24"
+				width = "90"
+				margin-left = "10"
+			}
+
+
+
+			// Advanced Options
+			place {
+				controls = "AdvancedClientOptions"
+				start = "QualityFast"
+				dir = "down"
+				height = "24"
+				width = "190"
+				margin-top = "10"
+			}
+			// Fast
+			place {
+				controls = "SupportInformationLabel"
+				start = "AdvancedClientOptions"
+				dir = "down"
+				height = "24"
+				width = "190"
+			}
+
+		// ------------------------------------------------------------------------------------------
+
+	}
+
+}

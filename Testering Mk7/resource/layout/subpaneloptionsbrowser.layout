@@ -1,0 +1,85 @@
+"resource/layout/subpaneloptionsbrowser.layout" {
+
+	layout {
+
+		// Browser ------------------------------------------------------------------------------------------
+
+			// Description
+			place {
+				controls = "DescriptionLabel"
+				width = "max"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+		// Overlay Home Page ------------------------------------------------------------------------------------------
+
+			// Home Label
+			place {
+				controls = "OverlayHomePageLabel"
+				start = "DescriptionLabel"
+				dir = "down"
+				height = "24"
+				width = "190"
+				margin-top = "10"
+			}
+
+			// Home Page
+			place {
+				controls = "OverlayHomePage"
+				start = "OverlayHomePageLabel"
+				dir = "down"
+				height = "24"
+				width = "300"
+				margin-top = "10"
+			}
+
+			// Home Page Auth Button
+			place {
+				controls = "ClientBrowserAuthHomePage"
+				start = "OverlayHomePage"
+				dir = "down"
+				height = "24"
+				margin-top = "10"
+			}
+
+		// Divider ------------------------------------------------------------------------------------------
+
+			// Divider
+			place {
+				controls = "Divider1"
+				start = "ClientBrowserAuthHomePage"
+				dir = "down"
+				height = "2"
+				width = "max"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+		// Clear Web Cache & Cookies ------------------------------------------------------------------------------------------
+
+			// Home Label
+			place {
+				controls = "ClearWebCacheButton"
+				start = "Divider1"
+				dir = "down"
+				height = "24"
+				width = "190"
+				margin-top = "10"
+			}
+
+			// Home Page
+			place {
+				controls = "ClearAllCookiesButton"
+				start = "ClearWebCacheButton"
+				dir = "down"
+				height = "24"
+				width = "190"
+				margin-top = "10"
+			}
+
+		// ------------------------------------------------------------------------------------------
+
+	}
+
+}
