@@ -178,18 +178,6 @@ basic.styles {
 				textcolor = "140 140 140 255"
 				bgcolor = "0 0 0 0"
 			}
-				
-			// List Panel
-			"ListPanel" {
-				font-family = "basefont"
-				font-size = "16"
-				textcolor = "140 140 140 255"
-				selectedtextcolor="200 200 200 255"
-				selectedbgcolor="40 40 40 255"
-				bgcolor = "0 0 0 0"
-				padding-left = "10"
-				padding-right = "10"
-			}
 
 			// Check Button List
 			"CheckButtonList" {
@@ -206,43 +194,39 @@ basic.styles {
 				textcolor = "140 140 140 255"
 				bgcolor = "0 0 0 0"
 			}
+				
+			// Html ------------------------------------------------------------------------------------------
 			
-			// Sectioned List Panel
-			"SectionedListPanel" {
-				font-family = "basefont"
-				font-size = "16"
-				textcolor = "140 140 140 255"
-				bgcolor = "0 0 0 0"
-			}
+				// HTML
+				"HTML" {
+					bgcolor = "0 0 0 0"
+				}
+				
+				// Root
+				"RootMenu"
+				{
+					bgcolor = "0 0 0 0"
+				}
 
+				// HTML Root
+				"HTMLRoot" {
+					bgcolor = "0 0 0 0"
+				}
 
-			// Page
-			"Page" {
-				font-family = "basefont"
-				font-size = "16"
-				textcolor = "140 140 140 255"
-				bgcolor = "0 0 0 0"
-			}
+			// List Panel ------------------------------------------------------------------------------------------
+				
+				// List Panel
+				"ListPanel" {
+					font-family = "basefont"
+					font-size = "16"
+					textcolor = "140 140 140 255"
+					selectedtextcolor="200 200 200 255"
+					selectedbgcolor="40 40 40 255"
+					bgcolor = "0 0 0 0"
+					padding-left = "10"
+					padding-right = "10"
+				}
 
-			// HTML
-			"HTML" {
-				bgcolor = "0 0 0 0"
-			}
-			
-			// Root
-			"RootMenu"
-			{
-				bgcolor = "0 0 0 0"
-			}
-
-			// HTML Root
-			"HTMLRoot" {
-				bgcolor = "0 0 0 0"
-			}
-
-		// ------------------------------------------------------------------------------------------
-
-		// Headers ------------------------------------------------------------------------------------------
 
 				// List Panel Header
 				"ListPanelColumnHeader" {
@@ -264,7 +248,55 @@ basic.styles {
 					bgcolor = "70 70 70 255"
 				}
 
+
+				// List Panel Column Button
+				"ListPanelColumnSelectButton" {
+					image = "graphics/icon_collapse"
+					inset = "-3 3 0 0"
+				}
+
 			// ------------------------------------------------------------------------------------------
+
+			// Sectioned List ------------------------------------------------------------------------------------------
+
+				// Sectioned List Panel
+				"SectionedListPanel" {
+					font-family = "basefont"
+					font-size = "16"
+					textcolor = "140 140 140 255"
+					bgcolor = "0 0 0 0"
+				}
+
+				// Sectioned List Panel
+				"SectionedlistpanelCollapser" {
+					image = "graphics/icon_collapse"
+					inset="2 1 0 0"
+				}
+
+				// Sectioned List Panel - Active
+				"SectionedListPanelCollapser:hover" {
+					image = "graphics/icon_collapse_over"
+				}
+
+				// Sectioned List Panel - Active
+				"SectionedListPanelCollapser:selected" {
+					image = "graphics/icon_expand"
+				}
+
+				// Sectioned List Panel - Active
+				"SectionedListPanelCollapser:selected:hover" {
+					image = "graphics/icon_expand_over"
+				}
+
+			// Page ------------------------------------------------------------------------------------------
+
+				// Page
+				"Page" {
+					font-family = "basefont"
+					font-size = "16"
+					textcolor = "140 140 140 255"
+					bgcolor = "0 0 0 0"
+				}
 
 				// Page Header
 				"PageTab" {
@@ -287,26 +319,6 @@ basic.styles {
 				}
 
 			// ------------------------------------------------------------------------------------------
-
-				// Sectioned List Panel
-				"SectionedlistpanelCollapser" {
-					image = "graphics/icon_collapse"
-				}
-
-				// Sectioned List Panel - Active
-				"SectionedListPanelCollapser:hover" {
-					image = "graphics/icon_collapse_over"
-				}
-
-				// Sectioned List Panel - Active
-				"SectionedListPanelCollapser:selected" {
-					image = "graphics/icon_expand"
-				}
-
-				// Sectioned List Panel - Active
-				"SectionedListPanelCollapser:selected:hover" {
-					image = "graphics/icon_expand_over"
-				}
 
 		// ------------------------------------------------------------------------------------------
 
@@ -724,6 +736,48 @@ basic.styles {
 				"ScrollBarButton.left:active" {
 					image = "graphics/icon_left_hover" 
 				}
+		// ------------------------------------------------------------------------------------------
+
+		// Arrows - Added because steam decided to add these into places and not directly see ------------------------------------------------------------------------------------------
+
+			// Down ------------------------------------------------------------------------------------------
+
+				downarrow {
+					image = "graphics/icon_down_default"
+				}
+
+				downarrow:hover {
+					image = "graphics/icon_down_hover"
+				}
+
+			// Up ------------------------------------------------------------------------------------------
+
+				uparrow {
+					image = "graphics/icon_up_default"
+				}
+
+			// Right ------------------------------------------------------------------------------------------
+
+				rightarrow {
+					image = "graphics/icon_right_default"
+				}
+
+				rightarrow:hover {
+					image = "graphics/icon_right_hover"
+				}
+
+			// Left ------------------------------------------------------------------------------------------
+
+				leftarrow {
+					image = "graphics/icon_left_default"
+				}
+
+				leftarrow:hover {
+					image = "graphics/icon_left_hover"
+				}
+
+			// ------------------------------------------------------------------------------------------
+
 		// ------------------------------------------------------------------------------------------
 
 	}

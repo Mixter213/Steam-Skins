@@ -254,7 +254,7 @@
 
 		// Menu Bar -------------------------------------------------------------------------------
 
-			// Menu Bar (Not OSX)
+			// Menu Bar
 			place {
 				control = "MenuBar"
 				height = "24"
