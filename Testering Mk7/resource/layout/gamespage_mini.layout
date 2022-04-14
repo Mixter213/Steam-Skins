@@ -78,9 +78,10 @@
 
 			place {
 				control = "frame_captiongrip"
-				margin = "2"
-				width = "max"
 				height = "44"
+				width = "max"
+				x = "2"
+				margin = "2"
 			}
 
 		// Menu ------------------------------------------------------------------------------------------

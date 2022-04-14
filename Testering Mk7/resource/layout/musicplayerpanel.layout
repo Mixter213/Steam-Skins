@@ -1,0 +1,354 @@
+"resource/layout/musicplayerpanel.layout" {
+
+	styles {
+
+		// Frame ------------------------------------------------------------------------------------------
+
+			"CMusicPlayerPanel" {
+				bgcolor = "20 20 20 255"
+				minimum-width = "440"
+				minimum-height = "139"
+			}
+
+		// Music Info ------------------------------------------------------------------------------------------
+
+			"StatusStyle" {
+				textcolor = "160 160 160 255"
+			}
+
+			"StatusStyleDim" {
+				textcolor = "120 120 120 255"
+			}
+
+		// Music Player ------------------------------------------------------------------------------------------
+
+			"ToggleButton" {
+				bgcolor = "0 0 0 0"
+			}
+
+			// Repeat ------------------------------------------------------------------------------------------
+
+				"RepeatButtonStyle" {
+					image = "graphics/music_repeat_default"
+				}
+
+				"RepeatButtonStyle:hover" {
+					image = "graphics/music_repeat_hover"
+				}
+					
+				"RepeatButtonStyle:selected" {
+					image = "graphics/music_repeat_enabled"
+				}
+
+				"RepeatButtonStyle:selected:hover" {
+					image = "graphics/music_repeat_enabled_hover"
+				}
+				
+			// Repeat Once ------------------------------------------------------------------------------------------
+
+				"RepeatOnceButtonStyle" {
+					image = "graphics/music_repeat_default"
+				}
+
+				"RepeatOnceButtonStyle:hover" {
+					image = "graphics/music_repeat_hover"
+				}
+
+				"RepeatOnceButtonStyle:selected" {
+					image = "graphics/music_repeat1_enabled"
+				}
+
+				"RepeatOnceButtonStyle:selected:hover" {
+					image = "graphics/music_repeat1_enabled_hover"
+				}
+
+			// Shuffle ------------------------------------------------------------------------------------------
+
+				"ShuffleButtonStyle" {
+					image = "graphics/music_shuffle_default"
+				}
+
+				"ShuffleButtonStyle:hover" {
+					image = "graphics/music_shuffle_hover"
+				}
+
+				"ShuffleButtonStyle:selected" {
+					image = "graphics/music_shuffle_enabled"
+				}
+
+				"ShuffleButtonStyle:selected:hover" {
+					image = "graphics/music_shuffle_enabled_hover"
+				}
+
+			// Previous / Next ------------------------------------------------------------------------------------------
+
+				"PreviousButtonStyle" {
+					image = "graphics/music_trackback_default"
+				}
+				
+				"PreviousButtonStyle:hover" {
+					image = "graphics/music_trackback_hover"
+				}
+
+
+
+				"NextButtonStyle" {
+					image = "graphics/music_trackfwd_default"
+				}
+				
+				"NextButtonStyle:hover" {
+					image = "graphics/music_trackfwd_hover"
+				}
+
+			// Pause / Play ------------------------------------------------------------------------------------------
+
+				"PlayButtonStyle" {
+					image = "graphics/music_play_default"
+				}
+
+				"PlayButtonStyle:hover" {
+					image = "graphics/music_play_hover"
+				}
+
+
+
+				"PauseButtonStyle" {
+					image = "graphics/music_pause_default"
+				}
+
+				"PauseButtonStyle:hover" {
+					image = "graphics/music_pause_hover"
+				}
+
+			// Volume ------------------------------------------------------------------------------------------
+
+				"VolumeButtonStyle" {
+					image = "graphics/music_volume_default"
+				}
+
+				"VolumeButtonStyle:hover" {
+					image = "graphics/music_volume_hover"
+				}
+
+				"VolumeButtonActiveStyle" {
+					image = "graphics/music_volume_default"
+				}
+
+				"VolumeButtonActiveStyle:hover" {
+					image = "graphics/music_volume_hover"
+				}
+								
+			// Volume Muted ------------------------------------------------------------------------------------------
+
+				"MuteVolumeButtonStyle" {
+					image = "graphics/music_volume_mute_default"
+				}
+
+				"MuteVolumeButtonStyle:hover" {
+					image = "graphics/music_volume_mute_hover"
+				}
+
+				"MuteVolumeButtonActiveStyle" {
+					image = "graphics/music_volume_mute_default"
+				}
+
+				"MuteVolumeButtonActiveStyle:hover" {
+					image = "graphics/music_volume_mute_hover"
+				}
+
+			// Browse ------------------------------------------------------------------------------------------
+
+				"BrowseButtonStyle" {
+					image = "graphics/music_browse_default"
+				}
+
+				"BrowseButtonStyle:hover" {
+					image = "graphics/music_browse_hover"
+				}
+
+			// Seek Bar ------------------------------------------------------------------------------------------
+
+				"SeekBarStyle" {
+					bgcolor = "0 0 0 0"
+				}
+		
+			// ------------------------------------------------------------------------------------------
+
+		// Game List ------------------------------------------------------------------------------------------
+
+			"MusicListPanelInterior" {
+				textcolor = "160 160 160 255"
+				bgcolor = "30 30 30 255"
+			} 
+		
+			"NoTracksLabelStyle" {
+				image = "graphics/music_background"
+			}
+
+		// ------------------------------------------------------------------------------------------
+
+			"InfoLabelStyle" {
+				textcolor = "160 160 160 255"
+			}
+
+		// ------------------------------------------------------------------------------------------
+		
+	}
+	
+	layout {
+
+		// Top Bar ------------------------------------------------------------------------------------------
+
+			// Image Box
+			place {
+				control = "CurrentAlbumImage"
+				height = "72"
+				width = "72"
+				x = "10"
+				y = "34"
+			}
+
+			// Status Label
+			place {
+				control = "CurrentStatusLabel"
+				height = "24"
+				width = "250"
+				x = "86"
+				y = "34"
+				margin-right = "270"
+			}
+
+			// Status Label
+			place {
+				control = "CurrentTrackLabel"
+				height = "24"
+				width = "250"
+				x = "86"
+				y = "58"
+				margin-right = "270"
+			}
+
+			// Status Label
+			place {
+				control = "CurrentArtistLabel"
+				height = "24"
+				width = "250"
+				x = "86"
+				y = "82"
+				margin-right = "270"
+			}
+
+		// Music Player ------------------------------------------------------------------------------------------
+
+			place {
+				control = "BrowseButton"
+				align = "right"
+				height = "24"
+				y = "34"
+				margin-right = "10"
+			}
+
+			place {
+				control = "VolumeButton"
+				end-right = "BrowseButton"
+				align = "right"
+				height = "24"
+				y = "34"
+				margin-right = "4"
+			}
+
+			place {
+				control = "NextButton"
+				end-right = "VolumeButton"
+				align = "right"
+				height = "24"
+				y = "34"
+				margin-right = "4"
+			}
+
+			place {
+				control = "PlayPauseButton"
+				end-right = "NextButton"
+				align = "right"
+				height = "48"
+				y = "34"
+				margin-top = "-12"
+				margin-right = "4"
+			}
+
+			place {
+				control = "PreviousButton"
+				end-right = "PlayPauseButton"
+				align = "right"
+				height = "24"
+				y = "34"
+				margin-right = "4"
+			}
+
+			place {
+				control = "ShuffleButton"
+				end-right = "PreviousButton"
+				align = "right"
+				height = "24"
+				y = "34"
+				margin-right = "4"
+			}
+
+			place {
+				control = "RepeatButton"
+				end-right = "ShuffleButton"
+				align = "right"
+				height = "24"
+				y = "34"
+				margin-right = "4"
+			}
+
+
+
+			place {
+				control = "SeekBar"
+				align = "right"
+				height = "24"
+				width = "260"
+				y = "82"
+				margin-right = "10"
+			}
+
+		// Track List ------------------------------------------------------------------------------------------
+
+			place {
+				control = "TrackList"
+				height = "max"
+				width = "max"
+				x = "10"
+				y = "116"
+				margin-right = "10"
+				margin-bottom = "34"
+			}
+
+			place {
+				control = "NoTracksLabel"
+				align = "top-center"
+				x = "10"
+				y = "116"
+				margin-right = "10"
+			}
+
+
+		// Bottom Bar ------------------------------------------------------------------------------------------
+
+			place {
+				control = "InfoLabel"
+				align = bottom
+				height = "24"
+				width = "max"
+				x = "10"
+				margin-right = "10"
+				margin-bottom = "10"
+			}
+
+		// ------------------------------------------------------------------------------------------
+
+	}
+	
+}
