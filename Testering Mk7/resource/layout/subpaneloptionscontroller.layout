@@ -1,0 +1,116 @@
+"resource/layout/subpaneloptionscontroller.layout" {
+
+	layout {
+
+		// Conroller Config ------------------------------------------------------------------------------------------
+
+			// Title
+			place {
+				controls = "TitleLabel"
+				width = "max"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// Description
+			place {
+				controls = "DescriptionLabel"
+				start = "TitleLabel"
+				dir = "down"
+				width = "max"
+				margin-top = "10"
+			}
+
+			// Controller Settings
+			place {
+				controls = "GeneralSettingsButton"
+				start = "DescriptionLabel"
+				dir = "down"
+				height = "24"
+				width = "max"
+				margin-top = "4"
+			}
+
+		// Divider ------------------------------------------------------------------------------------------
+
+			// Divider
+			place {
+				controls = "Divider1"
+				start = "GeneralSettingsButton"
+				dir = "down"
+				height = "2"
+				width = "max"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+		// Controller Bindings ------------------------------------------------------------------------------------------
+
+			// Description
+			place {
+				controls = "DescriptionBindingLabel"
+				start = "Divider1"
+				dir = "down"
+				width = "max"
+				margin-top = "10"
+				margin-right = "10"
+			}
+			
+			// Big Picture Config
+			place {
+				controls = "BigPictureConfigButton"
+				start = "DescriptionBindingLabel"
+				dir = "down"
+				height = "24"
+				margin-top = "4"
+			}
+			
+			// Desktop Config
+			place {
+				controls = "DesktopConfigButton"
+				start = "BigPictureConfigButton"
+				dir = "down"
+				height = "24"
+				margin-top = "4"
+			}
+			
+			// Guide Button Chord Config
+			place {
+				controls = "GuideConfigButton"
+				start = "DesktopConfigButton"
+				dir = "down"
+				height = "24"
+				margin-top = "4"
+			}
+
+		// Divider ------------------------------------------------------------------------------------------
+
+			// Divider
+			place {
+				controls = "Divider2"
+				start = "GuideConfigButton"
+				dir = "down"
+				height = "2"
+				width = "max"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+		// Disable Notification ------------------------------------------------------------------------------------------
+
+			// Description
+			place {
+				controls = "DisableNotificationsCheckbox"
+				start = "Divider2"
+				dir = "down"
+				height = "24"
+				width = "max"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+		// ------------------------------------------------------------------------------------------
+
+	}
+
+}
