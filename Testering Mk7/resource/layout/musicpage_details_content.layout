@@ -1,0 +1,77 @@
+"resource/layout/musicpage_detail_content.layout" {
+
+	layout {
+
+		// Album Info -------------------------------------------------------------------------------
+
+			place {
+				control = "AlbumList"
+				width = "275"
+				height = "max"
+			}
+
+			place {
+				control = "ArtistList"
+				width = "275"
+				height = "max"
+			}
+
+			place {
+				control = "PlaylistList"
+				width = "275"
+				height = "max"
+			}
+
+		// Album Info -------------------------------------------------------------------------------
+
+			region	{
+				name = "details"
+				overflow = "scroll-vertical" 
+				x = "275"
+				y = "1"
+				margin = "2"
+			}
+
+			place {
+				control = "*MusicPageDetailsAlbum"
+				region = "details"
+				width = "max"
+				dir = "down"
+			}
+			
+			place {
+				control = "*MusicPageDetailsPlaylist"
+				region = "details"
+				width = "max"
+				dir = "down"
+			}
+			
+
+		// Background -------------------------------------------------------------------------------
+
+			place {
+				control = "BackgroundImageA"
+				width = "1024"
+				height = "1024"
+				margin = "2"
+			}
+
+			place {
+				control = "BackgroundImageB"
+				width = "1024"
+				height = "1024"
+				margin = "2"
+			}
+
+			place {
+				control = "BackgroundImageMask"
+				width = "1024"
+				height = "1024"
+				margin = "2"
+			}
+
+		// -------------------------------------------------------------------------------
+
+	}
+
+}

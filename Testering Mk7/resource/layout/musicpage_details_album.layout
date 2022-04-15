@@ -1,0 +1,145 @@
+"resource/layout/musicpage_details_album.layout" {
+
+	layout {
+
+		region {
+			name = "overflow"
+			overflow = "scroll-vertical"
+		}
+		
+		// Album Info -------------------------------------------------------------------------------
+
+			// Album Title
+			place {
+				control = "AlbumTitleLabel"
+				region = "overflow"
+				height = "30"
+				width = "max"
+				x = "20"
+				y = "4"
+				margin-right = "20"
+			}
+
+			// Album Artist
+			place {
+				control = "ArtistLabel"
+				region = "overflow"
+				start = "AlbumTitleLabel"
+				dir = "down"
+				height = "30"
+				width = "max"
+				y = "2"
+				margin-right = "20"
+			}
+
+			// Album Image
+			place {
+				control = "CoverImage"
+				region = "overflow"
+				start = "ArtistLabel"
+				dir = "down"
+				height = "200"
+				width = "200"
+				y = "4"
+			}
+
+			// Track Info
+			place {
+				control = "TracksInfoLabel"
+				region = "overflow"
+				start = "CoverImage"
+				dir = "down"
+				y = "4"
+			}
+
+		// Track Buttons -------------------------------------------------------------------------------
+
+			// Play Track
+			place {
+				control = "PlayTracksButton"
+				region = "overflow"
+				start = "TracksInfoLabel"
+				dir = "down"
+				y = "4"
+			}
+
+			// Add to Queue
+			place {
+				control = "AddTracksToQueueButton"
+				region = "overflow"
+				start = "PlayTracksButton"
+				dir = "down"
+				y = "4"
+			}
+
+			// Add to Playlist
+			place {
+				control = "AddTracksToPlaylistButton"
+				region = "overflow"
+				start = "AddTracksToQueueButton"
+				dir = "down"
+				y = "4"
+			}
+
+			// Play Album
+			place {
+				control = "PlayAlbumButton"
+				region = "overflow"
+				start = "AddTracksToPlaylistButton"
+				dir = "down"
+				y = "4"
+			}
+
+			// Add Album to Queue
+			place {
+				control = "AddAlbumToQueueButton"
+				region = "overflow"
+				start = "PlayAlbumButton"
+				dir = "down"
+				y = "4"
+			}
+
+			// Add Album to Playlist
+			place {
+				control = "AddAlbumToPlaylistButton"
+				region = "overflow"
+				start = "AddAlbumToQueueButton"
+				dir = "down"
+				y = "4"
+			}
+
+			// Show Album
+			place {
+				control = "ShowAlbumButton"
+				region = "overflow"
+				start = "AddAlbumToPlaylistButton"
+				dir = "down"
+				y = "4"
+			}
+
+			// Show Album in System
+			place {
+				control = "ShowAlbumInSystemButton"
+				region = "overflow"
+				start = "ShowAlbumButton"
+				dir = "down"
+				y = "4"
+			}
+		
+		// Music List -------------------------------------------------------------------------------
+			
+			place {
+				control = "*MusicPageDetailsTrack"
+				region = "overflow"
+				start = "ArtistLabel"
+				dir = "down"
+				width = "max"
+				margin-left = "230"
+				margin-right = "20"
+			}
+			
+		// -------------------------------------------------------------------------------
+
+	}
+
+}

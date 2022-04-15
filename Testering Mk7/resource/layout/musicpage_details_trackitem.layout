@@ -1,0 +1,41 @@
+"resource/layout/musicpage_details_trackitem.layout" {
+	
+	styles {
+
+		// Numbered Block
+		PositionLabelStyle { 
+			padding = "4"
+			textcolor = "160 160 160 255"
+		}
+		
+		// Item Name
+		TrackLabelStyle {
+			padding = "4"
+			textcolor = "160 160 160 255"
+		}
+		
+		// Item Name - Hover
+		TrackLabelStyle:hover {
+			textcolor = "200 200 200 255"
+		}
+
+	}
+	
+	layout {
+
+		// Numbered Block
+		place {
+			control = "PositionLabel"
+			width = "40"
+		}
+		
+		// Item Name
+		place {
+			control = "TrackLabel"
+			width = "max"
+			x = "44"
+		}
+
+	}
+	
+}

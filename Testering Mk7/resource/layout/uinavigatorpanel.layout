@@ -169,6 +169,80 @@
 
 		// -------------------------------------------------------------------------------
 
+		// Music Page -------------------------------------------------------------------------------
+
+			// Search Icon -------------------------------------------------------------------------------
+
+				"LibrarySearchIcon" {
+					image = "graphics/icon_button_search"
+				}
+
+				"LibrarySearchIcon:disabled" {
+					image = "none"
+				}
+
+			// Search Bar -------------------------------------------------------------------------------
+
+				"LibrarySearch" {
+					textcolor = "160 160 160 255"
+					selectedtextcolor = "250 250 250 255"
+					bgcolor = "20 20 20 255"
+					selectedbgcolor = "60 60 60 255"
+				}
+				
+				"LibrarySearch:empty" {
+					font-style = "italic"
+					textcolor = "120 120 120 255"
+					bgcolor = "26 26 26 255"
+				}
+					
+				"LibrarySearch:hover" {
+					textcolor = "200 200 200 255"
+				}
+
+			// Album Bar -------------------------------------------------------------------------------
+
+				"NavLabel2" {
+					bgcolor = "0 0 0 0"
+					textcolor = "160 160 160 255"
+					font-style = "outerglow"
+					font-outerglow-color = "100 100 100 255"
+				}
+
+				"NavLabel2:hover" {
+					textcolor = "200 200 200 255"
+				}
+
+
+				"MusicAddButton" {
+					bgcolor = "0 0 0 0"
+					image = "graphics/icon_collapse"
+					inset = "-4 0 0 0"
+				}
+
+				"MusicAddButton:hover" {
+					image = "graphics/icon_collapse_over"
+				}
+
+			// Music Player Icon -------------------------------------------------------------------------------
+
+				"MusicPlayerIcon" {
+					image = "graphics/icon_music_player"
+					inset = "-1 0 0 0"
+				}
+
+				"MusicPlayerIcon:hover" {
+					image = "graphics/icon_music_player_hover"
+				}
+
+				"MusicPlayerIcon:selected" {
+					image = "graphics/icon_music_player_selected"
+				}
+
+			// -------------------------------------------------------------------------------
+
+		// -------------------------------------------------------------------------------
+
 	}
 
 	layout {
@@ -210,8 +284,6 @@
 
 		//---------------------------------------------------------------------------------------------------------
 
-
-
 		// Nav Bar ---------------------------------------------------------------------------------------------------------
 
 			// Store - Library - Community - Profile - Console
@@ -233,8 +305,6 @@
 
 		//---------------------------------------------------------------------------------------------------------
 
-
-
 		// Forward & Back Buttons ---------------------------------------------------------------------------------------------------------
 
 			// Back - Forward
@@ -246,8 +316,6 @@
 			}
 
 		//---------------------------------------------------------------------------------------------------------
-
-
 
 		// Url Bar ---------------------------------------------------------------------------------------------------------
 
@@ -267,8 +335,8 @@
 				align = "right"
 				height = "30"
 				width = "30"
-				x = "10"
 				y = "58"
+				margin-right = "10"
 			}
 
 			// Url Anchor
@@ -292,8 +360,6 @@
 			}
 		//---------------------------------------------------------------------------------------------------------
 
-
-
 		// Music Page ---------------------------------------------------------------------------------------------------------
 
 			// Sub Nav Grouper
@@ -305,22 +371,28 @@
 				y = "58"
 			}
 
-			// Search Icon - Search Bar
+			// Search Icon
 			place {
-				control = "label_search_icon, library_search"
+				control = "label_search_icon"
 				height = "24"
-				spacing = "2"
 				x = "10"
 				y = "58"
+			}
+
+			// Search Bar
+			place {
+				control = "library_search"
+				start = "label_search_icon"
+				height = "24"
+				width = "120"
+				x = "10"
 			}
 
 			// Filters
 			place {
 				control = "library_filters"
-				align = "right"
 				height = "24"
-				width = "200"
-				x = "10"
+				x = "206"
 				y = "58"
 			}
 
@@ -331,8 +403,8 @@
 				height = "24"
 				width = "20"
 				spacing = "4"
-				x = "10"
 				y = "58"
+				margin-right = "10"
 			}
 			
 			// Music Player - Icon
@@ -342,66 +414,26 @@
 				height = "24"
 				width = "20"
 				spacing = "4"
-				x = "10"
+				y = "58"
+				margin-right = "10"
+			}
+
+			// Music Menu
+			place {
+				control = "library_music_menu"
+				height = "24"
+				x = "290"
 				y = "58"
 			}
 
 			// Music Menu - Music Add Button
 			place {
-				control = "library_music_menu, library_music_add_button"
+				control = "library_music_add_button"
+				start = "library_music_menu"
 				height = "24"
-				spacing = "4"
-				x = "290"
-				y = "58"
 			}
 
 		//---------------------------------------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 	}
 
