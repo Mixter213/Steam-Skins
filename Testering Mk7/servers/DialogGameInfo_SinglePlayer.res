@@ -1,0 +1,1 @@
+"Servers/DialogGameInfo_SinglePlayer.res" {}
