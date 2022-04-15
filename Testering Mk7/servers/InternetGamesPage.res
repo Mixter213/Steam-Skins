@@ -4,66 +4,63 @@
 
 		place {
 			control = "gamelist"
-			height = "80"
+			height = "max"
 			width = "max"
-			x = "10"
-			y = "10"
-			margin-right = "10"
+			margin-top = "10"
+			margin-bottom = "40"
 		}
 
-		region {
-			name = "bottom"
+		place {
+			control = "Filter"
 			align = "bottom"
-			width = "max"
-			height = "24"
-			margin = "0"
-		}
-	
-		
-		place {
-			control = "Filter,FilterString"
-			region = "bottom"
-			height = "24"
-			width = "max"
-			end-right = "AddServerButton"
-			margin-left = "4"
-			spacing = "8"
+			height = "30"
+			width = "90"
+			x = "10"
 		}
 
 		place {
-			control = "AddServerButton"
-			height = "40"
-			width = "40"
+			control = "FilterString"
+			start = "Filter"
+			end-right = "RefreshButton"
+			height = "30"
+			width = "max"
 			x = "10"
-			y = "100"
+			margin-right = "110"
 		}
-		
+
 		place {
-			control = "RefreshQuickButton"
-			height = "40"
-			width = "40"
-			x = "60"
-			y = "100"
+			control = "ConnectButton"
+			align = "bottom-right"
+			height = "30"
+			width = "90"
 		}
 		
 		place {
 			control = "RefreshButton"
-			height = "40"
-			width = "40"
-			x = "110"
-			y = "100"
+			end-right = "ConnectButton"
+			align = "bottom-right"
+			height = "30"
+			width = "90"
+			margin-right = "10"
 		}
 		
 		place {
-			control = "ConnectButton"
-			height = "40"
-			width = "40"
-			x = "160"
-			y = "100"
+			control = "RefreshQuickButton"
+			end-right = "RefreshButton"
+			align = "bottom-right"
+			height = "30"
+			width = "90"
+			margin-right = "10"
 		}
 		
-
-
+		place {
+			control = "AddServerButton"
+			end-right = "RefreshButton"
+			align = "bottom-right"
+			height = "30"
+			width = "90"
+			margin-right = "10"
+		}
 
 
 
