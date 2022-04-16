@@ -1,1 +1,0 @@
-"Servers\DialogGameInfo.res" {}

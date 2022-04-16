@@ -57,6 +57,45 @@ Scheme {
 			}
 		}
 		
+
+		
+		PropertyDialog {
+
+			"sheet" {
+				tall = "r48"
+				wide = "r9"
+				xpos = "9"
+				ypos = "26"
+			}
+			
+			// If some of the Buttons are hidden
+			// They shuffle to make sure there aren't gaps
+
+			"ApplyButton" {
+				tall = "24"
+				wide = "92"
+				xpos = "r101"
+				ypos = "r36"
+			}
+			
+			"CancelButton" {
+				tall = "24"
+				wide = "92"
+				xpos = "r203"
+				ypos = "r36"
+			}
+			
+			"OKButton" {
+				xpos = "r304"
+				ypos = "r36"
+				wide = "92"
+				tall = "24"
+			}
+
+		}
+
+
+
 		WizardPanel {
 
 			"subpanel" {

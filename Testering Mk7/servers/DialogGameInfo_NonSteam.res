@@ -1,1 +1,0 @@
-"Servers/DialogGameInfo_NonSteam.res" {}
