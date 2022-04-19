@@ -1,49 +1,63 @@
 "resource/layout/screenshotmanager.layout" {
 
+
+
 	layout {
 
-		// Top Bar ------------------------------------------------------------------------------------------
+		// Left Panel ------------------------------------------------------------------------------------------
+
+			region {
+				name = "LeftPanel"
+				height = "max"
+				width = "340"
+				margin-top = "40"
+				margin-left = "10"
+				margin-bottom = "10"
+			}
+
+
+			// Top Bar ------------------------------------------------------------------------------------------
 
 			// Selector Label
 			place {
 				control = "selectorlabel"
+				region = "LeftPanel"
 				height = "30"
-				width = "50"
-				x = "10"
-				y = "40"
 			}
 
 			// Selector Label
 			place {
 				control = "game_selector"
 				start = "selectorlabel"
+				region = "LeftPanel"
 				height = "30"
-				width = "280"
-				x = "10"
+				width = "max"
 			}
 
-		// Left Panel ------------------------------------------------------------------------------------------
+			// Images ------------------------------------------------------------------------------------------
 
 			// Screenshot Grid
 			place {
 				control="grid"
+				region = "LeftPanel"
 				start = "selectorlabel"
 				dir = "down"
 				height = "max"
-				width = "340"
-				y = "4"
-				margin-bottom = "38"
+				width = "max"
+				margin-top = "10"
+				margin-bottom = "40"
 			}
 			
 			// Screenshot Grid - Empty
 			place {
 				control="no_screenshots"
+				region = "LeftPanel"
 				start = "selectorlabel"
 				dir = "down"
 				height = "max"
-				width = "340"
-				y = "4"
-				margin-bottom = "38"
+				width = "max"
+				margin-top = "10"
+				margin-bottom = "40"
 			}
 
 			// Bottom Bar ------------------------------------------------------------------------------------------
@@ -51,114 +65,142 @@
 				// Multi Select Button
 				place {
 					control = "multiselect_button"
+					region = "LeftPanel"
 					align = "bottom"
 					height = "30"
-					x = "4"
-					margin-bottom = "4"
+
 				}
 
 				// View Local Button
 				place {
 					control = "view_local_library_button"
+					region = "LeftPanel"
 					start = "multiselect_button"
 					height = "30"
-					x = "4"
-					margin-bottom = "4"
+					margin-left = "10"
 				}
 
 				// View Online Button
 				place {
 					control = "view_screenshots"
+					region = "LeftPanel"
 					start = "view_local_library_button"
 					align = "bottom"
 					height = "30"
-					x = "4"
-					margin-bottom = "4"
+					margin-left = "10"
 				}
 
 			// ------------------------------------------------------------------------------------------
 
-
 		// Right Panel ------------------------------------------------------------------------------------------
+
+			region {
+				name = "RightPanel"
+				align = "right"
+				height = "max"
+				width = "max"
+				margin-top = "40"
+				margin-left = "350"
+				margin-bottom = "10"
+				margin-right = "10"
+			}
 
 			// Image ------------------------------------------------------------------------------------------
 
 				// Image
 				place {
 					control = "SSDetails"
+					region = "RightPanel"
 					height = "max"
 					width = "max"
-					x = "362"
-					y = "40"
-					margin-right = "10"
-					margin-bottom = "166"
+					margin-bottom = "160"
 				}
 				
 				// Image Timestamp
 				place {
 					control = "SSDate"
+					region = "RightPanel"
 					start = "SSDetails"
 					dir = "down"
 					height = "30"
-					width = "max"
-					margin-right = "10"
+					margin-top = "4"
 				}
 				
 				// Image Size - Image Original Size
 				place {
 					control = "SSSize, SSSizeOriginal"
+					region = "RightPanel"
 					start = "SSDate"
 					align = "right"
 					height = "30"
-					margin-right = "10"
+					margin-right = "4"
 				}
 
 				// Image Caption
 				place {
 					control = "details_caption"
-					align = "bottom-right"
-					height = "64"
+					region = "RightPanel"
+					start = "SSDate"
+					dir = "down"
+					height = "40"
 					width = "max"
-					margin-left = "362"
-					margin-right = "10"
-					margin-bottom = "102"
+					margin-top = "10"
+				}
+
+				place {
+					control = "publish_caption"
+					region = "RightPanel"
+					start = "SSDate"
+					dir = "down"
+					height = "40"
+					width = "max"
+					margin-top = "10"
+				}
+
+				place {
+					control = "publish_charsleft"
+					region = "RightPanel"
+					start = "publish_caption"
+					dir = "down"
+					align = "right"
+					height = "30"
+					margin-top = "10"
 				}
 
 				// Spoiler Checkbox
 				place {
 					control = "spoiler_checkbox"
-					align = "bottom-right"
+					region = "RightPanel"
+					start = "publish_caption"
+					dir = "down"
 					height = "30"
 					width = "max"
-					margin-left = "362"
-					margin-right = "10"
-					margin-bottom = "38"
+					margin-top = "10"
 				}
 
 				place {
 					control = "publish_button"
+					region = "RightPanel"
 					align = "bottom-right"
 					height = "30"
-					margin-right = "10"
-					margin-bottom = "4"
 				}
 
 				place {
 					control = "delete_button"
+					region = "RightPanel"
 					align = "bottom-right"
 					end-right = "publish_button"
 					height = "30"
 					margin-right = "10"
-					margin-bottom = "4"
 				}
 
 				place {
 					control = "details_button"
+					region = "RightPanel"
 					align = "bottom-right"
 					end-right = "delete_button"
 					height = "30"
 					margin-right = "10"
-					margin-bottom = "4"
 				}
 
 
@@ -166,42 +208,92 @@
 
 				place {
 					control = "instr_no_selection_title"
+					region = "RightPanel"
 					height = "30"
 					width = "max"
-					x = "362"
-					y = "40"
-					margin-right = "10"
 				}
 
 				place {
 					control = "instr_no_selection"
+					region = "RightPanel"
 					start = "instr_no_selection_title"
 					dir = "down"
 					height = "max"
 					width = "max"
-					y = "4"
-					margin-bottom = "38"
-					margin-right = "10"
+					margin-bottom = "40"
+				}
+
+				place {
+					control = "file_not_loaded_label"
+					region = "RightPanel"
+					align = "top-center"
+					start = "instr_no_selection"
+					dir = "down"
+					height = "30"
+					margin-top = "40"
+				}
+
+			// Multi Select ------------------------------------------------------------------------------------------
+
+				place {
+					control = "multi_img"
+					region = "RightPanel"
+					height = "max"
+					width = "max"
+					margin-bottom = "160"
+				}
+
+				place {
+					control = "multi_img_count"
+					region = "RightPanel"
+					align = "top-center"
+					height = "max"
+					margin-bottom = "160"
+				}
+
+				place {
+					control = "multi_img_selected"
+					region = "RightPanel"
+					start = "multi_img"
+					dir = "down"
+					align = "top-center"
+					height = "30"
+					margin-top = "10"
+				}
+
+				place {
+					control = "multi_img_upload_size, multi_img_upload_size_info"
+					region = "RightPanel"
+					start = "multi_img_selected"
+					align = "top-center"
+					height = "30"
+					margin-top = "40"
+					spacing = "4"
+				}
+
+				place {
+					control = "multi_img_storage_remaining, multi_img_storage_remaining_info"
+					region = "RightPanel"
+					start = "multi_img_upload_size"
+					align = "top-center"
+					height = "30"
+					margin-top = "40"
+					spacing = "4"
+				}
+
+				place {
+					control = "multi_img_delete,multi_img_upload"
+					region = "RightPanel"
+					start = "multi_img_storage_remaining"
+					align = "top-center"
+					height = "30"
+					margin-top = "40"
+					spacing = "4"
 				}
 
 			// ------------------------------------------------------------------------------------------
 
 		// ------------------------------------------------------------------------------------------
-
-		region { name="details" align=right margin-right=10 margin-top=34 margin-bottom=5 margin-left=358 height=max }
-
-
-		place { control="publish_caption" region="details" x=5 align=bottom margin-bottom=55 height=40 margin-right=3 width=max  }
-		place { control="publish_charsleft" region="details" x=5 align="bottom-right" margin-bottom=35 height=20 margin-right=5 }
-
-		place { control="multi_img" region="details" y=80 align="top-center" }
-		place { control="multi_img_count" region="details" y=92 align="top-center" }
-		place { control="multi_img_selected" region=details y=180  align="top-center" }
-		place { control="multi_img_upload_size,multi_img_upload_size_info" region=details y=205 align="top-center" spacing=5 }
-		place { control="multi_img_storage_remaining,multi_img_storage_remaining_info" region=details y=220 align="top-center" spacing=5 }
-		place { control="multi_img_delete,multi_img_upload" region=details y=260 align="top-center" spacing=8 }
-
-		place { control="file_not_loaded_label" region="details" y=140 align="top-center" }
 
 	}
 
