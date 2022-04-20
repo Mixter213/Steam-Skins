@@ -1,0 +1,12 @@
+"friends/playersdialog_sheet.layout" {
+	
+	layout {
+
+		place {
+			control = "tab"
+			height = "30"
+		}
+
+	}
+
+}

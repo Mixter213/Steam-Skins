@@ -1,0 +1,16 @@
+"friends/playersdialog.layout" {
+	
+	layout {
+
+		place {
+			control = "OKButton"
+            align = "bottom-right"
+			height = "30"
+			width = "120"
+			margin-bottom = "10"
+            margin-right = "10"
+		}
+
+	}
+
+}
