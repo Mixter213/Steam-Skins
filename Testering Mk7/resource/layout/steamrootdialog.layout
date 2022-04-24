@@ -95,9 +95,11 @@
 			// Inbox -------------------------------------------------------------------------------
 
 				"inbox_button" {
+					font-family = "basefont"
+					font-size = "16"
+					textcolor = "200 200 200 255"
 					bgcolor = "30 30 30 255"
-					image = "graphics/inbox_notification_inactive"
-					inset = "4 4 0 0"
+					render_bg { 0 = "image(x0,y0,x1,y1, graphics/inbox_notification_inactive)"}
 				}
 
 				"inbox_button:hover" {
@@ -111,17 +113,20 @@
 
 
 				"inbox_button_active" {
-					bgcolor = "40 40 40 255"
-					image = "graphics/inbox_notification"
-					inset = "4 4 0 0"
+					font-family = "basefont"
+					font-size = "16"
+					font-weight = "60"
+					textcolor = "200 200 200 255"
+					bgcolor = "90 120 20 255"
+					render_bg { 0 = "image(x1 - 18,y0 + 4,x1,y1, graphics/inbox_notification)"}
 				}
 
 				"inbox_button_active:hover" {
-					bgcolor = "50 50 50 255"
+					bgcolor = "120 160 80 255"
 				}
 
 				"inbox_button_active:selected" {
-					bgcolor = "50 50 50 255"
+					bgcolor = "90 120 20 255"
 				}
 
 			// Announcement -------------------------------------------------------------------------------
