@@ -99,7 +99,7 @@
 					font-size = "16"
 					textcolor = "200 200 200 255"
 					bgcolor = "30 30 30 255"
-					render_bg { 0 = "image(x0,y0,x1,y1, graphics/inbox_notification_inactive)"}
+					render_bg { 0 = "image(x1 - 24,y0 + 6,x1,y1, graphics/inbox_notification_inactive)"}
 				}
 
 				"inbox_button:hover" {
