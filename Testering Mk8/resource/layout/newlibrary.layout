@@ -1,13 +1,43 @@
 "resource/layout/newlibrary.layout" {
 
+	styles {
+
+		// Page -----------------------------------------------------------------------------
+
+			// Page Wrapper
+			HTMLRoot {
+				inset = "0 0 0 0"
+			}
+
+		//-----------------------------------------------------------------------------
+
+	}
+
 	layout {
 
-		// Page - Wrapper
-		place {
-			control = "HTMLRoot"
-			width = "max"
-			height = "max"
-		}
+		// Page -----------------------------------------------------------------------------
+
+			// Page - Region
+			region {
+				name = "root"
+				y = "0"
+				x = "0"
+				width = "max"
+				height = "max"
+			}
+
+			// Page - Wrapper
+			place
+			{
+				control = "HTMLRoot"
+				region = "root"
+				x = "0"
+				y = "0"
+				width = "max"
+				height = "max"
+			}
+
+		//-----------------------------------------------------------------------------
 
 	}
 

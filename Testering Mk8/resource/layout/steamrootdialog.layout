@@ -2,222 +2,640 @@
 
 	styles {
 
-		// Main Window -------------------------------------------------------------------------------
-
-			// Frame Container
-			"Frame" {
-				bgcolor = "20 20 20 255"
+		// Steam Root Dialog -------------------------------------------------------------------------------
+	
+			// Steam Root Dialog
+			"CSteamRootDialog" {
+				bgcolor = "none"
+				render_bg {
+					0 = "gradient( x0, y0, x1, y0+175, ClientBGTop, DialogBG )"
+					2 = "image( x0, y0, x1, y0+175, graphics/clienttexture2)"
+					3 = "fill( x0, y0+175, x0+20, y1-76, DialogBG )"
+					4 = "fill( x1-20, y0+175, x1, y1-76, DialogBG )"
+					5 = "fill( x0, y1 - 76, x1, y1, DialogBG )"
+				}
 			}
 
-			// Frame Title
-			"FrameTitle" {
-				textcolor = "0 0 0 0"
+		// Frame -------------------------------------------------------------------------------
+
+			// Frame - Title -------------------------------------------------------------------------------
+
+				// Frame - Title
+				"FrameTitle" {
+					font-family = "basefont"
+					font-size = "15"
+					font-weight = "400"
+					textcolor = "Label"
+					bgcolor = "none"
+					render_bg {
+						1 = "gradient( x0, y0 - 4, x1, y1 + 18, TitleBar, none )"
+						1 = "gradient( x0, y0, x1, y1 + 18, TitleBar, none )" [$OSX]
+					}
+				}
+
+				// Frame - Title - Focus
+				"FrameTitle:framefocus" { 
+					font-family = "basefont"
+					font-size = "15"
+					font-weight = "400"
+					textcolor = "Label"
+					bgcolor = "none"
+					textcolor = "Text"
+					render_bg { 
+						1 = "gradient( x0, y0 - 4, x1, y1 + 18, titlebarfocus, none )"
+						1 = "gradient( x0, y0, x1, y1 + 18, titlebarfocus, none )" [$OSX] 
+					}
+				}
+
+			// Frame - Buttons -------------------------------------------------------------------------------
+
+				// Frame - Buttons - Restore -------------------------------------------------------------------------------
+
+					// Frame - Button - Restore
+					"FrameRestoreButton" {
+						render_bg {}
+						inset = "0 0 4 0"
+						inset = "0 0 -2 -8" [$OSX]
+						image = "graphics/win32_win_restore"
+						image = "graphics/osx_win_dis" [$OSX] 
+						image = "graphics/osx_win_dis_new_dark" [$OSX1010] 
+					}
+
+					// Frame - Button - Restore - Hover
+					"FrameRestoreButton:hover" {
+						render_bg {}
+						inset = "0 0 4 0"
+						inset = "0 0 -2 -8" [$OSX]
+						bgcolor = "none"
+						image = "graphics/win32_win_restore_hover"
+						image = "graphics/osx_max_hov" [$OSX] 
+						image = "graphics/osx_max_hov_new" [$OSX1010] 
+					}
+
+					// Frame - Button - Restore - Active
+					"FrameRestoreButton:active" {
+						render_bg {}
+						inset = "0 0 4 0"
+						inset = "0 0 -2 -8" [$OSX]
+						bgcolor = "none"
+						image = "graphics/win32_win_restore_hover"
+						image = "graphics/osx_max_down" [$OSX] 
+						image = "graphics/osx_max_down_new" [$OSX1010] 
+					}
+
+					// Frame - Button - Restore - Focus
+					"FrameRestoreButton:framefocus" {
+						render_bg {}
+						inset = "0 0 4 0"
+						inset = "0 0 -2 -8" [$OSX]
+						bgcolor = "none"
+						image = "graphics/win32_win_restore"
+						image = "graphics/osx_max_def" [$OSX] 
+						image = "graphics/osx_max_def_new" [$OSX1010] 
+					}
+
+					// Frame - Button - Restore - Focus - Hover
+					"FrameRestoreButton:framefocus:hover" {
+						render_bg {}
+						inset = "0 0 4 0"
+						inset = "0 0 -2 -8" [$OSX]
+						bgcolor = "none"
+						image = "graphics/win32_win_restore_hover"
+						image = "graphics/osx_max_hov" [$OSX] 
+						image = "graphics/osx_max_hov_new" [$OSX1010] 
+					}
+
+				// Frame - Buttons - Minimize -------------------------------------------------------------------------------
+
+					// Frame - Button - Minimize
+					"FrameMinimizeButton" {
+						render_bg {}
+						image = "graphics/win32_win_min"
+						inset = "0 0 4 0"
+						inset = "0 0 4 -8" [$OSX] 
+						image = "graphics/osx_win_dis" [$OSX] 
+						image = "graphics/osx_win_dis_new_dark" [$OSX1010] 
+					}
+
+					// Frame - Button - Minimize - Hover
+					"FrameMinimizeButton:hover" {
+						render_bg {}
+						bgcolor = "none"
+						inset = "0 0 4 0"
+						inset = "0 0 4 -8" [$OSX] 
+						image = "graphics/win32_win_min_hover"
+						image = "graphics/osx_min_hov" [$OSX] 
+						image = "graphics/osx_min_hov_new" [$OSX1010] 
+					}
+
+					// Frame - Button - Minimize - Active (OSX)
+					"FrameMinimizeButton:active" [$OSX] {
+						render_bg {}
+						inset = "0 0 4 -8"
+						image = "graphics/osx_min_down"
+						image = "graphics/osx_min_down_new" [$OSX1010] 
+					}
+
+					// Frame - Button - Minimize - Focus (OSX)
+					"FrameMinimizeButton:framefocus" [$OSX] {
+						render_bg {}
+						inset = "0 0 4 -8"
+						image = "graphics/osx_min_def"
+						image = "graphics/osx_min_def_new" [$OSX1010] 
+					}
+
+					// Frame - Button - Minimize - Focus - Hover (OSX)
+					"FrameMinimizeButton:framefocus:hover" [$OSX] {
+						render_bg {}
+						inset = "0 0 4 -8"
+						image = "graphics/osx_min_hov"
+						image = "graphics/osx_min_hov_new" [$OSX1010] 
+					}
+
+				// Frame - Buttons - Maximize -------------------------------------------------------------------------------
+
+					// Frame - Button - Maximize
+					"FrameMaximizeButton" {
+						render_bg {}
+						inset = "0 0 4 0"
+						inset = "0 0 -2 -8" [$OSX]
+						image = "graphics/win32_win_max"
+						image = "graphics/osx_win_dis" [$OSX]
+						image = "graphics/osx_win_dis_new_dark" [$OSX1010]
+					}
+
+					// Frame - Button - Maximize - Hover
+					"FrameMaximizeButton:hover" {
+						render_bg {}
+						inset = "0 0 4 0"
+						inset = "0 0 -2 -8" [$OSX] 
+						bgcolor = "none"
+						image = "graphics/win32_win_max_hover"
+						image = "graphics/osx_max_hov" [$OSX] 
+						image = "graphics/osx_max_hov_new" [$OSX1010] 
+					}
+
+					// Frame - Button - Maximize - Active
+					"FrameMaximizeButton:active" {
+						render_bg {}
+						inset = "0 0 4 0"
+						inset = "0 0 -2 -8" [$OSX] 
+						bgcolor = "none"
+						image = "graphics/win32_win_max_hover"
+						image = "graphics/osx_max_down" [$OSX]
+						image = "graphics/osx_max_down_new" [$OSX1010] 
+					}
+
+					// Frame - Button - Maximize - Focus
+					"FrameMaximizeButton:framefocus" {
+						render_bg {}
+						inset = "0 0 4 0"
+						inset = "0 0 -2 -8" [$OSX] 
+						bgcolor = "none"
+						image = "graphics/win32_win_max"
+						image = "graphics/osx_max_def" [$OSX]
+						image = "graphics/osx_max_def_new" [$OSX1010] 
+					}
+
+					// Frame - Button - Maximize - Focus - Hover
+					"FrameMaximizeButton:framefocus:hover" {
+						render_bg {}
+						inset = "0 0 4 0"
+						inset = "0 0 -2 -8" [$OSX] 
+						bgcolor = "none"
+						image = "graphics/win32_win_max_hover"
+						image = "graphics/osx_max_hov" [$OSX] 
+						image = "graphics/osx_max_hov_new" [$OSX1010] 
+					}
+
+				// Frame - Buttons - Close -------------------------------------------------------------------------------
+
+					// Frame - Button - Close
+					"FrameCloseButton" {
+						render_bg {}
+						inset = "0 0 4 0"
+						inset = "-7 0 4 -8" [$OSX] 
+						image = "graphics/win32_win_close"
+						image = "graphics/osx_win_dis" [$OSX] 
+						image = "graphics/osx_win_dis_new_dark" [$OSX1010] 
+					}
+
+					// Frame - Button - Close - Hover
+					"FrameCloseButton:hover" {
+						render_bg {}
+						inset = "0 0 4 0"
+						inset = "-7 0 4 -8" [$OSX] 
+						image = "graphics/win32_win_close_hover"
+						image = "graphics/osx_close_hov" [$OSX] 
+						image = "graphics/osx_close_hov_new" [$OSX1010] 
+					}
+
+					// Frame - Button - Close - Active
+					"FrameCloseButton:active" [$OSX] {
+						render_bg {}
+						inset = "-7 0 4 -8"
+						bgcolor = "none"
+						image = "graphics/osx_close_down"
+						image = "graphics/osx_close_down_new" [$OSX1010] 
+					}
+
+					// Frame - Button - Close - Focus
+					"FrameCloseButton:framefocus" [$OSX] {
+						render_bg {}
+						inset = "-7 0 4 -8"
+						bgcolor = "none"
+						image = "graphics/osx_close_def"
+						image = "graphics/osx_close_def_new" [$OSX1010] 
+					}
+
+					// Frame - Button - Close - Focus - Hover
+					"FrameCloseButton:framefocus:hover" [$OSX] {
+						render_bg {}
+						inset = "-7 0 4 -8"
+						bgcolor = "none"
+						image = "graphics/osx_close_hov"
+						image = "graphics/osx_close_hov_new" [$OSX1010] 
+					}
+
+					// Frame - Button - Close - Disabled
+					"FrameCloseButton:disabled" {
+						render_bg {}
+						inset = "0 0 4 0"
+						inset = "-7 0 4 -8" [$OSX] 
+						bgcolor = "none"
+						image = "graphics/win32_win_close_disabled"
+						image = "graphics/osx_win_dis" [$OSX] 
+						image = "graphics/osx_win_dis_new_dark" [$OSX1010] 
+					}
+
+				//-------------------------------------------------------------------------------
+
+			//-------------------------------------------------------------------------------
+
+		// Client Title -------------------------------------------------------------------------------
+
+			// Client Title (Not OSX)
+			"ClientTitle" [!$OSX] {
+				textcolor = "none"
 			}
 
-		// -------------------------------------------------------------------------------
-
-		// Menu Bar -------------------------------------------------------------------------------
-
-			"MenuButton" {
-				bgcolor = "0 0 0 0"
+			// Client Title (OSX)
+			"ClientTitle" [$OSX] {
+				font-family = "basefont"
+				font-size = "15"
+				font-weight = "400"
+				textcolor = "textdisabled"
+				bgcolor = "none"
+				inset = "0 12 0 0"
 			}
 
-		// -------------------------------------------------------------------------------
+			// Client Title - Focus (OSX)
+			"ClientTitle:FrameFocus" [$OSX] {
+				font-family = "basefont"
+				font-size = "15"
+				font-weight = "400"
+				textcolor = "texthover"
+				bgcolor = "none"
+				inset = "0 12 0 0"
+			}
 
-		// Top Bar Items -------------------------------------------------------------------------------
+		// Menu -------------------------------------------------------------------------------
 
-			// Fullscreen -------------------------------------------------------------------------------
-
-				"FullscreenButton" {
-					bgcolor = "0 0 0 0"
-					image="graphics/icon_controller_bpm"
+			// Menu
+			"Menu" {
+				bgcolor = "dialogbg"
+				padding-right = "4"
+				inset = "2 2 2 2"
+				render_bg {
+					0 = "gradient( x0 + 1, y0 + 1, x1 - 1, y0+140, MenuBG1, MenuBG2  )"
+					1 = "fill( x0 + 1 , y0 + 140, x1 - 1, y1 - 1, MenuBG2  )"
+					2 = "fill( x0 + 1, y0, x1 - 1, y0 + 1, clientbg )"
+					3 = "fill( x0 + 1, y1 - 1, x1 - 1, y1, clientbg )"
+					4 = "fill( x0, y0 + 1, x0 + 1, y1 - 1, clientbg )"
+					5 = "fill( x1 - 1, y0 + 1, x1, y1 - 1, clientbg )"
 				}
+			}
 
-				"FullscreenButton:hover" {
-					bgcolor = "0 0 0 0"
-					image="graphics/icon_controller_bpm_over"
-				}
-
-				"FullscreenButton:active" {
-					bgcolor = "0 0 0 0"
-					image="graphics/icon_controller_bpm_down"
-				}
-
-				"FullscreenButton:disabled" {
-					bgcolor = "0 0 0 0"
-					image="graphics/icon_controller_bpm_disabled"
-				}
-
-			// VR -------------------------------------------------------------------------------
-
-				"VRButton" {
-					bgcolor = "0 0 0 0"
-					image="graphics/icon_vr"
-				}
-
-				"VRButton:hover" {
-					bgcolor = "0 0 0 0"
-					image="graphics/icon_vr_over"
-				}
-
-				"VRButton:active" {
-					bgcolor = "0 0 0 0"
-					image="graphics/icon_vr_down"
-				}
-
-				"VRButton:disabled" {
-					bgcolor = "0 0 0 0"
-					image="graphics/icon_vr_disabled"
-				}
+			// Root Menu
+			"RootMenu" {
+				bgcolor = "none"
+			}
 
 
+		// Top Bar -------------------------------------------------------------------------------
+	
+			// Universe Label
+			"UniverseLabel" {
+				padding-top = "11"
+			}
 
-				"VRButtonExit" {
-					bgcolor = "0 0 0 0"
-					image="graphics/icon_vr_happy"
-				}
-
-				"VRButtonExit:hover" {
-					bgcolor = "0 0 0 0"
-					image="graphics/icon_vr_happy_over"
-				}
-
-				"VRButtonExit:active" {
-					bgcolor = "0 0 0 0"
-					image="graphics/icon_vr_happy_down"
-				}
-
-				"VRButtonExit:disabled" {
-					bgcolor = "0 0 0 0"
-					image="graphics/icon_vr_disabled"
-				}
+			// VR Exit Button
+			"VRButtonExit" [$OSX] {
+				padding-left = "0"
+				padding-top = "8"
+				padding-right = "0"
+				padding-bottom = "0"
+			}
 
 			// Inbox -------------------------------------------------------------------------------
 
-				"inbox_button" {
-					font-family = "basefont"
-					font-size = "16"
-					textcolor = "200 200 200 255"
-					bgcolor = "30 30 30 255"
-					render_bg { 0 = "image(x1 - 24,y0 + 6,x1,y1, graphics/inbox_notification_inactive)"}
-				}
+				// Inbox Button -------------------------------------------------------------------------------
 
-				"inbox_button:hover" {
-					bgcolor = "40 40 40 255"
-				}
+					// Inbox Button (Not OSX)
+					"inbox_button" [!$OSX] {
+						font-family = "basefont"
+						font-size = "14"
+						font-weight = "800"
+						font-style = "none"
+						textcolor = "white"
+						padding-top = "2"
+						padding-right = "16"
+						render {}
+						render_bg {
+							0 = "fill( x0, y0, x1, y1, dark_blue )"
+							1 = "image( x1-24, y0+4, x1-2, y1+2, graphics/inbox_notification_inactive )"
+						}
+					}
 
-				"inbox_button:selected" {
-					bgcolor = "40 40 40 255"
-				}
+					// Inbox Button (OSX)
+					"inbox_button" [$OSX] {
+						font-family = "basefont"
+						font-size = "13"
+						font-weight = "800"
+						font-style = "none"
+						textcolor = "white"
+						padding-top = "3"
+						padding-right = "16"
+						render {}
+						render_bg { 
+							0 = "fill( x0, y0, x1, y1, dark_blue )"
+							1 = "image( x1-22, y0+6, x1-2, y1, graphics/inbox_notification_inactive )"
+						}
+					}
 
+					// Inbox Button - Disabled
+					"inbox_button:disabled" {
+						textcolor = "labeldisabled"
+						render_bg {
+							1 = "image( x1-24, y0+4, x1-2, y1+2, graphics/inbox_notification_inactive_disabled )"
+						}
+					}
 
+					// Inbox Button - Hover
+					"inbox_button:hover" {
+						render_bg {
+							0 = "fill(  x0, y0, x1, y1, darkblue )"
+							13 = "image( x1-24, y0+4, x1, y1, graphics/inbox_notification_inactive )"
+						}
+					}
 
-				"inbox_button_active" {
-					font-family = "basefont"
-					font-size = "16"
-					font-weight = "60"
-					textcolor = "200 200 200 255"
-					bgcolor = "90 120 20 255"
-					render_bg { 0 = "image(x1 - 18,y0 + 4,x1,y1, graphics/inbox_notification)"}
-				}
+					// Inbox Button - Selected
+					"inbox_button:selected" {
+						render_bg {
+							0 = "fill(  x0, y0, x1, y1, green6 )"
+							1 = "image( x1-24, y0+4, x1 -2, y1 + 2, graphics/inbox_notification_inactive )"
+						}
+					}
 
-				"inbox_button_active:hover" {
-					bgcolor = "120 160 80 255"
-				}
+				// Inbox Button - Active -------------------------------------------------------------------------------
 
-				"inbox_button_active:selected" {
-					bgcolor = "90 120 20 255"
-				}
+					// Inbox Button - Active
+					"inbox_button_active" {
+						render_bg {
+							0 = "fill( x0 , y0, x1, y1, green6 )"
+							1 = "image( x1-21, y0+4, x1-2, y1+2, graphics/inbox_notification )"
+						}
+					}
 
-			// Announcement -------------------------------------------------------------------------------
+					// Inbox Button - Active - Disabled
+					"inbox_button_active:disabled" {
+						render {}
+						render_bg {
+							1 = "image( x1-21, y0+4, x1-2, y1+2, graphics/inbox_notification_disabled )"
+						}
+					}
 
+					// Inbox Button - Active - Hover
+					"inbox_button_active:hover" {
+						render_bg {
+							0 = "fill( x0 , y0, x1, y1, green5 )"
+							1 = "image( x1-21, y0+4, x1-2, y1+2, graphics/inbox_notification )"
+						}
+					}
+
+					// Inbox Button - Active - Selected
+					"inbox_button_active:selected" {
+						render_bg {
+							0 = "fill(  x0, y0, x1, y1, green6 )"
+							1 = "image( x1-21, y0+4, x1-2, y1+2, graphics/inbox_notification )"
+						}
+					}
+
+				// Inbox - Dropdown List -------------------------------------------------------------------------------
+
+					// Inbox Dropdown Item - Active - Hover
+					"inboxmenuitem_active:hover" {
+						textcolor = "white"
+					}
+
+					// Inbox Dropdown Item - Active
+					"inboxmenuitem_active" {
+						textcolor = "label"
+					}
+
+					// Inbox Dropdown Item
+					"inboxmenuitem" {
+						textcolor = "inbox_inactive_text"
+					}
+
+			// Announcement Button -------------------------------------------------------------------------------
+
+				// Announcement Button
 				"announcement_button" {
-					bgcolor = "30 30 30 255"
-					image = "graphics/updatenone_notification"
-					inset = "4 2 0 0"
+					render_bg {
+						0 = "fill( x0, y0, x1, y1, dark_blue )"
+						1 = "image( x1-24, y0+4, x1 -2, y1 + 1, graphics/updatenone_notification )"
+					}
 				}
 
-
+				// Announcement Button - Hover
 				"announcement_button:hover" {
-					bgcolor = "40 40 40 255"
+					render_bg {
+						0 = "fill( x0, y0, x1, y1, darkblue )"
+						1 = "image( x1-24, y0+4, x1 -2, y1 + 1, graphics/updatenone_notification )"
+					}
 				}
 
+				// Announcement Button - Active
 				"announcement_button_active" {
-					bgcolor = "40 40 40 255"
-					image = "graphics/updatenew_notification"
-					inset = "4 2 0 0"
+					render_bg {
+						0 = "fill(  x0, y0, x1, y1, AnnouncementBlue )"
+						1 = "image( x1-24, y0+4, x1 -2, y1 + 1, graphics/updatenew_notification )"
+					}
 				}
 
-			// Parental Lock -------------------------------------------------------------------------------
+			// Parental Lock Button -------------------------------------------------------------------------------
 
+				// Parental Lock Button
 				"parental_lock_button" {
-					bgcolor = "30 30 30 255"
-					image="resource/notfamilyview"
+					render_bg {
+						0 = "fill( x0, y0, x1, y1, parental_lock_inactive1 )"
+						1 = "image( x0+9, y0+2, x1, y1, resource/notfamilyview )"
+					}
 				}
 
-				"parental_lock_button:hover" {
-					bgcolor = "40 40 40 255"
+				// Parental Lock Button - Hover
+				"parental_lock_button:hover" { 
+					render_bg {
+						0 = "fill( x0, y0, x1, y1, parental_lock_inactive3 )"
+						1 = "image( x0+9, y0+2, x1, y1, resource/notfamilyview )"
+					}
 				}
 
+				// Parental Lock Button - Selected
 				"parental_lock_button:selected" {
-					bgcolor = "40 40 40 255"
-					image="graphics/icon_vr_happy_down"
-				}
-
-		// -------------------------------------------------------------------------------
-
-		// Bottom Bar Items -------------------------------------------------------------------------------
-
-			// Add Game -------------------------------------------------------------------------------
-
-				"AddGameButton" {
-					textcolor = "140 140 140 255"
-					bgcolor = "0 0 0 0"
-					padding-left = "28"
-					render {
-						1 = "image( x0, y0 + 10, x1, y1, graphics/icon_addgame )" 
+					render_bg {
+						0 = "fill( x0, y0, x1, y1, green6 )"
+						1 = "image( x0+9, y0+2, x1, y1, resource/familyview )"
 					}
 				}
 
-				"AddGameButton:hover" {
-					textcolor = "160 160 160 255"
-					bgcolor = "0 0 0 0"
-					padding-left = "28"
-					render {
-						1 = "image( x0, y0 + 10, x1, y1, graphics/icon_addgame_over )" 
+				// Parental Lock Button - Selected - Hover
+				"parental_lock_button:selected:hover" {
+					render_bg {
+						0 = "fill( x0, y0, x1, y1, green5 )"
+						1 = "image( x0+9, y0+2, x1, y1, resource/familyview )"
 					}
 				}
 
-			// View Friends -------------------------------------------------------------------------------
+			// Support Alert -------------------------------------------------------------------------------
 
-				// View Friends
-				"view_friends" {
-					textcolor = "140 140 140 255"
-					bgcolor = "0 0 0 0"
-					padding-right = "28"
-					render {
-						1 = "image( x1 - 30, y0 + 10, x1, y1, graphics/icon_friendslist )" 
+				// Support Alert
+				"support_alert" {
+					font-family = "basefont"
+					font-size = "14"
+					font-weight = "1000"
+					font-style = "none"
+					textcolor = "white"
+					padding-left = "50"
+					padding-right = "50"
+					padding-top = "6"
+					inset = "-8 -3 8 0"
+					render {}
+					render_bg {
+						0 = "fill( x0, y0, x1, y1, parental_lock_inactive1 )"
 					}
 				}
 
-				// View Friends - Hover
-				"view_friends:Hover" {
-					textcolor = "160 160 160 255"
-					bgcolor = "0 0 0 0"
-					textcolor = "140 140 140 255"
-					bgcolor = "0 0 0 0"
-					padding-right = "28"
-					render {
-						1 = "image( x1 - 30, y0 + 10, x1, y1, graphics/icon_friendslist_over )" 
+				// Support Alert - Hover
+				"support_alert:hover" {
+					font-family = "basefont"
+					font-size = "14"
+					font-weight = "1000"
+					font-style = "none"
+					textcolor = "white"
+					padding-left = "50"
+					padding-right = "50"
+					padding-top = "6"
+					inset = "-8 -3 8 0"
+					render {}
+					render_bg {
+						0 = "fill( x0, y0, x1, y1, parental_lock_inactive3 )"
 					}
 				}
 
-				// View Friends - Disabled
-				"view_friends:disabled" {
-					textcolor = "120 120 120 255"
+				// Support Alert - Ack
+				"support_alert_ack" {
+					font-family = "basefont"
+					font-size = "14"
+					font-weight = "1000"
+					font-style = "none"
+					textcolor = "white"
+					padding-left = "50"
+					padding-right = "50"
+					padding-top = "6"
+					inset = "-8 -3 8 0"
+					render {}
+					render_bg {
+						0 = "fill( x0, y0 + 3, x1-1, y1, support_lock_ack1 )"
+					}
 				}
 
-		// -------------------------------------------------------------------------------
+				// Support Alert - Ack - Hover
+				"support_alert_ack:hover" {
+					font-family = "basefont"
+					font-size = "14"
+					font-weight = "1000"
+					font-style = "none"
+					textcolor = "white"
+					padding-left = "50"
+					padding-right = "50"
+					padding-top = "6"
+					inset = "-8 -3 8 0"
+					render {}
+					render_bg {
+						0 = "fill( x0, y0 + 3, x1-1, y1, support_lock_ack2 )"
+					}
+				}
+
+			//-------------------------------------------------------------------------------
+
+		// View Friends Button -------------------------------------------------------------------------------
+
+			// Friend Panel - Hover
+			"CFriendPanel:hover" {
+				render_bg {
+					0 = "fill( x0, y0, x1, y1, black)"
+				}
+			}
+
+		// Add Game Button -------------------------------------------------------------------------------
+
+			// Add Game Button
+			"AddGameButton" {
+				font-size = "14"
+				font-size = "13 [$OSX]"
+				font-family = "basefont"
+				textcolor = "labelfocus"
+				padding-left = "24"
+				font-style = "uppercase"
+				render_bg {
+					0 = "image( x0 + 2, y0 + 4, x1, y1, graphics/icon_addgame )"
+				}
+			}
+
+			// Add Game Button - Hover
+			"AddGameButton:hover" {
+				textcolor = "white"
+				render_bg {
+					0 = "image( x0 + 2, y0 + 4, x1, y1, graphics/icon_addgame_over )"
+				}
+			}
+
+		//-------------------------------------------------------------------------------
+
+	}
+
+	colors {
+
+		//-------------------------------------------------------------------------------
+
+			support_flag_red = "169 72 71 255"
+			support_hover_red1 = "193 94 93 255"
+			support_hover_red2 = "156 64 63 255"
+
+		//-------------------------------------------------------------------------------
+
+			inbox_active_text = "text"
+			inbox_inactive_text = "labeldisabled"
+
+		//-------------------------------------------------------------------------------
+
+			backdrop = "20 20 20 255"
+
+			disabledborder = "63 63 63 255"
+
+		//-------------------------------------------------------------------------------
 
 	}
 
@@ -228,180 +646,204 @@
 			// Frame - Caption Grip
 			place {
 				control = "frame_captiongrip"
-				height = "100"
+				margin = "2"
 				width = "max"
-				x = "0"
-				y = "0"
+				height = "40"
 			}
 
 			// Navigator Panel
 			place {
 				control = "UINavigatorPanel"
-				height = "max"
 				width = "max"
-				margin = "8"
-				margin-top = "30"
-				margin-bottom = "72"
+				height = "max"
+				margin-right = "1"
+				margin-left = "1"
+				margin-bottom = "40"
+				margin-top = "22"
 			}
 
-			// Frame Buttons
+			// Status Panel
 			place {
+				control = "UIStatusPanel"
+				width = "max"
+				height = "40"
+				align = "bottom"
+				margin-bottom = "18"
+			}
+
+		// Top Bar - Main -------------------------------------------------------------------------------
+
+			// Menu Bar (Not OSX)
+			place [!$OSX] {
+				control = "MenuBar"
+				align = "top"
+				margin-top = "5"
+				margin-left = "2"
+			}
+
+			// Frame - Buttons (Not OSX)
+			place [!$OSX] {
 				control = "frame_minimize,frame_maximize,frame_close"
 				align = "right"
-				spacing = "6"
-				margin-right = "10"
-				y = "10"
+				margin-top = "13"
+				margin-right = "9"
+				spacing = "-5 "
 			}
 
-
-
-		// -------------------------------------------------------------------------------
-
-		// Menu Bar -------------------------------------------------------------------------------
-
-			// Menu Bar
-			place {
-				control = "MenuBar"
-				height = "24"
-				x = "10"
-				y = "10"
+			// Frame - Buttons (OSX)
+			place [$OSX]  {
+				control = "frame_close,frame_minimize,frame_maximize"
+				align = "left"
+				margin-top = "13"
+				margin-left = "11"
+				spacing = "-7 "
 			}
 
-		// -------------------------------------------------------------------------------
+		// Top Bar - Items -------------------------------------------------------------------------------
 
-		// Top Bar -------------------------------------------------------------------------------
+			// Top Bar - Items - Fullscreen -------------------------------------------------------------------------------
 
-			// Big Picture -------------------------------------------------------------------------------
-
-				// Top Bar - Big Picture
-				place {
+				// Top Bar - Big Picture (Not OSX)
+				place [!$OSX] {
 					control = "fullscreen"
 					align = "right"
 					end-right = "frame_minimize"
-					spacing = "8"
-					height = "24"
+					height = "20"
 					width = "30"
-					y = "10"
 					margin-right = "8"
+					margin-top = "11"
 				}
 
-			// VR -------------------------------------------------------------------------------
+				// Top Bar - Big Picture (OSX)
+				place [$OSX]  {
+					control = "fullscreen"
+					align = "right"
+					height = "20"
+					width = "30"
+					margin-right = "16"
+					margin-top = "11"
+				}
 
-				// VR Start - VR Exit
+			// Top Bar - Items - VR Button -------------------------------------------------------------------------------
+
+				// Top Bar - VR Buttons
 				place {
 					control = "startvr, exitvr"
 					align = "right"
 					end-right = "fullscreen"
-					spacing = "8"
-					height = "24"
-					y = "10"
-					margin-right = "8"
+					margin-right = "4"
+					margin-top = "10"
 				}
-				
-			// Account -------------------------------------------------------------------------------
 
-				// Top Bar - Account
+			// Top Bar - Items - Account -------------------------------------------------------------------------------
+
+				// Top Bar - Account Button
 				place {
 					control = "AccountButton"
 					align = "right"
 					end-right = "startvr"
-					spacing = "8"
-					height = "24"
-					y = "10"
+					margin-top = "9"
 					margin-right = "8"
+					height = "24"
 				}
 
-			// Inbox -------------------------------------------------------------------------------
+			// Top Bar - Items - Inbox -------------------------------------------------------------------------------
 
-				// Inbox
+				// Top Bar - Inbox Button
 				place {
 					control = "InboxButton"
 					align = "right"
 					end-right = "AccountButton"
-					spacing = "8"
-					height = "24"
-					width = "34"
-					y = "10"
+					margin-top = "9"
 					margin-right = "8"
+					height = "24"
 				}
 
-			// Announcment Button -------------------------------------------------------------------------------
+			// Top Bar - Items - Announcement -------------------------------------------------------------------------------
 
-				// Announcement Button
+				// Top Bar - Announcement Button
 				place {
 					control = "AnnouncementButton"
 					align = "right"
 					end-right = "InboxButton"
-					spacing = "8"
+					margin-top = "9"
+					margin-right = "8"
 					height = "24"
 					width = "34"
-					y = "10"
-					margin-right = "8"
 				}
-		
-			// Parental Lock -------------------------------------------------------------------------------
+
+			// Top Bar - Items - Parental Lock -------------------------------------------------------------------------------
 
 				// Top Bar - Parental Lock Button
 				place {
 					control = "ParentalLockButton"
 					align = "right"
 					end-right = "AnnouncementButton"
-					spacing = "8"
+					margin-top = "9"
+					margin-right = "8"
 					height = "24"
 					width = "44"
-					y = "10"
-					margin-right = "8"
 				}
 
-			// Alerts -------------------------------------------------------------------------------
+			// Top Bar - Items - Alerts -------------------------------------------------------------------------------
 
-				// Top Bar - Alerts
-				place {
-					control = "universe_label, EOLAlert, SupportAlert"
+				// Top Bar - Alerts (Not OSX)
+				place [!$OSX] {
+					control = "universe_label, 
+					EOLAlert, SupportAlert"
+					spacing = "8"
 					align = "right"
 					end-right = "ParentalLockButton"
-					spacing = "8"
-					height = "24"
-					y = "10"
+					margin-top = "9"
 					margin-right = "8"
+					height = "24"
 				}
 
-			// -------------------------------------------------------------------------------
+				// Top Bar - Alerts (OSX)
+				place [$OSX]  {
+					control = "universe_label, 
+					EOLAlert, SupportAlert"
+					spacing = "8"
+					start = "frame_maximize"
+					align = "left"
+					margin-top = "-4"
+					margin-left = "13"
+					height = "24"
+				}
 
-		// -------------------------------------------------------------------------------
+			//-------------------------------------------------------------------------------
 
-		// Bottom Bar -------------------------------------------------------------------------------
+		// Bottom Bar - Items -------------------------------------------------------------------------------
 
-			// Status Panel
-			place {
-				control = "UIStatusPanel"
+			// Bottom Region
+			region {
+				name = "bottom"
 				align = "bottom"
-				height = "60"
 				width = "max"
-				margin = "8"
-				margin-bottom = "4"
+				height = "62"
 			}
 
 			// Bottom Bar - Add Game
 			place {
 				control = "add_game"
-				align = "bottom"
-				height = "40"
-				x = "20"
-				margin-bottom = "20"
+				x = "14"
+				y = "16"
+				region = "bottom"
+				height = "30"
 			}
 
 			// Bottom Bar - View Friends
 			place {
 				control = "view_friends"
-				align = "bottom-right"
-				height = "40"
-				width = "120"
-				margin-right = "20"
-				margin-bottom = "20"
+				height = "64"
+				width = "160"
+				region = "bottom"
+				align = "right"
+				dir = "right"
+				margin-right = "16"
 			}
 
-		// -------------------------------------------------------------------------------
+		//-------------------------------------------------------------------------------
 
 	}
 

@@ -2,53 +2,140 @@
 
 	styles {
 
-		// Frame ------------------------------------------------------------------------------------------
+		// Main ------------------------------------------------------------------------------------------
 
 			"CGamesPage_Mini"  {
-				bgcolor = "20 20 20 255"
+				bgcolor = "dialogBG"
+				render_bg {
+					1 = "image( x0, y0, x1, y1, graphics/clienttexture2)"
+				}
+			}
+
+			// the games list column chooser
+			"CGamesPage_Mini ListPanelColumnSelectButton" {
+				inset = "-3 3 0 0"
+				render {
+					1="fill( x0, y0 + 1, x1 - 1, y1, none )"
+					2="image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse )"
+				}
+				render_bg {}
+			}
+
+			"CGamesPage_Mini ListPanel" {
+				padding-left = "4"
+				padding-right = "2"
+			}
+
+			"CGamesPage_Mini ListPanelInterior" {
+				inset = "3 1 -2 0"
+				bgcolor = "none"
+				render {}
+				render_bg {}
+			}
+
+			"CGamesPage_Mini ListPanelInterior:scrollbar" {
+				inset = "3 1 -2 0"
+				bgcolor = "none"
+				render_bg {}
+			}
+
+			"CGamesPage_Mini CGameFilterMenuButton" {
+				inset = "3 0 0 0"
+				padding-left = "-3"
+			}
+			
+			"DetailsBorderPanel" {
+				inset = "-1 0 0 0"
+				bgcolor = none
+				render_bg {
+					0 = "gradient( x0+1, y0+1, x1-2, y0 + 149, none, AlmostBlack )"
+					1 = "fill( x0+1, y0 + 149, x1-2, y1, AlmostBlack )"
+				}
 			}
 
 		// Menu ------------------------------------------------------------------------------------------
-		
-			"menubutton" {
-				bgcolor = "0 0 0 0"
-			} 
 
-			"menubutton:hover" {
-				textcolor = "200 200 200 255"
-			} 
-		
+			"menubar" {
+				bgcolor = "none"
+			}
+
+			"menubar menubutton" {
+				padding-right = "0"
+				padding-left = "-4"
+				inset = "0 0 0 0"
+			}
+
+		// Text Entry ------------------------------------------------------------------------------------------
+
+			"TextEntry" {
+				font-family = "basefont"
+				font-size = "14"
+				textcolor = "Text"
+				font-weight = "400"
+				bgcolor = "none"
+				selectedtextcolor = "white"
+				selectedbgcolor = "TextSelectedBG"
+				shadowtextcolor = "Text"
+				inset-left = "4"
+				inset-top = "0"
+				render {}
+			}
+
+			"TextEntry:hover" {
+				textcolor = "TextHover"
+			}
+
+			"TextEntry:active" {
+				textcolor = "TextHover"
+			}
+
+			"TextEntry:selected" {
+				textcolor = "TextHover"
+			}
+
 		// Top Bar ------------------------------------------------------------------------------------------
 
 			// Top Bar Wrapper
 			"grouper" {
-				bgcolor = "30 30 30 255"
+				bgcolor = "none"
+				render_bg {
+					0 = "fill( x0 + 3, y0 + 1, x1 - 3, y1 - 1, dialogbg )"
+				}
 			}
 
 			// Label Search Icon
 			"LibrarySearchIcon" {
-				bgcolor = "0 0 0 0"
-				image = "graphics/icon_button_search"
+				bgcolor = "none"
 				inset = "2 0 0 0"
+				render_bg {}
+				image = "graphics/icon_button_search"
+				padding-left = "0"
+				padding-right = "-1"
 			}
 
 		// Top Bar - Search Bar ------------------------------------------------------------------------------------------
 
 			"LibrarySearch" {
-				textcolor = "160 160 160 255"
-				selectedtextcolor = "250 250 250 255"
-				bgcolor = "20 20 20 255"
-				selectedbgcolor = "60 60 60 255"
+				padding-left = "0"
+				font-family = "basefont"
+				font-size = "14"
+				font-weight = "400"	
+				textcolor = "text"
 			}
-			
+
 			"LibrarySearch:empty" {
 				font-style = "italic"
-				textcolor = "120 120 120 255"
-				bgcolor = "26 26 26 255"
+				textcolor = "LabelDisabled"
 			}
-				
+
 			"LibrarySearch:hover" {
-				textcolor = "200 200 200 255"
+				textcolor = "texthover"
+			}
+
+			"LibrarySearch:empty:hover" {
+				font-style = "italic"
+				textcolor = "texthover"
+				
 			}
 
 		// Filter Button ------------------------------------------------------------------------------------------
@@ -67,6 +154,28 @@
 				padding-left = "24"
 			}
 
+		// Label ------------------------------------------------------------------------------------------
+
+			"NavLabel2" {
+				font-family = "basefont"
+				font-size = "14"
+				font-weight = "400"
+				textcolor = "TextentrySelected"
+				font-style = "outerglow,uppercase"
+				font-outerglow-color = "TextGlowHover"
+				font-outerglow-offset = "1"
+				font-outerglow-filtersize = "3"
+				inset = "2 0 2 0"
+			}
+
+		// List Panel ------------------------------------------------------------------------------------------
+
+			"ListPanelColumnheader" {
+				bgcolor = "none"
+				render {}
+				render_bg {}	
+			}
+
 		// ------------------------------------------------------------------------------------------
 
 
@@ -78,70 +187,84 @@
 
 			place {
 				control = "frame_captiongrip"
-				height = "44"
+				height = "38"
 				width = "max"
-				x = "2"
 				margin = "2"
 			}
 
 		// Menu ------------------------------------------------------------------------------------------
 
-			// Menu Bar
-			place {
+			// Menu Bar (Not OSX)
+			place [!$OSX] {
 				control = "MenuBar"
+				margin-left = "0"
 				height = "24"
-				x = "10"
-				y = "10"
+				margin-top = "2"
+				margin-right = "44"
 			}
+		
 
 		// Top Bar ------------------------------------------------------------------------------------------
 
 			// Top Bar Wrapper
 			place {
 				control = "subnavgroup_library"
-				height = "30"
+				align = "top-center"
+				y = "38"
+				height = "26"
 				width = "max"
-				x = "10"
-				y = "48"
-				margin-right = "10"
-			}
-
-			// Label Search Icon
-			place {
-				control = "label_search_icon"
-				height = "24"
-				width = "24"
-				x = "20"
-				y = "51"
+				margin-right = "9"
+				margin-left = "9"
 			}
 
 			// Library Search Bar
 			place {
 				control = "library_search"
-				height = "24"
-				width = "90"
-				x = "50"
-				y = "51"
+				width = "80"
 			}
-			
+				
+			// Label Search Icon - Library Search Bar (Not OSX)
+			place [!$OSX] {
+				control = "label_search_icon,library_search"
+				align = "left"
+				y = "43"
+				height = "17"
+				spacing = "1"
+				x = "14"
+			}
+
+			// Label Search Icon - Library Search Bar (OSX)
+			place  [$OSX] {
+				control = "label_search_icon,library_search"
+				align = "left"
+				y = "43"
+				height = "17"
+				spacing = "1"
+				x = "13"
+			}
+
 			// Library Filters
 			place {
 				control = "library_filters"
 				align = "right"
-				height = "24"
-				y = "51"
-				margin-right = "10"
+				margin-left = "10"
+				margin-right = "11"
+				margin-top = "41"
+				height = "22"
+				spacing = "1"
 			}
 
 		// Game List ------------------------------------------------------------------------------------------
 
 			place {
 				control = "gameslist"
+				align = "left"
+				margin-left = "10"
+				margin-right = "9"
+				margin-top = "66"
+				margin-bottom = "18"
 				width = "max"
 				height = "max"
-				margin = "10"
-				margin-top = "82"
-				margin-bottom = "20"
 			}
 
 		// ------------------------------------------------------------------------------------------
@@ -158,10 +281,10 @@
 
 
 
-		
-		
-		
-		
+
+
+
+
 
  	}
 

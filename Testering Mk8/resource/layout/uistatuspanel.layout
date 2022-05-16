@@ -2,72 +2,85 @@
 
 	styles {
 
-		// Main Window -------------------------------------------------------------------------------
+		// Progress Bar ------------------------------------------------------------------------------------------------
 
-			"CUIStatusPanel" {
-				bgcolor = "0 0 0 0"
-			}
-
-		// Text -------------------------------------------------------------------------------
-
-			// Download / No Connection
-			"StatusLabel" {
-				font-size = "14"
-				textcolor = "200 200 200 255"
-				bgcolor = "0 0 0 0"
-			}
-
-			// Download / No Connection - Hover
-			"StatusLabel:hover" {
-				font-size = "14"
-				textcolor = "240 240 240 255"
-				bgcolor = "0 0 0 0"
-			}
-
-			// x / x Items Complete Bar
-			"StatusLabelDim" {
-				font-size = "14"
-				textcolor = "200 200 200 255"
-				bgcolor = "0 0 0 0"
-			}
-
-		// Progress Bar -------------------------------------------------------------------------------
-
+			// Progress Bar
 			"SlimProgressBar" {
-				textcolor = "60 60 60 255"
-				bgcolor = "0 0 0 255"
+				textcolor = "focus4"
+				render {}      
+				render_bg {
+					0 = "fill( x0, y0, x1, y1, black )"
+				}
 			}
 
-		// -------------------------------------------------------------------------------
+		//------------------------------------------------------------------------------------------------
 
 	}
 
 	layout {
-	  
-		// Download / No Connection
-		place {
-			control = "StatusDownloading"
-			align = "top-center"
-			height = "24"
-			y = "4"
-		}
-		
-		// Progress Bar
-	 	place {
-			control = "StatusProgressbar"
-			align = "top-center"
-			height = "4"
-			width = "300"
-			y = "28"
-		}
 
-		// x / x Items Complete Bar
-		place {
-			control = "StatusPaused, StatusComplete"
-			align = "top-center"
-			height = "24"
-			y = "34"
-		}
+		// Top Bar ------------------------------------------------------------------------------------------------
+
+			// Region - Top Bar
+			region {
+				name = "TitleRegion"
+				width = "max"
+				height = "28"
+				align = "top"
+				margin = "5"
+			} 
+
+			// Status - Downloading
+			place {
+				control = "StatusDownloading"
+				region = "TitleRegion"
+				align = "top-center" 
+				margin-top = "2"
+			}
+
+		// Middle Bar ------------------------------------------------------------------------------------------------
+
+			// Region - Middle Bar
+			region {
+				name = "statusRegion"
+				y = "28"
+				width = "max"
+				height = "28"
+				align = "bottom"
+				margin = "6"
+			} 
+
+			// Status - Pause - Completed
+			place {
+				control = "StatusPaused, StatusComplete"
+				region = "StatusRegion"
+				align = "top-center" 
+				margin-top = "3"
+			}
+
+		// Bottom Bar ------------------------------------------------------------------------------------------------
+
+			// Region - Bottom Bar
+			region {
+				name = "ProgressRegion"
+				y = "37"
+				width = "max"
+				height = "10"
+				align = "top"
+				margin = "0"
+			}
+
+			// Status - Progress Bar
+			place {
+				control = "StatusProgressbar"
+				region = "ProgressRegion"
+				width = "300"
+				height = "3"
+				margin-top = "0"
+				align = "top-center"
+			}
+
+		//------------------------------------------------------------------------------------------------
 
 	}
 

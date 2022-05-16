@@ -2,79 +2,121 @@
 
 	styles {
 
-		// Main Dropdown Button
-		"AccountMenuButtonStyle" {
-			bgcolor = "0 0 0 0"
-		}
+		// Account Button -----------------------------------------------------------------------------
 
-		// Balance
-		"AccountBalanceStyle" {
-			font-family = "basefont"
-			font-size = "14"
-			textcolor = "160 160 160 255" 
-			bgcolor = "127 127 127 30"
-			padding-left = "4"
-			padding-right = "4"
-		}
+			// Main Button -----------------------------------------------------------------------------
 
-		// Dropdown Icon -------------------------------------------------------------------------------
+				"AccountButtonStyle" {
+					render_bg
+					{
+						0 = "fill( x0, y0, x1, y1, dark_blue )"
+					}
+				}
 
-			// Dropdown Icon - Offline
-			"AccountDropDownStyleOffline" {
-				textcolor = "127 127 127 255"
-				bgcolor = "127 127 127 30"
-				image = "graphics/dropdown_offline"
-			}
+				"AccountButtonStyle:hover" {
+					render_bg
+					{
+						0 = "fill( x0, y0, x1, y1, darkblue )"
+					}
+				}
 
-			// Dropdown Icon - Online
-			"AccountDropDownStyleOnline" {
-				textcolor = "84 165 196 255"
-				bgcolor = "84 165 196 30"
-				image = "graphics/dropdown_online"
-			}
+			// Main Dropdown Button -----------------------------------------------------------------------------
 
-			// Dropdown Icon - InGame
-			"AccountDropDownStyleInGame" {
-				textcolor = "144 186 60 255"
-				bgcolor = "144 186 60 30"
-				image = "graphics/dropdown_ingame"
-			}
+				"AccountMenuButtonStyle" {
+					render_bg {}
+				}
 
-		// Account Persona ( Name ) -------------------------------------------------------------------------------
+			// Name -----------------------------------------------------------------------------
+
+				"AccountPersonaStyleOffline" {
+					padding-right = "6"
+					padding-left = "12"
+					textcolor = "Friends.OfflineColor"
+				}
+
+				"AccountPersonaStyleOnline" {
+					padding-right = "6"
+					padding-left = "12"
+					textcolor = "Friends.OnlineColor"
+					render_bg
+					{
+						0 = "gradient_horizontal( x0, y0 - 1, x0 + 2, y1 + 1, Friends.OnlineColor, DialogBG )"
+					}
+				}
+
+				"AccountPersonaStyleInGame" {
+					padding-right = "6"
+					padding-left = "12"
+					textcolor = "Friends.InGameColor"
+					render_bg
+					{
+						0 = "gradient_horizontal( x0, y0 - 1, x0 + 2, y1 + 1, Friends.InGameColor, DialogBG )"
+					}
+				}
+
+			// Dropdown Icon -----------------------------------------------------------------------------
+
+				"AccountDropDownStyleOffline" {
+					render_bg
+					{
+						1 = "image( x0, y0+10, x1, y1, graphics/dropdown_offline )"
+					}
+					
+				}
+				
+				"AccountDropDownStyleOnline" {
+					render_bg
+					{
+						1 = "image( x0, y0 + 10, x1, y1, graphics/dropdown_online )"
+					}
+				}
+				
+				"AccountDropDownStyleInGame" {
+					render_bg
+					{
+						1 = "image( x0, y0+10, x1, y1, graphics/dropdown_ingame )"
+					}
+				}
+
+			// Balance -----------------------------------------------------------------------------
+
+				"AccountBalanceStyle" {
+					textcolor = "labeldisabled"
+					bgcolor = "none"
+					font-family = "basefont"
+					font-size = "14"
+					font-weight = "400"
+					font-style = "regular"
+					padding-top = "1"
+					padding-right = "8"
+					padding-left = "2"
+				}
+
+				"AccountBalanceStyle" [$OSX]
+				{
+					textcolor = "labeldisabled"
+					bgcolor = "none"
+					font-family = "basefont"
+					font-size = "13"
+					font-weight = "400"
+					font-style = "regular"
+					inset = "0 1 0 0"
+				}
 	
-			// Account Persona - Offline
-			"AccountPersonaStyleOffline" {
-				padding-right = "8"
-				padding-left = "8"
-				textcolor = "127 127 127 255"
-				bgcolor = "127 127 127 30"
-			}
+			//-----------------------------------------------------------------------------
 
-			// Account Persona - Online
-			"AccountPersonaStyleOnline" {
-				padding-right = "8"
-				padding-left = "8"
-				textcolor = "84 165 196 255"
-				bgcolor = "84 165 196 30"
-			}
+		//-----------------------------------------------------------------------------
 
-			// Account Persona - InGame
-			"AccountPersonaStyleInGame" {
-				padding-right = "8"
-				padding-left = "8"
-				textcolor = "144 186 60 255"
-				bgcolor = "144 186 60 30"
-			}
-		
-		// -------------------------------------------------------------------------------
-	
 	}
 
 	layout {
 
+		// Account Button -----------------------------------------------------------------------------
+
 			// Main Dropdown Button
 			place {
 				control = "account_menu_button"
+				align = "left"
 				height = "24"
 				width = "max"
 			}
@@ -91,8 +133,9 @@
 				control = "account_drop_down"
 				align = "right"
 				end-right = "account_balance"
+				margin-top = "1"
 				height = "24"
-				width = "12"
+				width = "8"
 			}
 
 			// Name
@@ -100,6 +143,7 @@
 				control = "account_persona"
 				align = "right"
 				end-right = "account_drop_down"
+				margin-top = "1"
 				height = "24"
 			}
 
@@ -111,6 +155,8 @@
 				height = "24"
 				width = "24"
 			}
+
+		//-----------------------------------------------------------------------------
 
 	}
 
