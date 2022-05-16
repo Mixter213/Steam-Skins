@@ -1,4 +1,4 @@
-steam.styles {
+"steam.styles" {
 
 	include = "resource/styles/basic.styles"
 	include = "resource/styles/variables.styles"
