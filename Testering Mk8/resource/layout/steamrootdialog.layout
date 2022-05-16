@@ -1,0 +1,408 @@
+"resource/layout/steamrootdialog.layout"{
+
+	styles {
+
+		// Main Window -------------------------------------------------------------------------------
+
+			// Frame Container
+			"Frame" {
+				bgcolor = "20 20 20 255"
+			}
+
+			// Frame Title
+			"FrameTitle" {
+				textcolor = "0 0 0 0"
+			}
+
+		// -------------------------------------------------------------------------------
+
+		// Menu Bar -------------------------------------------------------------------------------
+
+			"MenuButton" {
+				bgcolor = "0 0 0 0"
+			}
+
+		// -------------------------------------------------------------------------------
+
+		// Top Bar Items -------------------------------------------------------------------------------
+
+			// Fullscreen -------------------------------------------------------------------------------
+
+				"FullscreenButton" {
+					bgcolor = "0 0 0 0"
+					image="graphics/icon_controller_bpm"
+				}
+
+				"FullscreenButton:hover" {
+					bgcolor = "0 0 0 0"
+					image="graphics/icon_controller_bpm_over"
+				}
+
+				"FullscreenButton:active" {
+					bgcolor = "0 0 0 0"
+					image="graphics/icon_controller_bpm_down"
+				}
+
+				"FullscreenButton:disabled" {
+					bgcolor = "0 0 0 0"
+					image="graphics/icon_controller_bpm_disabled"
+				}
+
+			// VR -------------------------------------------------------------------------------
+
+				"VRButton" {
+					bgcolor = "0 0 0 0"
+					image="graphics/icon_vr"
+				}
+
+				"VRButton:hover" {
+					bgcolor = "0 0 0 0"
+					image="graphics/icon_vr_over"
+				}
+
+				"VRButton:active" {
+					bgcolor = "0 0 0 0"
+					image="graphics/icon_vr_down"
+				}
+
+				"VRButton:disabled" {
+					bgcolor = "0 0 0 0"
+					image="graphics/icon_vr_disabled"
+				}
+
+
+
+				"VRButtonExit" {
+					bgcolor = "0 0 0 0"
+					image="graphics/icon_vr_happy"
+				}
+
+				"VRButtonExit:hover" {
+					bgcolor = "0 0 0 0"
+					image="graphics/icon_vr_happy_over"
+				}
+
+				"VRButtonExit:active" {
+					bgcolor = "0 0 0 0"
+					image="graphics/icon_vr_happy_down"
+				}
+
+				"VRButtonExit:disabled" {
+					bgcolor = "0 0 0 0"
+					image="graphics/icon_vr_disabled"
+				}
+
+			// Inbox -------------------------------------------------------------------------------
+
+				"inbox_button" {
+					font-family = "basefont"
+					font-size = "16"
+					textcolor = "200 200 200 255"
+					bgcolor = "30 30 30 255"
+					render_bg { 0 = "image(x1 - 24,y0 + 6,x1,y1, graphics/inbox_notification_inactive)"}
+				}
+
+				"inbox_button:hover" {
+					bgcolor = "40 40 40 255"
+				}
+
+				"inbox_button:selected" {
+					bgcolor = "40 40 40 255"
+				}
+
+
+
+				"inbox_button_active" {
+					font-family = "basefont"
+					font-size = "16"
+					font-weight = "60"
+					textcolor = "200 200 200 255"
+					bgcolor = "90 120 20 255"
+					render_bg { 0 = "image(x1 - 18,y0 + 4,x1,y1, graphics/inbox_notification)"}
+				}
+
+				"inbox_button_active:hover" {
+					bgcolor = "120 160 80 255"
+				}
+
+				"inbox_button_active:selected" {
+					bgcolor = "90 120 20 255"
+				}
+
+			// Announcement -------------------------------------------------------------------------------
+
+				"announcement_button" {
+					bgcolor = "30 30 30 255"
+					image = "graphics/updatenone_notification"
+					inset = "4 2 0 0"
+				}
+
+
+				"announcement_button:hover" {
+					bgcolor = "40 40 40 255"
+				}
+
+				"announcement_button_active" {
+					bgcolor = "40 40 40 255"
+					image = "graphics/updatenew_notification"
+					inset = "4 2 0 0"
+				}
+
+			// Parental Lock -------------------------------------------------------------------------------
+
+				"parental_lock_button" {
+					bgcolor = "30 30 30 255"
+					image="resource/notfamilyview"
+				}
+
+				"parental_lock_button:hover" {
+					bgcolor = "40 40 40 255"
+				}
+
+				"parental_lock_button:selected" {
+					bgcolor = "40 40 40 255"
+					image="graphics/icon_vr_happy_down"
+				}
+
+		// -------------------------------------------------------------------------------
+
+		// Bottom Bar Items -------------------------------------------------------------------------------
+
+			// Add Game -------------------------------------------------------------------------------
+
+				"AddGameButton" {
+					textcolor = "140 140 140 255"
+					bgcolor = "0 0 0 0"
+					padding-left = "28"
+					render {
+						1 = "image( x0, y0 + 10, x1, y1, graphics/icon_addgame )" 
+					}
+				}
+
+				"AddGameButton:hover" {
+					textcolor = "160 160 160 255"
+					bgcolor = "0 0 0 0"
+					padding-left = "28"
+					render {
+						1 = "image( x0, y0 + 10, x1, y1, graphics/icon_addgame_over )" 
+					}
+				}
+
+			// View Friends -------------------------------------------------------------------------------
+
+				// View Friends
+				"view_friends" {
+					textcolor = "140 140 140 255"
+					bgcolor = "0 0 0 0"
+					padding-right = "28"
+					render {
+						1 = "image( x1 - 30, y0 + 10, x1, y1, graphics/icon_friendslist )" 
+					}
+				}
+
+				// View Friends - Hover
+				"view_friends:Hover" {
+					textcolor = "160 160 160 255"
+					bgcolor = "0 0 0 0"
+					textcolor = "140 140 140 255"
+					bgcolor = "0 0 0 0"
+					padding-right = "28"
+					render {
+						1 = "image( x1 - 30, y0 + 10, x1, y1, graphics/icon_friendslist_over )" 
+					}
+				}
+
+				// View Friends - Disabled
+				"view_friends:disabled" {
+					textcolor = "120 120 120 255"
+				}
+
+		// -------------------------------------------------------------------------------
+
+	}
+
+	layout {
+
+		// Main Window -------------------------------------------------------------------------------
+
+			// Frame - Caption Grip
+			place {
+				control = "frame_captiongrip"
+				height = "100"
+				width = "max"
+				x = "0"
+				y = "0"
+			}
+
+			// Navigator Panel
+			place {
+				control = "UINavigatorPanel"
+				height = "max"
+				width = "max"
+				margin = "8"
+				margin-top = "30"
+				margin-bottom = "72"
+			}
+
+			// Frame Buttons
+			place {
+				control = "frame_minimize,frame_maximize,frame_close"
+				align = "right"
+				spacing = "6"
+				margin-right = "10"
+				y = "10"
+			}
+
+
+
+		// -------------------------------------------------------------------------------
+
+		// Menu Bar -------------------------------------------------------------------------------
+
+			// Menu Bar
+			place {
+				control = "MenuBar"
+				height = "24"
+				x = "10"
+				y = "10"
+			}
+
+		// -------------------------------------------------------------------------------
+
+		// Top Bar -------------------------------------------------------------------------------
+
+			// Big Picture -------------------------------------------------------------------------------
+
+				// Top Bar - Big Picture
+				place {
+					control = "fullscreen"
+					align = "right"
+					end-right = "frame_minimize"
+					spacing = "8"
+					height = "24"
+					width = "30"
+					y = "10"
+					margin-right = "8"
+				}
+
+			// VR -------------------------------------------------------------------------------
+
+				// VR Start - VR Exit
+				place {
+					control = "startvr, exitvr"
+					align = "right"
+					end-right = "fullscreen"
+					spacing = "8"
+					height = "24"
+					y = "10"
+					margin-right = "8"
+				}
+				
+			// Account -------------------------------------------------------------------------------
+
+				// Top Bar - Account
+				place {
+					control = "AccountButton"
+					align = "right"
+					end-right = "startvr"
+					spacing = "8"
+					height = "24"
+					y = "10"
+					margin-right = "8"
+				}
+
+			// Inbox -------------------------------------------------------------------------------
+
+				// Inbox
+				place {
+					control = "InboxButton"
+					align = "right"
+					end-right = "AccountButton"
+					spacing = "8"
+					height = "24"
+					width = "34"
+					y = "10"
+					margin-right = "8"
+				}
+
+			// Announcment Button -------------------------------------------------------------------------------
+
+				// Announcement Button
+				place {
+					control = "AnnouncementButton"
+					align = "right"
+					end-right = "InboxButton"
+					spacing = "8"
+					height = "24"
+					width = "34"
+					y = "10"
+					margin-right = "8"
+				}
+		
+			// Parental Lock -------------------------------------------------------------------------------
+
+				// Top Bar - Parental Lock Button
+				place {
+					control = "ParentalLockButton"
+					align = "right"
+					end-right = "AnnouncementButton"
+					spacing = "8"
+					height = "24"
+					width = "44"
+					y = "10"
+					margin-right = "8"
+				}
+
+			// Alerts -------------------------------------------------------------------------------
+
+				// Top Bar - Alerts
+				place {
+					control = "universe_label, EOLAlert, SupportAlert"
+					align = "right"
+					end-right = "ParentalLockButton"
+					spacing = "8"
+					height = "24"
+					y = "10"
+					margin-right = "8"
+				}
+
+			// -------------------------------------------------------------------------------
+
+		// -------------------------------------------------------------------------------
+
+		// Bottom Bar -------------------------------------------------------------------------------
+
+			// Status Panel
+			place {
+				control = "UIStatusPanel"
+				align = "bottom"
+				height = "60"
+				width = "max"
+				margin = "8"
+				margin-bottom = "4"
+			}
+
+			// Bottom Bar - Add Game
+			place {
+				control = "add_game"
+				align = "bottom"
+				height = "40"
+				x = "20"
+				margin-bottom = "20"
+			}
+
+			// Bottom Bar - View Friends
+			place {
+				control = "view_friends"
+				align = "bottom-right"
+				height = "40"
+				width = "120"
+				margin-right = "20"
+				margin-bottom = "20"
+			}
+
+		// -------------------------------------------------------------------------------
+
+	}
+
+}

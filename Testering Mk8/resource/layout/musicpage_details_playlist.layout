@@ -1,0 +1,92 @@
+"resource/layout/musicpage_details_playlist.layout" {
+
+	layout {
+
+		region {
+			name = "overflow"
+			overflow = "scroll-vertical"
+		}
+
+
+		// Playlist Info -------------------------------------------------------------------------------
+
+			// Playlist Title
+			place {
+				control = "PlaylistTitleLabel"
+				region = "overflow"
+				height = "30"
+				width = "max"
+				x = "20"
+				y = "4"
+				margin-right = "20"
+			}
+
+			// Playlist Tracks
+			place {
+				control = "TracksInfoLabel"
+				region = "overflow"
+				start = "PlaylistTitleLabel"
+				dir = "down"
+				height = "30"
+				width = "max"
+				y = "2"
+				margin-right = "20"
+			}
+
+			// Playlist Image
+			place {
+				control = "CoverImage"
+				region = "overflow"
+				start = "TracksInfoLabel"
+				dir = "down"
+				height = "200"
+				width = "200"
+				y = "4"
+			}
+
+		// Playlist Buttons -------------------------------------------------------------------------------
+
+			// Play Playlist
+			place {
+				control = "PlayPlaylistButton"
+				region = "overflow"
+				start = "CoverImage"
+				dir = "down"
+				y = "4"
+			}
+
+			// Add to Queue
+			place {
+				control = "AddPlaylistToQueueButton"
+				region = "overflow"
+				start = "PlayPlaylistButton"
+				dir = "down"
+				y = "4"
+			}
+
+			// Add to Playlist
+			place {
+				control = "AddRandomTracksToPlaylistButton"
+				region = "overflow"
+				start = "AddPlaylistToQueueButton"
+				dir = "down"
+				y = "4"
+			}
+
+		// Music List -------------------------------------------------------------------------------
+			
+			place {
+				control = "*MusicPageDetailsPlaylistTrack"
+				region = "overflow"
+				start = "ArtistLabel"
+				dir = "down"
+				width = "max"
+				margin-left = "230"
+				margin-right = "20"
+			}
+			
+		// -------------------------------------------------------------------------------
+
+	}
+
+}

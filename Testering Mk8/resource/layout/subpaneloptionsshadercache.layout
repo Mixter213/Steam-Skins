@@ -1,0 +1,52 @@
+"resource/layout/subpaneloptionsshadercache.layout" {
+
+	layout {
+
+		// Clear Cache ------------------------------------------------------------------------------------------
+
+			// Description
+			place {
+				controls = "ShaderCacheInfo"
+				width = "max"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// Enable Shader Pre-Caching
+			place {
+				controls = "ShaderCacheEnabledCheckbox"
+				start = "ShaderCacheInfo"
+				dir = "down"
+				height = "24"
+				width = "max"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// Enable Background Processing of Vulken Shaders
+			place {
+				controls = "ShaderCacheBGProcessingEnabledCheckbox"
+				start = "ShaderCacheEnabledCheckbox"
+				dir = "down"
+				height = "24"
+				width = "max"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// Enable Background Processing of Vulken Shaders
+			place {
+				controls = "ShaderCacheBGProcessingProgress"
+				start = "ShaderCacheBGProcessingEnabledCheckbox"
+				dir = "down"
+				height = "24"
+				width = "max"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+		// ------------------------------------------------------------------------------------------
+
+	}
+
+}

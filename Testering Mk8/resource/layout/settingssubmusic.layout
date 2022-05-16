@@ -1,0 +1,302 @@
+"resource/layout/settingssubmusic.layout" {
+	
+	layout {
+
+		// Music Libraries ------------------------------------------------------------------------------------------
+
+			// Music Libraries Title
+			place {
+				controls = "LibraryHeader"
+				height = "24"
+				width = "max"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// Music Libraries List
+			place {
+				controls = "LibraryList"
+				start = "LibraryHeader"
+				dir = "down"
+				height = "60"
+				width = "max"
+				margin-top = "4"
+				margin-right = "10"
+			}
+
+		// Music Libraries Buttons ------------------------------------------------------------------------------------------
+		
+			// Add Library
+			place {
+				controls = "AddLibraryButton"
+				start = "LibraryList"
+				dir = "down"
+				height = "30"
+				width = "90"
+				margin-top = "4"
+			}
+		
+			// Remove Library
+			place {
+				controls = "RemoveLibraryButton"
+				start = "AddLibraryButton"
+				height = "30"
+				width = "90"
+				margin-left = "10"
+			}
+		
+			// Scan Now
+			place {
+				controls = "StartCrawlingButton"
+				start = "RemoveLibraryButton"
+				height = "30"
+				width = "90"
+				margin-left = "10"
+			}
+		
+		// Divider ------------------------------------------------------------------------------------------
+
+			// Divider
+			place {
+				controls = "LibraryDivider"
+				start = "AddLibraryButton"
+				dir = "down"
+				height = "2"
+				width = "max"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+		// Database ------------------------------------------------------------------------------------------
+
+			// Database Title
+			place {
+				controls = "DatabaseHeader"
+				start = "LibraryDivider"
+				dir = "down"
+				height = "24"
+				width = "max"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// Database Scan at startup Button
+			place {
+				controls = "DatabaseCrawlAtStartup"
+				start = "DatabaseHeader"
+				dir = "down"
+				height = "30"
+				width = "230"
+				margin-top = "4"
+				margin-right = "10"
+			}
+
+			// Database Scan at startup Button
+			place {
+				controls = "DatabaseCrawlSteamInstallFolders"
+				start = "DatabaseHeader"
+				align = "right"
+				dir = "down"
+				height = "30"
+				width = "230"
+				margin-top = "4"
+				margin-right = "10"
+			}
+
+
+
+			// Reset Database
+			place {
+				controls = "ResetDatabaseButton"
+				start = "DatabaseCrawlAtStartup"
+				dir = "down"
+				height = "30"
+				margin-top = "4"
+				margin-right = "10"
+			}
+
+			// Reset Database Label
+			place {
+				controls = "DatabaseInfoLabel"
+				start = "ResetDatabaseButton"
+				height = "30"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+		// Divider ------------------------------------------------------------------------------------------
+
+			// Divider
+			place {
+				controls = "DatabaseDivider"
+				start = "ResetDatabaseButton"
+				dir = "down"
+				height = "2"
+				width = "max"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+		// Volume ------------------------------------------------------------------------------------------
+
+			// Volume Title
+			place {
+				controls = "VolumeHeader"
+				start = "DatabaseDivider"
+				dir = "down"
+				height = "24"
+				width = "max"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// Volume Slider
+			place {
+				controls = "VolumeSlider"
+				start = "VolumeHeader"
+				dir = "down"
+				height = "30"
+				width = "230"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// Volume Media Keys
+			place {
+				controls = "EnableMediaKeysCheckbox"
+				start = "VolumeHeader"
+				align = "right"
+				dir = "down"
+				height = "30"
+				width = "230"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+		// Divider ------------------------------------------------------------------------------------------
+
+			// Divider
+			place {
+				controls = "VolumeDivider"
+				start = "VolumeSlider"
+				dir = "down"
+				height = "2"
+				width = "max"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+		// Pause Music ------------------------------------------------------------------------------------------
+
+			// Pause Music Title
+			place {
+				controls = "PauseMusicHeader"
+				start = "VolumeDivider"
+				dir = "down"
+				height = "24"
+				width = "230"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// When starting an application
+			place {
+				controls = "PauseMusicWhenStartingApplicationCheckbox"
+				start = "PauseMusicHeader"
+				dir = "down"
+				height = "30"
+				width = "230"
+				margin-top = "4"
+				margin-right = "10"
+			}
+
+			// When voice chatting
+			place {
+				controls = "PauseMusicWhenVoiceChatCheckbox"
+				start = "PauseMusicWhenStartingApplicationCheckbox"
+				dir = "down"
+				height = "30"
+				width = "230"
+				margin-top = "4"
+				margin-right = "10"
+			}
+
+		// Display a Notification ------------------------------------------------------------------------------------------
+
+			// Display a Notification Title
+			place {
+				controls = "NotificationHeader"
+				start = "PauseMusicWhenVoiceChatCheckbox"
+				dir = "down"
+				height = "24"
+				width = "230"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// When starting an application
+			place {
+				controls = "NotificationPlaylistNowPlayingCheckbox"
+				start = "NotificationHeader"
+				dir = "down"
+				height = "30"
+				width = "230"
+				margin-top = "4"
+				margin-right = "10"
+			}
+
+		// Additional Files ------------------------------------------------------------------------------------------
+
+			// Additional Files Title
+			place {
+				controls = "AdditionalFilesHeader"
+				start = "VolumeDivider"
+				align = "right"
+				dir = "down"
+				height = "24"
+				width = "230"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// Download high quality audio file
+			place {
+				controls = "AdditionalFilesHighQualityCheckbox"
+				start = "AdditionalFilesHeader"
+				dir = "down"
+				height = "30"
+				width = "230"
+				margin-top = "4"
+				margin-right = "10"
+			}
+
+		// Logging ------------------------------------------------------------------------------------------
+
+			// Logging Title
+			place {
+				controls = "LoggingHeader"
+				start = "AdditionalFilesHighQualityCheckbox"
+				align = "right"
+				dir = "down"
+				height = "24"
+				width = "230"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+			// Save scanning activity log
+			place {
+				controls = "LoggingCrawlingCheckbox"
+				start = "LoggingHeader"
+				dir = "down"
+				height = "30"
+				width = "230"
+				margin-top = "4"
+				margin-right = "10"
+			}
+
+		// ------------------------------------------------------------------------------------------
+
+	}
+
+}

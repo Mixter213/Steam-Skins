@@ -1,0 +1,168 @@
+"resource/layout/gamespage_mini.layout" {
+
+	styles {
+
+		// Frame ------------------------------------------------------------------------------------------
+
+			"CGamesPage_Mini"  {
+				bgcolor = "20 20 20 255"
+			}
+
+		// Menu ------------------------------------------------------------------------------------------
+		
+			"menubutton" {
+				bgcolor = "0 0 0 0"
+			} 
+
+			"menubutton:hover" {
+				textcolor = "200 200 200 255"
+			} 
+		
+		// Top Bar ------------------------------------------------------------------------------------------
+
+			// Top Bar Wrapper
+			"grouper" {
+				bgcolor = "30 30 30 255"
+			}
+
+			// Label Search Icon
+			"LibrarySearchIcon" {
+				bgcolor = "0 0 0 0"
+				image = "graphics/icon_button_search"
+				inset = "2 0 0 0"
+			}
+
+		// Top Bar - Search Bar ------------------------------------------------------------------------------------------
+
+			"LibrarySearch" {
+				textcolor = "160 160 160 255"
+				selectedtextcolor = "250 250 250 255"
+				bgcolor = "20 20 20 255"
+				selectedbgcolor = "60 60 60 255"
+			}
+			
+			"LibrarySearch:empty" {
+				font-style = "italic"
+				textcolor = "120 120 120 255"
+				bgcolor = "26 26 26 255"
+			}
+				
+			"LibrarySearch:hover" {
+				textcolor = "200 200 200 255"
+			}
+
+		// Filter Button ------------------------------------------------------------------------------------------
+
+			"CMiniGameFilterMenuButton" {
+				bgcolor = "0 0 0 0"
+				textcolor = "160 160 160 255"
+				font-style = "outerglow"
+				font-outerglow-color = "100 100 100 255"
+			}
+
+		// Games List ------------------------------------------------------------------------------------------
+
+			"ListPanel" {
+				bgcolor = "30 30 30 255 "
+				padding-left = "24"
+			}
+
+		// ------------------------------------------------------------------------------------------
+
+
+	}
+
+ 	layout {
+
+		// Frame ------------------------------------------------------------------------------------------
+
+			place {
+				control = "frame_captiongrip"
+				height = "44"
+				width = "max"
+				x = "2"
+				margin = "2"
+			}
+
+		// Menu ------------------------------------------------------------------------------------------
+
+			// Menu Bar
+			place {
+				control = "MenuBar"
+				height = "24"
+				x = "10"
+				y = "10"
+			}
+
+		// Top Bar ------------------------------------------------------------------------------------------
+
+			// Top Bar Wrapper
+			place {
+				control = "subnavgroup_library"
+				height = "30"
+				width = "max"
+				x = "10"
+				y = "48"
+				margin-right = "10"
+			}
+
+			// Label Search Icon
+			place {
+				control = "label_search_icon"
+				height = "24"
+				width = "24"
+				x = "20"
+				y = "51"
+			}
+
+			// Library Search Bar
+			place {
+				control = "library_search"
+				height = "24"
+				width = "90"
+				x = "50"
+				y = "51"
+			}
+			
+			// Library Filters
+			place {
+				control = "library_filters"
+				align = "right"
+				height = "24"
+				y = "51"
+				margin-right = "10"
+			}
+
+		// Game List ------------------------------------------------------------------------------------------
+
+			place {
+				control = "gameslist"
+				width = "max"
+				height = "max"
+				margin = "10"
+				margin-top = "82"
+				margin-bottom = "20"
+			}
+
+		// ------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+		
+		
+		
+
+ 	}
+
+}

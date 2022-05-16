@@ -1,0 +1,14 @@
+"resource/layout/newlibrary.layout" {
+
+	layout {
+
+		// Page - Wrapper
+		place {
+			control = "HTMLRoot"
+			width = "max"
+			height = "max"
+		}
+
+	}
+
+}

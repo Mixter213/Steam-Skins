@@ -1,0 +1,54 @@
+"resource/layout/accountmenu.layout" {
+
+	styles {
+
+		// Account Dropdown Menu -----------------------------------------------------------------------------
+
+			// Main Background
+			AccountMenuStyle {
+				bgcolor = "30 30 30 255"
+			}
+		
+			// Item
+			account_menu_button {
+				font-size = "14"
+				textcolor = "160 160 160 255"
+				bgcolor = "0 0 0 0"
+				padding-left = "4"
+				padding-right = "4"
+			}
+			
+			// Item - Hover
+			account_menu_button:hover {
+				textcolor = "200 200 200 255"
+			}
+			
+			// Item - Extra
+			account_menu_label {
+				font-size = "14"
+				textcolor = "84 165 196 255"
+			}
+
+		//-----------------------------------------------------------------------------
+
+	}
+	
+	layout {
+
+		//-----------------------------------------------------------------------------
+
+			
+			// Button - View Profile
+			place {
+				control = "view_profile_button, view_account_button, change_user_button, view_preferences_button, view_wallet_button"
+				dir = "down"
+				spacing = "2"
+				height = "24"
+				width = "max"
+			}
+
+		//-----------------------------------------------------------------------------
+
+	}
+
+}

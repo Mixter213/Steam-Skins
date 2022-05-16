@@ -1,0 +1,28 @@
+"resource/layout/musicplayervolumepanel.layout" {
+
+	styles {
+		
+		// Music Popout Volume Slider - Keep ratio 100 / 18 + (top margin) + ( y )
+		CMusicPlayerVolumePanel {
+			minimum-height = 46
+			minimum-width = 200
+		}
+	
+	}
+	
+
+
+	layout {
+
+		place {
+			control = "VolumeSlider"
+			height = "36"
+			width = "200"
+			x = "10"
+			y = "10"
+			margin-right = "10"
+		}
+
+	}
+
+}

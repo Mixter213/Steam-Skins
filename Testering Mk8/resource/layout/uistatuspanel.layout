@@ -1,0 +1,74 @@
+"resource/layout/uistatuspanel.layout" {
+
+	styles {
+
+		// Main Window -------------------------------------------------------------------------------
+
+			"CUIStatusPanel" {
+				bgcolor = "0 0 0 0"
+			}
+
+		// Text -------------------------------------------------------------------------------
+
+			// Download / No Connection
+			"StatusLabel" {
+				font-size = "14"
+				textcolor = "200 200 200 255"
+				bgcolor = "0 0 0 0"
+			}
+
+			// Download / No Connection - Hover
+			"StatusLabel:hover" {
+				font-size = "14"
+				textcolor = "240 240 240 255"
+				bgcolor = "0 0 0 0"
+			}
+
+			// x / x Items Complete Bar
+			"StatusLabelDim" {
+				font-size = "14"
+				textcolor = "200 200 200 255"
+				bgcolor = "0 0 0 0"
+			}
+
+		// Progress Bar -------------------------------------------------------------------------------
+
+			"SlimProgressBar" {
+				textcolor = "60 60 60 255"
+				bgcolor = "0 0 0 255"
+			}
+
+		// -------------------------------------------------------------------------------
+
+	}
+
+	layout {
+	  
+		// Download / No Connection
+		place {
+			control = "StatusDownloading"
+			align = "top-center"
+			height = "24"
+			y = "4"
+		}
+		
+		// Progress Bar
+	 	place {
+			control = "StatusProgressbar"
+			align = "top-center"
+			height = "4"
+			width = "300"
+			y = "28"
+		}
+
+		// x / x Items Complete Bar
+		place {
+			control = "StatusPaused, StatusComplete"
+			align = "top-center"
+			height = "24"
+			y = "34"
+		}
+
+	}
+
+}

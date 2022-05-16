@@ -1,0 +1,440 @@
+"resource/layout/uinavigatorpanel.layout" {
+
+	styles {
+
+		//Navigation Buttons -------------------------------------------------------------------------------
+
+			// Back Button -------------------------------------------------------------------------------
+
+				// Back
+				"BackButton" {
+					bgcolor = "0 0 0 0"
+					inset = "-6 0 0 0"
+					image = "graphics/icon_button_back"
+				}
+
+				// Back - Disabled
+				"BackButton:hover" {
+					image = "graphics/icon_button_back_down"
+				}
+
+				// Back - Disabled
+				"BackButton:active" {
+					image = "graphics/icon_button_back_down"
+				}
+
+				// Back - Disabled
+				"BackButton:disabled" {
+					image = "graphics/icon_button_back_disabled"
+				}
+
+			// Forward -------------------------------------------------------------------------------
+
+				// Forward
+				"ForwardButton" {
+					bgcolor = "0 0 0 0"
+					inset = "-8 0 0 0"
+					image = "graphics/icon_button_forward"
+				}
+
+				// Forward - Hover
+				"ForwardButton:hover" {
+					image = "graphics/icon_button_forward_over"
+				}
+
+				// Forward - Active
+				"ForwardButton:active" {
+					image = "graphics/icon_button_forward_down"
+				}
+
+				// Forward - Disabled
+				"ForwardButton:disabled" {
+					image = "graphics/icon_button_forward_disabled"
+				}
+
+
+			// Nav Buttons -------------------------------------------------------------------------------
+
+				"CUINavButton" {
+					font-size = "24"
+					textcolor = "200 200 200 255"
+					bgcolor = "0 0 0 0"
+					padding-left = "4"
+					padding-right = "4"
+				}
+
+				"CUINavButton:hover" {
+					textcolor = "240 240 240 255"
+				}
+				
+		// -------------------------------------------------------------------------------
+
+		// URL Bar -------------------------------------------------------------------------------
+
+			// Label
+			"Label" {
+				textcolor = "120 120 120 255"
+				bgcolor = "0 0 0 0"
+			}
+
+			// Url Bar
+			"TextEntryURL" {
+				textcolor = "120 120 120 255"
+				selectedtextcolor = "160 160 160 255"
+				bgcolor = "0 0 0 0"
+				selectedbgcolor = "30 30 30 255"
+				padding-left = "8"
+				padding-right = "8"
+			}
+
+			// Secure Url Bar
+			"URLBarSecure" {
+				textcolor = "126 166 75 255"
+			}
+
+			// Insecure Url Bar
+			"URLBarBrokenSecure" {
+				textcolor = "173 69 72 255"
+			}
+
+			// EVCert Label
+			"LabelEVCert" {
+				font-size = "14"
+				textcolor = "30 30 30 255"
+				bgcolor = "126 166 75 255"
+				padding-left = "8"
+				padding-right = "8"
+			}
+
+			// EVCert Lock Icon
+			"URLStatusImage" {
+				bgcolor = "0 0 0 0"
+				image = "graphics/html_lock_disabled"
+				padding-left = "8"
+				padding-right = "8"
+			}
+
+			// Stop -------------------------------------------------------------------------------
+
+				// Stop
+				"StopButton" {
+					bgcolor = "0 0 0 0"
+					inset = "-5 0 0 0"
+					image = "graphics/icon_button_stop"
+					padding-left = "8"
+					padding-right = "8"
+				}
+
+				// Stop - Hover
+				"StopButton:hover" {
+					image = "graphics/icon_button_stop_over"
+				}
+
+				// Stop - Active
+				"StopButton:active" {
+					image = "graphics/icon_button_stop_down"
+				}
+
+				// Stop - Disabled
+				"StopButton:disabled" {
+					image = "graphics/icon_button_stop_disabled"
+				}
+
+			// Refresh -------------------------------------------------------------------------------
+
+				// Reload
+				"ReloadButton" {
+					bgcolor = "0 0 0 0"
+					inset = "-5 0 0 0"
+					image = "graphics/icon_button_reload"
+					padding-left = "8"
+					padding-right = "8"
+				}
+
+				// Reload - Hover
+				"ReloadButton:hover" {
+					image = "graphics/icon_button_reload_over"
+				}
+
+				// Reload - Active
+				"ReloadButton:active" {
+					image = "graphics/icon_button_reload_down"
+				}
+
+				// Reload - Disabled
+				"ReloadButton:disabled" {
+					image = "graphics/icon_button_reload_disabled"
+				}
+
+
+		// -------------------------------------------------------------------------------
+
+		// Music Page -------------------------------------------------------------------------------
+
+			// Search Icon -------------------------------------------------------------------------------
+
+				"LibrarySearchIcon" {
+					image = "graphics/icon_button_search"
+				}
+
+				"LibrarySearchIcon:disabled" {
+					image = "none"
+				}
+
+			// Search Bar -------------------------------------------------------------------------------
+
+				"LibrarySearch" {
+					textcolor = "160 160 160 255"
+					selectedtextcolor = "250 250 250 255"
+					bgcolor = "20 20 20 255"
+					selectedbgcolor = "60 60 60 255"
+				}
+				
+				"LibrarySearch:empty" {
+					font-style = "italic"
+					textcolor = "120 120 120 255"
+					bgcolor = "26 26 26 255"
+				}
+					
+				"LibrarySearch:hover" {
+					textcolor = "200 200 200 255"
+				}
+
+			// Album Bar -------------------------------------------------------------------------------
+
+				"NavLabel2" {
+					bgcolor = "0 0 0 0"
+					textcolor = "160 160 160 255"
+					font-style = "outerglow"
+					font-outerglow-color = "100 100 100 255"
+				}
+
+				"NavLabel2:hover" {
+					textcolor = "200 200 200 255"
+				}
+
+
+				"MusicAddButton" {
+					bgcolor = "0 0 0 0"
+					image = "graphics/icon_collapse"
+					inset = "-4 0 0 0"
+				}
+
+				"MusicAddButton:hover" {
+					image = "graphics/icon_collapse_over"
+				}
+
+			// Music Player Icon -------------------------------------------------------------------------------
+
+				"MusicPlayerIcon" {
+					image = "graphics/icon_music_player"
+					inset = "-1 0 0 0"
+				}
+
+				"MusicPlayerIcon:hover" {
+					image = "graphics/icon_music_player_hover"
+				}
+
+				"MusicPlayerIcon:selected" {
+					image = "graphics/icon_music_player_selected"
+				}
+
+			// -------------------------------------------------------------------------------
+
+		// -------------------------------------------------------------------------------
+
+	}
+
+	layout {
+
+		// Pages ---------------------------------------------------------------------------------------------------------
+
+			// Web Page
+			place {
+				control = "WebPanel"
+				height = "max"
+				width = "max"
+				margin-top = "90"
+			}
+
+			// New Library Page
+			place {
+				control = "NewLibraryPage"
+				height = "max"
+				width = "max"
+				margin-top = "58"
+			}
+
+			// Console Page
+			place {
+				control = "ConsolePage"
+				height = "max"
+				width = "max"
+				margin-top = "58"
+			}
+
+			
+			// Music Page
+			place {
+				control = "MusicPage_Details"
+				height = "max"
+				width = "max"
+				margin-top = "90"
+			}
+
+		//---------------------------------------------------------------------------------------------------------
+
+		// Nav Bar ---------------------------------------------------------------------------------------------------------
+
+			// Store - Library - Community - Profile - Console
+			place {
+				control = "label_store, label_library, label_community, label_me, label_console"
+				height = "40"
+				spacing = "8"
+				x = "68"
+				y = "10"
+			}
+
+			// Community "New" Tag
+				place {
+					control = "label_community_new"
+					start = "label_community"
+					height = "0"
+					width = "0"
+				}
+
+		//---------------------------------------------------------------------------------------------------------
+
+		// Forward & Back Buttons ---------------------------------------------------------------------------------------------------------
+
+			// Back - Forward
+			place {
+				control = "back, forward"
+				height = "40"
+				x = "0"
+				y = "10"
+			}
+
+		//---------------------------------------------------------------------------------------------------------
+
+		// Url Bar ---------------------------------------------------------------------------------------------------------
+
+			// Refresh - Stop - Url Status Image - EvCert - Url Bar
+			place {
+				control = "refresh, stop, URLStatusImage, EVCert, URLBar"
+				spacing = "4"
+				height = "24"
+				width = "max"
+				x = "0"
+				y = "58"
+			}
+
+			// Page Load Throbber
+			place {
+				control = "PageLoadThrobber"
+				align = "right"
+				height = "30"
+				width = "30"
+				y = "58"
+				margin-right = "10"
+			}
+
+			// Url Anchor
+			place {
+				control = "URLAnchor"
+				height = "24"
+				width = "max"
+				x = "0"
+				y = "58"
+			}
+
+			// Library Anchor
+			place {
+				control = "LibraryAnchor"
+				start = "URLAnchor"
+				dir = "down"
+				height = "24"
+				width = "max"
+				x = "0"
+				y = "0"
+			}
+		//---------------------------------------------------------------------------------------------------------
+
+		// Music Page ---------------------------------------------------------------------------------------------------------
+
+			// Sub Nav Grouper
+			place {
+				control = "subnavgroup_library"
+				height = "24"
+				width = "max"
+				x = "0"
+				y = "58"
+			}
+
+			// Search Icon
+			place {
+				control = "label_search_icon"
+				height = "24"
+				x = "10"
+				y = "58"
+			}
+
+			// Search Bar
+			place {
+				control = "library_search"
+				start = "label_search_icon"
+				height = "24"
+				width = "120"
+				x = "10"
+			}
+
+			// Filters
+			place {
+				control = "library_filters"
+				height = "24"
+				x = "206"
+				y = "58"
+			}
+
+			// Filter Details - Filters List - Filters Grid
+			place {
+				control = "library_filters_details, library_filters_list, library_filters_grid"
+				align = "right"
+				height = "24"
+				width = "20"
+				spacing = "4"
+				y = "58"
+				margin-right = "10"
+			}
+			
+			// Music Player - Icon
+			place {
+				control = "library_music_player_icon"
+				align = "right"
+				height = "24"
+				width = "20"
+				spacing = "4"
+				y = "58"
+				margin-right = "10"
+			}
+
+			// Music Menu
+			place {
+				control = "library_music_menu"
+				height = "24"
+				x = "290"
+				y = "58"
+			}
+
+			// Music Menu - Music Add Button
+			place {
+				control = "library_music_add_button"
+				start = "library_music_menu"
+				height = "24"
+			}
+
+		//---------------------------------------------------------------------------------------------------------
+
+	}
+
+}

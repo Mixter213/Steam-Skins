@@ -1,0 +1,257 @@
+"resource/layout/settingssubbroadcast.layout" {
+
+	layout {
+
+		// Broadcast Disabled ------------------------------------------------------------------------------------------
+
+			// Broadcast Title
+			place {
+				controls = "BroadcastDisabledLabel"
+				height = "24"
+				margin-top = "10"
+			}
+
+			// Broadcast URL
+			place {
+				controls = "BroadcastDisabledSupportURL"
+				start = "BroadcastDisabledLabel"
+				height = "24"
+				margin-left = "10"
+			}
+
+		// Broadcast Status Helper ------------------------------------------------------------------------------------------
+
+			// Status Helper Title
+			place {
+				controls = "BroadcastStatusHeader"
+				start = "BroadcastDisabledLabel"
+				dir = "down"
+				height = "24"
+				margin-top = "10"
+			}
+
+			// Status Helper URL
+			place {
+				controls = "BroadcastStatus"
+				start = "BroadcastStatusHeader"
+				height = "24"
+				margin-left = "10"
+			}
+
+		// Broadcast Status Helper ------------------------------------------------------------------------------------------
+
+			// Status Helper Title
+			place {
+				controls = "BroadcastHelpHeader"
+				start = "BroadcastStatusHeader"
+				dir = "down"
+				height = "24"
+				margin-top = "10"
+			}
+
+			// Status Helper URL
+			place {
+				controls = "BroadcastHelpURL"
+				start = "BroadcastHelpHeader"
+				height = "24"
+				margin-left = "10"
+			}
+
+		// Divider ------------------------------------------------------------------------------------------
+
+			// Divider
+			place {
+				controls = "Divider1"
+				start = "BroadcastHelpHeader"
+				dir = "down"
+				height = "2"
+				width = "max"
+				margin-top = "10"
+				margin-right = "10"
+			}
+
+		// Privacy Settings ------------------------------------------------------------------------------------------
+
+			// Privacy Title
+			place {
+				controls = "PermissionsHeader"
+				start = "Divider1"
+				dir = "down"
+				height = "24"
+				margin-top = "10"
+			}
+
+			// Privacy Button
+			place {
+				controls = "Permissions"
+				start = "PermissionsHeader"
+				dir = "down"
+				height = "24"
+				width = "250"
+				margin-top = "10"
+			}
+
+		// Video Dimensions ------------------------------------------------------------------------------------------
+
+			// Video Title
+			place {
+				controls = "DimensionsHeader"
+				start = "Permissions"
+				dir = "down"
+				height = "24"
+				margin-top = "10"
+			}
+
+			// Video Button
+			place {
+				controls = "Dimensions"
+				start = "DimensionsHeader"
+				dir = "down"
+				height = "24"
+				width = "250"
+				margin-top = "10"
+			}
+
+		// Maximum Bitrate ------------------------------------------------------------------------------------------
+
+			// Bitrate Title
+			place {
+				controls = "BitrateLimitHeader"
+				start = "Dimensions"
+				dir = "down"
+				height = "24"
+				margin-top = "10"
+			}
+
+			// Bitrate Button
+			place {
+				controls = "BitrateLimit"
+				start = "BitrateLimitHeader"
+				dir = "down"
+				height = "24"
+				width = "250"
+				margin-top = "10"
+			}
+
+		// Optimize Encoding ------------------------------------------------------------------------------------------
+
+			// Optimize Encoding Title
+			place {
+				controls = "EncoderHeader"
+				start = "BitrateLimit"
+				dir = "down"
+				height = "24"
+				margin-top = "10"
+			}
+
+			// Optimize Encoding Button
+			place {
+				controls = "EncoderSetting"
+				start = "EncoderHeader"
+				dir = "down"
+				height = "24"
+				width = "250"
+				margin-top = "10"
+			}
+
+		// Show Chat In Game ------------------------------------------------------------------------------------------
+
+			// Show Chat Title
+			place {
+				controls = "ShowChatHeader"
+				start = "EncoderSetting"
+				dir = "down"
+				height = "24"
+				margin-top = "10"
+			}
+
+			// Show Chat Button
+			place {
+				controls = "ShowChatCombo"
+				start = "ShowChatHeader"
+				dir = "down"
+				height = "24"
+				width = "250"
+				margin-top = "10"
+			}
+		
+		// Record Buttons ------------------------------------------------------------------------------------------
+
+			// Record from desktop
+			place {
+				controls = "IncludeDesktop"
+				start = "ShowChatCombo"
+				dir = "down"
+				height = "24"
+				margin-top = "10"
+			}
+
+			// Record system audio
+			place {
+				controls = "RecordSystemAudio"
+				start = "IncludeDesktop"
+				dir = "down"
+				height = "24"
+				margin-top = "4"
+			}
+
+			// Record Mic
+			place {
+				controls = "RecordMic"
+				start = "RecordSystemAudio"
+				dir = "down"
+				height = "24"
+				margin-top = "4"
+			}
+
+			// Record Mic
+			place {
+				controls = "RecordMic"
+				start = "RecordSystemAudio"
+				dir = "down"
+				height = "24"
+				margin-top = "4"
+			}
+
+			// Record Mic - Config URL
+			place {
+				controls = "ConfigMic"
+				start = "RecordMic"
+				height = "24"
+				margin-top = "4"
+			}
+
+			// Show Debug Info
+			place {
+				controls = "ShowDebugInfo"
+				start = "RecordMic"
+				dir = "down"
+				height = "24"
+				margin-top = "4"
+			}
+
+			// Show Reminder
+			place {
+				controls = "ShowReminder"
+				start = "ShowDebugInfo"
+				dir = "down"
+				height = "24"
+				margin-top = "4"
+			}
+		
+		// Restart Button ------------------------------------------------------------------------------------------
+
+			// Restart Label
+			place {
+				controls = "RequiresRestartLabel"
+				start = "ShowReminder"
+				dir = "down"
+				height = "24"
+				margin-top = "4"
+			}
+
+		// ------------------------------------------------------------------------------------------
+
+	}
+
+}

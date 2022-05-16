@@ -1,0 +1,54 @@
+"resource/layout/screenshotdeletedialog.layout" {
+
+	styles {
+
+		"ScreenshotDeleteDialog" {
+			minimum-width = "325"
+			minimum-height = "200"
+		}
+
+	}
+	
+	layout {
+
+		place {
+			control = "Warning"
+			height = "70"
+			width = "70"
+			margin-top = "60"
+			margin-left = "10"
+		}
+		
+		place {
+			control = "WarningText"
+			start = "Warning"
+			width = "max"
+			margin-right = "10"
+			margin-left = "10"
+		}
+
+		place {
+			control = "DeleteFromCloudBox"
+			start = "WarningText"
+			dir = "down"
+		}
+
+		place {
+			control = "Delete"
+			align = "bottom"
+			height = "30"
+			margin-bottom = "10"
+			margin-left = "10"
+		}
+
+		place {
+			control = "Cancel"
+			align = "bottom-right"
+			height = "30"
+			margin-bottom = "10"
+			margin-right = "10"
+		}
+
+	}
+
+}

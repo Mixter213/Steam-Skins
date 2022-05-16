@@ -1,0 +1,185 @@
+"resource/layout/screenshotsuploaddialog.layout" {
+
+	styles {
+
+		"CScreenshotUploadDialog" {
+			minimum-width = "325"	
+			minimum-height = "350"
+		}
+
+	}
+
+	layout {
+
+		place {
+			control = "upload_question"
+			height = "30"
+			width = "max"
+			margin-top = "40"
+			margin-left = "10"
+			margin-right = "10"
+		}
+
+		place {
+			control = "upload_info"
+			height = "30"
+			width = "max"
+			margin-top = "40"
+			margin-left = "10"
+			margin-right = "10"
+		}
+
+		place {
+			control = "error_info"
+			start = "upload_info"
+			dir = "down"
+			height = "30"
+			width = "max"
+			margin-top = "10"
+			margin-right = "10"
+		}
+
+		place {
+			control = "upload_progress"
+			start = "error_info"
+			dir = "down"
+			height = "30"
+			width = "max"
+			margin-top = "10"
+			margin-right = "10"
+		}
+
+
+
+
+		place {
+			control = "upload_size"
+			start = "upload_progress"
+			dir = "down"
+			height = "30"
+			margin-top = "10"
+		}
+
+		place {
+			control = "upload_size_info"
+			start = "upload_size"
+			height = "30"
+			margin-left = "10"
+		}
+
+
+		place {
+			control = "storage_remaining"
+			start = "upload_size"
+			dir = down
+			height = "30"
+			margin-top = "10"
+		}
+
+		place {
+			control = "storage_remaining_info"
+			start = "storage_remaining"
+			height = "30"
+			margin-left = "10"
+		}
+
+
+		place {
+			control = "visiblity_label"
+			start = "storage_remaining"
+			dir = down
+			height = "30"
+			margin-top = "10"
+		}
+
+		place {
+			control = "visibility_options"
+			start = "visiblity_label"
+			height = "30"
+			width = "max"
+			margin-left = "10"
+			margin-right = "10"
+		}
+
+
+		place {
+			control = "share_to_facebook_check_button"
+			start = "visiblity_label"
+			dir = down
+			height = "30"
+			width = "max"
+			margin-top = "10"
+			margin-right = "50"
+		}
+
+		place {
+			control = "facebook_logo"
+			start = "share_to_facebook_check_button"
+			height = "30"
+			width = "30"
+			margin-left = "10"
+		}
+
+
+
+
+
+		place {
+			control = "shared_to_facebook_ok_label"
+			start = "share_to_facebook_check_button"
+			dir = "down"
+			width = "max"
+			margin-top = "10"
+		}
+
+		place {
+			control = "shared_to_facebook_no_multi_label"
+			start = "share_to_facebook_check_button"
+			dir = "down"
+			width = "max"
+			margin-top = "10"
+		}
+
+		place {
+			control = "shared_to_facebook_no_private_label"
+			start = "share_to_facebook_check_button"
+			dir = "down"
+			width = "max"
+			margin-top = "10"
+		}
+
+		place {
+			control = "limited_user_upload_label"
+			start = "share_to_facebook_check_button"
+			dir = "down"
+			width = "max"
+			margin-top = "10"
+		}
+
+
+
+
+
+
+
+
+		place {
+			control = "cancel_button"
+			align = "bottom-right"
+			height = "30"
+			margin-bottom = "10"
+			margin-right = "10"
+		}
+
+		place {
+			control = "upload_button"
+			end-right = "cancel_button"
+			align = "bottom-right"
+			height = "30"
+			margin-right = "10"
+			margin-bottom = "10"
+		}
+
+	}
+
+}

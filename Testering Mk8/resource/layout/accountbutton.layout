@@ -1,0 +1,117 @@
+"resource/layout/accountbutton.layout" {
+
+	styles {
+
+		// Main Dropdown Button
+		"AccountMenuButtonStyle" {
+			bgcolor = "0 0 0 0"
+		}
+
+		// Balance
+		"AccountBalanceStyle" {
+			font-family = "basefont"
+			font-size = "14"
+			textcolor = "160 160 160 255" 
+			bgcolor = "127 127 127 30"
+			padding-left = "4"
+			padding-right = "4"
+		}
+
+		// Dropdown Icon -------------------------------------------------------------------------------
+
+			// Dropdown Icon - Offline
+			"AccountDropDownStyleOffline" {
+				textcolor = "127 127 127 255"
+				bgcolor = "127 127 127 30"
+				image = "graphics/dropdown_offline"
+			}
+
+			// Dropdown Icon - Online
+			"AccountDropDownStyleOnline" {
+				textcolor = "84 165 196 255"
+				bgcolor = "84 165 196 30"
+				image = "graphics/dropdown_online"
+			}
+
+			// Dropdown Icon - InGame
+			"AccountDropDownStyleInGame" {
+				textcolor = "144 186 60 255"
+				bgcolor = "144 186 60 30"
+				image = "graphics/dropdown_ingame"
+			}
+
+		// Account Persona ( Name ) -------------------------------------------------------------------------------
+	
+			// Account Persona - Offline
+			"AccountPersonaStyleOffline" {
+				padding-right = "8"
+				padding-left = "8"
+				textcolor = "127 127 127 255"
+				bgcolor = "127 127 127 30"
+			}
+
+			// Account Persona - Online
+			"AccountPersonaStyleOnline" {
+				padding-right = "8"
+				padding-left = "8"
+				textcolor = "84 165 196 255"
+				bgcolor = "84 165 196 30"
+			}
+
+			// Account Persona - InGame
+			"AccountPersonaStyleInGame" {
+				padding-right = "8"
+				padding-left = "8"
+				textcolor = "144 186 60 255"
+				bgcolor = "144 186 60 30"
+			}
+		
+		// -------------------------------------------------------------------------------
+	
+	}
+
+	layout {
+
+			// Main Dropdown Button
+			place {
+				control = "account_menu_button"
+				height = "24"
+				width = "max"
+			}
+
+			// Balance
+			place {
+				control = "account_balance"
+				align = "right"
+				height = "24"
+			}
+
+			// Dropdown Icon
+			place {
+				control = "account_drop_down"
+				align = "right"
+				end-right = "account_balance"
+				height = "24"
+				width = "12"
+			}
+
+			// Name
+			place {
+				control = "account_persona"
+				align = "right"
+				end-right = "account_drop_down"
+				height = "24"
+			}
+
+			// Avatar
+			place {
+				control = "account_avatar"
+				align = "right"
+				end-right = "account_persona"
+				height = "24"
+				width = "24"
+			}
+
+	}
+
+}
