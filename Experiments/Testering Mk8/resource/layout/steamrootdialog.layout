@@ -789,8 +789,7 @@
 
 				// Top Bar - Alerts (Not OSX)
 				place [!$OSX] {
-					control = "universe_label, 
-					EOLAlert, SupportAlert"
+					control = "universe_label, EOLAlert, SupportAlert"
 					spacing = "8"
 					align = "right"
 					end-right = "ParentalLockButton"
